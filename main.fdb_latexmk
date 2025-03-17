@@ -1,0 +1,21 @@
+# Fdb version 3
+["pdflatex"] 1742202306 "/home/lyokol/Scrivania/Master thesis/main.tex" "main.pdf" "main" 1742202306
+  "/etc/texmf/web2c/texmf.cnf" 1691845395 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/lyokol/Scrivania/Master thesis/main.tex" 1742202305 72 4f85fb90ba8b585c8ae42dcefbc1825c ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsl12.tfm" 1136768653 1504 f280e6069e577ca4a981806c471fe65c ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo" 1636758526 8285 589b019f4c77ae67e70783f50c29f749 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/book.cls" 1636758526 23268 2b549a0e88d4c803f33b9b907020a582 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1642022539 29921 f0f4f870357ebfb8fe58ed9ed4ee9b92 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1691845597 4379155 98693266ff65f58d9f98aff394de12d2 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1711353807 2800863 b006096f82529f01114cb41cb216a1be ""
+  "main.aux" 1742202306 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1742202305 72 4f85fb90ba8b585c8ae42dcefbc1825c ""
+  (generated)
+  "main.aux"
+  "main.log"
+  "main.pdf"
