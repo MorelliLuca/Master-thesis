@@ -1,6 +1,76 @@
 \documentclass[12pt,a4paper]{book}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=3cm, headheight=15pt, headsep=0.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{newlfont}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{changepage}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usepackage{url}         
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=green, urlcolor=cyan]{hyperref}     
+\usepackage{cleveref}    
+\usepackage{bookmark}
+
+\newcommand{\Title}{Tensor Perturbations}
+\newcommand{\Author}{Luca Morelli}
+
+\newcommand{\defeq}{\stackrel{\text{def}}{=} }
+\newcommand{\versor}[1]{\mathbf{\hat{#1}}}
+
+
+   
+\pagestyle{fancy}
+\fancyhead[LE]{\textbf{\Title}}
+\fancyhead[RE]{\Author}
+\fancyhead[RO]{\textbf{\nouppercase{\leftmark}}}
+\fancyhead[LO]{}
+\fancyfoot[LE,RO]{\thepage}
+\cfoot{}
+\setlength{\headwidth}{\textwidth}
+\usetikzlibrary{arrows.meta, decorations.pathmorphing, positioning}
+
+% Redefining part display style
+\titleformat{\part}[display] 
+{\normalfont\Huge\bfseries\centering} 
+{\thepart} 
+{20pt} 
+{\Huge}
+
+
 
 \begin{document}
-asd
+\frontmatter 
+\include{titilepage}
+\null\thispagestyle{empty}
+\newpage
+\include{abstract}
+\include{Notazioni} 
+\tableofcontents
+
+\mainmatter
+\part{The homogeneous universe}
+\chapter{Robertson Walker Universe}
+\input{Fundamentals/Metric}
+\input{Fundamentals/FriedmannEq}
+
+\part{The inhomogeneous universe}
+
+\part{CMB physic}
+\chapter{Anisotropies of the CMB}
+\input{CMB/Anisotropies}
+\input{CMB/SpectralDistortions}
+\input{CMB/SilkDumping.tex}
+
+\appendix
+\chapter{Differential geometry tools}
+\input{Fundamentals/MaxSymmetric}
+\chapter{Thermodynamics tools}
+\input{CMB/PertubedBoltzmannEquations}
+
+\bibliographystyle{plain} 
+\bibliography{references}  
 
 \end{document}
