@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{Chluba_Green}
+J.~Chluba.
+\newblock Green’s function of the cosmological thermalization problem.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  434(1):352–357, June 2013.
+
 \bibitem{dodelson}
 Scott Dodelson and Fabian Schmidt.
 \newblock {\em Modern Cosmology}.
@@ -16,5 +22,12 @@ D.~J. Fixsen, E.~S. Cheng, J.~M. Gales, J.~C. Mather, R.~A. Shafer, and E.~L.
 Wayne Hu and Martin White.
 \newblock Cmb anisotropies: Total angular momentum method.
 \newblock {\em Physical Review D}, 56(2):596–615, July 1997.
+
+\bibitem{Lucca_2020}
+Matteo Lucca, Nils Schöneberg, Deanna~C. Hooper, Julien Lesgourgues, and Jens
+  Chluba.
+\newblock The synergy between cmb spectral distortions and anisotropies.
+\newblock {\em Journal of Cosmology and Astroparticle Physics},
+  2020(02):026–026, February 2020.
 
 \end{thebibliography}

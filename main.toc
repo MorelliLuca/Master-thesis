@@ -4,39 +4,48 @@
 \contentsline {chapter}{\numberline {1}Robertson Walker Universe}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}The geometry of the universe}{3}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}The Robertson-Walker metric}{4}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}The curvature of the universe}{8}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Christoffel symbol of the R-W metric}{8}{subsection.1.1.3}%
-\contentsline {section}{\numberline {1.2}The Friedmann equations}{9}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Cosmic fluids}{9}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Firedmann equations}{11}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Universe geometry and its density}{12}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Matter-radiation universe}{13}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}The $\Lambda $CDM model}{13}{subsection.1.2.5}%
-\contentsline {part}{II\hspace {1em}The inhomogeneous universe}{15}{part.2}%
-\contentsline {part}{III\hspace {1em}CMB physic}{17}{part.3}%
-\contentsline {chapter}{\numberline {2}Anisotropies of the CMB}{19}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Angular power spectrum}{19}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Estimate the angular power spectrum}{20}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Multipole expansion}{20}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}From perturbations to anisotropies}{21}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Time evolution of anisotropies}{23}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Polarization of light}{25}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Polarization from Compton scattering}{26}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Multipole expansion of the Boltzmann equation}{27}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Polarization power spectrum}{29}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Tensor perturbations effects on the CMB}{29}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Coupling of tensors to anisotropies}{30}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Multipole expansion of tensor induced anisotropies}{31}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Approximate solutions for the dynamics of the anisotropies}{33}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}The tight coupling approximation}{33}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Improved tight coupling approximation}{34}{subsection.2.4.2}%
-\contentsline {chapter}{\numberline {3}Spectral Distortions}{37}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Production of spectral distortion}{37}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Silk dumping}{37}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Mixing of blackbodies}{37}{subsection.3.2.1}%
-\contentsline {chapter}{\numberline {A}Differential geometry tools}{39}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{39}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Thermodynamics tools}{43}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Scalar perturbed Liouville operator}{43}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Collision term}{45}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{45}{section.B.3}%
+\contentsline {subsection}{\numberline {1.1.2}Christoffel symbol of the R-W metric}{8}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Dynamical effects in the Robertson Walker universe}{9}{subsection.1.1.3}%
+\contentsline {subsubsection}{Hubble Law}{9}{subsubsection*.2}%
+\contentsline {subsubsection}{Cosmological redshift}{10}{subsubsection*.3}%
+\contentsline {section}{\numberline {1.2}The Friedmann equations}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Cosmic fluids}{11}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}The Friedmann equations}{13}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}The $\Lambda $CDM model}{16}{subsection.1.2.3}%
+\contentsline {part}{II\hspace {1em}The inhomogeneous universe}{21}{part.2}%
+\contentsline {part}{III\hspace {1em}CMB physic}{23}{part.3}%
+\contentsline {chapter}{\numberline {2}Anisotropies of the CMB}{25}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Angular power spectrum}{25}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Estimate the angular power spectrum}{26}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Multipole expansion}{27}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}From perturbations to anisotropies}{28}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Time evolution of anisotropies}{29}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Polarization of light}{30}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Polarization from Compton scattering}{31}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Multipole expansion of the Boltzmann equation}{33}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Polarization power spectrum}{34}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Tensor perturbations effects on the CMB}{35}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Coupling of tensors to anisotropies}{36}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Multipole expansion of tensor induced anisotropies}{37}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Approximate solutions for the dynamics of the anisotropies}{39}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}The tight coupling approximation}{39}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Improved tight coupling approximation}{40}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}Spectral Distortions}{43}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The thermalization problem}{43}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Thermalization scales}{46}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Modeling spectral distortions}{47}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Shapes of spectral distortions}{47}{subsection.3.2.1}%
+\contentsline {subsubsection}{Temperature shift G}{48}{subsubsection*.7}%
+\contentsline {subsubsection}{Chemical potential $\boldsymbol \mu $ distortion}{48}{subsubsection*.8}%
+\contentsline {subsubsection}{Compton y distortion}{49}{subsubsection*.9}%
+\contentsline {subsection}{\numberline {3.2.2}Amplitudes of spectral distortions}{50}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Injected, deposited energy and heating rate}{51}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Branching rations and the Green's function approach}{53}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Silk dumping}{55}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Mixing of blackbodies}{55}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {A}Differential geometry tools}{57}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{57}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{61}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Scalar perturbed Liouville operator}{61}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Collision term}{63}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{63}{section.B.3}%

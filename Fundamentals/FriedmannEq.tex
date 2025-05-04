@@ -22,10 +22,8 @@ where $\rho$ is the energy density of the fluid, $p$ the pressure and $U^\mu$ th
 \end{equation}
 Even before plugging everything in the Einstein equations, we can study the energy conservation of this fluid, which reads
 \begin{align}\label{eq:ConservationEnergy}
-    0&=\nabla_\mu T^\mu\phantom{} _0\nonumber\\&=\partial_\mu T^\mu\phantom{} _0+\Gamma^\mu_{\mu\lambda}T^\lambda\phantom{} _0-\Gamma^\lambda_{\mu0}T^\mu\phantom{} _\lambda\nonumber\\
-    &=\partial_0 T^0\phantom{} _0+\Gamma^\mu_{\mu0}T^0\phantom{} _0-\Gamma^\lambda_{\mu0}T^\mu\phantom{} _\lambda\nonumber\\
-    &=-\dot\rho-3\frac{\dot a}{a}\rho-3\frac{\dot a}{a}p\nonumber\\
-    &=-\dot\rho-3\frac{\dot a}{a}(\rho+p),
+    0&=\nabla_\mu T^\mu\phantom{} _0=\partial_\mu T^\mu\phantom{} _0+\Gamma^\mu_{\mu\lambda}T^\lambda\phantom{} _0-\Gamma^\lambda_{\mu0}T^\mu\phantom{} _\lambda=\partial_0 T^0\phantom{} _0+\Gamma^\mu_{\mu0}T^0\phantom{} _0-\Gamma^\lambda_{\mu0}T^\mu\phantom{} _\lambda\nonumber\\
+    &=-\dot\rho-3\frac{\dot a}{a}\rho-3\frac{\dot a}{a}p=-\dot\rho-3\frac{\dot a}{a}(\rho+p),
 \end{align}
 in which we used that $T^\mu\phantom{}_\nu$ is diagonal, and the Christoffel symbols \eqref{eq:RWChristoffel}.
 
@@ -49,7 +47,7 @@ To better grasp the physics of our construction let's study the evolution of som
     \item \textbf{Vacuum or dark energy}: this last type of cosmic fluid is quite a strange one, the equation of state for this fluid is $$p_v=-\rho_v,\quad \Rightarrow\quad \omega_v=-1.$$ This means that the energy density, as well as the pressure, as the universe expands, remains constant. Sometimes this is not considered a content of the universe, and it is referred as the \emph{cosmological constant} $\Lambda$: $$\rho_v=\frac{\Lambda}{8\pi G}.$$
 \end{itemize}
 Initially, it was thought that the universe could be described just but dust and radiation: a radiation dominated universe that then transitioned into a matter dominated. This was supported by the fact that $\rho_r\propto a^{-4}$ decrease faster than $\rho_d\propto a^{-3}$, as the universe expands.\\ Nowadays, we know that the expansion of the universe is accelerating, and this led to the introduction of the dark energy, to account for this behavior.
-\subsection{Firedmann equations}
+\subsection{The Friedmann equations}
 Now that we characterized the main types of fluids that we can use to model the content of the universe, we can proceed to derive the equations governing the time evolution of the universe.
 
 First we want to simplify a bit Einstein equations \eqref{eq:EFE}: from the trace of both sides of the equation we get
@@ -82,16 +80,17 @@ which is the \textbf{first Friedmann equation}, while from the $00$ component al
     \label{eq:Friedmann2}\boxed{\frac{\ddot a}{a}=-\frac{4\pi G}{3}(\rho+3p)}.
 \end{equation}
 The first, which is the one that is usually referred as the Friedmann equation, will determine the time evolution of the scale factor $a(t)$. To solve it, it is enough to know the dependence $\rho(a)$, that we previously discussed.
-\subsection{Universe geometry and its density}
-Usually, the first Friedmann equation \eqref{eq:Friedmann1} is expressed in terms of some cosmological parameters:
+
+Usually, the first Friedmann equation \eqref{eq:Friedmann1} is expressed in terms of specific cosmological parameters that are more easily measurable:
 \begin{itemize}
-    \item the \textbf{Hubble parameter}, $H=\frac{\dot a}{a}$, which measure the rate of expansion,
-    \item the \textbf{critical density}, $\rho_{\text{crit}}=\frac{3H^2}{8\pi G}$
-    \item the \textbf{density parameter}, $\Omega=\frac{8\pi G}{3H^2}\rho=\frac{\rho}{\rho_{\text{crit}}}$.
+    \item the \textbf{Hubble parameter}, $H\defeq\frac{\dot a}{a}$, which measure the rate of expansion,
+    \item the \textbf{critical density}, $\rho_{\text{crit}}\defeq\frac{3H^2}{8\pi G},$
+    \item the \textbf{density parameter}, $\Omega=\frac{8\pi G}{3H^2}\rho\defeq\frac{\rho}{\rho_{\text{crit}}}$,
+    \item the \textbf{curvature parameter}, $\Omega_k\defeq\frac{k}{(aH)^2}$.
 \end{itemize}
 In this way \eqref{eq:Friedmann1} explicitly relates the matter content of the universe with its geometry (flat. open or closed). Indeed, inserting the above parameters in \eqref{eq:Friedmann1} it reads
-\begin{equation}
-    \boxed{\Omega-1=\frac{k}{H^2a^2}},
+\begin{equation}\label{eq:Friedmann_Omega}
+    \boxed{\Omega-1=\Omega_k=\frac{k}{H^2a^2}},
 \end{equation}
 from which we can distinguish 3 distinct cases:
 \begin{itemize}
@@ -107,7 +106,188 @@ Depending on the different cosmic fluids the universe evolves mainly in three di
     \item \textbf{Empty universe}: lastly we consider an empty universe or in which vacuum energy dominates, therefore $\rho=\frac{\Lambda}{8\pi G}$, from which we get$$\dot a=a\sqrt{\frac{\Lambda}{3}}\quad \Rightarrow\quad a(t)=a_0e^{\sqrt{\frac{\Lambda}{3}}(t-t_0)},$$
      in which we imposed $a(t_0)=a_0$.\\Note that, among the cases, this universe is the only one that has an accelerating expansion ($\ddot a\geq0$). It is worth noting also that the first two cases admit a finite time (in our calculations $t=0$) for which the universe has no spatial extension ($a(0)=0$ generates a singularity).\\ The empty universe does not admit it. 
 \end{itemize}
-\subsection{Matter-radiation universe}
-asd
+\begin{figure}[h]
+    \centering
+    \label{fig:a_comparison}
+    \begin{tikzpicture}[scale=0.7]
+        \begin{axis}[
+            width=12cm, height=8cm,
+            xlabel={$t$}, ylabel={$a(t)$},
+            xmin=0, xmax=10,
+            ymin=0, ymax=25,
+            legend pos=north east,
+            axis lines=left,
+            legend style={font=\small}
+        ]
+            % Plot for a_mat = t^(2/3)
+            \addplot[
+                domain=0.01:10, % Avoid t=0 for power functions
+                samples=100,
+                thick,
+                blue
+            ] {x^(2/3)};
+            \addlegendentry{$a_{\text{mat}} $}
+
+            % Plot for a_rad = t^(1.5)
+            \addplot[
+                domain=0.01:10,
+                samples=100,
+                thick,
+                red
+            ] {x^(1.5)};
+            \addlegendentry{$a_{\text{rad}} $}
+
+            % Plot for a_vac = e^t
+            \addplot[
+                domain=0:4,
+                samples=100,
+                thick,
+                green
+            ] {exp(x)};
+            \addlegendentry{$a_{\text{vac}} $}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Comparison of the time evolution of the scale factor with three different fluids.}
+\end{figure}
 \subsection{The $\Lambda$CDM model} 
-asd
+\label{sec:LambdaCDM}
+With all the previous tools we introduced we are finally ready to describe the universe that we live in and its evolution. To draw the timeline of our universe we must start from today, from current observations of the cosmological parameters, and the trace back its history.
+
+The first cosmological parameter that has been ever observed is the Hubble parameter by Hubble himself in $1929$. Current and more precise measurements of this parameter give
+$$H_0=(67.74\pm0.46)\text{km s$^{-1}$Mpc$^{-1}$}$$
+which correspond to a critical density $\rho_{\text{crit},0}=(8.62\pm0.12)\times10^{-27}\text{kg m}^{m}$.
+
+Nowadays, most of our knowledge on the cosmological universe comes from measures of the \emph{CMB}, or the \emph{Cosmic microwave background radiation}, which for now is just the relic of the photons that filled the universe at earlier times. In $1996$, the \emph{COBE} satellite \cite{COBE1996} measured the spectrum of the CMB that turned out to be an almost perfect blackbody radiation at the temperature 
+\begin{equation}
+    \label{eq:T0_CMB}
+    T_0=(2.7255\pm0.0006)K,
+\end{equation}
+this allows to estimate the number density and the energy density of these relic photons (section ???) that turns out to be
+$$n_{\gamma,0}\approx410\text{ photons cm}^{-3},\quad \rho_{\gamma, 0}\approx4.6\times10^{34}\text{g cm}^{-3},\quad\Omega_{\gamma,0}=(5.38\pm0.15)\times10^{-5}.$$
+This turns out to be the main contribution to the overall photon contained in the universe today.\\
+From COBE we also discovered that the CMB displays small temperature fluctuations $\Delta T/T\approx 10^{-5}$ that, we will see, give us a tremendous amount of data about the history of the universe. For now, it is important that these measures suggest an upper bound for the spatial curvature of our universe today
+\begin{equation}
+    \label{eq:Omega_k0}|\Omega_{k,0}|<0.005.
+\end{equation}
+This shows that today only a small fraction of all the contribution to the Friedmann equation \eqref{eq:Friedmann_Omega} is represented by curvature and therefore we consider our universe almost flat. 
+
+Together with photons, our universe is also filled by neutrinos that, being really light particles, behave as almost radiation (their speed is really close to $c$) and therefore they also contribute to the total radiation density\footnote{In this context radiation means that we describe this fraction of energy as a perfect fluid with $\omega=1/3$.} $$\Omega_{r,0}=(9.02\pm0.21)\times10^{-5}.$$  
+
+Clearly, also the ordinary matter of which we are made of (what we called dust that mainly is stars and gasses that fill the universe) must be taken into account: current measures from the CMB and the abundances of the lightest chemical elements in our universe show $$\Omega_{b,0}=0.0493\pm0.0006,$$
+where the subscript $b$ stands for baryons, which are the main ingredients of ordinary matter particles.
+From this data we can estimate the corresponding number density: assuming that the main contribute to ordinary matter is represented by protons (since they are more massive than electrons and the most abundant gas is hydrogen) we find $$n_{n,0}\approx\frac{\rho_{m_0}}{m_p}=\frac{\Omega_{b,0}\rho_{\text{crit},0}}{m_p}\approx0.3\times10^{-6}\text{cm}^{-3}.$$ Comparing this to the density of photons we note that the latter is much higher, with a baryon-to-photon ratio
+\begin{equation}
+    \label{eq:baryon-to.photon_ratio}
+    \eta_{b\gamma}\defeq n_b/n_\gamma\approx6\times10^{-10}.
+\end{equation}
+
+Modern astrophysics hints that a further component must be accounted: \textbf{Dark matter} which is observed through the dynamics of galaxies or by other gravitational effect but doesn't seem to be affected by the other fundamental interactions. Again, the temperature perturbations of the CMB allows us to estimate the fraction of dark matter in our universe, which turn out to be $$\Omega_{\text{cdm},0} \approx0.27,$$ where \emph{cdm} stands for \emph{cold dark matter}, which means that we are assuming that it is described by the same equation of state of dust ($\omega_d=0$). In this way, the sum of baryon density and cold dark matter makes the total matter density of the universe
+$$\Omega_{m,0}=0.3153\pm0.0073$$.
+
+Lastly we can note that, with all the above data, the Friedmann equation \eqref{eq:Friedmann_Omega} is not satisfied $$\sum_{\text{content}}\Omega_{,0}-1\approx0.68\neq\Omega_{k,0}\approx\pm0.0005 $$this suggests that another component of the content of the universe should be taken into account. Current observations of type 1 Supernovae hint that this last ingredient must be \textbf{dark energy} ($\omega_v=-1$) with a corresponding density parameter 
+$$\Omega_{\Lambda,0}=0.6847\pm0.0073.$$
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|p{6cm}|c|}
+    \hline
+    \textbf{Parameter} & \textbf{Meaning} & \textbf{Value} \\ \hline \hline
+    $H_0$ & \raggedright expansion rate & $67.74 \pm 0.46$ km s$^{-1}$ Mpc$^{-1}$ \\ \hline
+    $\rho_{\text{crit},0}$ & \raggedright critical density & $(8.62 \pm 0.12) \times 10^{-27}$ kg m$^{-3}$ \\ \hline \hline
+    $\Omega_{\gamma,0}$ & \raggedright photon density parameter & $(5.38 \pm 0.15) \times 10^{-5}$ \\ \hline
+    $\Omega_{r,0}$ & \raggedright radiation density parameter & $(9.02 \pm 0.21) \times 10^{-5}$ \\ \hline
+    $\Omega_{b,0}$ & \raggedright baryon density parameter & $0.0493 \pm 0.0006$ \\ \hline
+    $\Omega_{\text{cdm},0}$ & \raggedright cold dark matter density par. & $\approx 0.27$ \\ \hline
+    $\Omega_{m,0}$ & \raggedright total matter density parameter & $0.3153 \pm 0.0073$ \\ \hline
+    $\Omega_{\Lambda,0}$ & \raggedright dark energy density parameter & $0.6847 \pm 0.0073$ \\ \hline
+    $\Omega_{k,0}$ & \raggedright spatial curvature parameter & $|\Omega_{k,0}| < 0.005$ \\ \hline \hline
+    $t_0$ & \raggedright age of the universe & $\approx 13.8$ Gyr \\ \hline
+    $t_\text{eq}$ & \raggedright time of matter-radiation eq. & $\approx 50,000$ years \\ \hline
+    $t_{m\Lambda}$ & \raggedright time of matter-dark energy eq. & $\approx 10.2$ Gyr \\ \hline
+    \end{tabular}
+    \caption{Summary of parameters of the $\Lambda$CDM model today.}
+    \label{tab:LambdaCDM}
+\end{table}
+
+The above set of data (Tab. \ref{tab:LambdaCDM}) is what we usually refer to as the $\boldsymbol{\Lambda}$\textbf{CDM model} as from this information we can set initial conditions for the Friedmann equation and then study backwards, from today, the history of our universe. Comparing all the density parameters we presented we note that out universe is vacuum dominated then, recalling that $\rho_r\propto a^{-4},\ \rho_d\propto a^{-3}$ while $\rho_v=$const, we understand that this was not always the case. Indeed, as we go back in time the universe shrinks and the energy density of matter and radiation raise: the former, being more dominant today, is the first one to dominate over dark energy, while the latter dominates over both at earlier times.\\
+For this reason we usually subdivide the history in different eras, each one dominated by a different fluid and we assume that the transition occurred when the density parameter of a specific fluid became grater then all the others\footnote{Clearly, the dynamics of the universe must describe by a smooth function and this sharp transition approach let us simplify the calculations during a precise era in which we neglect all the subdominant fluids.}.
+
+The first transition that we encounter is between the current \emph{Dark energy dominated era} and the \emph{matter dominated era}, from the definition of the density parameters we easily get (here we are assuming the usual convention $a_0=1$)
+$$\Omega_\Lambda(t)=\Omega_{\Lambda,0},\ \Omega_m(t)=\Omega_{m,0}a^{-3}\quad \Rightarrow\quad a_{m\Lambda}=\bigg(\frac{\Omega_{m,0}}{\Omega_{\Lambda,0}}\bigg)^\frac{1}{3}\approx0.77,$$
+when $\Omega_\Lambda(t)=\Omega_m(t)$. This allows us to obtain the redshift of the dark energy-matter transition $z_{m\Lambda}\approx0.3$.
+
+As we already described, proceeding backwards in time radiation starts to dominate: considering $\Omega_r(t)=\Omega_{r,0}a^{-4}$ we find that the transition occurs at
+$$a_\text{eq}=\frac{\Omega_{r,0}}{\Omega_{m,0}}\approx2.9\times10^{-4}\quad \Rightarrow\quad z_\text{eq}\approx3400,$$ where the subscript \emph{eq} stands for matter-radiation equality. 
+
+\begin{figure}[h]
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=14cm, height=8cm,
+            xlabel={Scale factor $a(t)$}, ylabel={Density parameter $\Omega(a)$},
+            xmin=1e-10, xmax=1e4,
+            ymin=1e-6, ymax=1e30,
+            xmode=log,
+            ymode=log,
+            extra x ticks={0.77, 2.9e-4},
+            extra x tick labels={},
+            extra x tick style={grid=major, dashed},
+            axis x line=bottom,
+            axis y line=left,
+        ]
+    
+            % Radiation density
+            \addplot[
+                domain=1e-10:1e4,
+                samples=200,
+                thick,
+                red
+            ] {9*10^(-5)/x^4};
+            \node at (axis cs:5e-6,1e20) {$\Omega_r$};
+    
+            % Matter density
+            \addplot[
+                domain=1e-10:1e4,
+                samples=200,
+                thick,
+                blue
+            ] {0.31/x^3};
+            \node at (axis cs:1e-1,1e5) {$\Omega_m$};
+    
+            % Vacuum density
+            \addplot[
+                domain=1e-10:1e4,
+                samples=200,
+                thick,
+                gray
+            ] {0.68};
+            \node at (axis cs:1e-5,1e1) {$\Omega_\Lambda$};
+    
+            % Arrows and labels for the eras
+            % Radiation-dominated era
+            \draw[<->, thick] (axis cs:1e-10,2e29) -- (axis cs:2.9e-4,2e29)
+                node[midway, below, font=\small] {Radiation era};
+    
+            % Matter-dominated era
+            \draw[<->, thick] (axis cs:2.9e-4,2e29) -- (axis cs:0.77,2e29)
+                node[midway, below, font=\small] {Matter era};
+    
+            % Dark energy-dominated era
+            \draw[<->, thick] (axis cs:0.77,2e29) -- (axis cs:1e4,2e29)
+                node[midway, below, font=\small] {Dark Energy era};
+    
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Evolution of the densities of matter, radiation and dark energy. In this plot the transitions between the main eras are showed.}
+    \label{fig:Universe_history}
+\end{figure}
+
+Going further back in time the scale factor continues to decrease ($a_\text{rad}(t)\propto\sqrt{t}$) and we reach a scale at which the universe was so small that quantum mechanics effects must be taken into account and a theory of \emph{quantum gravity} is required. However, no-definitive solution for this problem has been found today.\\ For our purposes we will assume that the history of the universe started when $a=0$, in this way we can convert our redshifts in comoving time. From the Friedmann equation \eqref{eq:Friedmann1} $a(t)$ can be converted in a time by the following integral$$H_0t=\int_{0}^{a}\frac{da'}{\sqrt{\Omega_{r,0}a^{-2}+\Omega_{m,0}a^{-1}+\Omega_{\Lambda,0}a^{2}+\Omega_{k,0}}}\ \Rightarrow\ \begin{cases}
+    t_0\approx13.8Gyrs,\\
+    t_\text{eq}\approx 50\ 000yrs,\\
+    t_{m\Lambda}\approx10.2Gyrs.
+\end{cases}$$
+This shows that, compared to the entire life of the universe ($t_0$) the \emph{radiation dominated era} lasted  only for 50 000 years, while the \emph{dark energy dominated era} is the closest to us, that started only a few billion years ago. Then the \emph{matter dominated era} is the longest one of the three. 
+
+
+
+

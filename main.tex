@@ -1,5 +1,5 @@
 \documentclass[12pt,a4paper]{book}
-\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=3cm, headheight=15pt, headsep=0.5cm]{geometry}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm, headheight=15pt, headsep=0.5cm]{geometry}
 \usepackage{graphicx}
 \usepackage{newlfont}
 \usepackage{color}
@@ -13,6 +13,10 @@
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=green, urlcolor=cyan]{hyperref}     
 \usepackage{cleveref}    
 \usepackage{bookmark}
+\usepackage{multicol}
+\usepackage{pgfplots}
+\usepackage[justification=centering]{caption}
+
 
 \newcommand{\Title}{Tensor Perturbations}
 \newcommand{\Author}{Luca Morelli}
@@ -20,8 +24,8 @@
 \newcommand{\defeq}{\stackrel{\text{def}}{=} }
 \newcommand{\versor}[1]{\mathbf{\hat{#1}}}
 
-
-   
+\setlength{\parskip}{.5em} % Increase paragraph spacing
+\pgfplotsset{compat=1.18}
 \pagestyle{fancy}
 \fancyhead[LE]{\textbf{\Title}}
 \fancyhead[RE]{\Author}
@@ -30,8 +34,7 @@
 \fancyfoot[LE,RO]{\thepage}
 \cfoot{}
 \setlength{\headwidth}{\textwidth}
-\usetikzlibrary{arrows.meta, decorations.pathmorphing, positioning}
-
+\usetikzlibrary{arrows.meta, decorations.pathmorphing, positioning, decorations.markings}
 % Redefining part display style
 \titleformat{\part}[display] 
 {\normalfont\Huge\bfseries\centering} 
@@ -42,6 +45,7 @@
 
 
 \begin{document}
+\tikzset{->-/.style={decoration={markings, mark=at position #1 with {\arrow[scale=1.5]{>}}}, postaction={decorate}}}
 \frontmatter 
 \include{titilepage}
 \null\thispagestyle{empty}
