@@ -43,9 +43,10 @@
 \contentsline {subsection}{\numberline {3.2.4}Branching rations and the Green's function approach}{53}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Silk dumping}{55}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Mixing of blackbodies}{55}{subsection.3.3.1}%
-\contentsline {chapter}{\numberline {A}Differential geometry tools}{57}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{57}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Thermodynamics tools}{61}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Scalar perturbed Liouville operator}{61}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Collision term}{63}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{63}{section.B.3}%
+\contentsline {subsection}{\numberline {3.3.2}Comptonization of mixed blackbodies}{58}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {A}Differential geometry tools}{59}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{59}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{63}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Scalar perturbed Liouville operator}{63}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Collision term}{65}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{65}{section.B.3}%

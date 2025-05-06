@@ -1,6 +1,48 @@
 \section{Silk dumping}
-Primordial perturbations, when reentering the Hubble horizon after inflation, they can generate small fluctuation in the temperature of the plasma. In this way, photons from the hotter and denser regions will diffuse in the blackbody radiation of the plasma and produce distortions in the \emph{CMB spectrum}. This effect is called \emph{Silk damping} and it mainly consists of two processes: \textbf{mixing of blackbodies} and \textbf{comptonization}.\\ We will now show that the first one produces \emph{y-distortions} while the latter will turn these distortions in \emph{$\mu$-distortions}.
+Primordial perturbations, when reentering the Hubble horizon after inflation, excite standing waves in the plasma that, depending on the phase of the wave, lead to different patches of photons to be hotter or colder than the average. Later on, these photons can diffuse in the baryon-photon plasma and mix together. In this way diffusion dissipates the standing waves and generates distortions in the \emph{CMB spectrum}. This effect is called \emph{Silk damping}.
+
+Initially, the \textbf{mixing of blackbodies} at different temperatures (by diffusion) produces \emph{y-distortions} in the overall spectrum of the CMB. Then, \textbf{comptonization} brings the equilibrium phase space distribution to a Bose-Einstein one (section \ref{sec:ThermalizationProblem}), turning the initial distortions in \emph{$\mu$-distortions}.\\In the following sections we will describe these two processes in detail.
 \subsection{Mixing of blackbodies}\label{sec:MixingOfBlackbodies}
-To start we recall the main formulae that describe a blackbody radiation: given the phase space distribution of a black body
-$$f(\nu,T)=\bigg(\exp\bigg\{\frac{\nu}{k_BT}\bigg\}-1\bigg)^{-1}=\bigg(e^x-1\bigg)^{-1},\qquad \text{with }x=\frac{\nu}{k_BT},$$
-we can evaluate the energy, the entropy and the number of photons in the radiation $$E=a_{R}T^4,\qquad S=\frac{4}{3}a_RT^3,\qquad N=b_{R}T^3.$$
+We already discovered that at high redshifts all the interactions in the primordial plasma bring the photons to a state of thermal equilibrium described by the Planck distribution
+$$B(\nu,T)=\frac{1}{\exp[\nu/(k_BT_e)]-1}=\bigg(e^x-1\bigg)^{-1},\qquad \text{with }x=\frac{\nu}{k_BT_e}.$$
+From this distribution we can evaluate the number density and the energy density of the photons in the radiation 
+\begin{align*}
+    n&\defeq \frac{g}{(2\pi)^3}\int d^3p\ f(p,T) \qquad&\Longrightarrow\qquad n=b_RT^3,&&\\
+    \rho&\defeq \frac{g}{(2\pi)^3}\int d^3p\  f(p,T)p \qquad&\Longrightarrow\qquad \rho=a_RT^4,&&
+\end{align*}
+where $a_R\defeq8\pi^5k_B^4/15$ and $b_R\defeq 16\pi k_B^3\zeta(3)$ while the number of internal degrees of freedom $g=2$ for photons.\\From the first principle of thermodynamics and choosing as the intensive thermodynamic variable $T$ we can then obtain the entropy density ($s=S/V$) by
+\begin{align*}
+    TdS&=TVds+Ts\ dV=TV\frac{\partial s}{\partial T}\bigg|_V dT+Ts\ dV\\&=d(\rho V)+PdV=Vd\rho+\rho\ dV+PdV=V\frac{\partial \rho}{\partial T}\bigg|_V dT+\rho\ dV+\frac{1}{3}\rho\ dV\\\Rightarrow& \quad \bigg(TV\frac{\partial s}{\partial T}\bigg|_V-V\frac{\partial \rho}{\partial T}\bigg|_V\bigg)dT=\bigg(\frac{4}{3}\rho+Ts\bigg)dV\quad\Rightarrow\quad \boxed{s=\frac{4}{3}\frac{\rho}{T}=\frac{4}{3}a_RT^3},
+\end{align*}
+where we used the equation of state for radiation $P=\frac{1}{3}\rho$ and the fact that the change of temperature and volume must be independent.
+
+In general, Zeldovich \cite{Zeldovich1972} showed that the mixing of blackbody spectra results in the appearance of a y-distortion. This can easily be understood by Taylor expanding a Planck distribution whose temperature depends on the position in the plasma (so that this describes a different blackbody spectrum at each point in space) and then taking the spatial average. Considering a temperature $\bar{T}+\Delta T(x)$, with $\Delta T\ll\bar{T}$ the expansion of $B[x/(1+\Delta T/\bar T)]$ is a temperature shift expanded at the second order (equation \ref{eq:SD_2ord_temp_shift}): therefore the average yields
+\begin{align}
+     \nonumber\bigg\langle B\bigg(\frac{x}{1+(\Delta T/\bar T)^2}\bigg)\bigg\rangle&\approx\bigg\langle B(x)+G(x)\frac{\Delta T}{\bar T}+\frac{1}{2}[Y(x)+2G(x)]\bigg(\frac{\Delta T}{\bar T}\bigg)\bigg\rangle\\\nonumber
+     &=B(x)+G(x)\bigg\langle\frac{\Delta T}{\bar T}\bigg\rangle+\frac{1}{2}[Y(x)+2G(x)]\bigg\langle\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg\rangle\\&\bigg\downarrow \bigg\langle\frac{\Delta T}{\bar T}\bigg\rangle=0,\ B(x)+G(x)\bigg\langle\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg\rangle\approx B\bigg(\frac{x}{1+\langle(\Delta T/\bar T)^2\rangle}\bigg),\nonumber\\
+     &\approx B\bigg(\frac{x}{1+\langle(\Delta T/\bar T)^2\rangle}\bigg)+\frac{1}{2}Y(x)\bigg\langle\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg\rangle,\label{eq:Mixing_Y_SD}
+\end{align}
+where we used that the mean of the temperature perturbations is zero, and we recognized a first order temperature shift distortion in the term that contained $G(x)$.\\ The above calculation thus shows that the mixing of blackbodies, not only results in a y-distortion, but also in a small increase in temperature to $T_{\text{new}}=\bar T(1+\langle(\Delta T/\bar T)^2\rangle)$. We shall also recall that a y-distortion maintains unchanged the number of photons in the radiation: indeed the mixing consists just in a redistribution of "hotter" and "colder" photons. Hence, even though the temperature increases and thus one should expect a change in the number of photons, this happens only with respect to the number density of each blackbody, while the total number of photons remains unchanged.
+
+Another way to see this phenomenon is by considering directly the mixing of two blackbodies at temperature $T_1=\bar T+\Delta T$ and $T_2=\bar T-\Delta T$ (now $\Delta T$ is not a function of space anymore). Before the two blackbodies have mixed some photons will obey the first blackbody distribution while the others the second one: hence the initial energy density, number density and entropy density are just the average of the two blackbodies:
+\begin{align}\label{eq:Mix_rho_initial}
+    \rho_\text{initial}&= \frac{1}{2}a_R(T_1^4+T_2^4)\approx a_R\bar T^4\bigg[1+6\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg]>a_R\bar T^4,\\\label{eq:Mix_n_initial}
+    n_\text{initial}&= \frac{1}{2}b_R(T_1^3+T_2^3)\approx b_R\bar T^3\bigg[1+3\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg]>b_R\bar T^3,\\\label{eq:Mix_s_initial}
+    s_\text{initial}&= \frac{1}{2}\frac{4}{3}a_R( T_1^3+T_2^3)\approx\frac{4}{3}a_R\bigg[1+3\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg]>\frac{4}{3}a_R\bar T^3,
+\end{align}
+where for each quantity we Taylor expanded for $\Delta T/\bar T\ll 1$ at the first order.\\
+Note that all the three averages are larger than the densities that would have a single blackbody at the average temperature $\bar T$. These extra contributions, as we will see, are responsible for the creation of the distortions.\\After the mixing we will have a single blackbody spectrum (plus distortions) with a new temperature $T_\text{final}$; since the number of photons is unchanged (we only mix them) we can obtain this new temperature from the initial number density 
+$$T_\text{final}=\bigg(\frac{n_\text{initial}}{b_R}\bigg)^{1/3}\approx\bar T\bigg[1+\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg],$$ similarly to what we found with the previous approach. The extra photons thus cause only an increase in the temperature because the y-distortion conserves the number of photons ($\int dx\ x^2Y(x)=0$), hence only the blackbody part of the spectrum and the temperature shift, from the \eqref{eq:Mixing_Y_SD}, contribute to the number density.\\
+Now, the final temperature allows us to evaluate the final energy density
+$$\rho_\text{final}=a_RT_\text{final}^4\approx a_R\bar T^4\bigg[1+4\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg]<\rho_\text{initial},$$ which we find to be smaller that the initial one. This is because some energy is now stored in the form of the y-distortion (that we haven't considered yet since we are only using the observable of a blackbody). Indeed, by comparing $\rho-a_R\bar T^4$, which (form equation \ref{eq:Mixing_Y_SD}) is the energy density associated to all the distortions (temperature shift + y-distortion), we discover that only $2/3$ of this energy is then transferred in the new blackbody radiation at $T_\text{final}$ (in the form of the temperature shift)
+$$\rho_\text{final}-a_R \bar T^4=4\bigg(\frac{\Delta T}{\bar T}\bigg)^2a_R\bar T^4=\frac{2}{3}\bigg(\rho_\text{initial}-a_R \bar T^4\bigg).$$
+The remaining $1/3$ of the energy corresponds to the contribution of the y-distortion
+$$\frac{1}{3}\bigg(\rho_\text{initial}-a_R \bar T^4\bigg)=2\bigg(\frac{\Delta T}{\bar T}\bigg)^2a_R\bar T^4\propto\frac{1}{2}\bigg(\frac{\Delta T}{\bar T}\bigg)^2\int dx\ x^3 Y(x).$$
+Lastly, we can compute the final entropy density$$ s_\text{final}=\frac{4}{3}a_RT_\text{final}^3\approx\frac{4}{3}a_R \bar T^4\bigg[1+3\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg]=s_\text{initial}.$$ However, this holds only for the entropy associated to the new shifted blackbody spectrum and also the y-distortion should contribute to entropy. We can compute this contribution from the fraction of energy stored in the y-distortion $\Delta \rho = 1/3(\rho_\text{initial}-a_R \bar T^4)$
+$$\Delta s=\frac{\Delta \rho}{T}\approx 2a_R \bar T^3\bigg(\frac{\Delta T}{\bar T}\bigg)^2.$$
+This extra contribution is expected since, when mixing the two blackbodies, the entropy should increase as when we mix two fluids (the disorder increases), hence the initial entropy cannot be the same as the final.
+
+To sum up what we discovered, mixing of blackbodies leads to a new spectrum that can be decomposed in two parts: a blackbody at a higher temperature $T_\text{new}=\bar T(1+\langle(\Delta T/\bar T)^2\rangle)$ and a y-distortion. While the number of photons is conserved (since we are only mixing them) and fully accounted by the blackbody part, the energy and entropy are redistributed between the temperature shift of the blackbody and the y-distortion. Exactly, $2/3$ of the energy associated to the distortions is directly transferred to the new blackbody (as a temperature increase), while the remaining $1/3$ is stored in the y-distortion. The entropy associated to the blackbody is instead conserved, while a new contribution appears due to the y-distortion. 
+\subsection{Comptonization of mixed blackbodies}
+\label{sec:MixSD_Comportonization}
+
