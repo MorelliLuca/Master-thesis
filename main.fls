@@ -1137,6 +1137,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT ./Appendix/Thermo.tex
+INPUT ./Appendix/Thermo.tex
+INPUT ./Appendix/Thermo.tex
+INPUT Appendix/Thermo.tex
+INPUT ./Appendix/Thermo.tex
+INPUT ./Appendix/Thermo.tex
+INPUT Appendix/Thermo.tex
 INPUT ./CMB/PertubedBoltzmannEquations.tex
 INPUT ./CMB/PertubedBoltzmannEquations.tex
 INPUT ./CMB/PertubedBoltzmannEquations.tex

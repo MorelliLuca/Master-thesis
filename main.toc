@@ -44,9 +44,11 @@
 \contentsline {section}{\numberline {3.3}Silk dumping}{55}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Mixing of blackbodies}{55}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Comptonization of mixed blackbodies}{58}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {A}Differential geometry tools}{59}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{59}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Thermodynamics tools}{63}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Scalar perturbed Liouville operator}{63}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Collision term}{65}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{65}{section.B.3}%
+\contentsline {chapter}{\numberline {A}Differential geometry tools}{61}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{61}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{65}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{65}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{65}{subsection.B.1.1}%
+\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{66}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Collision term}{68}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{68}{section.B.4}%
