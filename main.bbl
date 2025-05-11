@@ -1,10 +1,22 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{10.1093/mnras/226.3.655}
+J.~R. Bond and G.~Efstathiou.
+\newblock The statistics of cosmic background radiation fluctuations.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  226(3):655--687, 06 1987.
 
 \bibitem{Chluba_Green}
 J.~Chluba.
 \newblock Green’s function of the cosmological thermalization problem.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   434(1):352–357, June 2013.
+
+\bibitem{Chluba_tens_diss}
+Jens Chluba, Liang Dai, Daniel Grin, Mustafa A.~Amin, and Marc Kamionkowski.
+\newblock Spectral distortions from the dissipation of tensor perturbations.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  446(3):2871–2886, November 2014.
 
 \bibitem{dodelson}
 Scott Dodelson and Fabian Schmidt.
@@ -22,6 +34,13 @@ D.~J. Fixsen, E.~S. Cheng, J.~M. Gales, J.~C. Mather, R.~A. Shafer, and E.~L.
 Wayne Hu and Martin White.
 \newblock Cmb anisotropies: Total angular momentum method.
 \newblock {\em Physical Review D}, 56(2):596–615, July 1997.
+
+\bibitem{1929PNAS...15..168H}
+Edwin {Hubble}.
+\newblock {A Relation between Distance and Radial Velocity among Extra-Galactic
+  Nebulae}.
+\newblock {\em Proceedings of the National Academy of Science}, 15(3):168--173,
+  March 1929.
 
 \bibitem{MixingBB}
 R.~Khatri, R.~A. Sunyaev, and J.~Chluba.

@@ -65,4 +65,66 @@ To conclude let us write the total spectral distortion that we obtain after comp
 $$f(x)=B(x)+G(x)\bigg[\bigg(\frac{\Delta T}{\bar T}\bigg)^2+t_\text{BE}\bigg]-\mu\frac{G(x)}{x},$$
 where, after the Planckian spectrum $B$, we have the total temperature shift (both from the mixing and the comptonization) and the $\mu$-distortion. Note the latter appears as $-G/x$ and not at as $M$: this is because we assumed that the temperature changes during comptonization and then we imposed that the number of photons was conserved. Hence, the temperature shift $t_\text{BE}$ already accounts also for the shift contained in $M$.
 
-To conclude we shall indicate that, although our derivation used only the mixing of two blackbodies, considering an ensemble of $n$ blackbodies the result can be generalized without spoiling our solution. Indeed, it is sufficient to replace $(\Delta T/\bar T)^2$ by $\langle(\Delta T/\bar T)^2\rangle$ to account for the whole ensemble, as explained in \cite{MixingBB} and hinted at the end of the previous section. 
+To conclude we shall indicate that, although our derivation used only the mixing of two blackbodies, considering an ensemble of $n$ blackbodies the result can be generalized without spoiling our solution. Indeed, it is sufficient to replace $(\Delta T/\bar T)^2$ by $\langle(\Delta T/\bar T)^2\rangle$ to account for the whole ensemble, as explained in \cite{MixingBB} and hinted at the end of the previous section.
+
+\subsection{Mixing of polarized blackbodies}
+\label{sec:MixingPolarization}
+When dealing with the \emph{CMB}, the mixing of blackbodies must take into account also that the radiation is polarized. To connect to section \ref{sec:ComptonPolarization} we shall change our notation to be consistent to the usual definition of \emph{CMB anisotropies} $\Theta(x,t)\defeq \Delta T/\bar T$.
+
+We start by describing linearly polarized light, then the more general case will be deduced exploiting the following calculations. We start by introducing a \emph{phase space matrix}
+\begin{equation}
+    \label{eq:Pol_Occup_Matrix}
+    \mathcal{F} _\text{unpol} \defeq
+    \begin{pmatrix}
+        B(x) & 0 \\ 0 & B(x)
+    \end{pmatrix}\ \xrightarrow{\text{polarization}}\mathcal{F}  \defeq
+    \begin{pmatrix}
+        B(x/[1+\Theta_\parallel]) & 0 \\ 0 & B(x/[1+\Theta_\perp ])
+    \end{pmatrix},
+\end{equation}
+where $\Theta_\perp$ and $\Theta_\parallel$ are the temperature fluctuations associated to photons that are polarized either in the perpendicular direction or in the orthogonal one and $B(x)$ is the Planckian spectrum. The total phase space distribution is then recovered by taking the trace of the above matrices $f=\text{Tr}(\mathcal{F} )/2$, which corresponds to the average of the two polarization.\\
+It is useful to rewrite the above in terms of the \emph{ Pauli matrices} $\sigma_i$
+$$\mathcal{F} =\frac{f_\parallel+f_\perp}{2}\begin{pmatrix}
+    1&0\\0&1
+\end{pmatrix}+\frac{f_\parallel-f_\perp}{2}\begin{pmatrix}
+    1&0\\0&-1
+\end{pmatrix}=f_I\hat 1+f_Q\sigma_3, $$
+where $f_\parallel\defeq B(x/[1+\Theta_\parallel])$ and $f_\perp\defeq B(x/[1+\Theta_\perp])$, while $f_I$ is the distribution associated to the Stokes parameter $I$, and it corresponds to $f$, while $f_Q$ is associated to $Q$.
+
+With this framework we can proceed to expand (as in equation \ref{eq:Mixing_Y_SD}) the perturbation at the second order to obtain the distortions:
+\begin{align*}
+    f_I&=\frac{f_\parallel+f_\perp}{2}\approx B(x)+G(x)\frac{\Theta_\parallel+\Theta_\perp+\Theta^2_\parallel+\Theta^2_\perp}{2}+Y(x)\frac{\Theta^2_\parallel+\Theta^2_\perp}{4},\\
+    f_Q&=\frac{f_\parallel-f_\perp}{2}\approx G(x)\frac{\Theta_\parallel-\Theta_\perp+\Theta^2_\parallel-\Theta^2_\perp}{2}+Y(x)\frac{\Theta^2_\parallel-\Theta^2_\perp}{4}.
+\end{align*}
+Now, identifying the right anisotropies associated to each Stokes parameter, $\Theta_I=(\Theta_\parallel+\Theta_\perp)/2$ and $\Theta_Q=(\Theta_\parallel-\Theta_\perp)/2$, we find
+\begin{align*}
+    f_I&\approx B(x)+G(x)\bigg(\Theta_I+\Theta^2_I+\Theta^2_Q\bigg)+Y(x)\frac{\Theta^2_I+\Theta^2_Q}{2},\\
+    f_Q&\approx G(x)\bigg(\Theta_Q+2\Theta_I\Theta_Q\bigg)+Y(x)\Theta_I\Theta_Q.
+\end{align*}
+This shows that also the phase space associated to the $Q$ parameter gets a temperature shift and a y-distortion.
+
+To generalize this result to a generic distortion we can simply consider the phase space distribution $f_U$, by a change of basis this can be rotated into $f_Q$ (as a rotation changes $U\rightarrow Q$). This means that the above calculations holds also for $f_U$ (since the distribution is itself a scalar) and just by rotating everything back we get the final result
+\begin{subequations}\label{eq:y-dist_polarization_components}
+\begin{align}
+    \mathcal{F}=&f_I\hat 1+f_Q\sigma_3+f_u\sigma_1 \\
+    f_I&\approx B(x)+G(x)\bigg(\Theta_I+\Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg)+Y(x)\frac{\Theta^2_I+\Theta^2_Q+\Theta^2_U}{2},\\
+    f_Q&\approx G(x)\bigg(\Theta_Q+2\Theta_I\Theta_Q\bigg)+Y(x)\Theta_I\Theta_Q,\\
+    f_U&\approx G(x)\bigg(\Theta_U+2\Theta_I\Theta_U\bigg)+Y(x)\Theta_I\Theta_U,
+\end{align}
+\end{subequations}
+where we obtained $f_u\sigma_1$ by the change of basis.
+Overall, the y-distortion can be read by averaging the phase space distributions 
+$$ f\defeq\frac{1}{2}\text{Tr}(\mathcal{F} )= B(x)+G(x)\bigg(\Theta_I+\Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg)+Y(x)\frac{\Theta^2_I+\Theta^2_Q+\Theta^2_u}{2}$$
+and then by taking the spatial average over the temperature anisotropies (recall $\langle\Theta\rangle=0$ as in section \ref{sec:MixingOfBlackbodies}) 
+\begin{align}
+    &\langle f\rangle=B(x)+G(x)\bigg\langle \Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg\rangle+Y(x)\bigg\langle\frac{\Theta^2_I+\Theta^2_Q+\Theta^2_U}{2}\bigg\rangle\nonumber\\
+    &\Longrightarrow\quad \boxed{y=\frac{1}{2}\bigg\langle\Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg\rangle}.\label{eq:y-distortion_polarization}
+\end{align}
+ 
+
+
+\subsection{Dissipation of acoustic waves}
+We introduced \emph{Silk damping} as the process that, through the mixing of blackbodies and their eventual successive Comptoniziation, dissipates the primordial perturbations that reentered the Hubble horizon. Now that we are familiar with these two processes, it is time to understand how the dissipation take place: we will begin by analyzing the dissipation of acoustic waves (which are the perturbations in the plasma induced by primordial scalar perturbation).
+
+
+

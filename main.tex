@@ -15,6 +15,9 @@
 \usepackage{bookmark}
 \usepackage{multicol}
 \usepackage{pgfplots}
+\usepgfplotslibrary{colormaps}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage[justification=centering]{caption}
 
 
@@ -26,12 +29,26 @@
 
 \setlength{\parskip}{.5em} % Increase paragraph spacing
 \pgfplotsset{compat=1.18}
+\tikzset{>=stealth}
 \pagestyle{fancy}
-\fancyhead[LE]{\textbf{\Title}}
-\fancyhead[RE]{\Author}
-\fancyhead[RO]{\textbf{\nouppercase{\leftmark}}}
+\fancyhead[LE]{\textbf{\nouppercase{\leftmark}}}
+\fancyhead[RE]{}
+\fancyhead[RO]{\emph{\nouppercase{\rightmark}}}
 \fancyhead[LO]{}
 \fancyfoot[LE,RO]{\thepage}
+\fancypagestyle{plain}{
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot[LE,RO]{\thepage} % set page number on left (even) and right (odd)
+  \renewcommand{\headrulewidth}{0pt} % optional: remove the header rule line
+}
+\fancypagestyle{blank}{
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot[LE,RO]{\thepage} % set page number on left (even) and right (odd)
+  \renewcommand{\headrulewidth}{0pt} % optional: remove the header rule line
+}
+
+
+
 \cfoot{}
 \setlength{\headwidth}{\textwidth}
 \usetikzlibrary{arrows.meta, decorations.pathmorphing, positioning, decorations.markings}
@@ -56,7 +73,7 @@
 
 \mainmatter
 \part{The homogeneous universe}
-\chapter{Robertson Walker Universe}
+\chapter{The Friedmann Robertson Walker Universe}
 \input{Fundamentals/Metric}
 \input{Fundamentals/FriedmannEq}
 
