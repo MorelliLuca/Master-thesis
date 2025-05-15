@@ -30,24 +30,25 @@
 \contentsline {chapter}{\numberline {3}Spectral Distortions}{41}{chapter.3}%
 \contentsline {section}{\numberline {3.1}The thermalization problem}{41}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Thermalization scales}{44}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Modeling spectral distortions}{45}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Shapes of spectral distortions}{45}{subsection.3.2.1}%
-\contentsline {subsubsection}{Temperature shift G}{46}{subsubsection*.9}%
-\contentsline {subsubsection}{Chemical potential $\boldsymbol \mu $ distortion}{46}{subsubsection*.10}%
-\contentsline {subsubsection}{Compton y distortion}{47}{subsubsection*.11}%
-\contentsline {subsection}{\numberline {3.2.2}Amplitudes of spectral distortions}{48}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Injected, deposited energy and heating rate}{49}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Branching rations and the Green's function approach}{51}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Silk dumping}{53}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Mixing of blackbodies}{53}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Comptonization of mixed blackbodies}{56}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Mixing of polarized blackbodies}{57}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Dissipation of acoustic waves}{59}{subsection.3.3.4}%
-\contentsline {chapter}{\numberline {A}Differential geometry tools}{61}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{61}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Thermodynamics tools}{65}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{65}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{65}{subsection.B.1.1}%
-\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{66}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Collision term}{68}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{68}{section.B.4}%
+\contentsline {section}{\numberline {3.2}Modeling spectral distortions}{46}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Shapes of spectral distortions}{46}{subsection.3.2.1}%
+\contentsline {subsubsection}{Temperature shift G}{46}{subsubsection*.10}%
+\contentsline {subsubsection}{Chemical potential $\boldsymbol \mu $ distortion}{47}{subsubsection*.11}%
+\contentsline {subsubsection}{Compton y distortion}{48}{subsubsection*.12}%
+\contentsline {subsubsection}{Residual distortion}{49}{subsubsection*.14}%
+\contentsline {subsection}{\numberline {3.2.2}Amplitudes of spectral distortions}{50}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Injected, deposited energy and heating rate}{51}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Branching rations and the Green's function approach}{52}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Dissipation of primordial perutbations}{54}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Mixing of blackbodies}{54}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Comptonization of mixed blackbodies}{57}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Mixing of polarized blackbodies}{58}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Dissipation of scalar perturbations}{60}{subsection.3.3.4}%
+\contentsline {chapter}{\numberline {A}Differential geometry tools}{63}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{63}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{67}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{67}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{67}{subsection.B.1.1}%
+\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{68}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Collision term}{70}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{70}{section.B.4}%

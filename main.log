@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.25)  12 MAY 2025 00:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.25)  15 MAY 2025 14:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -905,37 +905,37 @@ Overfull \hbox (4.36049pt too wide) in paragraph at lines 100--101
 [][] 
  []
 
+[43] [44]
+Package pgfplots info on input line 151: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 151: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+ [45] [46]
+Underfull \vbox (badness 3803) has occurred while \output is active []
 
-Overfull \hbox (10.03394pt too wide) in paragraph at lines 115--118
-\OT1/cmr/m/n/12 scat-ter-ing since such in-ter-ac-tion con-serves the num-ber of pho-tons. How-ever, Bremsstrahlung
- []
-
-[43] [44] [45] [46]
-Overfull \hbox (8.90898pt too wide) detected at line 195
+ [47]
+Overfull \hbox (8.90898pt too wide) detected at line 257
 []
  []
 
-[47]
-Package pgfplots info on input line 209: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 249: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
- [48] [49]
-Underfull \vbox (badness 7907) has occurred while \output is active []
-
- [50] [51] [52]) (./CMB/SilkDumping.tex [53]
-Underfull \vbox (badness 3000) has occurred while \output is active []
-
- [54] [55]
+[48]
+Package pgfplots info on input line 271: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 311: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+ [49] [50] [51] [52] [53]) (./CMB/Dissipation.tex [54] [55] [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56] [57] [58]) [59] [60
+ [57] [58] [59] [60] [61]
+Overfull \hbox (9.70432pt too wide) detected at line 170
+[]
+ []
 
-]
+) [62]
 Appendix A.
-(./Fundamentals/MaxSymmetric.tex [61] [62]) [63] [64
+(./Fundamentals/MaxSymmetric.tex [63
+
+] [64]) [65] [66
 
 ]
 Appendix B.
-(./Appendix/Thermo.tex [65]) (./CMB/PertubedBoltzmannEquations.tex
+(./Appendix/Thermo.tex [67]) (./CMB/PertubedBoltzmannEquations.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--1
 
  []
@@ -945,26 +945,26 @@ Overfull \hbox (15.07323pt too wide) in paragraph at lines 9--11
 \OT1/cmr/m/n/12 The lo-cal mo-men-tum de-fined in the same way, there-fore it must sat-isfy the usual Minkowskian
  []
 
-[66] [67] [68]) (./main.bbl [69] [70
+[68] [69] [70]) (./main.bbl [71] [72
 
-]) [71] (./main.aux (./titilepage.aux) (./abstract.aux) (./Notazioni.aux))
+] [73]) [74] (./main.aux (./titilepage.aux) (./abstract.aux) (./Notazioni.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 36194 strings out of 478287
- 842596 string characters out of 5849289
- 1378555 words of memory out of 5000000
- 53494 multiletter control sequences out of 15000+600000
+ 36254 strings out of 478287
+ 843840 string characters out of 5849289
+ 1381562 words of memory out of 5000000
+ 53541 multiletter control sequences out of 15000+600000
  490144 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,21n,89p,1223b,2296s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (77 pages, 633746 bytes).
+ 84i,21n,89p,1374b,2296s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (80 pages, 668989 bytes).
 PDF statistics:
- 1117 PDF objects out of 1200 (max. 8388607)
- 974 compressed objects within 10 object streams
- 291 named destinations out of 1000 (max. 500000)
+ 1166 PDF objects out of 1200 (max. 8388607)
+ 1017 compressed objects within 11 object streams
+ 304 named destinations out of 1000 (max. 500000)
  414 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,176 @@
+\section{Dissipation of primordial perutbations}
+Primordial perturbations, when reentering the Hubble horizon after inflation, excite standing waves in the plasma that, depending on the phase of the wave, lead to different patches of photons to be hotter or colder than the average. Later on, these photons can diffuse in the baryon-photon plasma and mix together. In this way diffusion dissipates the standing waves and generates distortions in the \emph{CMB spectrum}. For scalar perturbations, this well known effect is called \emph{Silk damping}.
+
+Initially, the \textbf{mixing of blackbodies} at different temperatures (by diffusion) produces \emph{y-distortions} in the overall spectrum of the CMB. Then, \textbf{comptonization} brings the equilibrium phase space distribution to a Bose-Einstein one (section \ref{sec:ThermalizationProblem}), turning the initial distortions in \emph{$\mu$-distortions}. In the following sections we will describe these two processes in detail.
+\subsection{Mixing of blackbodies}\label{sec:MixingOfBlackbodies}
+We already discovered that at high redshifts all the interactions in the primordial plasma bring the photons to a state of thermal equilibrium described by the Planck distribution
+$$B(\nu,T)=\frac{1}{\exp[\nu/(k_BT_e)]-1}=\bigg(e^x-1\bigg)^{-1},\qquad \text{with }x=\frac{\nu}{k_BT_e}.$$
+From this distribution we can evaluate the number density and the energy density of the photons in the radiation 
+\begin{align*}
+    n&\defeq \frac{g}{(2\pi)^3}\int d^3p\ f(p,T) \qquad&\Longrightarrow\qquad n=b_RT^3,&&\\
+    \rho&\defeq \frac{g}{(2\pi)^3}\int d^3p\  f(p,T)p \qquad&\Longrightarrow\qquad \rho=a_RT^4,&&
+\end{align*}
+where $a_R\defeq\pi^2k_B^4/15$ and $b_R\defeq 2k_B^3\zeta(3)/\pi^2$, with the number of internal degrees of freedom of photons $g=2$.\\From the first principle of thermodynamics and choosing as the intensive thermodynamic variable $T$, we can then obtain the entropy density ($s=S/V$) by
+\begin{align*}
+    TdS&=TVds+Ts\ dV=TV\frac{\partial s}{\partial T}\bigg|_V dT+Ts\ dV\\&=d(\rho V)+PdV=Vd\rho+\rho\ dV+PdV=V\frac{\partial \rho}{\partial T}\bigg|_V dT+\rho\ dV+\frac{1}{3}\rho\ dV\\\Rightarrow& \quad \bigg(TV\frac{\partial s}{\partial T}\bigg|_V-V\frac{\partial \rho}{\partial T}\bigg|_V\bigg)dT=\bigg(\frac{4}{3}\rho+Ts\bigg)dV\quad\Rightarrow\quad \boxed{s=\frac{4}{3}\frac{\rho}{T}=\frac{4}{3}a_RT^3},
+\end{align*}
+where we used the equation of state for radiation $P=\frac{1}{3}\rho$ and the fact that the change of temperature and volume must be independent.
+
+In general, Zeldovich \cite{Zeldovich1972} showed that the mixing of blackbody spectra results in the appearance of a y-distortion. This can easily be understood by Taylor expanding a Planck distribution whose temperature depends on the position in the plasma (so that this describes a different blackbody spectrum at each point in space) and then taking the spatial average. Considering a temperature $\bar{T}+\Delta T(x)$, with $\Delta T\ll\bar{T}$ the expansion of $B[x/(1+\Delta T/\bar T)]$ would be a temperature shift \ref{eq:SD_temperature_shift}: however, this kind of distortion, being linear in $\Delta T/\bar T$, will give no distortion terms after the spatial average (hotter and colder spots, on average, give the mean temperature $\bar T$). A temperature shift expanded at the second order (equation \ref{eq:SD_2ord_temp_shift}) instead gives rise to non-vanishing terms in the average
+\begin{align}
+     \nonumber\bigg\langle B\bigg(\frac{x}{1+(\Delta T/\bar T)^2}\bigg)\bigg\rangle&\approx\bigg\langle B(x)+G(x)\frac{\Delta T}{\bar T}+\frac{1}{2}[Y(x)+2G(x)]\bigg(\frac{\Delta T}{\bar T}\bigg)\bigg\rangle\\\nonumber
+     &=B(x)+G(x)\bigg\langle\frac{\Delta T}{\bar T}\bigg\rangle+\frac{1}{2}[Y(x)+2G(x)]\bigg\langle\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg\rangle\\&\bigg\downarrow \bigg\langle\frac{\Delta T}{\bar T}\bigg\rangle=0,\ B(x)+G(x)\bigg\langle\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg\rangle\approx B\bigg(\frac{x}{1+\langle(\Delta T/\bar T)^2\rangle}\bigg),\nonumber\\
+     &\approx B\bigg(\frac{x}{1+\langle(\Delta T/\bar T)^2\rangle}\bigg)+\frac{1}{2}Y(x)\bigg\langle\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg\rangle,\label{eq:Mixing_Y_SD}
+\end{align}
+where we used that the mean of the temperature perturbations is zero, and we recognized a first order temperature shift distortion in the term proportional to $G(x)$.\\ The above calculation thus shows that the mixing of blackbodies, not only results in a y-distortion, but also in a small increase in temperature to $T_{\text{new}}=\bar T(1+\langle(\Delta T/\bar T)^2\rangle)$. We shall also recall that a y-distortion maintains unchanged the number of photons in the radiation: indeed the mixing consists just in a spatial redistribution of "hotter" and "colder" photons. Hence, even though the temperature increases and thus one should expect a change in the number of photons, this happens only with respect to the number density of each blackbody, while the total number of photons remains unchanged.
+
+Another way to see this phenomenon is by considering directly the mixing of two blackbodies at temperature $T_1=\bar T+\Delta T$ and $T_2=\bar T-\Delta T$ (now $\Delta T$ is not a function of space anymore). Before the two blackbodies have mixed some photons will obey the first blackbody distribution while the others the second one\footnote{Approximately half are at $T_1$ and the other half at $T_2$ since the two temperatures are really close.}: hence the initial energy density, number density and entropy density are just the average of the two blackbodies:
+\begin{align}\label{eq:Mix_rho_initial}
+    \rho_\text{initial}&= \frac{1}{2}a_R(T_1^4+T_2^4)\approx a_R\bar T^4\bigg[1+6\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg]>a_R\bar T^4,\\\label{eq:Mix_n_initial}
+    n_\text{initial}&= \frac{1}{2}b_R(T_1^3+T_2^3)\approx b_R\bar T^3\bigg[1+3\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg]>b_R\bar T^3,\\\label{eq:Mix_s_initial}
+    s_\text{initial}&= \frac{1}{2}\frac{4}{3}a_R( T_1^3+T_2^3)\approx\frac{4}{3}a_R\bigg[1+3\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg]>\frac{4}{3}a_R\bar T^3,
+\end{align}
+where for each quantity we Taylor expanded for $\Delta T/\bar T\ll 1$ at the first order.\\
+Note that all the three averages are larger than the densities that would have a single blackbody at the average temperature $\bar T$. These extra contributions, as we will see, are responsible for the creation of the distortions.\\After the mixing, we will have a single blackbody spectrum (plus distortions) with a new temperature $T_\text{final}$; since the number of photons is unchanged (we only mix them) we can obtain this new temperature from the initial number density using $n=b_RT^4$ for blackbodies
+$$T_\text{final}=\bigg(\frac{n_\text{initial}}{b_R}\bigg)^{1/3}\approx\bar T\bigg[1+\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg],$$ similarly to what we found with the previous approach. The extra photons thus cause only an increase in the temperature because the y-distortion conserves the number of photons ($\int dx\ x^2Y(x)=0$), hence only the blackbody part of the spectrum and the temperature shift, from the \eqref{eq:Mixing_Y_SD}, contribute to the number density.\\
+Now, the final temperature allows us to evaluate the final energy density
+$$\rho_\text{final}=a_RT_\text{final}^4\approx a_R\bar T^4\bigg[1+4\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg]<\rho_\text{initial},$$ which we find to be smaller that the initial one. This is because some energy is now stored in the form of the y-distortion (that we haven't considered yet since we are only using the observable of a blackbody). Indeed, by comparing $\rho-a_R\bar T^4$, which (form equation \ref{eq:Mixing_Y_SD}) is the energy density associated to all the distortions (temperature shift + y-distortion), we discover that only $2/3$ of this energy is then transferred in the new blackbody radiation at $T_\text{final}$ (in the form of the temperature shift)
+$$\rho_\text{final}-a_R \bar T^4=4\bigg(\frac{\Delta T}{\bar T}\bigg)^2a_R\bar T^4=\frac{2}{3}\bigg(\rho_\text{initial}-a_R \bar T^4\bigg).$$
+The remaining $1/3$ of the energy corresponds to the contribution of the y-distortion
+$$\frac{1}{3}\bigg(\rho_\text{initial}-a_R \bar T^4\bigg)=2\bigg(\frac{\Delta T}{\bar T}\bigg)^2a_R\bar T^4\propto\frac{1}{2}\bigg(\frac{\Delta T}{\bar T}\bigg)^2\int dx\ x^3 Y(x).$$
+Lastly, we can compute the final entropy density$$ s_\text{final}=\frac{4}{3}a_RT_\text{final}^3\approx\frac{4}{3}a_R \bar T^4\bigg[1+3\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg]=s_\text{initial}.$$ However, this holds only for the entropy associated to the new shifted blackbody spectrum and also the y-distortion should contribute to entropy. We can compute this contribution from the fraction of energy stored in the y-distortion $\Delta \rho = 1/3(\rho_\text{initial}-a_R \bar T^4)$
+$$\Delta s=\frac{\Delta \rho}{T}\approx 2a_R \bar T^3\bigg(\frac{\Delta T}{\bar T}\bigg)^2.$$
+This extra contribution is expected since, when mixing the two blackbodies, the entropy should increase as when we mix two fluids (the disorder increases), hence the initial entropy cannot be the same as the final.
+
+To sum up what we discovered, mixing of blackbodies leads to a new spectrum that can be decomposed in two parts: a blackbody at a higher temperature $T_\text{new}=\bar T\big(1+\langle(\Delta T/\bar T)^2\rangle\big)$ and a y-distortion. While the number of photons is conserved (since we are only mixing them) and fully accounted by the blackbody part, the energy and entropy are redistributed between the temperature shift of the blackbody and the y-distortion. Exactly, $2/3$ of the energy associated to the distortions is directly transferred to the new blackbody (as a temperature increase), while the remaining $1/3$ is stored in the y-distortion. The entropy associated to the blackbody is instead conserved, while a new contribution appears due to the y-distortion. 
+\subsection{Comptonization of mixed blackbodies}
+\label{sec:MixSD_Comportonization}
+The previously described mixing generates a y-distortion without considering the interactions in the plasma, this means that the y-distortion is produced at redshifts $z<z_{\mu y}\approx 5\times 10^4$ (see section \ref{sec:ThermalizationProblem}). In the presence of Compton scatterings the resulting transfer of energy thermalizes the radiation to a Bose-Einstein distribution (or a Planckian if also Bremsstrahlung and double Compton scattering are efficient). When the Bose-Einstein distribution is produced, the y-distortion is converted into a $\mu$-distorion. 
+
+To obtain the amplitude of the new distortion generated we can proceed to consider the mixing of the two, previously introduced, blackbodies at $T_1$ and $T_2$. We assume that after comptonization the temperature of the radiation changes from $T_\text{new}=\bar T\big[1+(\Delta T/\bar T)^2\big]$ to $T_\text{BE}=T_\text{new}(1+t_\text{BE})\approx\bar T\big[+t_\text{BE}+(\Delta T/\bar T)^2\big]$, where $t_\text{BE}\ll1$ measures the change in temperature. 
+Now, the energy and number densities are fully described by the Bose-Einstein distribution, in appendix \ref{sec:SmallChemicalPotential} approximated formulae for these are evaluated in the limit of small chemical potential. Since comptonization conserves the number of photons (in section \ref{sec:ThermalizationProblem} we discussed that no extra photons are created by Compton scattering) we can compare the initial number density to the final one. Then, since the blackbodies are at very close temperatures, we can assume that they are almost in thermal equilibrium with the other components of the plasma. Hence, the exchange of energy between different species of the plasma is negligible and we can consider the energy density of the photons unchanged. Using equation \eqref{eq:SmallChemicalPotential_n} and \eqref{eq:SmallChemicalPotential_rho} we can equate the initial and final number and energy densities:
+\begin{align*}
+    n_\text{final}&\approx b_R T^3_\text{BE}\bigg(1-\mu\frac{\zeta(2)}{\zeta(3)}\bigg)\approx b_R \bar T^3\bigg(1+3t_\text{BE}+3\bigg(\frac{\Delta T}{\bar T}\bigg)^2-\mu\frac{\zeta(2)}{\zeta(3)}\bigg)\\
+    &=n_\text{initial}=b_R\bar T^3\bigg[1+3\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg],\\
+    \rho_\text{final}&\approx b_R T^4_\text{BE}\bigg(1-\mu\frac{\zeta(3)}{\zeta(4)}\bigg)\approx b_R \bar T^3\bigg(1+4t_\text{BE}+4\bigg(\frac{\Delta T}{\bar T}\bigg)^2-\mu\frac{\zeta(3)}{\zeta(4)}\bigg)\\
+    &=\rho_\text{initial}=b_R\bar T^3\bigg[1+6\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg].
+\end{align*}
+From the first equation we immediately obtain that $t_\text{BE}= \mu\frac{\zeta(2)}{3\zeta(3)}$, inserting this relation in the second equation we obtain
+\begin{align}
+    \mu&=2\bigg(\frac{4\zeta(2)}{3\zeta(3)}-\frac{\zeta(3)}{\zeta(4)}\bigg)^{-1}\bigg(\frac{\Delta T}{\bar T}\bigg)^2\approx2.802\bigg(\frac{\Delta T}{\bar T}\bigg)^2,\label{eq:mu_MixingBB}\\
+    t_\text{BE}&=\frac{2\zeta(2)}{3\zeta(3)}\bigg(\frac{4\zeta(2)}{3\zeta(3)}-\frac{\zeta(3)}{\zeta(4)}\bigg)^{-1}\bigg(\frac{\Delta T}{\bar T}\bigg)^2\approx1.278\bigg(\frac{\Delta T}{\bar T}\bigg)^2.\label{eq:t_BE_MixingBB}
+\end{align}
+Note that the same chemical potential can be obtained by considering a that all the energy stored in the y-distortion gets transferred to the $\mu$-distortion, using equation \ref{eq:SD_mu_amplitude}:$$\mu=1.401\frac{\Delta \rho}{\rho}=1.401\frac{\frac{1}{3}(\rho_\text{initial}-a_R \bar T^4)}{a_R \bar T^4}=1.401\times\frac{6}{3}\bigg(\frac{\Delta T}{\bar T}\bigg)^2=2.802\bigg(\frac{\Delta T}{\bar T}\bigg)^2.$$
+To conclude let us write the total spectral distortion that we obtain after comptonization:
+$$f(x)=B(x)+G(x)\bigg[\bigg(\frac{\Delta T}{\bar T}\bigg)^2+t_\text{BE}\bigg]-\mu\frac{G(x)}{x},$$
+where, after the Planckian spectrum $B$, we have the total temperature shift (both from the mixing and the comptonization) and the $\mu$-distortion. Note that the latter appears as $-G(x)/x$ and not at as $M(x)$: this is because we assumed that the temperature changes during comptonization and then we imposed that the number of photons was conserved. Hence, the temperature shift $t_\text{BE}$ already accounts also for the shift contained in $M$.
+
+To conclude we shall indicate that, although our derivation used only the mixing of two blackbodies, considering an ensemble of $n$ blackbodies the result can be generalized without spoiling our solution. Indeed, it is sufficient to replace $(\Delta T/\bar T)^2$ by $\langle(\Delta T/\bar T)^2\rangle$ to account for the whole ensemble, as explained in \cite{MixingBB} and hinted at the end of the previous section.
+
+\subsection{Mixing of polarized blackbodies}
+\label{sec:MixingPolarization}
+When dealing with the \emph{CMB}, the mixing of blackbodies must take into account also that the radiation is polarized. To connect to section \ref{sec:ComptonPolarization} we shall change our notation to be consistent to the usual definition of \emph{CMB anisotropies} $\Theta(x,t)\defeq \Delta T/\bar T$.
+
+We start by describing linearly polarized light, then the more general case will be deduced exploiting the following calculations. We start by introducing a \emph{phase space matrix}
+\begin{equation}
+    \label{eq:Pol_Occup_Matrix}
+    \mathcal{F} _\text{unpol} \defeq
+    \begin{pmatrix}
+        B(x) & 0 \\ 0 & B(x)
+    \end{pmatrix}\ \xrightarrow{\text{polarization}}\mathcal{F}  \defeq
+    \begin{pmatrix}
+        B(x/[1+\Theta_\parallel]) & 0 \\ 0 & B(x/[1+\Theta_\perp ])
+    \end{pmatrix},
+\end{equation}
+where $\Theta_\perp$ and $\Theta_\parallel$ are the temperature fluctuations associated to photons that are polarized either in the perpendicular direction or in the orthogonal one and $B(x)$ is the Planckian spectrum. The total phase space distribution is then recovered by taking the trace of the above matrices $f=\text{Tr}(\mathcal{F} )/2$, which corresponds to the average of the two polarization.\\
+It is useful to rewrite the above in terms of the \emph{ Pauli matrices} $\sigma_i$
+$$\mathcal{F} =\frac{f_\parallel+f_\perp}{2}\begin{pmatrix}
+    1&0\\0&1
+\end{pmatrix}+\frac{f_\parallel-f_\perp}{2}\begin{pmatrix}
+    1&0\\0&-1
+\end{pmatrix}=f_I\hat 1+f_Q\sigma_3, $$
+where $f_\parallel\defeq B(x/[1+\Theta_\parallel])$ and $f_\perp\defeq B(x/[1+\Theta_\perp])$, while $f_I$ is the distribution associated to the Stokes parameter $I$, and it corresponds to $f$, while $f_Q$ is associated to $Q$.
+
+With this framework we can proceed to expand (as in equation \ref{eq:Mixing_Y_SD}) the perturbation at the second order to obtain the distortions:
+\begin{align*}
+    f_I&=\frac{f_\parallel+f_\perp}{2}\approx B(x)+G(x)\frac{\Theta_\parallel+\Theta_\perp+\Theta^2_\parallel+\Theta^2_\perp}{2}+Y(x)\frac{\Theta^2_\parallel+\Theta^2_\perp}{4},\\
+    f_Q&=\frac{f_\parallel-f_\perp}{2}\approx G(x)\frac{\Theta_\parallel-\Theta_\perp+\Theta^2_\parallel-\Theta^2_\perp}{2}+Y(x)\frac{\Theta^2_\parallel-\Theta^2_\perp}{4}.
+\end{align*}
+Now, identifying the right anisotropies associated to each Stokes parameter, $\Theta_I=(\Theta_\parallel+\Theta_\perp)/2$ and $\Theta_Q=(\Theta_\parallel-\Theta_\perp)/2$, we find
+\begin{align*}
+    f_I&\approx B(x)+G(x)\bigg(\Theta_I+\Theta^2_I+\Theta^2_Q\bigg)+Y(x)\frac{\Theta^2_I+\Theta^2_Q}{2},\\
+    f_Q&\approx G(x)\bigg(\Theta_Q+2\Theta_I\Theta_Q\bigg)+Y(x)\Theta_I\Theta_Q.
+\end{align*}
+This shows that also the phase space associated to the $Q$ parameter gets a temperature shift and a y-distortion.
+
+To generalize this result to a generic distortion we can simply consider the phase space distribution $f_U$, by a change of basis this can be rotated into $f_Q$ (as a rotation changes $U\rightarrow Q$). This means that the above calculations holds also for $f_U$ (since the distribution is itself a scalar) and just by rotating everything back we get the final result
+\begin{subequations}\label{eq:y-dist_polarization_components}
+\begin{align}
+    \mathcal{F}=&f_I\hat 1+f_Q\sigma_3+f_u\sigma_1 \\
+    f_I&\approx B(x)+G(x)\bigg(\Theta_I+\Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg)+Y(x)\frac{\Theta^2_I+\Theta^2_Q+\Theta^2_U}{2},\\
+    f_Q&\approx G(x)\bigg(\Theta_Q+2\Theta_I\Theta_Q\bigg)+Y(x)\Theta_I\Theta_Q,\\
+    f_U&\approx G(x)\bigg(\Theta_U+2\Theta_I\Theta_U\bigg)+Y(x)\Theta_I\Theta_U,
+\end{align}
+\end{subequations}
+where we obtained $f_u\sigma_1$ by the change of basis.
+Overall, the y-distortion can be read by averaging the phase space distributions 
+$$ f\defeq\frac{1}{2}\text{Tr}(\mathcal{F} )= B(x)+G(x)\bigg(\Theta_I+\Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg)+Y(x)\frac{\Theta^2_I+\Theta^2_Q+\Theta^2_u}{2}$$
+and then by taking the spatial average over the temperature anisotropies (recall $\langle\Theta\rangle=0$ as in section \ref{sec:MixingOfBlackbodies}) 
+\begin{align}
+    &\langle f\rangle=B(x)+G(x)\bigg\langle \Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg\rangle+Y(x)\bigg\langle\frac{\Theta^2_I+\Theta^2_Q+\Theta^2_U}{2}\bigg\rangle\nonumber\\
+    &\Longrightarrow\quad \boxed{y=\frac{1}{2}\bigg\langle\Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg\rangle}.\label{eq:y-distortion_polarization}
+\end{align}
+From the above we can integrate the spectral distortion to obtain the energy stored in it: the integral is the same as when we consider unpolarised light from just two blackbodies ($\int dx\ x^3 Y(x)$) but now it is multiplied by $\big\langle\Theta^2_I+\Theta^2_Q+\Theta^2_U\big\rangle$ instead of $(\Delta T/\bar T)^2$. Thus, the final result is that the excess energy of an ensemble of blackbodies at different temperatures reads 
+\begin{equation}
+    \frac{\Delta \rho}{\rho}\bigg|_\text{excess}=6\bigg\langle\Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg\rangle,\label{eq:polarize_mixing_excess_energy}
+\end{equation}
+$1/3$ of this energy generates the y-distortion and the remaining $2/3$ raise the temperature of the radiation.
+
+If Comptonization is still efficient, the y-distortion turns in a $\mu$-distortion. The amplitude of this final distortion can be obtained, as we observed in the previous section, from \eqref{eq:SD_mu_amplitude} considering that all the energy of the y-distortion is transferred to the $\mu$ one
+\begin{equation}
+    \label{eq:mu-distortion_polarized}
+    \mu=1.401\times\frac{1}{3}\frac{\Delta\rho}{\rho}\bigg|_\text{excess}=2.802\bigg\langle\Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg\rangle.
+\end{equation}
+
+
+
+\subsection{Dissipation of scalar perturbations}
+We already anticipated that the process of mixing of blackbodies occurs at high redshifts when primordial perturbations reenter the Hubble horizon and start to interact with the plasma. In section \ref{sec:ThetaTimeEvolution} we studied how the scalar perturbations generate temperature anisotropies as the result of this interaction. Temperature anisotropies, that intuitively we can think as hotter or colder patches of photon plasma, as the universe cools down (the mean free path of photons decreases a little) then can mix. This erases the perturbations at the smallest scales and the dissipated energy produces the spectral distortions. If this process occurs during the $\mu$-era, the resulting distortion is immediately Comptonized and we obtain a $\mu$ distortion, otherwise we are left with the y-distortion.
+
+Equations \eqref{eq:y-distortion_polarization} and \eqref{eq:mu-distortion_polarized} relate the anisotropies to the amplitudes of the distortions, however we are interested in obtaining the distortions that we could observe today from the thermal history of the universe. For this we will need the expression for the heating rate, which describes how much energy is deposited in the distortions at a specific time: comparing the above equations with equation \eqref{eq:SD_Deltarho_rho} we find 
+\begin{align}
+    &\frac{\dot Q}{\rho_\gamma}=\frac{d}{dt}\frac{\Delta \rho_\gamma}{\rho_\gamma}\bigg|_\text{dist}=\frac{1}{3}\times\frac{d}{dt}\frac{\Delta \rho_\gamma}{\rho_\gamma}\bigg|_\text{excess}= 2\bigg\langle\Theta^2_I+\Theta^2_Q+\Theta^2_U\bigg\rangle,\nonumber\\
+    \Rightarrow\quad&\frac{\dot Q}{\rho_\gamma}\bigg|_I=\frac{d}{dt}\frac{\Delta \rho_\gamma}{\rho_\gamma}\bigg|_\text{I}=4\langle\Theta_I\dot \Theta_I\rangle,\label{eq:heating_rate_I}\\
+    \Rightarrow\quad&\frac{\dot Q}{\rho_\gamma}\bigg|_P=\frac{d}{dt}\frac{\Delta \rho_\gamma}{\rho_\gamma}\bigg|_\text{P}=4\langle\Theta_Q\dot \Theta_Q+\Theta_U\dot \Theta_U\rangle,\label{eq:heating_rate_P}
+\end{align}
+where in the last two line we separated the heating rates generated respectively by the temperature anisotropies and the polarization anisotropies.
+
+In this first section, we will obtain the heating rate of the dissipation of scalar perturbations, in the next section similar calculations will lead to the heating rate of the tensor modes. The guiding idea in the following calculations is that the Boltzmann equation allows us to relate the time derivative of the anisotropies to the sources of these anisotropies (metric perturbations or the anisotropies themselves). As proved by J. Chluba in \cite{Chluba_2x2} by studying the second order perturbed Boltzmann equation, once anisotropies are sourced the metric perturbations will not contribute to the formation of spectral distortions: intuitively this is due fact that it is the mixing of blackbodies, caused by free streaming and scattering, that sources the distortions \textcolor{red}{(Non so se questa interpretazione sia giusta)}. For these reasons we may neglect any metric perturbation in the equations \eqref{eq:multipole_boltzmann_photons} (that describe the evolution of the anisotropies).\\ To use equations \eqref{eq:multipole_boltzmann_photons} we have first to move in Fourier space and project the anisotropies onto the Legendre polynomials (equation \eqref{eq:legendre_expansion}), in this way in equation \eqref{eq:heating_rate_I} above we have
+\begin{align*}
+    \Theta_I\dot \Theta_I&=\int\frac{d^3k}{(2\pi)^3}\frac{d^3k'}{(2\pi)^3}e^{i(\mathbf{k}+\mathbf{k}')\cdot\mathbf{x}}\sum_{\ell=0}^{\infty}\sum_{\ell'=0}^{\infty}\frac{(2\ell+1)(2\ell'+1)}{i^{\ell+\ell'}}\tilde\Theta_\ell(\mathbf{k})\dot{\tilde\Theta}_{\ell'}(\mathbf{k}')P_\ell(\mu)P_{\ell'}(\mu'),
+\end{align*}
+where $\mu\defeq\versor{k}\cdot\versor{n}$ and $P_\ell(\mu)$ are the Legendre polynomials (as in section \ref{sec:MultipoleExpansion}). \\
+At this point, to compute the spatial average we first must remove the $\versor{n}$ dependence (direction of motion of photons) of $\Theta$ by averaging over the solid angle: the well known relation for the Legendre polynomials
+$$\int\frac{d\Omega_\versor{n}}{4\pi} P_\ell(\versor{k}\cdot\versor{n})P_{\ell'}(\versor{k'}\cdot\versor{n})=\frac{P_\ell(\versor{k}\cdot\versor{k}')}{2\ell+1}\delta_{\ell\ell'}$$
+allows for some simplification leading to 
+\begin{align*}
+    \int\frac{d\Omega_\versor{n}}{4\pi}\Theta_I\dot \Theta_I&=\int\frac{d^3k}{(2\pi)^3}\frac{d^3k'}{(2\pi)^3}e^{i(\versor{k}+\versor{k}')\cdot\mathbf{x}}\sum_{\ell=0}^{\infty}\frac{2\ell+1}{(-1)^{\ell}}\tilde\Theta_\ell(\mathbf{k})\dot{\tilde\Theta}_{\ell}(\mathbf{k}')P_\ell(\versor{k}\cdot\versor{k'}).
+\end{align*}
+We can now take the ensemble average of the above
+\begin{align*}
+    \bigg\langle\int\frac{d\Omega_\versor{n}}{4\pi}\Theta_I\dot \Theta_I\bigg\rangle&=\int\frac{d^3k}{(2\pi)^3}\frac{d^3k'}{(2\pi)^3}e^{i(\versor{k}+\versor{k}')\cdot\mathbf{x}}\sum_{\ell=0}^{\infty}\frac{2\ell+1}{(-1)^{\ell}}\langle\tilde\Theta_\ell(\mathbf{k})\dot{\tilde\Theta}_{\ell}(\mathbf{k}')\rangle P_\ell(\versor{k}\cdot\versor{k'})\\
+    &\bigg\downarrow\ \text{change of variable }\mathbf{k}'\rightarrow-\mathbf{k}'\text{ with } \tilde\Theta_\ell(-\mathbf{k})=(-1)^\ell \tilde\Theta_\ell(\mathbf{k})\\
+    &=\int\frac{d^3k}{(2\pi)^3}\frac{d^3k'}{(2\pi)^3}e^{i(\versor{k}-\versor{k}')\cdot\mathbf{x}}\sum_{\ell=0}^{\infty}(2\ell+1)\langle\tilde\Theta_\ell(\mathbf{k})\dot{\tilde\Theta}_{\ell}(\mathbf{k}')\rangle P_\ell(\versor{k}\cdot\versor{k'}).
+\end{align*}
+Let's focus on the averaged quantity and let's expand the time derivative using equation \eqref{eq:multipole_boltzmann_photons} neglecting the metric perturbations
+\begin{align*}
+    \tilde\Theta_0(\mathbf{k})\dot{\tilde\Theta}_{0}(\mathbf{k}')&=-\frac{k}{a}\tilde\Theta_0(\mathbf{k})\tilde\Theta_1(\mathbf{k}'),&&\\
+    3\tilde\Theta_1(\mathbf{k})\dot{\tilde\Theta}_{1}(\mathbf{k}')&=\frac{k}{a}\tilde\Theta_1(\mathbf{k})\tilde\Theta_0(\mathbf{k}')-2\frac{k}{a}\tilde\Theta_1(\mathbf{k})\tilde\Theta_2(\mathbf{k}')-n_e\sigma_T\tilde\Theta_1(\mathbf{k})\bigg( 3\tilde\Theta_1(\mathbf{k}')+\tilde v_b(\mathbf{k}') \bigg),&&\\
+    (2\ell+1)\tilde\Theta_\ell(\mathbf{k})\dot{\tilde\Theta}_{\ell}(\mathbf{k}')&=\frac{\ell k}{a}\tilde\Theta_\ell(\mathbf{k})\tilde\Theta_{\ell-1}(\mathbf{k}')-\frac{\ell+1}{a}k\tilde\Theta_\ell(\mathbf{k})\tilde\Theta_{\ell+1}(\mathbf{k}')+\\&\qquad\qquad\qquad-(2\ell+1)n_e\sigma_T\tilde\Theta_\ell(\mathbf{k})\bigg(\tilde\Theta_\ell(\mathbf{k}')-\frac{\delta_{\ell,2}}{10}\Pi(\mathbf{k}')\bigg)\qquad\ell\geq2,&&
+\end{align*}
+where we recall that $\Pi\defeq\tilde\Theta_2+\tilde\Theta_{P,2}+\tilde\Theta_{P,0}$. In the above we shall note that, when summed over $\ell$ all the non-scattering terms (the ones which are not multiplied by $n_e\sigma_T$) will all cancel out. Before reinserting everything back in the average note that now we have only the anisotropies and not their derivatives, thus we can multiply and divide all the anisotropy multipoles by the scalar perturbation $\mathcal{R}$, obtaining the transfer functions $\tilde\Theta_\ell/\mathcal{R}$, which leave in the average only the perturbations that result in the primordial power spectrum $\langle\mathcal{R}(\mathbf{k}) \mathcal{R}(\mathbf{k}') \rangle\defeq\mathcal{P}_\mathcal{R} \delta^{(3)}(\mathbf{k}-\mathbf{k'})$. The resulting delta will fix, upon integration, $\mathbf{k}=\mathbf{k'}$, that removes the last Legendre polynomial since $P_\ell(1)=1$. In the end we are left with
+\begin{align}
+    \langle\Theta_I\dot \Theta_I\rangle&=-n_e\sigma_T\int\frac{d^3k}{(2\pi)^3}\mathcal{P}_\mathcal{R} (\mathbf{k})\bigg[\tilde\Theta_1( 3\tilde\Theta_1+\tilde v_b)+\frac{9}{2}\tilde\Theta_2^2+\nonumber\\&\qquad\qquad\qquad\qquad\qquad\qquad\qquad-\frac{1}{2}\tilde\Theta_2(\tilde\Theta_{P,2}+\tilde\Theta_{P,0})+\sum_{\ell=3}^{\infty}(2\ell+1)\tilde\Theta_\ell^2\bigg]
+    \label{eq:TT_I_average_scalar}
+\end{align}
+COntrolla il segno della velocità!!!!
