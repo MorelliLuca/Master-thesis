@@ -44,11 +44,13 @@
 \contentsline {subsection}{\numberline {3.3.2}Comptonization of mixed blackbodies}{57}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Mixing of polarized blackbodies}{58}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Dissipation of scalar perturbations}{60}{subsection.3.3.4}%
-\contentsline {chapter}{\numberline {A}Differential geometry tools}{63}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{63}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Thermodynamics tools}{67}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{67}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{67}{subsection.B.1.1}%
-\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{68}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Collision term}{70}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{70}{section.B.4}%
+\contentsline {subsubsection}{Tight coupling approximation}{63}{subsubsection*.15}%
+\contentsline {subsection}{\numberline {3.3.5}Dissipation of tensor perturbations}{63}{subsection.3.3.5}%
+\contentsline {chapter}{\numberline {A}Differential geometry tools}{65}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{65}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{69}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{69}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{69}{subsection.B.1.1}%
+\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{70}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Collision term}{72}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{72}{section.B.4}%

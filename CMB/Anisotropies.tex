@@ -148,13 +148,13 @@ Equating the Liouville operator \eqref{eq:liouville_pert} with the collision ter
 which is the equation describing the dynamics of the \emph{CMB anisotropies}. Assuming initially $\Theta=0$, the perturbation of the metric $\Psi$ and $\Phi$ can still generate a final non-zero anisotropy. In this sense, perturbations are source terms for $\Theta$.\\
 Since the above is a linear partial differential equation, it can be reduced to an ordinary differential equation by Fourier transforming the spatial coordinates.
 Introducing 
-$$\Theta(x^\mu) = \int \frac{d^3k}{(2\pi)^3}e^{i\mathbf{k}\cdot\mathbf{x}}\tilde\Theta(\mathbf{k},t),\qquad \mu\defeq \cos\theta=\frac{\mathbf{k}\cdot\mathbf{\hat{p}}}{k},$$respectively, the Fourier transform of $\Theta$ and the cosine of the angle between $\mathbf{k}$ and $\mathbf{\hat{p}}$, and assuming that $\mathbf{v}_b$ is irrotational ($\mathbf{\tilde v}_b=\versor k\tilde v_b$) we obtain in momentum space:
+$$\Theta(x^\mu) = \int \frac{d^3k}{(2\pi)^3}e^{i\mathbf{k}\cdot\mathbf{x}}\tilde\Theta(\mathbf{k},t),\qquad \mu\defeq \cos\theta=\frac{\mathbf{k}\cdot\mathbf{\hat{p}}}{k},$$respectively, the Fourier transform of $\Theta$ and the cosine of the angle between $\mathbf{k}$ and $\mathbf{\hat{p}}$, and assuming that $\mathbf{v}_b$ is irrotational ($\mathbf{\tilde v}_b=-i\versor k\tilde v_b$) we obtain in momentum space:
 \begin{equation*}
-    \frac{\partial \tilde\Theta}{\partial t} +\frac{ik\mu}{a}\tilde\Theta+\frac{\partial \tilde\Psi}{\partial t}+\frac{ik\mu}{a}\tilde\Phi=n_e \sigma_T\Bigg[\tilde\Theta_0-\tilde\Theta+\mu\tilde v_b\Bigg].
+    \frac{\partial \tilde\Theta}{\partial t} +\frac{ik\mu}{a}\tilde\Theta+\frac{\partial \tilde\Psi}{\partial t}+\frac{ik\mu}{a}\tilde\Phi=n_e \sigma_T\Bigg[\tilde\Theta_0-\tilde\Theta-i\mu\tilde v_b\Bigg].
 \end{equation*}
 The above collision term \eqref{eq:first_collision_term} however neglects the angular dependence of Compton scatterings, by accounting also for this (as explained in \cite{dodelson}) a new term appears:
 \begin{equation}
-    \frac{\partial \tilde\Theta}{\partial t} +\frac{ik\mu}{a}\tilde\Theta+\frac{\partial \tilde\Psi}{\partial t}+\frac{ik\mu}{a}\tilde\Phi=n_e \sigma_T\Bigg[\tilde\Theta_0-\tilde\Theta+\mu\tilde v_b-\frac{3\mu^2-1}{4}\tilde\Theta_2\Bigg],
+    \frac{\partial \tilde\Theta}{\partial t} +\frac{ik\mu}{a}\tilde\Theta+\frac{\partial \tilde\Psi}{\partial t}+\frac{ik\mu}{a}\tilde\Phi=n_e \sigma_T\Bigg[\tilde\Theta_0-\tilde\Theta-i\mu\tilde v_b-\frac{3\mu^2-1}{4}\tilde\Theta_2\Bigg],
 \end{equation}
 where $\tilde\Theta_2\defeq -\frac{1}{2}\int_{-1}^{+1}d\mu\frac{3\mu^2-1}{2}\tilde\Theta$ is the \textbf{anisotropy quadrupole momentum}. In the next sections we will discover that this momentum plays a leading role for many phenomena.
 \subsection{Polarization from Compton scattering}\label{sec:ComptonPolarization}
@@ -347,18 +347,18 @@ all the physics described previously is unchanged, however we need to account fo
 where $\Pi=\tilde\Theta_2+\tilde\Theta_{P,2}+\tilde\Theta_{P,0}$ and $P_2(\mu)=\frac{3\mu^2-1}{2}$ is the order 2 Legendre polynomial.
 Then, polarization will affect also the regular collision term for Compton scattering, hence equation \eqref{eq:phot_boltzmann_pert} must be corrected:
 \begin{equation}\label{eq:phot_boltzmann_pert_pol}
-    \frac{\partial \tilde\Theta}{\partial t} +\frac{ik\mu}{a}\tilde\Theta+\frac{\partial \tilde\Psi}{\partial t}+\frac{ik\mu}{a}\tilde\Phi=n_e \sigma_T\Bigg[\tilde\Theta_0-\tilde\Theta+\mu\tilde v_b-\frac{1}{4}P_2(\mu)\Pi\Bigg].
+    \frac{\partial \tilde\Theta}{\partial t} +\frac{ik\mu}{a}\tilde\Theta+\frac{\partial \tilde\Psi}{\partial t}+\frac{ik\mu}{a}\tilde\Phi=n_e \sigma_T\Bigg[\tilde\Theta_0-\tilde\Theta-i\mu\tilde v_b-\frac{1}{4}P_2(\mu)\Pi\Bigg].
 \end{equation}
 \subsection{Multipole expansion of the Boltzmann equation}\label{sec:BoltzmannMultipoleExpansion}
 In section \ref{sec:ComptonPolarization} we obtained the differential equations \eqref{eq:phot_boltzmann_pert_pol} and \eqref{eq:ThetaP_Boltzmann} governing the time evolution of the anisotropies in the CMB. To end our discussion of the time evolution of the anisotropies we want to expand these equations in multipoles.
 
 Since the CMB is observed in the sky, spherical harmonics are the natural basis to use to project the anisotropies. The fact that the equations \eqref{eq:phot_boltzmann_pert_pol} and \eqref{eq:ThetaP_Boltzmann} depend only on $\mu=\versor p\cdot\versor k$, corresponds to a rotational symmetry of the system around one of these two vectors. By using spherical polar coordinates, such that the vector $\versor k$ lies on the $z$ axis, the above symmetry corresponds to a rotational symmetry of the azimuthal angle $\phi$. Considering that $Y_{\ell m}\propto e^{im\phi}$, we immediately recognize that such symmetry is respected only by spherical harmonics with $m=0$ and these precisely corresponds to the Legendre polynomials. Therefore, for scalar perturbation, we can limit ourselves to a multipole expansion on the Legendre polynomials, without worrying of all the spherical harmonics.
 
-By multiplying the \eqref{eq:phot_boltzmann_pert_pol} by the order $\ell$ Legendre polynomial $P_\ell(\mu)$ and integrating over $\mu$, we can exploit the orthogonality of the Legendre polynomials as follows.
+By multiplying the \eqref{eq:phot_boltzmann_pert_pol} by the order $\ell$ Legendre polynomial $P_\ell(\mu)\times i^\ell/2$ and integrating over $\mu$, we can exploit the orthogonality of the Legendre polynomials as follows.
 \begin{itemize}
-    \item $\frac{\partial \tilde\Theta}{\partial t} $ and $n_e\sigma_T\tilde{\Theta}$ depending on $\mu$ in this expansion will give contributions corresponding respectively to $\frac{\partial \tilde\Theta_\ell}{\partial t} $ and $n_e\sigma_T\tilde{\Theta}_\ell$.
+    \item $\frac{\partial \tilde\Theta}{\partial t} $ and $n_e\sigma_T\tilde{\Theta}$ depending on $\mu$ in this expansion will give contributions corresponding respectively to $\frac{\partial \tilde\Theta_\ell}{\partial t} $ and $n_e\sigma_T\tilde{\Theta}_\ell$ (from the expansion definition \eqref{eq:legendre_expansion}).
     \item $\frac{\partial\tilde\Psi}{\partial t}$ and $n_e\sigma_T\tilde\Theta_0$ have no $\mu$ dependence, which corresponds to the zeroth order Legendre polynomial $P_0(\mu)=1$, and thus they only contribute to the $\ell=0$ equation.
-    \item $\tilde\Phi$ and $n_e\sigma_T\tilde v_b$ are multiplied by $P_1(\mu)=\mu$, giving contributions only to $\ell=1$ equation, while $\Pi$ is multiplied by $P_2(\mu)=\frac{3\mu^2-1}{2}$, contributing only to $\ell=2$ equation. Note that these terms must also be multiplied by a factor corresponding to the integral of their respective Legendre polynomial, since they don't contain any $\tilde\Theta$ function to be expanded 
+    \item $\tilde\Phi$ and $n_e\sigma_T\tilde v_b$ are multiplied by $P_1(\mu)=\mu$, giving contributions only to $\ell=1$ equation, while $\Pi$ is multiplied by $P_2(\mu)=\frac{3\mu^2-1}{2}$, contributing only to $\ell=2$ equation. Note that these terms must also be multiplied by a factor corresponding to the integral of their respective Legendre polynomial squared, since they don't contain any $\tilde\Theta$ function to be expanded.
     \item $\frac{ik\mu}{a}\tilde\Theta$ is instead more complicated since it is the product of two functions depending on $\mu$. Bonnet's formula \eqref{eq:bonnet} allows us to simplify the corresponding integral 
     $$\frac{i^\ell}{2}\int_{-1}^{+1}d\mu\ \mu P_\ell(\mu)\tilde\Theta=\frac{i^\ell}{2}\int_{-1}^{+1}d\mu \bigg[\frac{\ell+1}{2\ell+1}P_{\ell+1}(\mu)+\frac{\ell}{2\ell+1}P_{\ell-1}(\mu)\bigg]\tilde\Theta,$$
     in this way this will give contributions to all the equations coupling them together.
@@ -366,8 +366,8 @@ By multiplying the \eqref{eq:phot_boltzmann_pert_pol} by the order $\ell$ Legend
 Putting all of this together we obtain the following coupled system of differential equations
 \begin{subequations}\label{eq:multipole_boltzmann_photons}
     \begin{align}
-           &\dot{\tilde{\Theta}}_0=-\frac{k}{a}\tilde{\Theta}_1+\dot{\tilde\Psi}\label{eq:multipole_boltzmann_photons_0}\\
-            &\dot{\tilde{\Theta}}_1=\frac{k}{3a}\tilde\Theta_0-\frac{2k}{3a}\tilde\Theta_2+\frac{k}{3}\tilde\Phi-n_e\sigma_T\bigg[\tilde\Theta_1+\frac{\tilde v_b}{3}\bigg]\label{eq:multipole_boltzmann_photons_2}\\
+           &\dot{\tilde{\Theta}}_0=-\frac{k}{a}\tilde{\Theta}_1-\dot{\tilde\Psi}\label{eq:multipole_boltzmann_photons_0}\\
+            &\dot{\tilde{\Theta}}_1=\frac{k}{3a}\tilde\Theta_0-\frac{2k}{3a}\tilde\Theta_2+\frac{k}{3}\tilde\Phi-n_e\sigma_T\bigg[\tilde\Theta_1-\frac{\tilde v_b}{3}\bigg]\label{eq:multipole_boltzmann_photons_2}\\
             &\dot{\tilde{\Theta}}_\ell=\frac{\ell k}{(2\ell+1)a}\tilde\Theta_{\ell-1}-\frac{(\ell+1)k}{(2\ell+1)a}\tilde\Theta_{\ell+1}-n_e\sigma_T\bigg[\tilde\Theta_\ell-\frac{\delta_{\ell,2}}{10}\Pi\bigg]\qquad \ell\geq 2,\label{eq:multipole_boltzmann_photons_3}
         \end{align}
 \end{subequations}
@@ -375,8 +375,8 @@ Putting all of this together we obtain the following coupled system of different
 Similarly, equation \eqref{eq:ThetaP_Boltzmann} will result in the following system of differential equations
 \begin{subequations}\label{eq:multipole_boltzmann_polatization}
     \begin{align}
-           &\dot{\tilde{\Theta}}_{P0}=-\frac{k}{a}\tilde{\Theta}_{P1}-n_e\sigma_T\bigg[\tilde\Theta_{P0}-\frac{1}{2}\Pi\bigg]\label{eq:multipole_boltzmann_polatization_0}\\
-            &\dot{\tilde{\Theta}}_{P\ell}=\frac{\ell k}{(2\ell+1)a}\tilde\Theta_{P\ell-1}-\frac{(\ell+1)k}{(2\ell+1)a}\tilde\Theta_{P\ell+1}-n_e\sigma_T\bigg[\tilde\Theta_{P\ell}-\frac{\delta_{\ell,2}}{10}\Pi\bigg]\qquad \ell\geq 1,\label{eq:multipole_boltzmann_polatization_2}.
+           &\dot{\tilde{\Theta}}_{P,0}=-\frac{k}{a}\tilde{\Theta}_{P,1}-n_e\sigma_T\bigg[\tilde\Theta_{P,0}-\frac{1}{2}\Pi\bigg]\label{eq:multipole_boltzmann_polatization_0}\\
+            &\dot{\tilde{\Theta}}_{P,\ell}=\frac{\ell k}{(2\ell+1)a}\tilde\Theta_{P,\ell-1}-\frac{(\ell+1)k}{(2\ell+1)a}\tilde\Theta_{P,\ell+1}-n_e\sigma_T\bigg[\tilde\Theta_{P,\ell}-\frac{\delta_{\ell,2}}{10}\Pi\bigg]\qquad \ell\geq 1,\label{eq:multipole_boltzmann_polatization_2}.
         \end{align}
 \end{subequations}  
 Equations \eqref{eq:multipole_boltzmann_photons} and \eqref{eq:multipole_boltzmann_polatization} are not the full system of coupled equations, indeed these equations depend on the potential $\tilde\Psi$ and $\tilde\Phi$ and on the electron bulk velocity $\tilde v_b$. The differential equations governing these quantities must then be added to the ones above and solved all together.\\
