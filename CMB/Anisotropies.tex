@@ -381,17 +381,18 @@ Similarly, equation \eqref{eq:ThetaP_Boltzmann} will result in the following sys
 \end{subequations}  
 Equations \eqref{eq:multipole_boltzmann_photons} and \eqref{eq:multipole_boltzmann_polatization} are not the full system of coupled equations, indeed these equations depend on the potential $\tilde\Psi$ and $\tilde\Phi$ and on the electron bulk velocity $\tilde v_b$. The differential equations governing these quantities must then be added to the ones above and solved all together.\\
 Note that, in the above equations, $\Psi$ and $\Phi$ appears only in the equation with $\ell=0,1$: this means that primordial perturbations source directly only the first two momenta of the anisotropies. Then, since all the equations are coupled together, the dynamics of the anisotropies will give rise to the other momenta.
-\subsection{Polarization power spectrum Check convention}\label{sec:PolarizationPowerSpectrum}
-We already discussed that, in order to completely describe photons (thus the CMB), we also need to account for polarization. It is therefore natural to define a power spectrum for the polarization, which can be done similarly as for the temperature.
+\subsection{Polarization anisotropies power spectrum}\label{sec:PolarizationPowerSpectrum}
+We already discussed that, in order to completely describe photons (thus the CMB), we also need to account for polarization. It is therefore natural to define a power spectrum for the polarization anisotropies, which can be done similarly as for the temperature.
 
-We want to expand in spherical harmonics the Stokes parameters $Q$ and $U$\eqref{eq:stokes_parameters}, however we showed, in section \ref{sec:ComptonPolarization} that under a rotation the combination $Q\pm iU$ will transform as a spin 2 fields. This means that we cannot resort to the usual spherical harmonics decomposition, instead we must use \textbf{spin-weighted spherical harmonics} $Y_{\ell m}^{\pm2}$. In this way we get 
-$$Q(\versor n)\pm iU(\versor n) = \sum_{\ell m}a_{\ell m}^{\pm 2}Y_{\ell m}^{\pm2}(\versor n).$$
-It is then common to use modes that are projectable on the regular spherical harmonics: we start defining
-$$a^E_{\ell m}\defeq-\frac{a^2_{\ell m}+a^{-2}_{\ell m}}{2},\qquad a^B_{\ell m}\defeq\frac{a^2_{\ell m}-a^{-2}_{\ell m}}{2i},$$
-then we can recompose these modes as
-\begin{equation}\label{eq:EBmodes}
-    E(\versor n)=\sum_{\ell m}a^E_{\ell m}Y_{\ell m}(\versor n),\qquad B(\versor n)=\sum_{\ell m}a^B_{\ell m}Y_{\ell m}(\versor n).
+We want to expand onto the sky (really the dependence from the direction of observation $\versor n$) $\Theta_Q$ and $\Theta_UU$, however we showed, in section \ref{sec:ComptonPolarization} that under a rotation the combination $Q\pm iU$ (and thus their respective $\Theta$s) will transform as a spin 2 fields. This means that we cannot resort to the usual spherical harmonics decomposition, instead we must use \textbf{spin-weighted spherical harmonics} $Y_{\ell m}^{\pm2}$. In Fourier space such expansion reads. This expansion reads   
+\begin{equation}
+    (\Theta_Q\pm i\Theta_U)(\versor n)=\sum_{\ell m} Y^{\pm2}_{\ell m}(\versor n)a^{\pm2}_{\ell m} ,\label{eq:EB_sky_expansion}
 \end{equation}
+The coefficients we obtained can be then combined into parity even or odd combinations that turns out to be the multipoles of the so called \textbf{E-modes} and \textbf{B-modes}:
+\begin{align*}
+    a^E_{\ell m}&\defeq-\frac{a^2_{\ell m}+a^{-2}_{\ell m}}{2},\qquad &E(\versor n)=\sum_{\ell m}a^E_{\ell m}Y_{\ell m}(\versor n),&&\\ a^B_{\ell m}&\defeq\frac{a^2_{\ell m}-a^{-2}_{\ell m}}{2i}
+    \qquad &B(\versor n)=\sum_{\ell m}a^B_{\ell m}Y_{\ell m}(\versor n).&&
+\end{align*}
 The power spectra of the polarization can then be defined, as usual, as
 \begin{align}\label{eq:PolPowerSpectrum}
     \langle a^E_{\ell m}a^{E*}_{\ell' m'}\rangle\defeq C_{\ell}^{EE}\delta_{\ell \ell'}\delta_{m m'},\\ \langle a^B_{\ell m}a^{B*}_{\ell' m'}\rangle\defeq C_{\ell}^{BB}\delta_{\ell \ell'}\delta_{m m'},\\\langle a_{\ell m}a^{E*}_{\ell' m'}\rangle\defeq C_{\ell}^{TE}\delta_{\ell \ell'}\delta_{m m'}.
@@ -477,12 +478,11 @@ will be decomposed into
 
 where the contributions from $\tilde{\Theta_0}$ and $\tilde v_b$ are not appearing since they are multiplied by the $m=0$ spherical harmonics. Note that this time the primordial perturbations directly source a quadrupole momentum, that then can source the higher momenta.
 
-As we discussed in section \ref{sec:ComptonPolarization} the Compton scattering is influenced by the polarization of incoming and outgoing photons. For this reason we must add corrections to the above equations.
-To add the proper corrections we need also to describe the dynamics of the polarization.\\ Expanding the polarization in spherical harmonics as 
-\begin{equation}
-    (\Theta_Q\pm i\Theta_U)(\mathbf{x,\versor p})=\int\frac{d^3k}{(2\pi)^3}e^{i\mathbf{k}\cdot\mathbf{x}}\sum_{\ell m} (-i)^{\ell}\sqrt{\frac{4\pi}{2\ell+1}}Y^{\pm2}_{\ell m}(\versor p)(\tilde E_{\ell}^{(m)}\pm i\tilde B_\ell^{(m)}) ,\label{eq:EB_multipole_expansion_tensor}
-\end{equation}
-where $Y^{\pm2}_{\ell m}$ are again the \emph{spin weighted spherical harmonics}. We already discussed that, while the free streaming of photons is not influenced by the polarization, the quadrupole of the anisotropies sources polarized light and then, when not produced, at equilibrium we should obtain unpolarized light. This means that the equation for the dynamics of polarization anisotropies should be the same of the regular $\tilde\Theta^{(\pm2)}$ plus source terms for $\tilde\Theta_2$ and $-\tilde E_{\ell}^{(\pm2)},\ -\tilde B_{\ell}^{(\pm2)}$. The full derivation of these equations has been done by Hu and White in \cite{HuWhite}; the final result reads
+As we discussed in section \ref{sec:ComptonPolarization} the Compton scattering is influenced by the polarization of incoming and outgoing photons. For this reason we must add corrections to the above equations, to do so we must first describe the dynamics of the polarization.\\ The proper expansion to decouple the Boltzmann equation is a similar expansion we used in section \ref{sec:PolarizationPowerSpectrum}: in Fourier space we will follow the convention of Chluba \cite{Chluba_tens_diss}, to be consistent with the previous expansions,
+\begin{equation*}
+    (\Theta_Q\pm i\Theta_U)(\mathbf{x,\versor p})=\int\frac{d^3k}{(2\pi)^3}e^{i\mathbf{k}\cdot\mathbf{x}}\sum_{\ell m} (-i)^{\ell}\sqrt{\frac{4\pi}{2\ell+1}}Y^{\pm2}_{\ell m}(\versor p)(\tilde E_{\ell}^{(m)}\pm i\tilde B_\ell^{(m)}),
+\end{equation*}
+where $Y^{\pm2}_{\ell m}$ are again the \emph{spin weighted spherical harmonics}. We already discussed that, while the free streaming of photons is not influenced by the polarization, the quadrupole of the anisotropies sources polarized light and then, when not produced, at equilibrium we should obtain unpolarized light. This means that the equation for the dynamics of polarization anisotropies should be similar\footnote{The numerical factors will change due to the different relations between spin-weighted spherical harmonics and the regular ones. A comprehensive guide to these functions can be found in the first part of \cite{HuWhite}.} to the regular $\tilde\Theta^{(\pm2)}$ plus source terms for $\tilde\Theta_2$ and $-\tilde E_{\ell}^{(\pm2)},\ -\tilde B_{\ell}^{(\pm2)}$. The full derivation of these equations has been done by Hu and White in \cite{HuWhite}; the final result reads
 \begin{subequations}\label{eq:EB_multipole_equations_tensor}
     \begin{align}
         \dot{\tilde E}_\ell^{(\pm2)}&=\frac{k}{a}\bigg[\frac{\ell^2-2}{\ell^2(2\ell-1)}\tilde E_{\ell-1}^{(\pm2)}-\frac{\pm4}{\ell(\ell+1)}\tilde B_\ell^{(\pm2)}-\frac{\ell^2-2}{\ell^2(2\ell+3)}\tilde E_{\ell+1}^{(\pm2)}\bigg]+\nonumber\\&\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad-n_e\sigma_T\bigg[\tilde E_{\ell}^{(\pm2)}+\sqrt{6}\Pi^{(\pm2)}\delta_{\ell,2}\bigg],\label{eq:E_multipole_equation_tensor}\\
