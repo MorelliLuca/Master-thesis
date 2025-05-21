@@ -412,7 +412,7 @@ At this point we need to add the first order collision term associated to Compto
     \frac{\partial \Theta}{\partial t}+\frac{\hat p^i}{a}\frac{\partial \Theta}{\partial x^i}+\frac{1}{2}\dot{h}_{ij}\hat p^i\hat p^j=n_{e}\sigma_T\bigg[\Theta_0-\Theta+\mathbf{\hat{p}}\cdot\mathbf{v}_{b}\bigg].
 \end{equation}
 Again, note that the tensor perturbations can be a source for the anisotropies, as for the scalar case.
-\subsection{Coupling of tensors to anisotropies}
+\subsection{Coupling of tensors pertubations to anisotropies}\label{sec:TensorCoupling}
 Previously, to expand equation \eqref{eq:phot_boltzmann_pert}, we Fourier transformed $\Theta(t,\mathbf{x},\versor p)$ and then expanded it in Legendre polynomials. However, this last step was justified (in section \ref{sec:BoltzmannMultipoleExpansion}) by noting that the equations depended only on the cosine of angle between the direction of motion of the photon $\versor p$ and the wave number vector of the Fourier transform $\mathbf{k}$. This corresponded to a rotational symmetry around one of the above vectors that implied that Legendre polynomials were the appropriate basis to expand on. We shall now study equation \eqref{eq:tensor_anisotropies_boltzmann}, and its symmetries, to understand  what will now be the right basis to use for this expansion.
 
 To begin, let's recall that, being traceless transverse, in Fourier space $h_{ij}$ can be separated in two independent polarizations
@@ -466,13 +466,13 @@ $$\tilde{\Theta}_{\ell}^{(m)}(\mathbf{k})=i^\ell\sqrt{\frac{2\ell+1}{4\pi}}\int 
 therefore, upon integration of the equation above we can decompose it in a set of ordinary differential equations, one for each multipole $\Theta_\ell^{(m)}$.\\
 However, similarly to what happened in section \ref{sec:BoltzmannMultipoleExpansion}, we obtain from the second term on the left-hand side a contribution proportional to $Y^*_{\ell m}(\theta,\phi)\cos\theta$. The proprieties of spherical harmonics allows to simplify this term as follows
 $$
-\cos\theta Y_{\ell m}(\theta,\phi)=\sqrt\frac{4\pi}{3}Y_{10}Y_{\ell m}=\sqrt{\frac{\ell^2-m^2}{2\ell-1}}Y_{\ell-1,m}+\sqrt{\frac{\ell^2-m^2}{2\ell+3}}Y_{\ell+1,m}
+\cos\theta Y_{\ell m}(\theta,\phi)=\sqrt\frac{4\pi}{3}Y_{10}Y_{\ell m}=\sqrt{\frac{\ell^2-m^2}{(2\ell-1)(2\ell+1)}}Y_{\ell-1,m}+\sqrt{\frac{(\ell+1)^2-m^2}{(2\ell+3)(2\ell+1)}}Y_{\ell+1,m}
 $$  and upon integration we therefore also get contributions from other multipoles.\\In this way equation \eqref{eq:tensor_anisotropies_boltzmann}
 will be decomposed into
 \begin{subequations}
     \begin{align}
-    \dot{\tilde\Theta}_2^{(\pm2)}&=-n_e\sigma_T\tilde\Theta_{2}^{(\pm2)}-\dot{\tilde h}^{(\pm)}\quad \\
-    \dot{\tilde\Theta}_\ell^{(\pm2)}&=\frac{k}{a}\bigg[\frac{\sqrt{\ell^2-4}}{2\ell-1}\Theta_{\ell-1}^{(\pm2)}-\frac{\sqrt{\ell^2-4}}{2\ell+3}\Theta_{\ell+1}^{(\pm2)}\bigg]-n_e\sigma_T\tilde\Theta_{\ell}^{(\pm2)}\quad \ell\geq3,
+    \dot{\tilde\Theta}_2^{(\pm2)}&=-\frac{\sqrt{5}}{7a}k\tilde\Theta_3^{(\pm2)}-n_e\sigma_T\tilde\Theta_{2}^{(\pm2)}-\dot{\tilde h}^{(\pm)}\quad \\
+    \dot{\tilde\Theta}_\ell^{(\pm2)}&=\frac{k}{a}\bigg[\frac{\sqrt{\ell^2-4}}{2\ell-1}\tilde\Theta_{\ell-1}^{(\pm2)}-\frac{\sqrt{(\ell+1)^2-4}}{2\ell+3}\tilde\Theta_{\ell+1}^{(\pm2)}\bigg]-n_e\sigma_T\tilde\Theta_{\ell}^{(\pm2)}\quad \ell\geq3,
 \end{align}
 \end{subequations}
 
@@ -485,16 +485,16 @@ As we discussed in section \ref{sec:ComptonPolarization} the Compton scattering 
 where $Y^{\pm2}_{\ell m}$ are again the \emph{spin weighted spherical harmonics}. We already discussed that, while the free streaming of photons is not influenced by the polarization, the quadrupole of the anisotropies sources polarized light and then, when not produced, at equilibrium we should obtain unpolarized light. This means that the equation for the dynamics of polarization anisotropies should be similar\footnote{The numerical factors will change due to the different relations between spin-weighted spherical harmonics and the regular ones. A comprehensive guide to these functions can be found in the first part of \cite{HuWhite}.} to the regular $\tilde\Theta^{(\pm2)}$ plus source terms for $\tilde\Theta_2$ and $-\tilde E_{\ell}^{(\pm2)},\ -\tilde B_{\ell}^{(\pm2)}$. The full derivation of these equations has been done by Hu and White in \cite{HuWhite}; the final result reads
 \begin{subequations}\label{eq:EB_multipole_equations_tensor}
     \begin{align}
-        \dot{\tilde E}_\ell^{(\pm2)}&=\frac{k}{a}\bigg[\frac{\ell^2-2}{\ell^2(2\ell-1)}\tilde E_{\ell-1}^{(\pm2)}-\frac{\pm4}{\ell(\ell+1)}\tilde B_\ell^{(\pm2)}-\frac{\ell^2-2}{\ell^2(2\ell+3)}\tilde E_{\ell+1}^{(\pm2)}\bigg]+\nonumber\\&\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad-n_e\sigma_T\bigg[\tilde E_{\ell}^{(\pm2)}+\sqrt{6}\Pi^{(\pm2)}\delta_{\ell,2}\bigg],\label{eq:E_multipole_equation_tensor}\\
-        \dot{\tilde B}_\ell^{(\pm2)}&=\frac{k}{a}\bigg[\frac{\ell^2-2}{\ell^2(2\ell-1)}\tilde B_{\ell-1}^{(\pm2)}-\frac{\pm4}{\ell(\ell+1)}\tilde E_\ell^{(\pm2)}+\frac{\ell^2-2}{\ell^2(2\ell+3)}\tilde B_{\ell+1}^{(\pm2)}\bigg]+\nonumber\\&\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad-n_e\sigma_T\tilde B_{\ell}^{(\pm2)},\label{eq:B_multipole_equation_tensor}\\
+        \dot{\tilde E}_\ell^{(\pm2)}&=\frac{k}{a}\bigg[\frac{\ell^2-4}{\ell(2\ell-1)}\tilde E_{\ell-1}^{(\pm2)}-\frac{\pm4}{\ell(\ell+1)}\tilde B_\ell^{(\pm2)}-\frac{(\ell+1)^2-4}{(\ell+1)(2\ell+3)}\tilde E_{\ell+1}^{(\pm2)}\bigg]+\nonumber\\&\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad-n_e\sigma_T\bigg[\tilde E_{\ell}^{(\pm2)}+\sqrt{6}\Pi^{(\pm2)}\delta_{\ell,2}\bigg],\label{eq:E_multipole_equation_tensor}\\
+        \dot{\tilde B}_\ell^{(\pm2)}&=\frac{k}{a}\bigg[\frac{\ell^2-4}{\ell(2\ell-1)}\tilde B_{\ell-1}^{(\pm2)}-\frac{\pm4}{\ell(\ell+1)}\tilde E_\ell^{(\pm2)}+\frac{(\ell+1)^2-4}{(\ell+1)(2\ell+3)}\tilde B_{\ell+1}^{(\pm2)}\bigg]+\nonumber\\&\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad-n_e\sigma_T\tilde B_{\ell}^{(\pm2)},\label{eq:B_multipole_equation_tensor}\\
         \nonumber &\text{with}\quad\Pi^{(\pm2)}=\frac{1}{10}\bigg[\tilde\Theta_2^{(\pm2)}-\sqrt{6}\tilde E_2^{(\pm2)}\bigg].
     \end{align}
 \end{subequations}
 In a similar way, also the equations for the anisotropies must be corrected, giving
 \begin{subequations}\label{eq:Theta_multipole_equation_tensor}
     \begin{align}\label{eq:Theta_multipole_equation_tensor_l=2}
-    \dot{\tilde\Theta}_2^{(\pm2)}&=n_e\sigma_T\bigg[\Pi^{(\pm2)}-\tilde\Theta_{2}^{(\pm2)}\bigg]-\dot{\tilde h}^{(\pm)},\\\label{eq:Theta_multipole_equation_tensor_l>2}
-    \dot{\tilde\Theta}_\ell^{(\pm2)}&=\frac{k}{a}\bigg[\frac{\sqrt{\ell^2-4}}{2\ell-1}\Theta_{\ell-1}^{(\pm2)}-\frac{\sqrt{\ell^2-4}}{2\ell+3}\Theta_{\ell+1}^{(\pm2)}\bigg]-n_e\sigma_T\tilde\Theta_{\ell}^{(\pm2)}\quad \ell\geq3.
+    \dot{\tilde\Theta}_2^{(\pm2)}&=-\frac{\sqrt{5}}{7a}k\tilde\Theta_3^{(\pm2)}+n_e\sigma_T\bigg[\Pi^{(\pm2)}-\tilde\Theta_{2}^{(\pm2)}\bigg]-\dot{\tilde h}^{(\pm)},\\\label{eq:Theta_multipole_equation_tensor_l>2}
+    \dot{\tilde\Theta}_\ell^{(\pm2)}&=\frac{k}{a}\bigg[\frac{\sqrt{\ell^2-4}}{2\ell-1}\tilde\Theta_{\ell-1}^{(\pm2)}-\frac{\sqrt{(\ell+1)^2-4}}{2\ell+3}\tilde\Theta_{\ell+1}^{(\pm2)}\bigg]-n_e\sigma_T\tilde\Theta_{\ell}^{(\pm2)}\quad \ell\geq3.
 \end{align}
 \end{subequations}
 \

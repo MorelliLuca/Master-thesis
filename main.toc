@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Multipole expansion of the Boltzmann equation}{33}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Polarization anisotropies power spectrum}{34}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Tensor perturbations effects on the CMB}{35}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Coupling of tensors to anisotropies}{35}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Coupling of tensors pertubations to anisotropies}{35}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Multipole expansion of tensor induced anisotropies}{37}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Approximate solutions for the dynamics of the anisotropies}{39}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}The tight coupling approximation}{39}{subsection.2.4.1}%
@@ -46,11 +46,11 @@
 \contentsline {subsection}{\numberline {3.3.4}Dissipation of scalar perturbations}{62}{subsection.3.3.4}%
 \contentsline {subsubsection}{Tight coupling approximation}{65}{subsubsection*.15}%
 \contentsline {subsection}{\numberline {3.3.5}Dissipation of tensor perturbations}{65}{subsection.3.3.5}%
-\contentsline {chapter}{\numberline {A}Differential geometry tools}{67}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{67}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Thermodynamics tools}{71}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{71}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{71}{subsection.B.1.1}%
-\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{72}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Collision term}{74}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{74}{section.B.4}%
+\contentsline {chapter}{\numberline {A}Differential geometry tools}{69}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{69}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{73}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{73}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{73}{subsection.B.1.1}%
+\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{74}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Collision term}{76}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{76}{section.B.4}%
