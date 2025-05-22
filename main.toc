@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {3.1.1}Thermalization scales}{46}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}Modeling spectral distortions}{48}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Shapes of spectral distortions}{48}{subsection.3.2.1}%
-\contentsline {subsubsection}{Temperature shift G}{48}{subsubsection*.10}%
+\contentsline {subsubsection}{Temperature shift G}{49}{subsubsection*.10}%
 \contentsline {subsubsection}{Chemical potential $\boldsymbol \mu $ distortion}{49}{subsubsection*.11}%
 \contentsline {subsubsection}{Compton y distortion}{50}{subsubsection*.12}%
 \contentsline {subsubsection}{Residual distortion}{51}{subsubsection*.14}%
