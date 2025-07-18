@@ -1,0 +1,68 @@
+\chapter{Inflation}
+Current observations of the CMB show that the early universe was almost perfectly homogeneous (the temperature anisotropies are $\Delta T/T\approx 10^{-5}$) and all the components of the cosmic fluid were extremely close to thermal equilibrium. This allowed us to recognize extra symmetries that simplified the Einstein field equations to the Friedmann one. However, the question of how the universe got so uniform remains still to be answered. 
+\section{The flatness problem and its solution}
+A first explanation to the homogeneneity of the early universe can simply be that there has been enough time to thermalize the entire observable universe. This can occur only if our patch of universe was already in causal contact at recombination (since that is the time in which the CMB was formed and then interactions got greatly reduced). Whether two point were in causal contact at a previous time can be determined by studying if each light cone of each point fully intersects in their past: this gives us a direct and easy way to determine whether the thermalization approach represents a good candidate to explain an isotropic and homogeneous universe. 
+
+In the context of cosmology the \emph{comoving particle horizon} can be used to understand if two points were in causal contact at a given time: indeed this is defined as the distance that light travelled from the first instant of existence of the universe up to a determined later time
+\begin{equation}
+    \Delta r_{\text{max}}\defeq\int_0^t\frac{dt}{a(t)}.\label{eq:comoving_particle_horizon}
+\end{equation}
+Note that this definition corresponds perfectly with the definition of conformal time.\\When dealing with distances that we observe in the sky, it is better to us the angle that separates them. For small angles the corresponding distance can be approximated by $d_{AB}\approx \theta r_{A}$, where $d_{AB}$ is the comoving distance between two points $A$ and $B$ and $r_A$ is the comoving distance between us and the point $A$. In this way, the maximum angle between two points in the sky that were causally connected at recombination can be approximated by
+$$\theta_\text{max}\approx\frac{\tau_\text{rec}}{\tau_0-\tau_\text{rec}},$$
+where we used that the distance between the two points is the comoving particle horizon at recombination and that the distance between us and $A$ corresponds to the distance travelled by the light we observe and which is emitted at recombination. The standard values $\tau_0\approx 14200 h^{-1}$ Mpc and $\tau_\text{rec}\approx 281 h^{-1}$ Mpc give that such angle is approximately $1.2^\circ$, which clearly is not enough to explain the homogeneneity which the CMB displays over the whole sky. This inconsistency is known as the \textbf{flatness problem}.
+
+To reconciliate theory predictions and observations we must deepen our insight on why the comoving particle horizon seems to be so small at recombination. Equation \eqref{eq:comoving_particle_horizon} can be rewritten, by a simple change of variable, as
+$$\Delta r_{\text{max}}\defeq\int_0^{a_{*}}\frac{d\log a}{aH},$$
+this shows that the comoving particle horizon is the logarithmic integral of $1/aH$, which is also known as the \emph{comoving Hubble horizon}. This new quantity, which we recognize to be just the inverse of $\dot a$, measures the distance that light can travel within an $e$-folding, hence whether two points can communicate in the time the universe expands of a factor $e$. For both matter dominated ($H\propto a^{-3/2}$) and radiation dominated universe ($H\propto a ^{-2}$) the Hubble horizon is increasing, therefore the main contribution to the particle horizon comes from the most recent epochs. This suggests that a way to increase the particle horizon can be to consider an initial period with a decreasing Hubble horizon, which therefore gives some large contributions at the earliest times. Such initial period, which corresponds to an accelerated expansion of the universe (recall $1/aH=1/\dot a$), takes the name of \textbf{inflation}. Physically this approach solves the flatness problem in the following way: initially all the points in the Hubble horizon could communicate within a few $e$-folds of expansion, then inflation stretches these points apart, making some of them to exit the Hubble horizon. After inflation, the points inside the Hubble horizon correspond just to a small patch of the initial one, which therefore could have been already thermalized. 
+\section{Slow-roll inflation}
+We now know that a phase of accelerated expansion is required to solve the flatness problem, however we still don't know how this phase started and what kind of cosmic fluid drove it. At a first glance a vacuum dominated universe, which leads to De Sitter spacetime ($a(t)\propto e^{H_0t}$), could seem a solution, however we must consider that inflation has to be a temporary phase which ends with the beginning of the radiation dominated era. A vacuum dominated universe, since the density of vacuum is constant while the density of matter and radiation decrease as the universe expands, would be eternal. We conclude that De Sitter spacetime is not the appropriate solution, and we should look for a cosmic fluid that resemble vacuum during inflation but that can also behave differently, ending the inflationary phase.
+
+To determine whether inflation, within a determined model, is taking place the \textbf{first slow-roll parameter} $\epsilon_1$ is used: indeed we know that inflation occurs when the Hubble radius is shrinking, namely
+\begin{equation}
+    \label{eq:First_SR_paramteter}
+    0>\frac{d}{dt}\frac{1}{aH}=-\frac{1}{a}\bigg[1+\frac{\dot H}{H^2}\bigg]\defeq-1+\epsilon_1,\qquad\Rightarrow\qquad\epsilon_1\defeq-\frac{\dot H}{H^2}<1.
+\end{equation}
+The main advantage of the first slow-roll parameter is that we can evaluate it in a specific model that we want to study and identify the conditions for its inflationary dynamics. Note that this parameter also quantifies the departure from De Sitter spacetime (since for De Sitter $H=$ const and thus $\epsilon_1=0$).
+
+At this point we have to consider which cosmic fluid drives inflation: the easiest fluid, and yet complex enough to give rise to inflationary dynamics, is a quantum scalar field, usually called \textbf{inflaton}. In general a quantum field $\phi(x)$ depends both on time and space, such scenario would spoil the symmetries of FRW metric and would require us to solve the full system of the Einstein equations coupled to the field. For this reason we assume that classically the field can be perturbatively expanded resulting in a background homogeneous field $\phi(t)$, plus some small perturbations $\delta \phi(t,\mathbf x)$, that can be later described in the context of cosmological perturbation theory. In this way, the background  inflation field determines the dynamics of inflation, and it is treated completely classically, while its perturbations will source anisotropies through quantum mechanisms.\\
+Starting from the action of the background inflaton field, with a generic potential, we can derive its equation of motion
+\begin{equation}
+    \mathcal{S}[\phi]=\int\ d^4x\sqrt{-g}\bigg(\frac{1}{2}\dot\phi^2(t)-V(\phi)\bigg)\qquad\Rightarrow\qquad\ddot\phi+3H\dot \phi+\partial_\phi V(\phi)=0,\label{eq:motion_inflaton}
+\end{equation}
+and its stress-energy tensor
+\begin{equation}
+   \tensor{T}{^\mu_\nu}=\partial^\mu\phi\partial_\nu\phi+\tensor{g}{^\mu_\nu}\mathcal{L}=
+   \begin{cases}
+    \tensor{T}{^0_0}=-\bigg(\frac{1}{2}\dot\phi^2(t)+V(\phi)\bigg)\\
+    \tensor{T}{^i_j}=\bigg(\frac{1}{2}\dot\phi^2(t)-V(\phi)\bigg)\tensor{\delta}{^i_j}\\
+   \end{cases}.
+\end{equation}
+By analogy with the stress-energy tensor of a perfect fluid, we can compute the energy density ($\rho=-\tensor{T}{^0_0}$) and the pressure ($p=\tensor{T}{^i_i}/3$) associated to the inflaton field, which turn out to be respectively
+\begin{equation}
+    \label{eq_rho_p_inflaton}
+    \rho=\frac{1}{2}\dot\phi^2(t)+V(\phi)\qquad\text{and}\qquad p=\frac{1}{2}\dot\phi^2(t)-V(\phi).
+\end{equation}
+By plugging the energy density of the inflaton in the Friedmann equation \eqref{eq:Friedmann} we find
+\begin{equation}
+    H^2=\frac{8\pi G}{3}\bigg(\frac{1}{2}\dot\phi^2(t)+V(\phi)\bigg),
+    \label{eq:Friedmann_inflaton}
+\end{equation}
+which should be solved to determine the evolution of the scale factor. However, we are not interested into the full dynamics of the scale factor and of the inflaton but just to determine the condition for inflation. As we know the first slow-roll parameter can be exploited to this end
+\begin{equation}
+    \epsilon_1=-\frac{\dot H}{H^2}=\frac{\frac{3}{2}\dot\phi^2}{\big(\frac{1}{2}\dot\phi^2+V(\phi)\big)}=\frac{4\pi G\dot\phi^2}{H^2},\label{eq:SRP_field}
+\end{equation}
+where we obtained the time derivative of the Hubble parameter by differentiating the Friedmann equation \eqref{eq:Friedmann_inflaton} in which we inserted the equation of motion \eqref{eq:motion_inflaton}
+$$2H\dot H=\frac{8\pi G}{3}\bigg(\dot\phi\ddot\phi+\partial_\phi V(\phi)\dot\phi\bigg)=-8\pi GH\dot \phi^2\quad\Rightarrow\quad \dot H=-\frac{\dot \phi^2}{16\pi G}.$$
+Form the slow-roll parameter we immediately note that inflation occurs when $\dot \phi\ll V(\phi)$. Note that in this limit the inflaton field behaves as vacuum $$\omega\defeq\frac{p}{\rho}=\frac{\frac{1}{2}\dot\phi^2-V(\phi)}{\frac{1}{2}\dot\phi^2+V(\phi)}\xrightarrow{\dot\phi\ll V(\phi)}-1,$$
+and thus, as we expect, we recover an approximated version of De Sitter spacetime.
+
+The slow-roll condition is not the only requirement which we should make; indeed, if the inflaton field was to meet the condition $\epsilon_1<1$ for short time, inflation would end too soon. We therefore also require, to maintain inflationary conditions, that $\epsilon_1$ varies slowly: this is done by defining the \textbf{second slow-roll parameter}
+\begin{equation}
+    \epsilon_2\defeq\frac{\dot\epsilon_1}{H\epsilon_1}=2\frac{\ddot\phi}{\dot\phi H}-2\frac{\dot H}{H^2},\label{eq:second_sr_parameter}
+\end{equation}
+where we also computed its value for the scalar field model. This simple calculation shows that to maintain a slow-roll inflation also the condition $\ddot\phi\ll H\dot\phi$ should be satisfied. Indeed, imposing the above conditions, the equations of motion of the inflaton and of the scale factor reduce to
+\begin{equation}
+    \label{eq:SR_equation_motion}
+    \dot\phi \approx-\frac{\partial_\phi V(\phi)}{3H},\qquad H^2\approx\frac{8\pi G}{3}V(\phi).
+\end{equation}
+These two equations shows that the dynamics of slow-roll inflation is fully determined by the potential of the inflaton. 

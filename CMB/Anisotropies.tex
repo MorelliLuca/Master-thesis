@@ -441,7 +441,7 @@ To individuate the appropriate basis for the spherical harmonics expansion, let'
 \end{equation}
 Comparing this definition and the previous basis, we can easily find the transformation between the two polarizations
 \begin{align*}
-    h_{\boldsymbol{+}}&=-\sqrt\frac{3}{2}(h^{(+)}+h^{(-)}),\qquad &h^{(+)}&=\frac{1}{\sqrt{6}}(h_{\boldsymbol{+}}-ih_{\boldsymbol{-}}),\\ h_{\boldsymbol{+}}&=-i\sqrt\frac{3}{2}(h^{(+)}-h^{(-)}),\qquad &h^{(-)}&=-\frac{1}{\sqrt{6}}(h_{\boldsymbol{+}}+ih_{\boldsymbol{-}}).
+    h_{\boldsymbol{\times}}&=-\sqrt\frac{3}{2}(h^{(+)}+h^{(-)}),\qquad &h^{(+)}&=-\frac{1}{\sqrt{6}}(h_{\boldsymbol{\times}}-ih_{\boldsymbol{+}}),\\ h_{\boldsymbol{+}}&=-i\sqrt\frac{3}{2}(h^{(+)}-h^{(-)}),\qquad &h^{(-)}&=-\frac{1}{\sqrt{6}}(h_{\boldsymbol{\times}}+ih_{\boldsymbol{+}}).
 \end{align*}
 Let's now project the versor $\versor p$, defined as above, onto $\mathbf{e}^{(\pm)}$, 
 $$\mathbf{e}_{ij}^{(\pm)}\hat p^i\hat p^j=\sin^2\theta[\cos^2\phi-\sin^2\phi\pm2i\sin\phi\cos\phi]=\sin^2\theta e^{\pm i2\phi},$$
@@ -499,7 +499,7 @@ In a similar way, also the equations for the anisotropies must be corrected, giv
 \end{subequations}
 \
 
-Let's stop for a second to appreciate that the equations \eqref{eq:Theta_multipole_equation_tensor}, \eqref{eq:E_multipole_equation_tensor} and \eqref{eq:B_multipole_equation_tensor} do not mix the $\pm2$ modes. Furthermore, for both values of $m$ the equations read the same, this means that from now on we can study only the $m=2$ modes and then use the results to obtain the $m=-2$ ones.
+Let's stop for a second to appreciate that the equations \eqref{eq:Theta_multipole_equation_tensor}, \eqref{eq:E_multipole_equation_tensor} and \eqref{eq:B_multipole_equation_tensor} do not mix the $\pm2$ modes. Furthermore, for both values of $m$ the equations for $\tilde\Theta_\ell^{(m)}$ read the same, this means that we can study only the $m=2$ modes and then use the results to obtain the $m=-2$ ones. However this does not hold for the polarizations.
 \section{Approximate solutions for the dynamics of the anisotropies}\label{sec:CMBApproximations}
 All the differential equations we derived are pretty hare to solve analytically, since they are strongly coupled and in theory they are an infinite number (as much as the number of multipoles). Usually we resort to numerical methods to obtain exact results, however some approximations can be useful to understand the general behavior of the CMB or even to simplify some numerical calculations.
 \subsection{The tight coupling approximation}
@@ -519,6 +519,7 @@ that using the definition of $\Pi^{(\pm2)}=\frac{1}{10}[\tilde\Theta_{2}^{(\pm2)
 \end{equation}
 This approximation will be particularly useful in the next chapter to study the spectral distortions associated to the dissipation of gravitational waves.
 \subsection{Improved tight coupling approximation}
+\label{sec:IMPROVED_TightCouplingApproximation}
 To conclude we want to present a simple way to improve the tight coupling approximation relaxing the approximation of stationary solutions, without spoiling the reduced number of multipoles excited. For the purpose of this work, we are going to focus primarily on tensor perturbations as illustrated in \cite{Chluba_tens_diss}.
 Consider equations \eqref{eq:Theta_multipole_equation_tensor}, \eqref{eq:E_multipole_equation_tensor} and \eqref{eq:B_multipole_equation_tensor} with conformal time: working in tight coupling approximation we can neglect every multipole except for the quadrupoles. In this way we get
 \begin{align*}

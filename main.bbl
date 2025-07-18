@@ -1,5 +1,37 @@
 \begin{thebibliography}{10}
 
+\bibitem{NANOGrav}
+Gabriella Agazie, Akash Anumarlapudi, Anne~M. Archibald, Zaven Arzoumanian,
+  Paul~T. Baker, Bence Bécsy, Laura Blecha, Adam Brazier, Paul~R. Brook, Sarah
+  Burke-Spolaor, Rand Burnette, Robin Case, Maria Charisi, Shami Chatterjee,
+  Katerina Chatziioannou, Belinda~D. Cheeseboro, Siyuan Chen, Tyler Cohen,
+  James~M. Cordes, Neil~J. Cornish, Fronefield Crawford, H.~Thankful Cromartie,
+  Kathryn Crowter, Curt~J. Cutler, Megan~E. DeCesar, Dallas DeGan, Paul~B.
+  Demorest, Heling Deng, Timothy Dolch, Brendan Drachler, Justin~A. Ellis,
+  Elizabeth~C. Ferrara, William Fiore, Emmanuel Fonseca, Gabriel~E. Freedman,
+  Nate Garver-Daniels, Peter~A. Gentile, Kyle~A. Gersbach, Joseph Glaser,
+  Deborah~C. Good, Kayhan Gültekin, Jeffrey~S. Hazboun, Sophie Hourihane,
+  Kristina Islo, Ross~J. Jennings, Aaron~D. Johnson, Megan~L. Jones, Andrew~R.
+  Kaiser, David~L. Kaplan, Luke~Zoltan Kelley, Matthew Kerr, Joey~S. Key,
+  Tonia~C. Klein, Nima Laal, Michael~T. Lam, William~G. Lamb, T.~Joseph
+  W.~Lazio, Natalia Lewandowska, Tyson~B. Littenberg, Tingting Liu, Andrea
+  Lommen, Duncan~R. Lorimer, Jing Luo, Ryan~S. Lynch, Chung-Pei Ma, Dustin~R.
+  Madison, Margaret~A. Mattson, Alexander McEwen, James~W. McKee, Maura~A.
+  McLaughlin, Natasha McMann, Bradley~W. Meyers, Patrick~M. Meyers, Chiara
+  M.~F. Mingarelli, Andrea Mitridate, Priyamvada Natarajan, Cherry Ng, David~J.
+  Nice, Stella~Koch Ocker, Ken~D. Olum, Timothy~T. Pennucci, Benetge B.~P.
+  Perera, Polina Petrov, Nihan~S. Pol, Henri~A. Radovan, Scott~M. Ransom,
+  Paul~S. Ray, Joseph~D. Romano, Shashwat~C. Sardesai, Ann Schmiedekamp, Carl
+  Schmiedekamp, Kai Schmitz, Levi Schult, Brent~J. Shapiro-Albert, Xavier
+  Siemens, Joseph Simon, Magdalena~S. Siwek, Ingrid~H. Stairs, Daniel~R.
+  Stinebring, Kevin Stovall, Jerry~P. Sun, Abhimanyu Susobhanan, Joseph~K.
+  Swiggum, Jacob Taylor, Stephen~R. Taylor, Jacob~E. Turner, Caner Unal,
+  Michele Vallisneri, Rutger van Haasteren, Sarah~J. Vigeland, Haley~M. Wahl,
+  Qiaohong Wang, Caitlin~A. Witt, and Olivia Young.
+\newblock The nanograv 15 yr data set: Evidence for a gravitational-wave
+  background.
+\newblock {\em The Astrophysical Journal Letters}, 951(1):L8, June 2023.
+
 \bibitem{10.1093/mnras/226.3.655}
 J.~R. Bond and G.~Efstathiou.
 \newblock The statistics of cosmic background radiation fluctuations.
@@ -29,6 +61,16 @@ Jens Chluba, Liang Dai, Daniel Grin, Mustafa A.~Amin, and Marc Kamionkowski.
 \newblock Spectral distortions from the dissipation of tensor perturbations.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   446(3):2871–2886, November 2014.
+
+\bibitem{planck2018results}
+Planck Collaboration.
+\newblock Planck 2018 results. vi. cosmological parameters.
+\newblock {\em Astronomy \& Astrophysics}, 641:A6, 2020.
+
+\bibitem{Dicus_Repko}
+Duane~A. Dicus and Wayne~W. Repko.
+\newblock {Comment on damping of tensor modes in cosmology}.
+\newblock {\em Phys. Rev. D}, 72:088302, 2005.
 
 \bibitem{dodelson}
 Scott Dodelson and Fabian Schmidt.
@@ -66,6 +108,18 @@ Matteo Lucca, Nils Schöneberg, Deanna~C. Hooper, Julien Lesgourgues, and Jens
 \newblock The synergy between cmb spectral distortions and anisotropies.
 \newblock {\em Journal of Cosmology and Astroparticle Physics},
   2020(02):026–026, February 2020.
+
+\bibitem{Paoletti_2009}
+D.~Paoletti, F.~Finelli, and F.~Paci.
+\newblock The scalar, vector and tensor contributions of a stochastic
+  background of magnetic fields to cosmic microwave background anisotropies.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  396(1):523–534, June 2009.
+
+\bibitem{Weinberg_nu_dump}
+Steven Weinberg.
+\newblock Damping of tensor modes in cosmology.
+\newblock {\em Physical Review D}, 69(2), January 2004.
 
 \bibitem{Zeldovich1972}
 Y.~B. {Zeldovich}, A.~F. {Illarionov}, and R.~A. {Syunyaev}.
