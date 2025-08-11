@@ -1,13 +1,26 @@
 \chapter{GW in the post-inflationary universe}
-In this section we will explore the evolution of gravitational waves in the post-inlationary universe: understanding this is fundamental to predict how the primordial power spectrum we found can impact present observable and which phenomena can magnify or reduce the resulting signal. To begin with we will describe free propagation of gravitational waves in the different eras of the universe to then introduce interactions that can alter this.
+In this section we will explore the evolution of gravitational waves in the post-inlationary universe: understanding this is fundamental to predict how the primordial power spectrum we found can impact present observable and which phenomena can magnify or reduce the resulting signal. To begin with we will describe free propagation of gravitational waves in the different eras of the universe to then introduce interactions that can alter this. 
 
 \section{Free gravitational waves in FRW universe}
-While dealing with gravitational waves in inflationary scenario, we already gave the action of gravitational waves on the FRW background
+\label{sec:free_GW}
+To study the propagation of gravitational waves in the FRW universe we must start from the Hilbert-Einstain action: at second order with respect to the tensor metric perturbations $h_ij$ it reads
 \begin{equation*}
-    \mathcal{S} [h_{ij}]=\frac{1}{64\pi G}\int d^4xa^2\Big[(h'_{ij})^2-(h_{ij,k})^2\Big]=\frac{1}{64\pi G}\sum_{\lambda=+,\times}\int d^4xa^2\Big[(h'_{(\lambda)})^2-(h_{(\lambda),k})^2\Big],
+    \mathcal{S} [h_{ij}]=\frac{1}{64\pi G}\int d^4xa^2\Big[(h'_{ij})^2-(h_{ij,k})^2\Big].
 \end{equation*}
-where we used the decomposition of gravitational waves in their two polarizations
-$$h_{ij}=\sum_{\lambda=+,\times}h_{(\lambda)}\boldsymbol\epsilon^\lambda_{ij},\qquad \text{with }\boldsymbol{\epsilon}^\lambda_{ij}\boldsymbol{\epsilon}^{(\lambda) ij}=1.$$
+Since the tensor $h_{ij}$ is a transverse traceless symmetric 3-tensor its dynamical degrees of freedom are reduced: to better see this let's move to Fourier space. A transverse symmetric 3-tensor must now satisfy the condition $k^i\tilde h_{ij}=k^i \tilde h_{ji}=0$ which, by rotating the axis such that $\mathbf k\parallel\versor z$, reads $\tilde{h}_{i1}=\tilde{h}_{1i}=0$. Further imposing the tracless condition we have $\tilde{h}_{11}=-\tilde h_{22}$, since by the transverlaity condition $\tilde{h}_{33}=0$. Lastly, being a symmetric tensor we have $\tilde{h}_{12}=\tilde{h}_{21}$. This showed that gravitational waves posses only 2 dynamical degrees of freedom, which we call \emph{polarizations}: indeed, defining $\tilde{h}_+\defeq\tilde{h}_{12}$ and $ \tilde{h}_\times\defeq\tilde{h}_{11}$
+\begin{equation}
+    \tilde{h}_{ij}=\tilde{h}_+\boldsymbol{\epsilon}_{ij}^++\tilde{h}_{\times}\boldsymbol{\epsilon}_{ij}^\times=
+    \begin{pmatrix}
+\tilde h_+ & \tilde h_\times & 0  \\ 
+\tilde h_\times & -\tilde h_+ & 0  \\
+0&0&0
+    \end{pmatrix}\qquad\text{with }\boldsymbol{\epsilon}^\lambda_{ij}\boldsymbol{\epsilon}^{\lambda}_{ij}=1.
+    \label{eq:GW-polarizations}
+\end{equation}
+This decomposition allows us to rewrite the action as the sum of the actions of each polarization, which turns out ro be the same:
+\begin{equation*}
+    \mathcal{S} [h_{ij}]=\frac{1}{64\pi G}\sum_{\lambda=+,\times}\int d^4xa^2\Big[(h'_{(\lambda)})^2-(h_{(\lambda),k})^2\Big],
+\end{equation*}
 Varying this action the equation of motion for both polarizations reads
 \begin{equation}
     h''+2\frac{a'}{a}h'-\boldsymbol{\nabla}^2h=0,\label{eq:EOM_GW_FREE}
@@ -28,7 +41,7 @@ then by fixing $\alpha$ such that $\alpha+\beta=1/2$
 $$\frac{d^2J_\nu}{dx^2}+\frac{1}{x}\frac{dJ_\nu}{dx}+\bigg(1+\frac{(\beta-\frac{1}{2})^2}{x^2}\bigg)J_\nu=\frac{d^2J_\nu}{dx^2}+\frac{1}{x}\frac{dJ_\nu}{dx}+\bigg(1-\frac{\nu^2}{x^2}\bigg)J_\nu=0.$$
 The above shows that the solutions to the gravitational wave equation are the Bessel function, of order $\nu=\beta-\tfrac12$ times $(k\tau)^{-\beta+1/2}$,
 $$\tilde h_k(\tau)=(k\tau)^{\frac{1}{2}-\beta}\bigg[C_1(\mathbf{k}) J_{\beta-\frac{1}{2}}(k\tau)+C_2(\mathbf{k}) Y_{\beta-\frac{1}{2}}(k\tau)\bigg],$$
-where $J_\nu$ and $Y_\nu$ are the \emph{Bessel functions of the first and second kind}, respectively, and $\beta$ depends on the background cosmology. Note that the above solution can be expressed in a nicer form by using that the \emph{spherical Bessel functions} can be expressed as $j_\ell(x)=\sqrt{\frac{\pi}{2x}}J_{\ell+\frac{1}{2}},\ y_\ell(x)=\sqrt{\frac{\pi}{2x}}Y_{\ell+\frac{1}{2}}$, by reabsorbing extra factors and $k^{\beta}$ in the two constants $C_1$ and $C_2$ and recalling that $a\propto\tau^{\beta}$, so that we have
+where $J_\nu$ and $Y_\nu$ are the \emph{Bessel functions of the first and second kind}, respectively, and $\beta$ depends on the background cosmology. Note that the above solution can be expressed in a nicer form by using the \emph{spherical Bessel functions}, which are defined by $j_\ell(x)=\sqrt{\frac{\pi}{2x}}J_{\ell+\frac{1}{2}},\ y_\ell(x)=\sqrt{\frac{\pi}{2x}}Y_{\ell+\frac{1}{2}}$. Reabsorbing the extra factors and $k^{\beta}$ in the two constants $C_1$ and $C_2$ and recalling that $a\propto\tau^{\beta}$ we have
 \begin{equation}
     \label{eq:free_GW_sol}
     \tilde h_k(\tau)=C_1(\mathbf{k})\tau\frac{j_{\beta-1}(k\tau)}{a(\tau)}+C_2(\mathbf{k})\tau\frac{y_{\beta-1}(k\tau)}{a(\tau)}.
@@ -36,59 +49,55 @@ where $J_\nu$ and $Y_\nu$ are the \emph{Bessel functions of the first and second
 Note that the above solution holds also during slow-roll inflation, when a simple calculation gives $\beta\approx-1$. Lastly, let us appreciate that super Hubble horizon and sub Hubble horizon regimes we recover the behaviors which we already discovered studying inflation: from equation \eqref{eq:EOM_GW_FREE}, in the limit $k^2\gg a'/a=a H$ oscillating modes are displayed at sub Hubble horizon scales while for $k^2\ll\ a'/a=a H$ the solution reads:
 $$\tilde h_k(\tau)=C_1(\mathbf k)+C_2(\mathbf k)\int\frac{d\tau}{a^2},$$ which is a combination of a constant mode and a mode that decays as the universe expands.
 \section{Interacting GW}
-\subsection{Neutrino damping}
-\label{sec:neutrino_damping}
-The previous section was devoted to study the evolution of tensor perturbations, namely primordial gravitational waves, in the free case, when no matter perturbation is coupled to these modes. Weinberg \cite{Weinberg_nu_dump} showed that free streaming neutrinos (neutrinos that decoupled from the plasma and can move freely without scatterings) can source anisotropic stress that then couples with the gravitational waves reducing their amplitudes after having crossed back the horizon. In this section we will illustrate this behavior.
-
-Perturbing the Einstein field equations with tensor perturbations, in general results in the following
+The previous section was devoted to study the evolution of tensor perturbations, namely primordial gravitational waves, in the free case, when no matter perturbation is coupled to these modes.
+In general, perturbing the Einstein field equations with tensor perturbations, results in the following
 $$\delta G_{\mu\nu}=8\pi G\delta T_{\mu\nu}\quad \Rightarrow\qquad h''_{ij}+2\frac{a'}{a}h'_{ij}-\boldsymbol{\nabla}^2 h_{ij}=16\pi G a^2\delta T_{ij},$$
-where $h_{ij}$ is the usual transverse traceless tensor characteristic of gravitational waves. When we studied matter perturbations (section \ref{sec:perturbations}) we allowed the stress-energy tensor to contain a spatial transverse traceless contribution called \emph{anisotropic stress}. From the above equation it is clear that, accordingly to the symmetries of $h_{ij}$, the only term that can appears at the right-hand side, from the stress-energy tensor, is the anisotropic stress:
+where $\delta T_{ij}$ is the perturbation of the spatial part of the energy-momentum tensor of the cosmic fluid. When we studied matter perturbations (section \ref{sec:perturbations}) we allowed this tensor to contain a spatial transverse traceless contribution called \emph{anisotropic stress}. From the above equation it is clear that, accordingly to the symmetries of $h_{ij}$, the only term that can appears at the right-hand side, from the energy-momentum tensor, is the anisotropic stress:
 \begin{equation}
     h''_{ij}+2\frac{a'}{a}h'_{ij}-\boldsymbol{\nabla}^2 h_{ij}=16\pi G a^2\pi_{ij}.\label{eq:GW_EOM_stress}
 \end{equation}
-We will now proceed to show that a non-zero $\pi_{ij}$ can be sourced by free streaming neutrinos, nevertheless keep in mind that an anisotropic stress can be sourced also by other phenomena as magnetic fields or photons.
+In the next section we will study three different sources of anisotropic stress that can influence the evolution of primordial gravitational waves.
+\subsection{Neutrino damping}
+\label{sec:neutrino_damping}
+ Weinberg \cite{Weinberg_nu_dump} showed that free streaming neutrinos, neutrinos that decoupled from the plasma and can move freely without being scattered (Section \ref{sec:decoupling}) can source anisotropic stress that then couples with the gravitational waves reducing their amplitudes after having crossed back the Hubble horizon. In this section we will illustrate this behavior.
 
-We now need to understand the behavior of neutrinos in the early universe: this is described by the \emph{Boltzmann equation}. Essentially, the Boltzmann equation describes the time evolution of the \emph{phase space distribution} $f(x,\mathbf p)$ of a determined specie, in general it reads
-\begin{equation}
-    \hat{L}[f]=C[f],\quad \text{with } \hat{L}[f]\defeq\frac{df}{dt}.
-\end{equation}
-The left hand-side is the \emph{Liouville operator}, which describes the evolution of $f(x,\mathbf p)$ accounting for the effects of curved spacetime, while the right hand-side is the \emph{collision operator}, which instead describes all the possible interactions among the species in the plasma. Since we will consider decoupled neutrinos the collision term will be set to zero from now on, hence the Boltzmann equation will be just a conservation equation. By the chain rule, the Liouville operator can be expressed in its explicit form
+To obtain the anisotropic stress related to neutrinos we shall understand their behavior in the early universe: as we know from Section \ref{sec:BoltzmannEquation}, this is described by the \emph{Boltzmann equation}. Describing decoupled neutrinos the collision term must be set to zero, hence the Boltzmann equation will be just a conservation equation. Following the calulations carried out by Weinberg, we will not use the local momentum $\mathbf{p}$ to write the Boltzmann equation. Instead, the comoving momentum $\mathbf{P}$ allows us to make more explicit which term can depend on the metric and source anisotropic stresses. By the chain rule, the Liouville operator can be expressed as
 \begin{align*}
-    \hat L[f]&=\frac{df}{dt}= \frac{\partial f}{\partial t}+\frac{\partial f}{\partial x^i}\frac{dx^i}{dt}+\frac{\partial f}{\partial p_i}\frac{dp_i}{dt},
+    \hat L[f]&=\frac{df}{dt}= \frac{\partial f}{\partial t}+\frac{\partial f}{\partial x^i}\frac{dx^i}{dt}+\frac{\partial f}{\partial P_i}\frac{dP_i}{dt},
 \end{align*}
 where we can evaluate all the remaining total derivatives with respect to time from the relativistic equations of motion:
-$$\frac{dx^i}{dt}=\frac{dx^i/d\lambda}{dx^0/d\lambda}=\frac{p^i}{p^0},\qquad \frac{dp^i}{d\lambda}=\frac{dp^i}{dt}p^0=-\Gamma^i_{\mu\nu} p^\mu p^\nu,$$
-however note that in the Lioville operator we chose to use $p_i$ as the momentum variable of the phase space, a simple calculation yields
+$$\frac{dx^i}{dt}=\frac{dx^i/d\lambda}{dx^0/d\lambda}=\frac{P^i}{P^0},\qquad \frac{dP^i}{d\lambda}=\frac{dP^i}{dt}P^0=-\Gamma^i_{\mu\nu} P^\mu P^\nu.$$
+A simple calculation yields
 \begin{align*}
-        \frac{dp_i}{dt}=&\frac{d}{dt}g_{ij}p^j=g_{ij,0}p^j+h_{ij,k}p^ip^k+g_{ij}\frac{dp^j}{dt}\\
-        &=g_{ij,0}p^j+g_{ij,k}p^jp^k-\Gamma^{i}_{\mu\nu}\frac{p^\mu p^\nu}{p^0}\\
-        &=g_{ij,0}p^j+g_{ij,k}p^jp^k-2\frac{1}{2}g^{ik}g_{jk,0}p^j-\frac{1}{2}g^{ih}(g_{hk,j}+g_{hj,k}-g_{jk,h})\frac{p^kp^j}{p^0}\\
-        &=\frac{1}{2}g_{jk,i}\frac{p^kp^j}{p^0}
+        \frac{dP_i}{dt}=&\frac{d}{dt}g_{ij}P^j=g_{ij,0}P^j+h_{ij,k}P^iP^k+g_{ij}\frac{dP^j}{dt}\\
+        &=g_{ij,0}P^j+g_{ij,k}P^jP^k-\Gamma^{i}_{\mu\nu}\frac{P^\mu P^\nu}{P^0}\\
+        &=g_{ij,0}P^j+g_{ij,k}P^jP^k-2\frac{1}{2}g^{ik}g_{jk,0}P^j-\frac{1}{2}g^{ih}(g_{hk,j}+g_{hj,k}-g_{jk,h})\frac{P^kP^j}{P^0}\\
+        &=\frac{1}{2}g_{jk,i}\frac{P^kP^j}{P^0}
 \end{align*}
 In this way the Boltzmann equation reads
 \begin{equation}
-    \frac{\partial f}{\partial t}+\frac{\partial f}{\partial x^i}\frac{p^i}{p^0}+\frac{\partial f}{\partial p_i}\frac{p^jp^k}{2p^0}g_{jk,i}=0. \label{eq:Boltzmann_neutrinos}
+    \frac{\partial f}{\partial t}+\frac{\partial f}{\partial x^i}\frac{P^i}{P^0}+\frac{\partial f}{\partial P_i}\frac{P^jP^k}{2P^0}g_{jk,i}=0. \label{eq:Boltzmann_neutrinos}
 \end{equation}
-We will now assume that initially at some time $t_1$, just after decoupling from the plasma, neutrinos are described by a \emph{Fermi-Dirac} distribution with zero chemical potential:
-$$f(\mathbf{x},\mathbf{p},t_1)\defeq\bar f(\mathbf{x},\mathbf{p})=\bigg[\exp\bigg(\sqrt{g^{ij}(\mathbf x,t_1)p_ip_j}/k_B T_1\bigg)+1\bigg]^{-1},$$
+We will now assume that initially at some time $t_1$, just after decoupling from the plasma, neutrinos, that were previously in equilibrium with the plasma, are described by a \emph{Fermi-Dirac} distribution with negligible chemical potential:
+$$f(\mathbf{x},\mathbf{P},t_1)\defeq\bar f(\mathbf{x},\mathbf{P})=\bigg[\exp\bigg(\sqrt{g^{ij}(\mathbf x,t_1)P_iP_j}/k_B T_1\bigg)+1\bigg]^{-1},$$
 where $T_1$ is the temperature of the plasma at $t_1$ and $k_B$ is the Boltzmann constant. In the absence of perturbations the Boltzmann equation would maintain the above solution as time evolves. However, introducing metric perturbations we now have to allow for perturbations $\delta f$ of the phase space distribution to arise with the condition $\delta f(\mathbf x,\mathbf p, t_1)=0$, so that overall we find
-$$f(x,\mathbf p)=\bigg[\exp\bigg(\sqrt{g^{ij}(\mathbf x,t_1)p_ip_j}/k_B T_1\bigg)+1\bigg]^{-1}+\delta f(\mathbf{x},\mathbf{p},t).$$
+$$f(x,\mathbf P)=\bigg[\exp\bigg(\sqrt{g^{ij}(\mathbf x,t_1)P_iP_j}/k_B T_1\bigg)+1\bigg]^{-1}+\delta f(\mathbf{x},\mathbf{P},t).$$
 By plugging the above in the Boltzmann equation \eqref{eq:Boltzmann_neutrinos} and keeping only up to first order terms, the equation of motion for the perturbations $\delta f$ is obtained:
 \begin{align*}
-   0&=\frac{\partial \delta f}{\partial t}+\frac{\partial \delta f}{\partial x^i}\frac{p^i}{p^0}+\frac{p^i}{p^0}\frac{\partial }{\partial x^i}\frac{1}{e^{\sqrt{p_ip^j}/k_BT_1}+1}+\frac{p^jp^k}{2p^0}g_{jk,i}\frac{\partial }{\partial p_i}\frac{1}{e^{\sqrt{p_ip^j}/k_BT_1}+1}\\&= \frac{\partial \delta f}{\partial t}+\frac{\partial \delta f}{\partial x^i}\frac{\hat p^i}{a}+\frac{\hat p^k}{a}\bar f'(p)\frac{p_ip_j}{2p^0}\tensor{g}{^i^j_,_k}(\mathbf{x},t_1)+\bar f'(p)p^i\frac{p^jp^k}{2p^0}g_{jk,i}(\mathbf x, t) \\&= \frac{\partial \delta f}{\partial t}+\frac{\partial \delta f}{\partial x^i}\frac{\hat p^i}{a}-\frac{p}{2a}\bar f'(p)\hat p_k\hat p_i\hat p_j\tensor{h}{_i_j_,_k}(\mathbf{x},t_1)+\frac{p}{2a}\bar f'(p)p_k\hat p_j\hat p_ih_{ji,k}(\mathbf x, t)\\
-   &\Longrightarrow\qquad \frac{\partial \delta f}{\partial t}+\frac{\partial \delta f}{\partial x^i}\frac{\hat p^i}{a}=\frac{p}{2a}\bar f'(p)\hat p_k\hat p_i\hat p_j[\tensor{h}{_i_j}(\mathbf{x},t_1)-h_{ij}(\mathbf x, t)]_{,k},
+   0&=\frac{\partial \delta f}{\partial t}+\frac{\partial \delta f}{\partial x^i}\frac{P^i}{P^0}+\frac{P^i}{P^0}\frac{\partial }{\partial x^i}\frac{1}{e^{\sqrt{P_iP^j}/k_BT_1}+1}+\frac{P^jP^k}{2P^0}g_{jk,i}\frac{\partial }{\partial P_i}\frac{1}{e^{\sqrt{P_iP^j}/k_BT_1}+1}\\&= \frac{\partial \delta f}{\partial t}+\frac{\partial \delta f}{\partial x^i}\frac{\hat P^i}{a}+\frac{\hat P^k}{a}\bar f'(P)\frac{P_iP_j}{2P^0}\tensor{g}{^i^j_,_k}(\mathbf{x},t_1)+\bar f'(P)P^i\frac{P^jP^k}{2P^0}g_{jk,i}(\mathbf x, t) \\&= \frac{\partial \delta f}{\partial t}+\frac{\partial \delta f}{\partial x^i}\frac{\hat P^i}{a}-\frac{P}{2a}\bar f'(P)\hat P_k\hat P_i\hat P_j\tensor{h}{_i_j_,_k}(\mathbf{x},t_1)+\frac{P}{2a}\bar f'(P)P_k\hat P_j\hat P_ih_{ji,k}(\mathbf x, t)\\
+   &\Longrightarrow\qquad \boxed{\frac{\partial \delta f}{\partial t}+\frac{\partial \delta f}{\partial x^i}\frac{\hat P^i}{a}=\frac{P}{2a}\bar f'(P)\hat P_k\hat P_i\hat P_j\big[\tensor{h}{_i_j}(\mathbf{x},t_1)-h_{ij}(\mathbf x, t)\big]_{,k}},
 \end{align*}
-where the prime indicates derivatives with respect to the argument of the function and $\hat p^i\defeq p^i/p$ with $p\defeq{\sqrt{p_ip_j\delta^{ij}}}$. This differential equation can be integrated quite easily if we assume that the $\mathbf x$ dependence of $h_{ij}$ and $\delta f$ is solely due to a factor $e^{i\mathbf{k\cdot x}}$ and by defining a new variable $u= k\int_{t_1}^{t}dt'/a(t')$: in this way we have
-$$\frac{a}{k}\frac{\partial \delta f}{\partial t}+i\delta f \mathbf{\hat p\cdot\hat k}=\frac{\partial}{\partial u}\bigg(\delta f e^{i\mathbf{\hat p\cdot\hat k}u}\bigg)=i\frac{p}{2}\bar f'(p)\mathbf{\hat p\cdot\hat k}\hat p_i\hat p_j[\tensor{h}{_i_j}(t_1)-h_{ij}( t)]$$
+where the prime indicates derivatives with respect to the argument of the function and $\hat P^i\defeq P^i/P$ with $P\defeq{\sqrt{P_iP_j\delta^{ij}}}=a P^0$. This differential equation can be integrated quite easily if we assume that the $\mathbf x$ dependence of $h_{ij}$ and $\delta f$ is solely due to a factor $e^{i\mathbf{k\cdot x}}$ and by defining a new variable $u= k\int_{t_1}^{t}dt'/a(t')$: in this way we have
+$$\frac{a}{k}\frac{\partial \delta f}{\partial t}+i\delta f \mathbf{\hat P\cdot\hat k}=\frac{\partial}{\partial u}\bigg(\delta f e^{i\mathbf{\hat P\cdot\hat k}u}\bigg)=i\frac{P}{2}\bar f'(P)\mathbf{\hat P\cdot\hat k}\ \hat P_i\hat P_j\big[\tensor{h}{_i_j}(t_1)-h_{ij}( t)\big]$$
 which upon integration, with the initial condition $\delta f(t=t_1)=0$, gives
 \begin{equation}
-    \delta f(u,\mathbf p) = \frac{i}{2}\bar f'(p)\mathbf{\hat p\cdot\hat k}\hat p_i\hat p_j\int_{0}^{u}du'e^{i\mathbf{\hat p\cdot\hat k}(u'-u)}(\tensor{h}{_i_j}(0)-h_{ij}(u')).
+    \delta f(u,\mathbf P) = \frac{i}{2}\bar f'(P)\mathbf{\hat P\cdot\hat k}\hat P_i\hat P_j\int_{0}^{u}du'e^{i\mathbf{\hat P\cdot\hat k}(u'-u)}\big(\tensor{h}{_i_j}(0)-h_{ij}(u')\big).
 \end{equation}
-We now proceed to compute the anisotropic stress tensor $\pi_{ij}$, which accordingly to our definition in section \ref{sec:perturbations} corresponds to the transverse traceless spatial part of the stress-energy tensor, that for a given phase space distribution reads
+We now proceed to compute the anisotropic stress tensor $\pi_{ij}$, which accordingly to our definition in Section \ref{sec:BoltzmannEquation} corresponds to the transverse traceless spatial part of the energy-momentum tensor, that for a given phase space distribution reads
 \begin{align*}
-    \tensor{T}{^i_j}=\frac{1}{\sqrt{\det g}}\int dp_1dp_2dp_3\ f(\mathbf x,\mathbf p,t)\frac{p^ip_j}{p^0}.
+    \tensor{T}{^i_j}=\frac{1}{\sqrt{- g}}\int dP_1dP_2dP_3\ f(\mathbf x,\mathbf p,t)\frac{P^iP_j}{P^0}.
 \end{align*}
-In the above equation three first order terms are produced: by the perturbation $\delta f$ and by the momenta $p^i$ and $p^0$ through the metric ($p^i=g^{ij}p_j$ and $p^0=\sqrt{g^ijp_ip_j}$). Combining these contributions together Weinberg shows that the anisotropic stress reads
+In the above equation three first order terms are produced: by the perturbation $\delta f$ and by the momenta $P^i$ and $P^0$ through the metric ($P^i=g^{ij}P_j$ and $P^0=\sqrt{g^ijP_iP_j}$). Combining these contributions together Weinberg \cite{Weinberg_nu_dump} shows that the anisotropic stress reads
 \begin{equation}
     \pi_{ij}=-4\bar\rho_\nu(u)\int_0^u dU\ K(u-U)h'_{ij}(U),\quad \text{where}\quad K(s)\defeq\frac{1}{16}\int_{-1}^{+1}dx(1-x^2)^2e^{ixs},\label{eq:pi_ij_neutrinos}
 \end{equation}
@@ -114,31 +123,42 @@ with $A$ and $\delta$ are constants that must be computed numerically. Dicus and
     h(u)=\sum_{n\text{ even}}^{\infty}a_n j_n(u).
 \end{equation}
  In their work they have computed the numerical coefficients $a_0=1,\ a_2=0.0243807,\ a_4=5.28424\times10^{-2},\ a_6= 6.13545\times10^{-3}.\ a_8=2.07534\times10^{-4},\ a_{10}=6.16273\times10^{-5},\ a_{12}=-4.78885\times10^{-6}$ and with smaller and smaller higher coefficients. 
- Moreover, considering that for $u\to0$ all the even order Bessel functions behave as $(-1)^{n/2}\sin(u)/u$, the factor $A$ can be approximated assume
+ Moreover, considering that for $u\to0$ all the even order Bessel functions behave as $(-1)^{n/2}\sin(u)/u$, the factor $A$ can be approximated to be
 $$A\approx \sum_{n=0}^{5}(-1)^n a_{2n}\approx 0.80313,$$
 which shows that the effect of the anisotropic stress is to reduce the amplitude of horizon crossing tensor perturbations.
 
 \subsection{Photon damping}
 \label{sec:photon_damping}
-A further interaction that can damp the amplitude of primordial gravitational waves is the interaction with photons. Without going in the details of the calculations, due to their symmetries, primordial gravitational waves are directly coupled to the quadrupole momentum of the photon anisotropies. This happens precisely because projecting the polarizations $\mathbf{e}_{ij}^\lambda$ onto the wave number vector yields\footnote{In the following calculation polarization basis introduced by Hu and White in \cite{HuWhite} has been used.}
-$$\mathbf{e}_{ij}^{(\pm)}\hat k^i\hat k^j=\sin^2\theta[\cos^2\phi-\sin^2\phi\pm2i\sin\phi\cos\phi]=\sin^2\theta e^{\pm i2\phi}\propto Y_{2,\pm2}(\theta,\phi),$$
-where $Y_{2,\pm2}(\theta,\phi)$ are the spherical harmonics of order $2$ and $m=\pm2$. Indeed, if we expand the phase space distribution, over an initial Planckian distribution, for small fluctuations in the temperature $\Theta(t,\mathbf x,\mathbf p)$ we obtain a perturbation proportional to $\Theta$ itself:
+A further interaction that can damp the amplitude of primordial gravitational waves is the interaction with photons. Without going in the details of the calculations that can be found in Section \ref{sec:TensorCoupling}, due to their symmetries primordial gravitational waves are directly coupled to the quadrupole momentum of the photon anisotropies. This happens precisely because projecting the polarizations $\mathbf{e}_{ij}^\lambda$ onto the local 3-momentum yields
+$$\mathbf{e}_{ij}^{(\pm)}\hat p^i\hat p^j=\sin^2\theta[\cos^2\phi-\sin^2\phi\pm2i\sin\phi\cos\phi]=\sin^2\theta e^{\pm i2\phi}\propto Y_{2,\pm2}(\theta,\phi),$$
+where $Y_{2,\pm2}(\theta,\phi)$ are the spherical harmonics of order $2$ and $m=\pm2$ and $\mathbf{e}_{ij}^{(\pm)}$ is the polarization basis introduced by Hu and White \cite{HuWhite} of equation \eqref{eq:HuWhiteBasis}. Indeed, if we expand the phase space distribution, over an initial Planckian distribution, for small fluctuations in the temperature $\Theta(t,\mathbf x,\mathbf p)$ we obtain a perturbation proportional to $\Theta$ itself (the complete calculation can be found in Section \ref{sec:PertToAnis}):
 $$
 f(t,\mathbf x,\mathbf p)=\bigg[\exp\bigg\{\frac{p}{k_B\bar T(1+\Theta)}\bigg\}-1\bigg]^{-1}\approx \frac{1}{e^{\frac{p}{k_b\bar T}}-1}-\Theta p\frac{\partial \bar f}{\partial p},
 $$ 
-where $\bar T$ is the average temperature and $\bar f$ is the Planckian distribution. This time, the anisotropic stress can be obtained by projecting the spatial components of the Fourier transformed stress-energy tensor onto the polarization $\mathbf{e}_{ij}^{\pm}$, which by the above result gives:
-$$\tilde T^{ij}\mathbf{e}_{ij}^{\pm}\propto\mathbf{e}_{ij}^{(\pm)}\hat k^i\hat k^j\propto Y_{2,\pm2}(\theta,\phi).$$
-Integrating over the solid angle of $\versor{k}$, the spherical harmonics will project the temperature anisotropies $\tilde\Theta$, giving at the end that the anisotropic stress associated to photons is encoded in the quadrupole momentum $\tilde \Theta_{2}^{(\pm2)}$. The precise result reads $\tilde\pi^{(\gamma)}=\tfrac85\tilde\Theta^{(2)}_2$ \cite{HuWhite}.
-One can show that this quadrupole momenta is generated directly by primordial gravitational waves, hence creating a back reaction effect.
+where $\bar T$ is the average temperature and $\bar f$ is the Planckian distribution. In Section \ref{sec:perturbations} we introduced the anisotropic stress as the transverse traceless part of the energy-momentum tensor, this means that in Fourier space the same decomposition of the polarizations of greavitational waves \eqref{eq:GW-polarizations} holds:
+$$\tilde \pi_{ij}=\tilde\pi^{(+)}\boldsymbol e_{ij}^++\tilde\pi^{(\times)}\boldsymbol e_{ij}^\times=\sqrt{\frac{3}{2}} \big(\tilde\pi^{(+)}\mathbf{e}^{(+)}_{ij}+\tilde\pi^{(-)}\mathbf{e}^{(-)}_{ij}\big).$$
+We can obtain the anisotropic stress by projecting the energy-momentum tensor onto the polarization basis
+\begin{align*}
+    \sqrt{\frac32}\tilde T^{ij}\boldsymbol{e}_{ij}^{(\pm)}&=\sqrt{\frac32}\tilde \pi^{ij}\boldsymbol{e}_{ij}^{(\pm)}=\frac{3}{2}4\tilde\pi^{(\mp)}\\
+    &=\frac{g_\text{dof}}{(2\pi)^3}\sqrt{\frac32}\int d^3p \frac{p^ip^j}{p^0}\boldsymbol{e}_{ij}^{(\pm)}f(t,\mathbf k,\mathbf p)\\&=\frac{g_\text{dof}}{(2\pi)^3}\sqrt{\frac32}\int d^3p\ p\ \sin^2(\theta)e^{\pm i2\phi}\bigg(\bar f(t,p)-\tilde\Theta p\frac{\partial\bar f}{\partial p}\bigg),
+\end{align*}
+where in the first line we used that $\boldsymbol{e}_{ij}^{(\pm)}\boldsymbol{e}_{ij}^{(\pm)}=0$ and $\boldsymbol{e}_{ij}^{(\pm)}\boldsymbol{e}_{ij}^{(\mp)}=4$. At ths stage we can recognise the spherical harmonics $Y_{2,\pm2}(\theta,\phi)=\sqrt{\frac{15}{2\pi}}\ \sin^2\theta e^{\pm i2\phi}$ and that by othronormality the integral over the solid angle of $\versor p$ vanished when intrgating $\bar f(t,p)$, while the remaining term gives the quadrupole momentum of the anisotropies. Indeed, expanding $\tilde \Theta$ and using again orthogonality we find
+\begin{align*}
+    \tilde{\Theta}(\mathbf{k},\versor p)&=\sum_{\ell,m}(-i)^{\ell}\sqrt{\frac{4\pi}{2\ell+1}}Y_{\ell, m}(\versor p)\tilde\Theta_{\ell}^{(m)}(\mathbf k),\\
+    \tilde \pi^{(\mp)}&=-\frac{g_\text{dof}}{6(2\pi)^3}\sqrt{\frac32}\int d^3p\ p^2 \frac{\partial\bar f}{\partial p}\sum_{\ell,m}(-i)^{\ell}\sqrt{\frac{2\pi}{15}}\sqrt{\frac{4\pi}{2\ell+1}}Y_{2,\mp2}^*Y_{\ell m}\tilde\Theta_{\ell}^{(m)}\\
+    &=-\frac{g_\text{dof}}{6(2\pi)^3}\int_0^\infty dp\ p^4 \frac{\partial\bar f}{\partial p}(-i)^{2}\frac{2\pi}{5}\tilde\Theta_{2}^{(\mp2)}\\
+    &=\tilde\Theta_{2}^{(\mp2)}\frac{2}{15}\frac{g_\text{dof}}{(2\pi)^3}\int_0^\infty dp\ 4\pi p^3 \bar f=\frac{2}{15}\tilde\Theta_2^{(\mp2)}\bar\rho_\gamma,
+\end{align*}
+where in the last line we integrated by parts and then we recognised the integral which yields the energy density.
 
-The equation of motion for the gravitational waves, in the presence of this anisotropic stress, reads in Fourier space
-\begin{equation}
-    \tilde h''_{ij}+2\frac{a'}{a}\tilde h'_{ij}+\boldsymbol{k}^2 \tilde h_{ij}=16\pi G a^2\tilde\pi^{(\gamma)}_{ij},\label{eq:GW_EOM_photons}
-\end{equation}
-where $\tilde\pi^{(\gamma)}_{ij}$ is the anisotropic stress sourced. This equation can be simplified by using the Friedmann equation in conformal time, $\mathcal{H}^2=\tfrac{8\pi G}{3}\bar\rho a^2$, and assuming radiation domination, $a\propto \tau$ and $\bar\rho=\bar\rho_\gamma+\bar\rho_\nu$. After having decomposed equation \eqref{eq:GW_EOM_photons} in the two polarizations, we can rewrite the anisotropic stress in terms of the photon anisotropy quadrupole momentum ($\tilde\pi^{(\gamma)}=\tfrac85\tilde\Theta^{(2)}_2$). Lastly, we assume the tight coupling limit, the limit in which photons scatterings are very frequent in the plasma and higher multipoles become negligible, so that $\tilde\Theta^{(2)}_2\approx-\tfrac43\tfrac{\tilde h'}{n_e\sigma_T a}$ \cite{HuWhite},
-where $n_e$ is the electron number density and $\sigma_T$ is the Thomson cross-section. In this way we obtain 
+One can show that this quadrupole momenta is generated directly by primordial gravitational waves (see Section \ref{sec:Anisotropies_From_Tensor}), hence creating a back reaction effect. Using the Friedmann equation in conformal time, $\mathcal{H}^2=\tfrac{8\pi G}{3}\bar\rho a^2$, and assuming radiation domination, $a\propto \tau$ and $\bar\rho=\bar\rho_\gamma+\bar\rho_\nu$, equation \eqref{eq:GW_EOM_stress}. After having decomposed it in the two polarizations, with our previous result we have:
 $$
-    \tilde h''_{k}+\frac{2}{\tau}\tilde h'_{k}+\boldsymbol{k}^2 \tilde h_{k}=-\mathcal{H}^2\frac{32(1-R\nu)}{15n_e\sigma_T a}\tilde h'_{k}\defeq -\Gamma_\gamma \tilde h'_k,
+    \tilde h''_{k}+\frac{2}{\tau}\tilde h'_{k}+\boldsymbol{k}^2 \tilde h_{k}=\frac{8}{5}\mathcal{H}^2\frac{\bar\rho_\gamma}{\bar\rho}\tilde\Theta_2^{(2)},
+$$
+Lastly, since relevant modes renter the Hubble at high redshift, we assume the tight coupling limit, the limit in which photons scatterings are very frequent in the plasma and higher multipoles become negligible. In Section \ref{sec:TightCouplingApproximation} we will show that in this approximation holds $\tilde\Theta^{(2)}_2\approx-\tfrac43\tfrac{\tilde h'}{n_e\sigma_T a}$ ,
+where $n_e$ is the electron number density and $\sigma_T$ is the Thomson cross-section. In this way we finally obtain 
+$$
+    \tilde h''_{k}+\frac{2}{\tau}\tilde h'_{k}+\boldsymbol{k}^2 \tilde h_{k}=-\mathcal{H}^2\frac{32(1-R_\nu)}{15n_e\sigma_T a}\tilde h'_{k}\defeq -\Gamma_\gamma \tilde h'_k,
 $$
 where we defined $R_\nu\defeq\bar\rho_\nu/(\bar\rho_\gamma+\bar\rho_\nu)$. Note that since $a\times n_e\propto a^{-2}$, as well as $\mathcal{H}$ during radiation domination, overall $\Gamma_\gamma$ is constant. In the sub Hubble horizon limit we can neglect the term $\tfrac2\tau \tilde h'_k$ and the equation of motions turns into a damped harmonic oscillator. This means that in this regime the solution reads 
 \begin{equation}
@@ -146,7 +166,7 @@ where we defined $R_\nu\defeq\bar\rho_\nu/(\bar\rho_\gamma+\bar\rho_\nu)$. Note 
 \end{equation} 
 which is the free solution damped of an exponential factor. On supehorizon scales the tensor modes are frozen and the damping can be neglected.
 \subsection{Primordial magnetic fields}
-In this section we will analyze a different interaction that can take place in the early universe and that can alter the evolution of gravitational waves enhancing their amplitude. Before the decoupling epoch the electric conductivity of the plasma was very high resulting in the total dissipation of any electric field present in the universe. Hence, in these extreme conditions, only stationary magnetic fields could survive and interact with the content of the universe. 
+In this section we will analyze a different interaction that can take place in the early universe and that, instead of damping primodial gravitational waves, can source them. Before the decoupling epoch the electric conductivity of the plasma was very high resulting in the total dissipation of any electric field present in the universe. Hence, in these extreme conditions, only stationary magnetic fields could survive and interact with the content of the universe. 
 
 Consider the electromagnetic tensor 
 $$F_{\mu\nu}= \nabla_\mu A_\nu - \nabla_\nu A_\mu=\partial_\mu A_\nu-\partial_\nu A_\mu=\begin{pmatrix}
@@ -155,11 +175,11 @@ $$F_{\mu\nu}= \nabla_\mu A_\nu - \nabla_\nu A_\mu=\partial_\mu A_\nu-\partial_\n
     E_y & -B_z & 0 & B_x \\
     E_z & B_y & -B_x & 0
 \end{pmatrix},$$
-where $A_\mu$ is the 4-potential while $E_i$ and $B_i$ are the electric and magnetic fields. The stress energy tensor of the electromagnetic field is given by 
+where $A_\mu$ is the 4-potential while $E_i$ and $B_i$ are the electric and magnetic fields. The energy-momentum tensor of the electromagnetic field is given by 
 $$
 \tensor{T}{^\mu_\nu}=\frac{1}{4\pi}\bigg(F^{\mu\alpha}F_{\nu\alpha}-\frac{1}{4}\tensor{g}{^\mu_\nu} F^{\alpha\beta}F_{\alpha\beta}\bigg).
 $$
-For these a straight forward computation shows that, in the absence of electric fields, the stress-energy tensor reads
+For these a straight forward computation shows that, in the absence of electric fields, the energy-momentum tensor reads
 \begin{subequations}
     \begin{align}
     \tensor{T}{^0_0}=&\frac{1}{8\pi a^4}\bigg(B^2-\frac{1}{2}B^2\bigg)=\frac{1}{16\pi a^4}B^2,\label{eq:EM_Tensor_00}\\

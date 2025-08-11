@@ -3,7 +3,7 @@ Cosmology is based upon two basics principles:
     \item \textbf{the Copernican Principle}, or that all the observers are on equal footing;
     \item \textbf{the Cosmological Principle}, which states that the universe, at the largest scales, is homogeneous and isotropic.
 \end{itemize}
-These principles may not seem to be consistent with physical reality: clearly the core of a star is very different from empty space or even from the interior of planets, but in order to describe the whole universe we need to make some simplifying assumptions. Observations, for example of the distribution of galaxies or of the cosmic microwave background radiation, show that at large scales, on average, the universe looks the same in all directions. From the Copernican Principle we then get that all observers should see an isotropic universe, thus we can claim that all points of the universe should also look the same. Again we should stress that these are just assumptions that, at some large scale, we think can become adequate to approximate the description of space, allowing us to reduce significantly the degrees of freedom that we have to study.
+These principles may not seem consistent with physical reality: clearly the core of a star is very different from empty space or even from the interior of planets, but in order to describe the dynamics of the whole universe we need to make some simplifying assumptions. Observations, for example of the distribution of galaxies or of the cosmic microwave background radiation, show that at large scales, on average, the universe looks the same in all directions. The Copernican Principle then implies that all observers should see an isotropic universe, thus we can claim that all points of the universe should also look the same. Again we should stress that these are just assumptions that, at some large scale, we think can become adequate to approximate the description of space, allowing us to reduce significantly the degrees of freedom that we have to study.
 \section{The geometry of the universe}
 We now have to translate the proprieties of isotropy and homogeneity to the language of General Relativity, namely differential geometry and manifolds.\\ Notice that the two above principles refer only to the universe, or better, to space at a fixed time, therefore it is space which is really isotropic and homogeneous, while time has no particular symmetries.\\
 Hence, we will assume that space is \textbf{maximally symmetric}, which means that it possesses the maximum number of independent Killing vectors. In fact, homogeneity guarantees 3 Killing vectors, associated to the 3 possible space translations, while isotropy guarantees other 3 Killing vectors, associated to the 3 rotations around a point, and the maximum number of independent Killing vectors for a 3D manifold is indeed 6 (this is proven in Appendix \ref{app:MaxSymm}).
@@ -11,13 +11,13 @@ In the next sections we will study first how to describe a spacetime with the ab
 \subsection{The Friedmann Robertson Walker metric}
 We will now proceed constructing charts (coordinates) that are the more convenient to describe the assumed geometry. The main goal of this section is to find the most general form of the metric of an isotropic and homogeneous universe.
 
-To start, consider a space-like hypersurface $\Sigma$ (a volume in this case), which is a slice of the spacetime manifold, corresponding to space (the universe) at a fixed time. On this hypersurface we choose one chart with coordinates $x^\mu=(0,x^1,x^2,x^3)$.\\ For each point $P\in\Sigma$ we pick a vector $\vec n$ that is orthogonal to $\Sigma$ (it should be orthogonal to each vector of the tangent space, in $P$, of the submanifold defined by $\Sigma$) such that those are normalized to $-1$ (since they must be time-like).\\ In each point $P$, the following Cauchy problem defines a unique geodesic, for which $\vec n$ is the tangent vector,
+To start, consider a space-like hypersurface $\Sigma$ (a volume in this case), which is a slice of the spacetime manifold, corresponding to space (the universe) at a fixed time. On this hypersurface we choose one chart with coordinates $x^\mu=(0,x^1,x^2,x^3)$.\\ For each point $P\in\Sigma$ we pick a vector $\vec n$ that is orthogonal to $\Sigma$ (it should be orthogonal to each vector of the tangent space, in $P$, of the submanifold defined by $\Sigma$) such that those are normalized to $-1$ (since they are orthogonal to a space-like hypersurface).\\ In each point $P$ the following Cauchy problem defines a unique geodesic for which $\vec n$ is the tangent vector,
 \begin{equation}\label{Chaucy problem}
     \begin{cases}
         \big(\nabla_{\vec n}\vec n\big)^\mu=\frac{d^2x^\mu}{dt^2}+\Gamma_{\nu\lambda}^{\mu}\frac{dx^\nu}{dt}\frac{dx^\lambda}{dt}=0,\\\frac{dx^\mu}{dt}\big|_{P}=n^\mu\big|_P,\\x^\mu(0)=x^\mu\big|_P.
     \end{cases}
 \end{equation}
-We can extend our initial chart, in a neighborhood of $\Sigma$, assigning to each point $Q$ the coordinates $x^\mu=(t,x^1,x^2,x^3)$, where $t$ is the value (in $Q$) of the parameter of the geodesic passing through $Q$, and $(0,x^1,x^2,x^3)$ are the coordinates of the point $P$, from which the geodesic starts. These coordinates will eventually fail once some geodesics, from our construction, will meet and intersect.
+We can extend our initial chart, in a neighborhood of $\Sigma$, assigning to each point $Q$ the coordinates $x^\mu=(t,x^1,x^2,x^3)$, where $t$ is the value in $Q$ of the geodesic parameter and $(0,x^1,x^2,x^3)$ are the coordinates of the point $P$, from which the geodesic starts. These coordinates will eventually fail once some geodesics, from our construction, will meet and intersect.
 
 We now want to describe the metric of our spacetime manifold using one of these charts. To do so we will take the chart induced basis of each tangent space $(\partial_t,\partial_1,\partial_2,\partial_3)$ and then label them:
 \begin{equation*}
@@ -25,49 +25,47 @@ We now want to describe the metric of our spacetime manifold using one of these 
 \end{equation*}
 where $\partial_t$ is by construction the normal vector field we have defined, since $\vec n$ is tangent to each geodesic by \eqref{Chaucy problem} and then is parallel transported along them.\\
 Using this basis, the first component of the metric reads, by our initial construction and because scalar products of parallel transported vectors is preserved by metric connection,
-\begin{equation}
+\begin{equation*}
     g_{tt}=g(\partial_t,\partial_t)=n^\mu n_\mu=-1.\label{gen gtt}
-\end{equation} 
+\end{equation*} 
 On $\Sigma$, from our construction hypothesis $\vec{n}\perp\Sigma $, the time-spacial mixed components read 
-\begin{equation}
+\begin{equation*}
     g_{ti}=g(\partial_t,\partial_i)=n_\mu Y^\mu_{(i)}=0.\label{gen gti}
-\end{equation} 
+\end{equation*} 
 We can prove that this holds also outside $\Sigma$ by evaluating its covariant derivative along one of the geodesics we constructed
 \begin{align*}
-    n^\nu\nabla_\nu(n_\mu Y_{(i)}^\mu)&=n^\nu n_\mu \nabla_\nu( Y_{(i)}^\mu)+Y_{(i)}^\mu n^\nu  \nabla_\nu(n_\mu )\\
-    &=n^\nu n_\mu \nabla_\nu( Y_{(i)}^\mu)\\
-    &=Y^\nu_{(i)}n_\mu\nabla_\nu(n^\mu)\\
-    &=\frac{1}{2}\big(Y^\nu_{(i)}n_\mu\nabla_\nu(n^\mu)+Y^\nu_{(i)}n_\mu\nabla_\nu(n^\mu)\big)\\
-    &=\frac{1}{2}\big(Y^\nu_{(i)}n_\mu\nabla_\nu(n^\mu)+Y^\nu_{(i)}n_\mu\nabla_\nu(g^{\mu\lambda}n_{\lambda})\big)\\
-    &=\frac{1}{2}\big(Y^\nu_{(i)}n_\mu\nabla_\nu(n^\mu)+Y^\nu_{(i)}n_\mu\nabla_\nu(g^{\mu\lambda})n_{\lambda}+Y^\nu_{(i)}n_\mu g^{\mu\lambda}\nabla_\nu(n_{\lambda})\big)\\
-    &=\frac{1}{2}\big(Y^\nu_{(i)}n_\mu\nabla_\nu(n^\mu)+Y^\nu_{(i)}n^\lambda\nabla_\nu(n_{\lambda})\big)\\
-    &=\frac{1}{2}Y^\nu_{(i)}\nabla_\nu(n^\lambda n_\lambda)=0,
+    n^\nu\nabla_\nu\Big(n_\mu Y_{(i)}^\mu\Big)&=n^\nu n_\mu \nabla_\nu Y_{(i)}^\mu+\cancel{Y_{(i)}^\mu n^\nu  \nabla_\nu n_\mu}\\
+    &=Y^\nu_{(i)}n_\mu\nabla_\nu n^\mu\\
+    &=\frac{1}{2}\Big(Y^\nu_{(i)}n_\mu\nabla_\nu n^\mu+Y^\nu_{(i)}n_\mu\nabla_\nu\big(g^{\mu\lambda}n_{\lambda}\big)\Big)\\
+    &=\frac{1}{2}\Big(Y^\nu_{(i)}n_\mu\nabla_\nu n^\mu+\cancel{Y^\nu_{(i)}n_\mu\nabla_\nu\big(g^{\mu\lambda}\big)n_{\lambda}}+Y^\nu_{(i)}n_\mu g^{\mu\lambda}\nabla_\nu n_{\lambda}\Big)\\
+    &=\frac{1}{2}\big(Y^\nu_{(i)}n_\mu\nabla_\nu n^\mu+Y^\nu_{(i)}n^\lambda\nabla_\nu n_{\lambda}\big)\\
+    &=\frac{1}{2}Y^\nu_{(i)}\nabla_\nu\big(n^\lambda n_\lambda\big)=0,
 \end{align*}
 in which we used (in order): the geodesic equation $n^\nu  \nabla_\nu(n_\mu )=0$, that coordinates vectors commute, so that $[\vec n,\vec Y_{(i)}]^\mu=n^\nu \nabla_\nu( Y_{(i)}^\mu)-Y^\nu_{(i)}\nabla_\nu(n^\mu)=0$\footnote{The Christoffel symbols cancel out, due to symmetric connection, leaving only partial derivatives.}, the metric connection condition $\nabla g=0$, and last that, being $n^\mu n_\mu=-1$, its derivative vanishes.\\
-Summing up the above results, we can write the metric, from \eqref{gen gtt} and \eqref{gen gti}, as
+Summing up the above results, we can write the metric as
 \begin{equation*}
     ds^2=-dt^2+g_{ij}dx^i dx^j.
 \end{equation*}
 In this expression the absence of the mixed terms $dt\ dx^i$ reflects that there exist a family of hypersurfaces, defined by $t=$ const, that are all orthogonal to the vector field $\vec n$. These represent the evolved universe at different times.\\
-The spatial components of the metric now depend on all the coordinates of the chart we have introduced. If we consider how time evolution could affect the spatial terms we can deduce that all the components $g_{ij}$ should scale in the same way, otherwise we could have different scaling in different directions, which is against the idea that space is isotropic. We will write explicitly the time dependence as
+At this stage, the spatial components of the metric can depend on all the coordinates of the chart we have introduced. If we consider how time evolution could affect the spatial terms we can deduce that all the components $g_{ij}$ should scale in the same way, otherwise we could have different scaling in different directions, which goes against the assumption of isotropy. We will write explicitly the time dependence as
 \begin{equation*}
     ds^2=-dt^2+a^2(t)g_{ij}dx^i dx^j.
 \end{equation*} 
 Let's now take into account that each space hypersurface is a maximally symmetric submanifold. 
-As showed in Appendix \ref{app:MaxSymm}, maximally symmetric manifolds have the peculiar propriety that, due to their high number of symmetries, the Riemann tensor reduces, in 3 dimensions, to 
+As showed in Appendix \ref{app:MaxSymm}, maximally symmetric manifolds have the peculiar propriety that, due to their high number of symmetries, the Riemann tensor reduces (in 3 dimensions) to 
 \begin{equation*}
     ^{(3)}R_{ijkl}=\frac{^{(3)}R}{6}(g_{ik}g_{jl}-g_{il}g_{jk}),
 \end{equation*}
-in which the $^{(3)}$ is used to signal that these are tensors referred to the submanifold $\Sigma$ and $^{(3)}R$ is the Ricci scalar. The Ricci tensor thus reads:
+in which the $^{(3)}$ is used to signal that these are tensors referred to the submanifold $\Sigma$ and $^{(3)}R$ is their Ricci scalar. The Ricci tensor thus reads:
 \begin{equation}\label{maxsymRicci}
     ^{(3)}R_{ij}=\frac{^{(3)}R}{6}(3g_{ij}-g^{lk}g_{il}g_{jk})=\frac{^{(3)}R}{3}g_{ij}.
 \end{equation}
-With this relation, we want to determine the metric without the Einstein field equations.
+With this relation we can further to determine the metric without using the Einstein field equations yet.
 To simplify the metric, we can note that, being maximally symmetric, each space submanifold will also have spherical symmetry. This allows us to write the metric in spherical coordinates as
 \begin{equation*}
     ds^2=-dt^2+a(t)^2\big[e^{2\beta(r)}dr^2+e^{2\gamma(r)}r^2(d\theta^2+\sin^2\theta\ d\phi^2)\big],
 \end{equation*}  
-where $\beta(r),\ \gamma(r)$ are some unknown functions, that depend only on the radial coordinate due to spherical symmetry. Note that we exploited the exponential in order to preserve the signature. Lastly, the angular part, $d\Omega^2= d\theta^2+\sin\theta\ d\phi^2$, must scales with an overall factor $e^{2\gamma}$, in order to maintain sphere to be perfectly round.\\
+where $\beta(r),\ \gamma(r)$ are some unknown functions that depend only on the radial coordinate due to spherical symmetry. Note that we exploited the exponential in order to preserve the signature. Lastly, the angular part, $d\Omega^2= d\theta^2+\sin\theta\ d\phi^2$, must scales with an overall factor $e^{2\gamma}$, in order to maintain sphere to be perfectly round.\\
 We can simplify this metric even more by scaling the radial coordinate
 \begin{equation*}
     r\rightarrow e^{-\gamma(r)}r,\qquad dr\rightarrow \bigg(1-r\frac{d\gamma}{dr}\bigg)e^{-\gamma(r)}dr,
@@ -103,33 +101,31 @@ Since we have two equations for one unknown, substituting the first equation int
 \begin{equation*}
     \frac{d\alpha}{dr}=\frac{^{(3)}R}{6}re^{2\alpha},\qquad\qquad e^{-2\alpha}\bigg[\frac{^{(3)}R}{6}r^2e^{2\alpha}-1\bigg]+1=\frac{^{(3)}R}{3}r^2.
 \end{equation*}
-To solve this differential equation we start by defining $k=\frac{^{(3)}R}{6}$, and then we integrate
+To solve this differential equation we start by defining $k\defeq^{(3)}R/6$, and then we integrate
 \begin{align*}
-    \int e^{-2\alpha}\ d\alpha=\int kr\ dr \Rightarrow e^{-2\alpha}=-kr^2+C,
+    \int e^{-2\alpha}\ d\alpha=\int kr\ dr\quad \Rightarrow\quad e^{-2\alpha}=-kr^2+C,
 \end{align*}
 then, to determine $C$ we plug this solution into the initial condition
 \begin{align*}
     2kr^2&=e^{-2\alpha}\bigg[kr^2e^{2\alpha}-1\bigg]+1=kr^2-e^{-2\alpha}+1\\
-       &=kr^2+kr^2-C+1=2kr^2-C+1,\quad \Rightarrow\quad C=1.
+       &=kr^2+kr^2-C+1=2kr^2-C+1,\quad \Rightarrow\quad \boxed{C=1}.
 \end{align*}    
 In this way we have obtained the \textbf{Friedmann Robertson Walker metric} (FRW metric)
 \begin{equation}\label{eq:RWMetric}
     ds^2=-dt^2+a^2(t)\bigg[\frac{dr^2}{1-kr^2}+r^2(d\theta^2+\sin^2\theta\ d\phi^2)\bigg],
 \end{equation}
-notice that, to obtain this metric, we never used the Einstein field equation, but only geometrical proprieties of spacetime, deduced from the cosmological principle, therefore this metric is totally generic once we assume the cosmological principle.\\
-The coordinates $(t,r,\theta,\phi)$ are called \textbf{comoving coordinates}, since these precise choice makes manifest the isotropy and homogeneity of the universe, that wouldn't be manifest in a moving reference frame with respect to the universe content (the cosmic fluid that we will use to model it).
-In this metric appear two parameters
-\begin{itemize}
-    \item $a(t)$, the \textbf{cosmic scale factor}, which measure how the "size" of the universe change with time;
-    \item $k$, the \textbf{curvature constant}, that is proportional to the Ricci scalar of each universe submanifold and thus measures the curvature of space.
-\end{itemize}
+notice that to obtain this metric we never used the Einstein field equation but only geometrical proprieties of spacetime, deduced from the cosmological principle, therefore this metric is totally generic once we assume such principle.\\
+The coordinates $(t,r,\theta,\phi)$ are called \textbf{comoving coordinates}, since these precise choice makes manifest the isotropy and homogeneity of the universe, that wouldn't be manifest in a moving reference frame with respect to the universe content.
+Two parameters appear in this metric:
+$a(t)$, the \textbf{cosmic scale factor}, which measure how distances, since it multiplies the spatial part of the metric, change with time, and
+$k$, the \textbf{curvature constant}, that is proportional to the Ricci scalar of each universe submanifold and thus measures the curvature of space.\\
 These parameters can be rescaled as follows, without affecting the metric \eqref{eq:RWMetric},
 \begin{equation*}
     r\rightarrow\lambda r,\qquad a\rightarrow\lambda^{-1} a,\qquad k\rightarrow\lambda^{-2} k,
 \end{equation*}
 this allows to give dimensions of a length arbitrarily to $r$ or to $a$.
 
-We will now give some interpretation to the curvature constant that appears in the Friedmann Robertson Walker metric \eqref{eq:RWMetric}.\\First, it is useful to use the scale invariance of the metric to reduce the possible values of this parameter so that it is just its sign to determine the curvature. Rescaling as follows 
+We will now give some interpretation to the curvature constant that appears in the Friedmann Robertson Walker metric \eqref{eq:RWMetric}. First, it is useful to use the scale invariance of the metric to reduce the possible values of this parameter so that it is just its sign to determine the curvature. Rescaling as follows 
 \begin{equation*}
     r\rightarrow\sqrt{|k|}r,\qquad a\rightarrow\frac{a}{\sqrt{|k|}},\qquad k\rightarrow\frac{k}{|k|},
 \end{equation*}  
@@ -137,10 +133,10 @@ $k$ can now only assume the following values $\{-1,0,+1\}$. \\
 Let's now discuss the geometry associated to each value of $k$, we will focus just on the spatial metric $d\sigma^2=\frac{dr^2}{1-kr^2}+r^2(d\theta^2+\sin^2\theta\ d\phi^2)$.
 \begin{itemize}
     \item \textbf{Flat universe}, for $k=0$, the metric reduces to usual metric of $\mathbb{R}^3$ in spherical coordinates $$d\sigma^2= dr^2+r^2(d\theta^2+\sin^2\theta\ d\phi^2)$$ which correspond to a flat universe.
-    \item \textbf{Closed universe}, for $k=+1$, the metric can be reduced to a more familiar one introducing $$d\chi=\frac{dr}{\sqrt{1-r^2}}\quad\Rightarrow\quad r=\sin\chi,$$$$d\sigma^2=d\chi^2+\sin^2\chi(d\theta^2+\sin^2\theta\ d\phi^2),$$which clearly shows that the radial coordinate is bounded\footnote{This behavior is signaled by the fact that in the previous chart the metric was singular for $r=1$.} ($r\in[0,+1]$) and the metric is the one of a $3$-dimensional sphere.
+    \item \textbf{Closed universe}, for $k=+1$, the metric can be reduced to a more familiar one introducing $$d\chi=\frac{dr}{\sqrt{1-r^2}}\quad\Rightarrow\quad r=\sin\chi,$$$$d\sigma^2=d\chi^2+\sin^2\chi(d\theta^2+\sin^2\theta\ d\phi^2),$$which makes manifest that the radial coordinate is bounded\footnote{This behavior is signaled by the fact that in the previous chart the metric was singular for $r=1$.} ($r\in[0,+1]$) and the metric is the one of a $3$-dimensional sphere.
     \item \textbf{Open universe}, for $k=-1$, the metric can be better understood by introducing$$d\chi=\frac{dr}{\sqrt{1+r^2}}\quad\Rightarrow\quad r=\sinh\chi,$$$$d\sigma^2=d\chi^2+\sinh^2\chi(d\theta^2+\sin^2\theta\ d\phi^2),$$ which shows that $r$ is not bounded, and the metric takes the form of the one of a $3$-dimensional hyperboloid.
 \end{itemize}
-The value of $k$ will be determined by the energy content of the universe, through the Einstein field equations, this will be the goal of the next section.
+The value of $k$ will be determined by the energy content of the universe, through the Einstein field equations.
 
 Since in the following sections we will need the metric connection and the Ricci tensor, we are going just to calculate them now.\\
 The Christoffel symbols of the Robertson Walker metric \eqref{eq:RWMetric} are
@@ -160,7 +156,7 @@ With the Robertson Walker metric \eqref{eq:RWMetric} in our hand it is time to s
 \subsubsection{Hubble Law}
 Let's start by evaluating the distance between two points: FRW metric gives 
 $$d(t)=a(t)\int_{r_1}^{r_2}\frac{dr}{\sqrt{1-kr^2}}.$$
-Notice that the first factor $a(t)$ multiplies a time independent integral giving an overall time dependence to the distance. This means that distances can change overtime: in the case of our universe they increase resulting in the expansion of the universe. This suggests that the comoving coordinates are not really physical, since they represent fixed points that appear to be moving. We thus define the \textbf{physical coordinates} by multiplying the comoving ones by the cosmic scale factor, this allows to describe a non-zero physical velocity for an object at fixed comoving coordinates
+Notice that the above implies that distances can now change overtime: in the case of our universe they increase resulting in the expansion of the universe. This suggests that the comoving coordinates are not really physical, since they represent fixed points that appear to be moving. We thus define the \textbf{physical coordinates} by multiplying the comoving ones by the cosmic scale factor, this allows to describe a non-zero physical velocity for an object at fixed comoving coordinates
 $$\mathbf{x}_\text{phy}\defeq a(t)\mathbf{x} \quad\Rightarrow\quad \mathbf{v}_\text{phy}\defeq\dot{\mathbf{x}}_\text{phy}=\frac{\dot a}{a} \mathbf{x}+a(t)\mathbf{v}.$$
 This is exactly what Hubble in 1929 \cite{1929PNAS...15..168H} observed by studying the motion of far galaxies: a linear relation between observed velocities and the distance between us and these galaxies. The factor of proportionality is nowadays measured to be $(\dot a/a)(t_0)=H_0\approx70$ km s$^{-1}$ Mpc$^{-1}$ and it is called \textbf{Hubble parameter}, this tells us that for each Megaparsec of distance an object appears to be moving with a physical velocity of $70$ km/s, due to the expansion of the universe. Indeed, by assuming a negligible peculiar velocity of the observed galaxy (typically hundreds of km/s) the physical velocity reads
 \begin{equation}
@@ -169,12 +165,55 @@ This is exactly what Hubble in 1929 \cite{1929PNAS...15..168H} observed by study
 \end{equation}
 which is called the \textbf{Hubble law}. Note that there is no obstacle for the physical velocity of a far enough object to exceed the speed of light: however this does not contradict special relativity since this is an effect that arises in our reference frame which is only locally inertial. For two objects at the same arbitrary distance from us, their relative velocity will always be less than the speed of light.
 \subsubsection{Cosmological redshift}
-All our observations, from astronomical objects, come in the form of light or, more recently, gravitational waves. This means that the notion of physical distances and velocities could not be enough to describe all the effects that could affect our observations. We will therefore study the \emph{null geodesics} of FRW metric. These are described by $$dt=\pm a(t)\frac{dr}{\sqrt{1-kr^2}}$$ that allows for the comoving distance between two objects to be related to the time needed by light to travel from one to the other. Now, suppose that a far object emits a periodic pulse of light each $\delta t_{\text{em}}$ seconds and let's allow for an arbitrary time between consecutive observations $\delta t_{\text{obs}}$ on the Earth. The above relation allows us to find the latter from the former. Indeed, if at some time $t_0$ a first signal is emitted and then received by us at some time $t_1$, so that\footnote{We used the $-$ sign since the motion occurs from the galaxy to us at the center of the reference frame.}
-$$\int_{t_1}^{t_0}\frac{dt}{a(t)}=\int_{0}^{r_1}\frac{dr}{\sqrt{1-kr^2}},$$ then a second pulse of light we would be emitted at $t_0+\delta t_{\text{em}}$ and received at $t_1+\delta t_{\text{obs}}$, hence giving $$\int_{t_1+\delta t_{\text{obs}}}^{t_0+\delta t_{\text{em}}}\frac{dt}{a(t)}=\int_{0}^{r_1}\frac{dr}{\sqrt{1-kr^2}}.$$Note that in both the above expressions the right-hand side is time independent and determined only by the comoving coordinates of the emitting and receiving objects. Equating the above and by splitting the second integral, we get
+All our observations, from astronomical objects, come in the form of light or, more recently, gravitational waves. This means that the notion of physical distances and velocities could not be enough to describe all the effects that could affect our observations. Knowing how the motion on \emph{null geodesics} occurs is also needed. The FRW metric gives $$dt=\pm a(t)\frac{dr}{\sqrt{1-kr^2}}$$ that allows for the comoving distance between two objects to be related to the time needed by light to travel from one to the other. Now, suppose that a far object emits a periodic pulse of light each $\delta t_{\text{em}}$ seconds and let's allow for an arbitrary time between consecutive observations $\delta t_{\text{obs}}$ on the Earth. The above relation allows us to find the latter from the former.
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[>=Stealth]
+  % Axes
+  \draw[->,thick] (0,0) -- (4,0) node[below right] {$r$};
+  \draw[->,thick] (0,-0.5) -- (0,4) node[left] {$t$};
+
+  % Grey dashed vertical line on the right
+  \draw[gray, thick, dashed] (3,0) node[below, black] {$r_1$} -- (3,4);
+
+  \foreach \i in {0,...,3} {
+        \draw[yellow, ultra thick] (0,1+\i*0.85) -- (3,0.5+\i*0.7);
+  }
+  \draw[yellow, ultra thick] (1,4) -- (3,0.5+4*0.7);
+
+  % 5 points on the left vertical axis
+  \foreach \i in {0,...,3} {
+    \fill (0,1+\i*0.85) circle (2pt);
+  }
+
+  \foreach \i in {0,...,4} {
+    \fill (3,0.5+\i*0.7) circle (2pt);
+  }
+
+  
+  % Labels for the points
+  \node[right] at (0,1) {$t_1$};
+  \node[left] at (3,0.5) {$t_0$};
+  \foreach \i in {0,...,2} {
+    % Double arrows for delta t_obs
+    \draw[<->] (-0.25,1+\i*0.85) -- (-0.25,\i*0.85+1.85);
+    \node[left] at (-0.3,1.425+\i*0.85) {$\delta t_\text{obs}$};
+  }
+  \foreach \i in {0,...,3} {
+    % Double arrows for delta t_em
+    \draw[<->] (3.25,.5+\i*0.7) -- (3.25,\i*0.7+1.2);
+    \node[right] at (3.3,0.85+\i*0.7) {$\delta t_\text{em}$};
+  }
+\end{tikzpicture}
+\caption{Graphical depiction of the emission and observation of light pulses in FRW spacetime. Time intervals are not in scale.\label{fig:redshift}}
+\end{figure}
+Indeed, if at some time $t_0$ a first signal is emitted and then received by us at some time $t_1$, so that\footnote{We used the $-$ sign since the motion occurs from the galaxy to us at the center of the reference frame.}
+$$\int_{t_1}^{t_0}\frac{dt}{a(t)}=\int_{0}^{r_1}\frac{dr}{\sqrt{1-kr^2}},$$ then a second pulse of light would be emitted at $t_0+\delta t_{\text{em}}$ and received at $t_1+\delta t_{\text{obs}}$ (Fig. \ref{fig:redshift}), hence giving $$\int_{t_1+\delta t_{\text{obs}}}^{t_0+\delta t_{\text{em}}}\frac{dt}{a(t)}=\int_{0}^{r_1}\frac{dr}{\sqrt{1-kr^2}}.$$
+Note that in both the above expressions the right-hand side is time independent and determined only by the comoving coordinates of the emitting and receiving objects. Equating the above and by splitting the second integral, we get
 \begin{align*}
     \int^{t_1}_{t_0}\frac{dt}{a(t)}=\int^{t_1+\delta t_{\text{em}}}_{t_0+\delta t_{\text{obs}}}\frac{dt}{a(t)}=\int_{t_0+\delta t_{\text{em}}}^{t_0}\frac{dt}{a(t)}+\int^{t_1}_{t_0}\frac{dt}{a(t)}+\int^{t_1+\delta t_{\text{obs}}}_{t_1}\frac{dt}{a(t)}
 \end{align*}
-that, by assuming $\delta t_{\text{em}}$ and $\delta t_{\text{obs}}$ to be small (so that the remaining integral can be approximated by the integrand by $\delta t$) we find the time between consecutive observations from the one between consecutive emissions:
+that, by assuming $\delta t_{\text{em}}$ and $\delta t_{\text{obs}}$ to be small (so that the remaining integral can be approximated by the integrand times $\delta t$) we find:
 \begin{equation}
     \label{eq:delta_t1/delta_t2}
     \frac{\delta t_{\text{em}}}{\delta t_{\text{obs}}}=\frac{a(t_{\text{em}})}{a(t_{\text{obs}})}.
@@ -186,6 +225,6 @@ This may seem a less important effect, however, when considering the wave nature
     \label{eq:redshift}
     z\defeq\frac{\lambda_{\text{obs}}-\lambda_{\text{em}}}{\lambda_{\text{em}}}=\frac{1-a(t_{\text{em}})}{a(t_\text{em})}\quad\Rightarrow\quad 1+z=\frac{1}{a(t_{\text{em}})},
 \end{equation}
-where we used that $\lambda(t)\propto a(t)$ and the convention $a(t_\text{obs})=1$. This shows that as the universe expands the light that comes from far objects is shifted, in its spectrum, towards red wavelengths. Further they are, more time for light is needed to reach us and $t_\text{em}$ gets pushed away from today increasing the observed redshift. This connection allows for us to refer to time in terms of redshifts: today corresponds to $z=0$, $z=1$ corresponds to when the universe was half its current size and as $z$ increases we go back in time.
+where we used that $\lambda(t)\propto a(t)$ and the convention $a(t_\text{obs})=1$. This shows that as the universe expands the light that comes from far objects is shifted, in its spectrum, towards red wavelengths. Further they are, more time for light is needed to reach us and $t_\text{em}$ gets pushed away from today increasing the observed redshift. This connection allows us referring to time in terms of redshifts: today corresponds to $z=0$, $z=1$ corresponds to when the universe was half its current size and as $z$ increases we go back in time.
 
-Lastly, let us mention how redshift is measured. This is accomplished by studying the spectrum of the observed galaxies: for each object we can predict its absorption lines (by knowing its chemical composition) that for far objects appear all \emph{"redshifted"} in the same way. By comparison with the spectrum of the same gasses on the Earth we obtain $z$. 
+Lastly, let us mention how redshift is measured. This is accomplished by studying the spectrum of observed galaxies: for each object we can predict its absorption lines (by knowing its chemical composition) that for far objects appear all \emph{"redshifted"} in the same way. By comparison with the spectrum of the same gasses on the Earth we obtain $z$. 
