@@ -44,6 +44,7 @@ where we used that the only non-vanishing Christoffel symbol with an upper spati
 \end{equation}
 Since the explicit form of the collision operator depends on the physics of the different components of the universe, we won't focus here on the derivation of such term. 
 \subsection{Thermodynamic observables}
+\label{sec:thdm_obs}
 Having sketched the way in which the phase space distribution can be obtained, we now have to describe how to compute the macroscopic observables that describe the plasma that filled the universe. 
 
 We already know, form the definition \eqref{eq:phspace_dist}, that integrating over phase space $f$ yields the total number of particles. When dealing with the whole universe, computing extensive quantities is not very convenient, instead integrating only over momentum space clearly yields intensive quantities (e.g. number density $n\defeq N/V$). The immediate generalization of \eqref{eq:phspace_dist} is the \emph{particle current density}
@@ -279,7 +280,7 @@ Shortly after neutrino decoupling, the temperature reaches the electron mass and
 $$e^++e^-\quad\longrightarrow\quad \gamma+\gamma.$$ In this process the energy of the annihilated electrons is transferred to photons heating them a bit resulting in a slightly colder relic of neutrinos compared to photons. At this point some electron survived the annihilation due to an initial \emph{matter-antimatter asymmetry}, which origin is still unclear.
 
 As the universe continues to cool down the temperature reaches the bound energy of Hydrogen atoms thus allowing for the remaining free electrons and nuclei (formed by interaction of protons and neutrons) to bound. 
-\subsection{Recombination}
+\subsection{Recombination}\label{sec:recombination}
 The phase in which the first atoms formed is called \textbf{recombination}: at this point in time only electrons that survived the annihilation and nuclei were part of the plasma. Around $90\%$ of the nuclei in the plasma are just protons and thus they will form with electrons Hydrogen atoms. The remaining nuclei will instead form Helium atoms, which we are going to neglect here. 
 
 To study the reaction that results into Hydrogen,
@@ -371,6 +372,7 @@ Similarly, we can compute the duration of recombination, which is $\Delta z\appr
 
 We conclude by mentioning that the estimate we found can be further refined considering the non-equilibrium solution of the Boltzmann equation, since as the fraction of free electrons decreases it gets harder to maintain equilibrium. The full calculation would show that recombination gets delayed to $z_\text{rec}\approx 1270$.
 \subsection{Photon decoupling and the CMB}
+\label{sec:CMB_decoupling}
 Until recombination photons were kept in equilibrium with the rest of the plasma mainly through \emph{Compton scattering}
 $$
 e^-+\gamma\rightleftharpoons e^-+\gamma 
@@ -395,17 +397,16 @@ As photons decouple from the plasma they stop to scatter off electrons, we usual
 before photon decoupling $\tau_D\gg1$ and the universe is said to be \emph{opaque}, while after recombination $\Gamma_\gamma$ drops and thus $ \tau_D\ll1$ making the universe transparent.
 
 As we already anticipated several times, the decoupled photons then travel freely in the universe until some of them reach us in the form of the \textbf{Cosmic Microwave Background radiation}. When we observe them the expansion of the universe, since the number of photons is now conserved ($na^{3}\propto T^3a^{3}=$ const), cooled them down to $2.73$ K (section \ref{sec:LambdaCDM}). Assuming that before decoupling photons where in equilibrium, their phase space distribution should be a Bose-Einstein distribution \eqref{eq:BE_FD_distributions} with a vanishing chemical potential: notice that, as  both $E=p=h\nu$ and the temperature get redshifted, the shape of such distribution remains the same. However, the phase distribution is not a direct observable. What experiments measure is the \textbf{spectral radiation intensity} or \textbf{spectral radiance} $I_\nu$, which measures the flux of energy per unit area and frequency. The number density of photons with frequencies in between $\nu$ and $\nu+d\nu$, from \eqref{eq:current_density}, reads 
-\begin{equation}
-    \label{eq:blackbody_spectrum}
+\begin{equation*}
 n(T,p)dp=\frac{2}{h^3}\frac{4\pi p^2dp}{\exp(\frac{E}{k_BT})-1}=\frac{2}{c^3}\frac{4\pi \nu^2d\nu}{\exp(\frac{h\nu}{k_BT})-1}=n(T,\nu)d\nu,
-\end{equation}
+\end{equation*}
 where we restored the $c$ and $h$ factors through $E=cp=h\nu$. This distribution is usually called \textbf{blackbody spectrum}. To obtain the spectral radiance let's first fix a specific direction $\versor n$ and consider photons moving along it. Now we pick a solid angle $\delta \Omega$ around $\versor n$: during an infinitesimal amount of time $\delta t$ photons in the solid angle will cross a surface of area $\delta A = (c\delta t)^2\delta\Omega$. The number of photons that cross this surface is given by integrating the blackbody spectrum \eqref{eq:blackbody_spectrum} over the volume they went through $\delta V=c\delta t\delta A$ and by dividing everything by $4\pi$, since equation \eqref{eq:blackbody_spectrum} accounts for photons moving in all directions while we fixed $\versor n$. In this way the flux of photons though $\delta A$ is
 $$
 \frac{\delta N}{\delta A\delta t}=\frac{2}{c^3}\frac{ \nu^2d\nu}{\exp(\frac{h\nu}{k_BT})-1}\frac{(\delta t c)\delta A}{\delta A \delta t}=\frac{2}{c^2}\frac{\nu^2d\nu}{\exp(\frac{h\nu}{k_BT})-1},
 $$
 and the energy flux is obtained considering that each photon carries $h\nu$ energy
-\begin{equation}
-    I_\nu=\frac{2h}{c^2}\frac{\nu^3}{\exp(\frac{h\nu}{k_BT})-1}.
+\begin{equation}\label{eq:blackbody_spectrum}
+    \mathcal{I}_\nu=\frac{2h}{c^2}\frac{\nu^3}{\exp(\frac{h\nu}{k_BT})-1}.
 \end{equation}
 In figure \ref{fig:COBE/FIRAS_spectrum} we can appreciate the spectral radiance measured by the FIRAS instrument on the COBE satellite \cite{COBE1996}, which perfectly fits the theoretical prediction proving right the assumption that photons were in thermal equilibrium before recombination.
 \begin{figure}
@@ -414,7 +415,7 @@ In figure \ref{fig:COBE/FIRAS_spectrum} we can appreciate the spectral radiance 
   \begin{axis}[
     width=12cm, height=8cm,
     xlabel={ \(\nu\) [GHz]},
-    ylabel={$I_\nu$ [Wm$^{-2}$sr$^{-1}$Hz$^{-1}$]},
+    ylabel={$\mathcal{I}_\nu$ [Wm$^{-2}$sr$^{-1}$Hz$^{-1}$]},
     xmin=30, xmax=600,
     ymin=0, ymax=4e-18,
     legend pos=north east,

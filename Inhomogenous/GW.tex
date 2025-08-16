@@ -7,7 +7,7 @@ To study the propagation of gravitational waves in the FRW universe we must star
 \begin{equation*}
     \mathcal{S} [h_{ij}]=\frac{1}{64\pi G}\int d^4xa^2\Big[(h'_{ij})^2-(h_{ij,k})^2\Big].
 \end{equation*}
-Since the tensor $h_{ij}$ is a transverse traceless symmetric 3-tensor its dynamical degrees of freedom are reduced: to better see this let's move to Fourier space. A transverse symmetric 3-tensor must now satisfy the condition $k^i\tilde h_{ij}=k^i \tilde h_{ji}=0$ which, by rotating the axis such that $\mathbf k\parallel\versor z$, reads $\tilde{h}_{i1}=\tilde{h}_{1i}=0$. Further imposing the tracless condition we have $\tilde{h}_{11}=-\tilde h_{22}$, since by the transverlaity condition $\tilde{h}_{33}=0$. Lastly, being a symmetric tensor we have $\tilde{h}_{12}=\tilde{h}_{21}$. This showed that gravitational waves posses only 2 dynamical degrees of freedom, which we call \emph{polarizations}: indeed, defining $\tilde{h}_+\defeq\tilde{h}_{12}$ and $ \tilde{h}_\times\defeq\tilde{h}_{11}$
+Since the tensor $h_{ij}$ is a transverse traceless symmetric 3-tensor its dynamical degrees of freedom are reduced: to better see this let's move to Fourier space. A transverse symmetric 3-tensor must now satisfy the condition $k^i\tilde h_{ij}=k^i \tilde h_{ji}=0$ which, by rotating the axis such that $\mathbf k\parallel\versor z$, reads $\tilde{h}_{i1}=\tilde{h}_{1i}=0$. Further imposing the traceless condition we have $\tilde{h}_{11}=-\tilde h_{22}$, since by the transversality condition $\tilde{h}_{33}=0$. Lastly, being a symmetric tensor we have $\tilde{h}_{12}=\tilde{h}_{21}$. This showed that gravitational waves posses only 2 dynamical degrees of freedom, which we call \emph{polarizations}: indeed, defining $\tilde{h}_+\defeq\tilde{h}_{12}$ and $ \tilde{h}_\times\defeq\tilde{h}_{11}$
 \begin{equation}
     \tilde{h}_{ij}=\tilde{h}_+\boldsymbol{\epsilon}_{ij}^++\tilde{h}_{\times}\boldsymbol{\epsilon}_{ij}^\times=
     \begin{pmatrix}
@@ -135,7 +135,7 @@ where $Y_{2,\pm2}(\theta,\phi)$ are the spherical harmonics of order $2$ and $m=
 $$
 f(t,\mathbf x,\mathbf p)=\bigg[\exp\bigg\{\frac{p}{k_B\bar T(1+\Theta)}\bigg\}-1\bigg]^{-1}\approx \frac{1}{e^{\frac{p}{k_b\bar T}}-1}-\Theta p\frac{\partial \bar f}{\partial p},
 $$ 
-where $\bar T$ is the average temperature and $\bar f$ is the Planckian distribution. In Section \ref{sec:perturbations} we introduced the anisotropic stress as the transverse traceless part of the energy-momentum tensor, this means that in Fourier space the same decomposition of the polarizations of greavitational waves \eqref{eq:GW-polarizations} holds:
+where $\bar T$ is the average temperature and $\bar f$ is the Planckian distribution. In Section \ref{sec:perturbations} we introduced the anisotropic stress as the transverse traceless part of the energy-momentum tensor, this means that in Fourier space the same decomposition of the polarizations of gravitational waves \eqref{eq:GW-polarizations} holds:
 $$\tilde \pi_{ij}=\tilde\pi^{(+)}\boldsymbol e_{ij}^++\tilde\pi^{(\times)}\boldsymbol e_{ij}^\times=\sqrt{\frac{3}{2}} \big(\tilde\pi^{(+)}\mathbf{e}^{(+)}_{ij}+\tilde\pi^{(-)}\mathbf{e}^{(-)}_{ij}\big).$$
 We can obtain the anisotropic stress by projecting the energy-momentum tensor onto the polarization basis
 \begin{align*}
@@ -149,7 +149,7 @@ where in the first line we used that $\boldsymbol{e}_{ij}^{(\pm)}\boldsymbol{e}_
     &=-\frac{g_\text{dof}}{6(2\pi)^3}\int_0^\infty dp\ p^4 \frac{\partial\bar f}{\partial p}(-i)^{2}\frac{2\pi}{5}\tilde\Theta_{2}^{(\mp2)}\\
     &=\tilde\Theta_{2}^{(\mp2)}\frac{2}{15}\frac{g_\text{dof}}{(2\pi)^3}\int_0^\infty dp\ 4\pi p^3 \bar f=\frac{2}{15}\tilde\Theta_2^{(\mp2)}\bar\rho_\gamma,
 \end{align*}
-where in the last line we integrated by parts and then we recognised the integral which yields the energy density.
+where in the last line we integrated by parts and then we recognized the integral which yields the energy density.
 
 One can show that this quadrupole momenta is generated directly by primordial gravitational waves (see Section \ref{sec:Anisotropies_From_Tensor}), hence creating a back reaction effect. Using the Friedmann equation in conformal time, $\mathcal{H}^2=\tfrac{8\pi G}{3}\bar\rho a^2$, and assuming radiation domination, $a\propto \tau$ and $\bar\rho=\bar\rho_\gamma+\bar\rho_\nu$, equation \eqref{eq:GW_EOM_stress}. After having decomposed it in the two polarizations, with our previous result we have:
 $$
@@ -166,9 +166,9 @@ where we defined $R_\nu\defeq\bar\rho_\nu/(\bar\rho_\gamma+\bar\rho_\nu)$. Note 
 \end{equation} 
 which is the free solution damped of an exponential factor. On supehorizon scales the tensor modes are frozen and the damping can be neglected.
 \subsection{Primordial magnetic fields}
-In this section we will analyze a different interaction that can take place in the early universe and that, instead of damping primodial gravitational waves, can source them. Before the decoupling epoch the electric conductivity of the plasma was very high resulting in the total dissipation of any electric field present in the universe. Hence, in these extreme conditions, only stationary magnetic fields could survive and interact with the content of the universe. 
+In this section we will analyze a different interaction that can take place in the early universe and that, instead of damping primordial gravitational waves, can source them. Before the decoupling epoch the electric conductivity of the plasma was very high resulting in the total dissipation of any electric field present in the universe. Hence, in these extreme conditions, only stationary magnetic fields could survive and interact with the content of the universe. We will show that these can become a source of anisotropic stress that won't back react on gravitational waves.
 
-Consider the electromagnetic tensor 
+Let's consider the electromagnetic tensor 
 $$F_{\mu\nu}= \nabla_\mu A_\nu - \nabla_\nu A_\mu=\partial_\mu A_\nu-\partial_\nu A_\mu=\begin{pmatrix}
     0 & -E_x & -E_y & -E_z \\
     E_x & 0 & B_z & -B_y \\

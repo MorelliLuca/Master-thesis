@@ -38,6 +38,13 @@ N.~D. Birrell and P.~C.~W. Davies.
 \newblock Cambridge Monographs on Mathematical Physics. Cambridge University
   Press, Cambridge, UK, 1982.
 
+\bibitem{CLASS}
+Diego Blas, Julien Lesgourgues, and Thomas Tram.
+\newblock The cosmic linear anisotropy solving system (class). part ii:
+  Approximation schemes.
+\newblock {\em Journal of Cosmology and Astroparticle Physics},
+  2011(07):034–034, July 2011.
+
 \bibitem{10.1093/mnras/226.3.655}
 J.~R. Bond and G.~Efstathiou.
 \newblock The statistics of cosmic background radiation fluctuations.
@@ -72,6 +79,11 @@ Jens Chluba, Liang Dai, Daniel Grin, Mustafa A.~Amin, and Marc Kamionkowski.
 Planck Collaboration.
 \newblock Planck 2018 results. vi. cosmological parameters.
 \newblock {\em Astronomy \& Astrophysics}, 641:A6, 2020.
+
+\bibitem{Danese_82}
+L.~Danese and G.~de~Zotti.
+\newblock Double compton process and the spectrum of the microwave background.
+\newblock {\em Astronomy \& Astrophysics}, 107(1):39--42, March 1982.
 
 \bibitem{Dicus_Repko}
 Duane~A. Dicus and Wayne~W. Repko.
