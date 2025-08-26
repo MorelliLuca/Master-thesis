@@ -166,51 +166,82 @@ where we defined $R_\nu\defeq\bar\rho_\nu/(\bar\rho_\gamma+\bar\rho_\nu)$. Note 
 \end{equation} 
 which is the free solution damped of an exponential factor. On supehorizon scales the tensor modes are frozen and the damping can be neglected.
 \subsection{Primordial magnetic fields}
-In this section we will analyze a different interaction that can take place in the early universe and that, instead of damping primordial gravitational waves, can source them. Before the decoupling epoch the electric conductivity of the plasma was very high resulting in the total dissipation of any electric field present in the universe. Hence, in these extreme conditions, only stationary magnetic fields could survive and interact with the content of the universe. We will show that these can become a source of anisotropic stress that won't back react on gravitational waves.
+In this section we will analyze a different interaction that can take place in the early universe and that, instead of damping primordial gravitational waves, can source them. Before the decoupling epoch the electric conductivity of the plasma was very high resulting in the total dissipation of any electric field present in the universe. In these extreme conditions, only stationary magnetic fields could survive and interact with the content of the universe. We will show that these can become a source of anisotropic stress that won't back react on gravitational waves.
 
-Let's consider the electromagnetic tensor 
-$$F_{\mu\nu}= \nabla_\mu A_\nu - \nabla_\nu A_\mu=\partial_\mu A_\nu-\partial_\nu A_\mu=\begin{pmatrix}
-    0 & -E_x & -E_y & -E_z \\
-    E_x & 0 & B_z & -B_y \\
-    E_y & -B_z & 0 & B_x \\
-    E_z & B_y & -B_x & 0
-\end{pmatrix},$$
-where $A_\mu$ is the 4-potential while $E_i$ and $B_i$ are the electric and magnetic fields. The energy-momentum tensor of the electromagnetic field is given by 
+Let's start introducing the \emph{electromagnetic tensor} 
+$$F_{\mu\nu}= A_{\nu;\mu} -  A_{\mu;\nu}= A_{\nu,\mu} -  A_{\mu,\nu},$$
+where $A_\mu$ is the \emph{4-potential} and we turned covariant derivatives into partials since all the Christoffel symbols cancel out. To obtain the \emph{electric} and \emph{magnetic fields} in a curved spacetime, a specific time direction must be chosen: fixing a time-like vector $u^\mu$ then we define
+\begin{equation}
+    E_\mu\defeq u^\nu F_{\mu\nu},\qquad B_\mu\defeq \frac{1}{2}\epsilon_{\mu\nu\rho\sigma} u^\nu F^{\rho\sigma},\label{eq:EB_fields}
+\end{equation}
+where $\epsilon_{\mu\nu\rho\sigma$ is the Levi-Civita symbol. An important consequence of this definition is that the electric and magnetic fields are purely spatial vectors, as they are orthogonal to $u^\mu$:
+$$u^\mu E_\mu=u^\mu u^\nu F_{\mu\nu}=0,\qquad u^\mu B_\mu=\frac{1}{2}\epsilon_{\mu\nu\rho\sigma} u^\mu u^\nu F^{\rho\sigma}=0.$$
+Note that in Minkowski spacetime $u^\mu=(1,0,0,0)$, which gives the usual definitions $E_i=F_{i0}$ and $B_i=\epsilon_{ijk}F^{jk}/2$. The same holds in FRW spacetime with cosmic time, however using conformal time an extra factor $a^{-1}$ appears due to the normalization $u^\mu u_\mu=-1$. Lastly, inverting equations \eqref{eq:EB_fields} we can show that the electromagnetic tensor is
+\begin{equation}
+    F_{\mu\nu}=u_\mu E_\nu - u_\nu E_\mu +\epsilon_{\mu\nu\rho\sigma} B^\rho u^\sigma.
+\end{equation}
+The equations of motion for the $E_i$ and $B_i$ fields are given by the electromagnetic action
+$$\mathcal{S}[A^\mu]=-\int \sqrt{-g}\ d^4x \Bigg[\frac{F^{\mu\nu}F_{\mu\nu}}{16\pi}+A_\mu J^\mu\Bigg]\quad \Rightarrow\quad \tensor{F}{^\mu^\nu_;_\mu}=4\pi J^\nu,$$
+where $J^\mu$ is the 4-current. The above must be complemented with the Bianchi identity for $F_{\mu\nu}$, which is given by the definition of the electromagnetic tensor and the Schwarz theorem, 
+$$F_{[\mu\nu;\rho]}=0.$$
+In the above the squared brackets indicate the sum of all the cyclic permutation of the indexes. For our discussion we can focus only on this last equation: choosing the indexes $ij0$ and assuming that $E_i=0$ we find
+$$0=F_{[ij;0]}=F_{ij;0}=(\epsilon_{0ijk}B^k)_{;0}=-3H\epsilon_{0ijk}B^k+\epsilon_{0ijk}B^k_{,0}+\epsilon_{0ijk}B^n\Gamma_{0n}^{k},$$
+where we used that the Levi-Civita symbol is proportional to $1/\sqrt{-g}=a^{-3}$. To complete our calculation we can use the Christoffel symbol from the \eqref{eq:RWChristoffel}, which gives
+$$0=3H\epsilon_{0ijk}B^k+\epsilon_{0ijk}B^k_{,0}+3H\epsilon_{0ijk}B^k=\epsilon_{0ijk}B^k_{,0},$$
+that once contracted with another Levi-Civita symbol yields our final result
+\begin{equation}
+    0=\dot B^k=\frac{\big(B^k\big)'}{a}=\frac{\big(a^2 B_k\big)'}{a}\qquad\Rightarrow\qquad B_k(\tau,\mathbf{x})=\frac{f(\mathbf{x})}{a^2(\tau)}.
+\end{equation}
+This shows a really important behavior of primordial magnetic fields: their time evolution is completely captured by a scaling of a factor $a^{-2}$. For this reason it is common to define the \emph{physical magnetic field} $\mathbf B_\text{phy}\defeq a^2 \mathbf B$, which is then time independent. 
+
+At this point, to study the effects of primordial magnetic fields on gravitational waves we should compute the energy-momentum tensor of the electromagnetic field
 $$
 \tensor{T}{^\mu_\nu}=\frac{1}{4\pi}\bigg(F^{\mu\alpha}F_{\nu\alpha}-\frac{1}{4}\tensor{g}{^\mu_\nu} F^{\alpha\beta}F_{\alpha\beta}\bigg).
 $$
-For these a straight forward computation shows that, in the absence of electric fields, the energy-momentum tensor reads
+In our case of study, a straight forward computation shows that, in the absence of electric fields, the energy-momentum tensor reads
 \begin{subequations}
     \begin{align}
-    \tensor{T}{^0_0}=&\frac{1}{8\pi a^4}\bigg(B^2-\frac{1}{2}B^2\bigg)=\frac{1}{16\pi a^4}B^2,\label{eq:EM_Tensor_00}\\
-    \tensor{T}{^0_i}=&0\label{eq:EM_Tensor_0i},\\
-    \tensor{T}{^i_j}=&\frac{1}{8\pi a^4}\bigg(B^iB_j-\frac{1}{2}\tensor{\delta}{^i_j} B^2\bigg)=\frac{1}{8\pi a^4}\bigg(B^iB_j-\frac{1}{4}\tensor{\delta}{^i_j} B^2\bigg).\label{eq:EM_Tensor_ij}
+    \tensor{T}{_0_0}=&\frac{1}{4\pi}\bigg(\mathbf B^2-\frac{1}{2}\mathbf B^2\bigg)=\frac{1}{8\pi}\mathbf B^2=\frac{1}{8\pi a^4}\mathbf B^2_\text{phy},\label{eq:EM_Tensor_00}\\
+    \tensor{T}{_0_i}=&0\label{eq:EM_Tensor_0i},\\
+    \tensor{T}{_i_j}=&\frac{1}{4\pi}\bigg(B_iB_j-\frac{1}{2}\tensor{\delta}{_i_j} \mathbf B^2\bigg)=\frac{1}{8\pi a^4}\bigg((B_\text{phy})_i(B_\text{phy})_j-\frac{1}{4}\tensor{\delta}{_i_j} \mathbf B_\text{phy}^2\bigg).\label{eq:EM_Tensor_ij}
 \end{align}
 \end{subequations}
-We immediately recognize in the components \eqref{eq:EM_Tensor_ij} a pressure term plus a contribution that can result in an anisotropic stress: this shows that in the presence of primordial magnetic fields, tensor perturbations will be coupled to these. To explicitly obtain the anisotropic stress we can Fourier transform the magnetic field, then projecting $\tensor{\tilde T}{^i_j}$ with $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$, to obtain just the transverse part, and lastly we remove its trace:
-$$\tilde\pi_{ij}^{(B)}\defeq\tensor{\tilde T}{_h_k}(\tensor{P}{^h_i}\tensor{P}{^k_j}-\frac{1}{2}\tensor{P}{_i_j}\tensor{P}{^k^h}),$$
-where the factor $\tfrac12$ corresponds to 2-dimensional space on which we project and $\hat{k}$ is the versor of the wave vector $\mathbf{k}$.\\
-Since we know that Einstein filed equations couple gravitational waves to anisotropic stress, in Fourier space their equation of motion reads
-\begin{equation}
-     \tilde h''_{ij}+2\frac{a'}{a}\tilde h'_{ij}+\boldsymbol{k}^2 \tilde h_{ij}=16\pi G a^2\tilde\pi^{(B)}_{ij}.
-\end{equation}
-The peculiarity of this kind of source term is that, not being determined by the system of equations that describes all the cosmological perturbations, it is a generic forcing term that can magnify the amplitude of gravitational waves. 
+We immediately recognize in the components \eqref{eq:EM_Tensor_ij} a pressure term plus a contribution that can result in an anisotropic stress: this shows that in the presence of primordial magnetic fields, tensor perturbations will couple to these. Moreover, equation \eqref{eq:EM_Tensor_ij} shows that any anisotropic stress would evolve scaling as $a^{-4}$. 
 
-In general, we model primordial magnetic fields as a stochastic background described by a 2- point function, in momentum space,
+Decomposing the energy momentum tensor in its traceless transverse part in Fourier space, the equation of motion of gravitational waves reads  
+\begin{equation*}
+     \tilde h''_{ij}+2\frac{a'}{a}\tilde h'_{ij}+\boldsymbol{k}^2 \tilde h_{ij}=16\pi G a^2\tilde\pi^{(B)}_{ij},
+\end{equation*}
+where $\tilde\pi^{(B)}_{ij}\propto a^{-4}$ is the anisotropic stress of the magnetic field. This kind of source term, not being determined by the system of equations that describes all the cosmological perturbations, acts on gravitational waves as an external force that can further produce perturbations.\\Decomposing the gravitational wave in its two polarization and considering radiation domination ($a \propto\tau$), we obtain the following differential equation for each polarization
+\begin{equation}\label{eq:GW_PMag}
+\tilde h_k''+\frac{2}{\tau}\tilde h_k'+\mathbf k^2\tilde h_k=\frac{6}{\tau^2}\frac{\tilde\pi^{(B)}}{\bar \rho_\gamma},
+\end{equation}
+where we used the Friedmann equation to obtain the time independent ratio $\tilde\pi^{(B)}/\bar\rho_\gamma$. This equation can be integrated numerically but the main effects can be understood by studying the sub and super Hubble horizon limits.\\ At super Horizon scales ($k\ll aH\propto\tau^{-1}$) the term $\mathbf k^2\tilde h_k$ becomes negligible and the expansion of the universe and the interactions with the magnetic fields dominate. Defining $u_k=\tilde h'_k$ equation \eqref{eq:GW_PMag} becomes
+$$u'_k+\frac{2}{\tau}u_k=\frac{6}{\tau^2}\frac{\tilde\pi^{(B)}}{\bar\rho_\gamma}.$$
+We can now use the usual ansatz $u_k\defeq\exp\big(-2\int d\tau/\tau\big)v_k$, which reduces this differential equation to 
+$$v_k'=\frac{6}{\tau^2}\frac{\tilde\pi^{(B)}}{\bar\rho_\gamma}e^{-2\int d\tau/\tau}\quad \Rightarrow\quad u_k(\tau)=6\frac{\tilde\pi^{(B)}}{\bar\rho_\gamma}\frac{1}{\tau}-\frac{C}{\tau^2},$$
+where $C$ is the integration constant. Integrating one last time we obtain the final solution 
+\begin{equation}
+    \tilde h_k=6\frac{\tilde\pi^{(B)}}{\bar\rho_\gamma}\log\tau+\frac{C_1}{\tau} + C_2. \label{eq:SH_PM_PGWs}
+\end{equation}
+In the end we found that, together with the constant and decaying modes we already obtained in Section \ref{sec:free_GW}, a logarithmically increasing mode is generated. To reconnect this solution to the inflationary initial condition we can impose that at some $\tau_0$ when the magnetic fields are sourced 
+$$\tilde h_k(\tau_0)=\tilde h_k^\text{infl},\ \tilde h'_k(\tau_0)=0 \quad \Rightarrow\quad \tilde h_k(\tau) = 6 \frac{\tilde\pi^{(B)}}{\bar\rho_\gamma}\bigg(\log\frac{\tau}{\tau_0}+\frac{\tau_0}{\tau}\bigg)+\tilde h_k^\text{infl}.$$
+We should then study the sub horizon regime: in this case the the anisotropic stress will still influence the evolution of primordial gravitational waves. However, at the smallest scales the electromagnetic interactions dissipates the magnetic fields and the usual solutions are recovered. This occurs at the so called \emph{damping scale} $k_D$.\\Overall, we discovered that primordial magnetic fields generates a super horizon growth of the gravitational waves sourced by vacuum fluctuations, then upon reentering the Hubble horizon the tensor perturbations start to oscillate again under the influence of the magnetic fields. At some even smaller scale $k_D$ the magnetic fields dissipates and the usual dynamics is reestablished.  
+
+In general, primordial magnetic fields are modeled as a stochastic background which statistics is captured by a 2-points correlation function,
 \begin{equation}
     \langle B_i(\mathbf{k})B^*_j(\mathbf{k'})\rangle=(2\pi)^3\delta^3(\mathbf{k}-\mathbf{k'})P_{ij}(\mathbf{k})\frac{\mathcal P_B(k)}{2},\label{eq:magnetic_2pt},
 \end{equation}
-were $\mathcal P_B$ is the power spectrum of such background. Phenomenologically these power spectra can be characterized by a power law
+were $\mathcal P_B$ is the power spectrum of the magnetic field. Phenomenologically these power spectra can be characterized by a power law
 $$\mathcal{P}_B(k)=\mathcal A_B\bigg(\frac{k}{k_0}\bigg)^{n_B},$$
-which then allows for the source term to be computed. However, we will not go into the details of these calculations, and we will limit ourselves to quote \cite{Paoletti_2009} the result in the case $n_B=2$ (fig. \ref{fig:stress_B}):
+which then allows for the 2-points correlation function of the anisotropic stress to be obtained:
+$$\langle\tilde\pi^{*(B)}_{ij}(k)\tilde\pi^{(B)}_{hk}\rangle=\frac{1}{4}|\tilde \pi^{(B)}(k)|^2\mathcal{M}_{ijkh}(k)\delta(k-k'),\text{ and }\mathcal{M}_{ijkh}(k)\defeq P_{ik}P_{jh}+P_{ih}P_{jk}-P_{ij}P_{hk},$$
+and with $P_{ij}\defeq \delta_{ij} - \hat k_i\hat k_j.$
+An extensive description of the physics of primordial magnetic fields and their interactions with the CMB anisotropies can be found in \cite{Paoletti_2009}: in this work many 2-points correlation function of the anisotropic stress are computed, we only quote here the result in the case $n_B=2$ (Fig. \ref{fig:stress_B}):
 $$
-|\tilde \pi^{(B)}(k)|^2\bigg|_{n_B=2}=\frac{\mathcal{A_B}^2k_D^7}{256\pi^4k_\star ^4}\bigg[\frac{8}{15}-\frac{7}{6}k+\frac{16}{15}k^2-\frac{7}{24}k^3-\frac{13}{480}k^5+\frac{11}{1920}k^7\bigg],
+|\tilde \pi^{(B)}(k)|^2\bigg|_{n_B=2}=\frac{\mathcal{A_B}^2k_D^7}{256\pi^4k_0 ^4}\bigg[\frac{8}{15}-\frac{7}{6}k+\frac{16}{15}k^2-\frac{7}{24}k^3-\frac{13}{480}k^5+\frac{11}{1920}k^7\bigg].
 $$
-which has been computed through the two point correlation function 
-$$\langle\tilde\pi^{*(B)}_{ij}(k)\tilde\pi^{(B)}_{hk}\rangle=\frac{1}{4}|\tilde \pi^{(B)}(k)|^2\mathcal{M}_{ijkh}(k)\delta(k-k'),\text{ and }\mathcal{M}_{ijkh}(k)\defeq P_{ik}P_{jh}+P_{ih}P_{jk}-P_{ij}P_{hk}.$$
-In the above result, the \emph{damping scale} $k_D$ appears: this represents the scale at which magnetic fields are damped by other interactions with the plasma and mathematically corresponds to an upper cut-off to every integral of the power spectrum.
-
-\begin{figure}[h!]
+\begin{figure}
     \centering
     \begin{tikzpicture}
         \begin{axis}[
@@ -232,13 +263,10 @@ In the above result, the \emph{damping scale} $k_D$ appears: this represents the
         {x^3 * (8/15 - 7/6*x + 16/15*x^2 - 7/24*x^3 - 13/480*x^5 + 11/1920*x^7)};
         \end{axis}
     \end{tikzpicture}
-    \label{fig:stress_B}
     \caption{Plot of $k^3 |\tilde{\pi}^{(B)}(k)|^2$ for $n_B=2$ as a function of $k/k_D$. We can appreciate that the anisotropic stress has a peak right after $k_D$, to then vanish for $2k_D$.}
+    \label{fig:stress_B}
 \end{figure}
+In the above, the damping scale $k_D$ appears: mathematically it corresponds to an upper cut-off to every momentum integral of the power spectrum.
 
 
-Decomposing the gravitational wave in its two polarization and considering radiation domination $a \propto\tau$, we obtain the following differential equation for each polarization
-$$
-\tilde h_k''+\frac{2}{\tau}\tilde h_k'+\mathbf k^2\tilde h_k=\frac{6}{\tau^2}\frac{\tilde\pi^{(B)}}{\bar \rho_\gamma},
-$$
-where we used the Friedmann equation to obtain the time independent ratio $\tilde\pi^{(B)}/\bar\rho_\gamma$ (since numerator and denominator scale with the same power of $a(\tau)$). It is easy to check that the above equation, in the super Hubble horizon limit, has a logarithmically growing solution $h_k\propto\log (k\tau)$. This, at least in theory, would allow for an unbounded growth of the tensor modes. 
+

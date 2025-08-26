@@ -311,5 +311,106 @@ Moreover, to account for a broader class of inflationary models, the power spect
 \begin{equation}
     \Delta=\mathcal{A}\bigg(\frac{k}{k_0}\bigg)^{n(k_0)-1+\frac{1}{2}\frac{d n}{d\log k}\log\frac{k}{k_0}+\frac{1}{6}\frac{d^2 n}{d\log k^2}\log^2\frac{k}{k_0}+\dots},
 \end{equation}
-in this way it can capture deviations from the power law behavior we found.
+in this way it can capture deviations from the power law behavior we found.\\
+On top of this, bump-like features can be added to the power spectrum. As explained in \cite{Hamann_2022} this can be done by modeling the bump as a \emph{log-normal} function
+\begin{equation}
+    \Delta_\text{bump}\defeq \mathcal A_\text{bump}\exp\Bigg[-\frac{\big(\log\frac{k}{k_{\text{pk}}}\big)^2}{2\sigma^2}\Bigg],\label{eq:lognormal}
+\end{equation}
+where $A_\text{bump}$ is the amplitude of the bump, $\sigma$ represents the width of the bump and $k_\text{pk}$ its location.  Note that for $\sigma\gg 1$ the bump degenerates into an almost flat plateau for $-\sigma\lesssim \log\frac{k}{k_{\text{pk}}}\lesssim\sigma $, as shown in Figure \ref{fig:lognormal_sigma}.
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.51\textwidth}
+    \centyering
+    \begin{tikzpicture}
+  \def\Abump{1}      % amplitude
+  \def\kpk{1}        % k_peak (set to 1 so x is k/k_pk)
+  \begin{axis}[
+    width=8cm, height=6.5cm,
+    xmode=log,
+    xmin=5e-2, xmax=5e1,
+    ymin=0, ymax=1.05,
+    xlabel={$k/k_{\mathrm{pk}}$},
+    ylabel={$\Delta_{\mathrm{bump}}$},
+    grid=none,
+    legend pos=south east,
+    legend cell align=left,
+    samples=400,
+    domain=1e-3:1e3,
+    % improve tick formatting on log axis
+    xtick={1e-3,1e-2,1e-1,1,1e1,1e2,1e3},
+    xticklabels={${10^{-3}}$,$10^{-2}$,$10^{-1}$,$1$,$10$,$10^{2}$,$10^{3}$},
+  ]
+
+  % sigma = 0.1
+  \addplot[very thick, dotted] { \Abump * exp( - ( (ln(x/\kpk))^2 ) / (2*(0.1)^2) ) };
+  \addlegendentry{$\sigma=0.1$}
+
+  % sigma = 1.0
+  \addplot[thick] { \Abump * exp( - ( (ln(x/\kpk))^2 ) / (2*(1.0)^2) ) };
+  \addlegendentry{$\sigma=1.0$}
+
+  % sigma = 0.5
+  \addplot[thick, dashed] { \Abump * exp( - ( (ln(x/\kpk))^2 ) / (2*(10)^2) ) };
+  \addlegendentry{$\sigma=10$}
+
+  \end{axis}
+\end{tikzpicture}
+    \caption{Sigma dependence}
+    \label{fig:lognormal_sigma}
+\end{subfigure}
+\begin{subfigure}[b]{0.45\textwidth}    
+    \begin{tikzpicture}
+  % --- parameters (edit these) ---
+  \def\Abump{1}      % bump amplitude
+  \def\kpk{1}        % peak location (so x = k/k_pk)
+  \def\sigma{0.2}    % bump width (in ln-space)
+  \def\Apl{1e-2}     % power-law amplitude (at k=k_pk)
+  \def\npl{-2}       % power-law index: Delta_pl = Apl * (k/k_pk)^npl
+  % -------------------------------
+
+  \begin{loglogaxis}[
+    width=7.5cm, height=6.5cm,
+    xmin=5e-3, xmax=5e1,
+    ymin=1e-6, ymax=10,
+    xlabel={$k/k_{\mathrm{pk}}$},
+    ylabel={$\Delta$},
+    grid=none,
+    legend pos=south west,
+    legend cell align=left,
+    samples=800,
+    % <- move tick labels to the right
+    yticklabel pos=right,
+    % <- place ylabel near the right ticks (slightly outside)
+    ylabel style={at={(axis description cs:1.2,0.5)},anchor=west},
+    xtick={1e-3,1e-2,1e-1,1,1e1,1e2,1e3},
+    xticklabels={${10^{-3}}$,$10^{-2}$,$10^{-1}$,$1$,$10$,$10^{2}$,$10^{3}$},
+    ytick={1e-4,1e-2,1},
+    yticklabels={$10^{-4}$,$10^{-2}$,$1$},
+  ]
+
+    % power law
+    \addplot[very thick, dotted,domain=1e-3:1e3] { \Apl * (x/\kpk)^(\npl) };
+    \addlegendentry{Power law}
+
+    % bump (log-normal in natural log)
+    \addplot[thick, dashed, domain=1e-3:1e3] {
+      \Abump * exp( - ( (ln(x/\kpk))^2 ) / (2*(\sigma)^2) )
+    };
+    \addlegendentry{Bump}
+
+    % sum
+    \addplot[very thick, domain=1e-3:1e3] {
+      \Apl * (x/\kpk)^(\npl) + \Abump * exp( - ( (ln(x/\kpk))^2 ) / (2*(\sigma)^2) )
+    };
+    \addlegendentry{PL + Bump}
+
+  \end{loglogaxis}
+\end{tikzpicture}
+\caption{Power spectra comparison}
+\label{fig:PS_comp}
+\end{subfigure}
+\caption{Plots of the power spectra presented in this section. The figure on the left (a) shows the behavior of the bump as $\sigma$ increases: note how a plateau is produced for high values of $\sigma$. The plot on the right (b) compares the power law (dotted) with the bump (dashed) with their sum (solid line). }
+\end{figure}
+
+ 
 
