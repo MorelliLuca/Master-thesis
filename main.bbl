@@ -102,6 +102,13 @@ D.~J. Fixsen, E.~S. Cheng, J.~M. Gales, J.~C. Mather, R.~A. Shafer, and E.~L.
   data set.
 \newblock {\em The Astrophysical Journal}, 473:576--587, 1996.
 
+\bibitem{Hamann_2022}
+Jan Hamann and Ameek Malhotra.
+\newblock Constraining primordial tensor features with the anisotropies of the
+  cosmic microwave background.
+\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2022(12):015,
+  December 2022.
+
 \bibitem{HuWhite}
 Wayne Hu and Martin White.
 \newblock Cmb anisotropies: Total angular momentum method.
@@ -133,6 +140,12 @@ D.~Paoletti, F.~Finelli, and F.~Paci.
   background of magnetic fields to cosmic microwave background anisotropies.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   396(1):523–534, June 2009.
+
+\bibitem{Watanabe_2006}
+Yuki Watanabe and Eiichiro Komatsu.
+\newblock Improved calculation of the primordial gravitational wave spectrum in
+  the standard model.
+\newblock {\em Physical Review D}, 73(12), June 2006.
 
 \bibitem{Weinberg_nu_dump}
 Steven Weinberg.

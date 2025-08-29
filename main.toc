@@ -40,48 +40,49 @@
 \contentsline {subsection}{\numberline {5.2.1}Neutrino damping}{59}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Photon damping}{62}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Primordial magnetic fields}{64}{subsection.5.2.3}%
-\contentsline {part}{III\hspace {1em}CMB physic}{67}{part.3}%
-\contentsline {chapter}{\numberline {6}Anisotropies of the CMB}{69}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Observations and the angular power spectrum}{69}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Multipole expansion}{71}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}From perturbations to anisotropies}{72}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Time evolution of anisotropies}{73}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Polarization from Compton scattering}{75}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Multipole expansion of the Boltzmann equation}{80}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Polarization anisotropies power spectrum}{81}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Tensor perturbations effects on the CMB}{82}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Coupling of tensors pertubations to anisotropies}{83}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Multipole expansion of tensor induced anisotropies}{84}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}Approximate solutions for the dynamics of the anisotropies}{85}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}The tight coupling approximation}{86}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Improved tight coupling approximation}{86}{subsection.6.4.2}%
-\contentsline {chapter}{\numberline {7}Spectral Distortions}{89}{chapter.7}%
-\contentsline {section}{\numberline {7.1}The thermalization problem of the CMB}{89}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Thermalization scales}{92}{subsection.7.1.1}%
-\contentsline {section}{\numberline {7.2}Modeling spectral distortions}{94}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Shapes of spectral distortions}{94}{subsection.7.2.1}%
-\contentsline {subsubsection}{Temperature shift G}{95}{subsubsection*.20}%
-\contentsline {subsubsection}{Chemical potential $\boldsymbol \mu $ distortion}{95}{subsubsection*.21}%
-\contentsline {subsubsection}{Compton y distortion}{96}{subsubsection*.22}%
-\contentsline {subsubsection}{Residual distortion}{97}{subsubsection*.24}%
-\contentsline {subsection}{\numberline {7.2.2}Amplitudes of spectral distortions}{98}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Injected, deposited energy and heating rate}{99}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Branching rations and the Green's function approach}{100}{subsection.7.2.4}%
-\contentsline {section}{\numberline {7.3}Dissipation of primordial perutbations}{102}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Mixing of blackbodies}{102}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Comptonization of mixed blackbodies}{105}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Mixing of polarized blackbodies}{106}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Dissipation of scalar perturbations}{108}{subsection.7.3.4}%
-\contentsline {subsubsection}{Tight coupling approximation}{111}{subsubsection*.25}%
-\contentsline {subsection}{\numberline {7.3.5}Dissipation of tensor perturbations}{111}{subsection.7.3.5}%
-\contentsline {subsection}{\numberline {7.3.6}Tight coupling approximation}{114}{subsection.7.3.6}%
-\contentsline {subsubsection}{Dissipation in the $\mu $-era}{115}{subsubsection*.26}%
-\contentsline {subsubsection}{Dissipation in the y-era}{117}{subsubsection*.28}%
-\contentsline {chapter}{\numberline {A}Differential geometry tools}{119}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{119}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Thermodynamics tools}{123}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{123}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{123}{subsection.B.1.1}%
-\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{124}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Collision term}{126}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{126}{section.B.4}%
+\contentsline {part}{III\hspace {1em}CMB physic}{69}{part.3}%
+\contentsline {chapter}{\numberline {6}Anisotropies of the CMB}{71}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Observations and the angular power spectrum}{71}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Multipole expansion}{73}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}From perturbations to anisotropies}{74}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Time evolution of anisotropies}{75}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Polarization from Compton scattering}{77}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Multipole expansion of the Boltzmann equation}{82}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Polarization anisotropies power spectrum}{83}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Tensor perturbations effects on the CMB}{84}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Coupling of tensors pertubations to anisotropies}{85}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Multipole expansion of tensor induced anisotropies}{86}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Approximate solutions for the dynamics of the anisotropies}{87}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}The tight coupling approximation}{88}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Improved tight coupling approximation}{88}{subsection.6.4.2}%
+\contentsline {chapter}{\numberline {7}Spectral Distortions}{91}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The thermalization problem of the CMB}{91}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Thermalization scales}{94}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Modeling spectral distortions}{96}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Shapes of spectral distortions}{96}{subsection.7.2.1}%
+\contentsline {subsubsection}{Temperature shift G}{97}{subsubsection*.21}%
+\contentsline {subsubsection}{Chemical potential $\boldsymbol \mu $ distortion}{97}{subsubsection*.22}%
+\contentsline {subsubsection}{Compton y distortion}{98}{subsubsection*.23}%
+\contentsline {subsubsection}{Residual distortion}{99}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {7.2.2}Amplitudes of spectral distortions}{100}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Injected, deposited energy and heating rate}{101}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Branching rations and the Green's function approach}{102}{subsection.7.2.4}%
+\contentsline {section}{\numberline {7.3}Dissipation of primordial perutbations}{104}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Mixing of blackbodies}{104}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Comptonization of mixed blackbodies}{107}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Mixing of polarized blackbodies}{108}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Dissipation of scalar perturbations}{110}{subsection.7.3.4}%
+\contentsline {subsubsection}{Tight coupling approximation}{113}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {7.3.5}Dissipation of tensor perturbations}{113}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}Tight coupling approximation}{116}{subsection.7.3.6}%
+\contentsline {subsubsection}{Dissipation in the $\mu $-era}{117}{subsubsection*.27}%
+\contentsline {subsubsection}{Dissipation in the y-era}{119}{subsubsection*.29}%
+\contentsline {subsection}{\numberline {7.3.7}Window functions}{120}{subsection.7.3.7}%
+\contentsline {chapter}{\numberline {A}Differential geometry tools}{121}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{121}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{125}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{125}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{125}{subsection.B.1.1}%
+\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{126}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Collision term}{128}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{128}{section.B.4}%
