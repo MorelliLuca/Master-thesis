@@ -1,3 +1,71 @@
 \section*{Notations and conventions}
 \addcontentsline{toc}{section}{Notations and conventions}
 \vspace*{\fill}
+\subsubsection{General conventions}
+\begin{itemize}
+  \item \textbf{Units:} The thesis mainly works in \emph{natural units}. Factors of $c,\hbar,k_B$ are sometimes restored when useful; otherwise $c=\hbar=k_B=1$ is assumed. See where natural units are restored in spectral-distortion expressions. 
+  \item \textbf{Einstein summation:} Repeated up/down indices are summed over (Einstein summation convention).
+  \item \textbf{Index conventions:} Greek indices $\mu,\nu,\rho,\dots$ denote spacetime components (0--3). Latin indices $i,j,k,\dots$ denote purely spatial components (1--3). Spatial Kronecker $\delta_{ij}$ and spatial Levi-Civita $\varepsilon_{ijk}$ are used for spatial manipulations.
+\end{itemize}
+
+\subsubsection{Metric and coordinates}
+\begin{itemize}
+  \item \textbf{Metric signature:} The Friedmann--Robertson--Walker (FRW) line element is written as
+  \[ ds^2 = -dt^2 + a^2(t)\,d\sigma^2 \]
+  (so the signature is $(-,+,+,+)$ in the thesis). Tensor perturbations appear as $ds^2 = -dt^2 + a^2(\delta_{ij}+h_{ij})dx^idx^j$. :contentReference[oaicite:0]{index=0}
+  \item \textbf{Scale factor:} $a(t)$ is the cosmic scale factor. Conformal time $\tau$ is defined by $d\tau = dt/a(t)$; derivatives wrt $\tau$ are often denoted by a prime $'$ while time derivatives wrt cosmic time $t$ use an overdot $\dot{}$. The Hubble parameter is $H\equiv \dot a/a$ (and the conformal Hubble $\mathcal{H}\equiv a'/a$). (Several FRW relations and Christoffel symbols appear in Chapter 1.) :contentReference[oaicite:1]{index=1}
+  \item \textbf{Curvature index:} The spatial curvature parameter $k\in\{-1,0,+1\}$ (open, flat, closed), used in the spatial metric $d\sigma^2$. :contentReference[oaicite:2]{index=2}
+  \item \textbf{Redshift and temperature:} The thesis uses $T_z\equiv T_0(1+z)$ and defines the dimensionless frequency $x\equiv \nu/(k_B T_z)$ so that $x$ is time invariant (useful for spectral-distortion calculations). :contentReference[oaicite:3]{index=3}
+  \item \textbf{Normalization convention:} At several places the present-day scale factor is taken as $a_0=1$ when convenient for numerical estimates. :contentReference[oaicite:4]{index=4}
+\end{itemize}
+
+\subsubsection{Fourier and phase-space conventions}
+\begin{itemize}
+  \item \textbf{Fourier transform:} The spatial Fourier transform convention used throughout is the ``physics'' convention with $(2\pi)^{-3}$ factors, e.g.
+  \[ f(\mathbf{x})=\int\frac{d^3k}{(2\pi)^3}\,e^{i\mathbf{k}\cdot\mathbf{x}}\,\tilde f(\mathbf{k}),\qquad
+     \tilde f(\mathbf{k})=\int d^3x\,e^{-i\mathbf{k}\cdot\mathbf{x}}\,f(\mathbf{x}).\]
+  This normalization appears repeatedly (e.g. when decomposing fields and computing power spectra). 
+  \item \textbf{Phase-space measure \& Boltzmann eq.:} The phase-space number measure used is written (in the thesis) as
+  \[ dN(x,p,t)=f(x,p,t)\,\frac{d^3x\,d^3p}{(2\pi)^2}, \]
+  with an explicit comment about the Planck constant normalization ($h=(2\pi)^3$ in natural units) and the chosen conventions for the Boltzmann/Liouville operator. The Liouville operator and the Boltzmann equation are stated in Chapter 2 and Appendix B. 
+  \item \textbf{Brightness / spectral radiance:} The spectral radiance (brightness) is written as
+  \[ I(\nu,t)\equiv 2\nu^3 f(\nu,t) \quad\text{or}\quad I(x,t)=2(k_B T_z)^3 x^3 f(x,t)\,, \]
+  where $f$ is the photon phase-space distribution and $x=\nu/(k_B T_z)$. These appear in the spectral-distortion chapter. 
+\end{itemize}
+
+\subsubsection{Perturbations, multipoles and harmonic expansions}
+\begin{itemize}
+  \item \textbf{Decomposition of perturbations:} Metric perturbations are decomposed into scalar, vector and tensor parts (usual SVT decomposition). Scalars: $A,B,C,E$; transverse vectors and traceless-transverse tensor for GW. See Chapter 4 for the full parametrization. 
+  \item \textbf{Legendre multipoles (scalar case):} For scalar perturbations (azimuthal symmetry around $\mathbf{k}$) the anisotropy $\tilde\Theta(t,k,\mu)$ is expanded as
+  \[ \tilde\Theta(t,k,\mu)=\sum_{\ell=0}^\infty (2\ell+1)(-i)^\ell \tilde\Theta_\ell(t,k)P_\ell(\mu), \]
+  with the inverse relation given in the thesis (see eq.\,(6.9)--(6.10)). 
+  \item \textbf{Spherical harmonics (general expansion):} Following Hu \& White's convention (used in the thesis), the full angular expansion uses spherical harmonics with the normalization given in Appendix C:
+  \[ Y_{\ell m}(\theta,\phi),\qquad \int d\Omega\,Y_{\ell m}Y_{\ell' m'}^\ast=\delta_{\ell\ell'}\delta_{mm'}. \]
+  The thesis lists explicit forms and conjugation/parity relations in Appendix C. :contentReference[oaicite:10]{index=10}
+  \item \textbf{Tensor-mode decomposition:} Gravitational waves $h_{ij}$ are decomposed into two helicities/polarizations using polarization tensors $e^{(\pm)}_{ij}$ or the $+,\times$ basis; power spectra conventions for tensors are given in the spectral-distortion calculations. 
+  \item \textbf{Multipole-phase conventions:} Many expansions include the usual $i^\ell$ (or $(-i)^\ell$) factors and the $(2\ell+1)$ normalization when switching between Legendre and spherical-harmonic bases (see eqs.\,(6.9)--(6.11)). 
+\end{itemize}
+
+\subsubsection{Electromagnetism \& energy--momentum tensor}
+\begin{itemize}
+  \item \textbf{EM tensor:} $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ and the decomposition with respect to an observer four-velocity $u^\mu$ is used:
+  \[ F_{\mu\nu}=u_\mu E_\nu-u_\nu E_\mu + \varepsilon_{\mu\nu\rho\sigma}B^\rho u^\sigma. \]
+  The EM energy-momentum tensor and its components in FRW are derived (see Section 5). :contentReference[oaicite:13]{index=13}
+  \item \textbf{Physical magnetic field:} The physical magnetic field is defined as $B_{\rm phy}\equiv a^2 B$ so that $B_{\rm phy}$ is time independent under flux-freezing scaling in the absence of electric fields. :contentReference[oaicite:14]{index=14}
+\end{itemize}
+
+\subsubsection{Spectral-distortion specific notation}
+\begin{itemize}
+  \item \textbf{Dimensionless frequency:} $x\equiv \nu/(k_B T_z)$ with $T_z=T_0(1+z)$. This $x$ is used to express Planck spectrum $B(x)=(e^x-1)^{-1}$ and distortions. :contentReference[oaicite:15]{index=15}
+  \item \textbf{Distortion shapes:} The standard shapes/functions $G(x),\,M(x),\,Y(x)$ (temperature shift, $\mu$ and $y$ shapes) and their amplitudes appear repeatedly; brightness perturbations are written as $I\propto x^3[B(x)+G+M+Y]$. :contentReference[oaicite:16]{index=16}
+  \item \textbf{Branching ratios \& eras:} The thesis uses notation $J_g(z),J_\mu(z),J_y(z)$ for branching ratios that select the fraction of injected/deposited energy converted into different distortion types; characteristic redshifts like $z_{\rm th}\sim 2\times10^6$, $z_{\mu y}\sim 5\times10^4$ are used. 
+\end{itemize}
+
+\subsubsection*{Appendix: quick reference of common symbols (as used in the thesis)}
+\begin{itemize}
+  \item $a(t)$ -- scale factor; $\tau$ -- conformal time; $H\equiv\dot a/a$ -- Hubble parameter. :contentReference[oaicite:18]{index=18}
+  \item $x\equiv \nu/(k_B T_z)$ -- dimensionless frequency; $T_z=T_0(1+z)$. :contentReference[oaicite:19]{index=19}
+  \item $\Theta$ -- fractional temperature perturbation, with multipoles $\Theta_\ell$ (or $\Theta_\ell^{(m)}$). :contentReference[oaicite:20]{index=20}
+  \item $P_\ell(\mu)$ -- Legendre polynomials; $Y_{\ell m}(\hat n)$ -- spherical harmonics (Appendix C provides explicit forms). :contentReference[oaicite:21]{index=21}
+  \item $F_{\mu\nu}$ -- electromagnetic tensor; $T^\mu_{\ \nu}$ -- energy-momentum tensor. :contentReference[oaicite:22]{index=22}
+\end{itemize}

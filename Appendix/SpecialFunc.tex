@@ -1,0 +1,155 @@
+\chapter{Special functions}
+\label{app:special-functions}
+In this last appendix we recollect all the useful relations and definitions that we used with the many special functions we encountered. More detailed material to use special function can be found in the Abramowitz and Stegun \cite{abramowitz+stegun}.
+
+\section{Spherical harmonics \(Y_{\ell m}(\theta,\varphi)\)}
+\label{app:spherical-harmonics}
+Spherical harmonics arise naturally when solving problems with spherical symmetry, such as phenomenon in the sky, since they are eigenfunction of the angular part of the Laplacian operator 
+$$
+\Bigg[\frac{1}{\sin\theta}\frac{\partial}{\partial \theta}\bigg(\sin\theta\frac{\partial}{\partial\theta}\bigg)+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\Bigg]Y_{\ell,m}=-\ell(\ell+1)Y_{\ell,m},\qquad \frac{\partial}{\partial\phi}Y_{\ell,m}=im Y_{\ell,m},$$
+where $\ell$ is a positive integer and $m$ is an integer with $|m|\leq \ell$.\\
+Solving explicitly this equation yields for the first values of $\ell$ and $m$
+\begin{align*}
+&Y_{00}(\theta,\phi)=\frac{1}{\sqrt{4\pi}}, &Y_{1,0}(\theta,\phi)=i\sqrt\frac{3}{4\pi}\cos{\theta},\\ &Y_{1,\pm1}(\theta,\phi)=\mp i\sqrt\frac{3}{8\pi}\sin\theta e^{\pm i\phi},\quad
+&Y_{20}(\theta,\phi)=\sqrt\frac{5}{16\pi}\big(1-3\cos^2\theta\big), \\ &Y_{2,\pm1}(\theta,\phi)=i\sqrt\frac{15}{8\pi}\cos{\theta}\sin\theta e^{\pm i\phi},\quad &Y_{2,\pm2}(\theta,\phi)=-\sqrt\frac{15}{32\pi}\sin^2\theta e^{\pm i2\phi},
+\end{align*}
+where all the coefficients are determined by using the orthonormality relation
+\[
+\int\sin\theta\ d\theta d\phi\ Y_{\ell m}(\theta,\varphi)\,Y^*_{\ell' m'}(\theta,\varphi)
+=\delta_{\ell\ell'}\delta_{mm'},
+\]
+which holds on the sphere since spherical harmonics represent an orthonormal basis of functions on such domain.\\
+We conclude our discussion on spherical harmonics by giving the conjugation and parity relations  
+\[
+Y_{\ell m}^*(\theta,\varphi)=(-1)^m Y_{\ell,-m}(\theta,\varphi),\qquad
+Y_{\ell m}(-\hat n)=(-1)^\ell Y_{\ell m}(\hat n),
+\]
+where the short-hand notation $\versor n$ has been used to indicate the angles associated to such direction.
+
+
+\section{Legendre polynomials \(P_\ell(x)\)}
+\label{app:legendre}
+Legendre polynomials can be defined as the eigenfunctions of the Legendre equation 
+\[
+(1-\mu^2)P_\ell''(\mu)-2xP_\ell'(\mu)+\ell(\ell+1)P_\ell(\mu)=0,\qquad \mu\in[-1,1].
+\]
+The first three Legendre polynomials are 
+$$
+P_0(\mu)=1,\qquad P_1(\mu)=\mu,\qquad P_2(\mu)=\frac{3\mu^2-1}{2},
+$$
+an explicit expression can be found for higher $\ell$ values by the \emph{Bonnet's formula}
+\[
+(\ell+1)P_{\ell+1}(\mu)=(2\ell+1)\mu P_\ell(\mu)-\ell P_{\ell-1}(\mu).
+\]
+We can observe that for these three functions, but this proprieties holds for all $\ell$, the polynomials are even or odd functions depending on wether $\ell$ is even or odd, respectively.\\
+Note that the differential equation for spherical harmonics, assuming no $\phi$ dependence and defining $x\defeq\cos\theta$, turns into the Legendre equation above. This shows that we can match, up to the normalization factor, Legendre polynomials with $m=0$ spherical harmonics.
+\[
+Y_{\ell 0}(\theta,\varphi)=\sqrt{\frac{2\ell+1}{4\pi}}\,P_\ell(\cos\theta).
+\]
+Furthermore, a geometrical meaning can be attributed to the variable $\mu$, which now represents the scalar product between the versor $\versor n$ and the $z$-axis.\\
+As for spherical harmonics, Legendre polynomials are an orthogonal basis on their domain $[-1,1]$
+\[
+\int_{-1}^{1}d\mu\ P_\ell(\mu)P_{m}(\mu)=\frac{2}{2\ell+1}\delta_{\ell m}.
+\]
+We conclude by giving a really useful formula that allows for Legendre polynomials to be turned in products of spherical harmonics and vice versa.
+$$
+P_\ell(\versor n\cdot\versor n')=\frac{4\pi}{2\ell+1}\sum_{m=-\ell}^\ell Y_{\ell,m}(\versor n)Y^*_{\ell,m'}(\versor n').$$
+
+
+
+\section{Spin-weighted spherical harmonics \({}_sY_{\ell m}(\theta,\varphi)\)}
+\label{app:spin-weighted}
+A generalization of the spherical harmonics we have previously introduced are the \textbf{spin-weighted spherical harmonics}, which are used to expand the polarization anisotropies of the CMB. 
+For our purpose it is not important to enter in the detail of this kind of functions, it is enough to keep in mind that they form na orthogonal set,
+\[
+\int_{S^2} Y^s_{\ell m}\,Y^{s*}_{\ell' m'}\,d\Omega=\delta_{\ell\ell'}\delta_{mm'},
+\]
+and the following conjugation proprieties holds
+\[
+\big(Y^s_{\ell m}(\theta,\varphi)\big)^*=(-1)^{m+s}Y^{-s}_{\ell,-m}(\theta,\varphi).
+\]
+A more detailed treatment of this kind of functions can be found in the work of Hu and White \cite{HuWhite}. 
+
+\section{Bessel functions \(J_\nu(z), Y_\nu(z)\) and Hankel functions $H_\nu^{(1)}(z), H_\nu^{(2)}(z)$}
+\label{app:bessel}
+Bessel functions constitute the natural basis for problems with circular or cylindrical symmetry. They are solutions of the Bessel equation
+\[
+\frac{d^2J_\nu}{dz^2}+\frac{1}{z}\frac{dJ_\nu}{dz}+\bigg(1-\frac{\nu^2}{z^2}\bigg)J_\nu=0,
+\]
+where the parameter $\nu\in\mathbb C$ determines the specific solution. For non-integer values of $\nu$, $J_\nu$ and $J_{-\nu}$, which are both solutions of the above, are linearly independent, which means that their combination gives the full solution. However, for integer values of $\nu$ they become related by 
+$$J_{-n}(z)=(-1)^n J_n(z), \qquad (n\in\mathbb Z) $$
+and therefore a new linearly independent solution must be found. The \emph{Bessel function of the second kind}, also sometimes known as \emph{Neumann fucntion}, manages to remain linearly independent for all the values of $\nu$
+$$Y_\nu(z)\defeq\frac{J_\nu(z)\cos(\nu\pi)-J_{-\nu}(z)}{\sin(\nu\pi)}.$$
+On the other hand $J_\nu(z)$ is usually referred to as the \emph{Bessel function of the first kind}.\\
+For small values of $z$ the last term of the Bessel function dominates the $z\to0$ limit is found
+\[
+J_\nu(z)\xrightarrow{z\to0}\frac{1}{\Gamma(\nu+1)}\left(\frac{z}{2}\right)^\nu,\qquad
+Y_\nu(z)\xrightarrow{z\to0} -\frac{\Gamma(\nu)}{\pi}\left(\frac{2}{z}\right)^\nu,
+\]
+for which we can see that $J_\nu$ is regular for $z=0$ while $Y_\nu$ diverges. On the other hand, in the limit $x\to \infty$ the Bessel equation reduces to the equation of motion of a simple harmonic oscillator, and indeed the large $z$ asymptotic behavior results in 
+\[
+J_\nu(z)\xrightarrow{z\to\infty}\sqrt{\frac{2}{\pi z}}\cos\Big(z-\frac{\pi\nu}{2}-\frac{\pi}{4}\Big),\qquad
+Y_\nu(z)\xrightarrow{z\to\infty}\sqrt{\frac{2}{\pi z}}\sin\Big(z-\frac{\pi\nu}{2}-\frac{\pi}{4}\Big).
+\]
+This can be better captured by defining the \emph{Hankel functions}, also known as \emph{Bessel functions of the third kind},
+\[
+H^{(1)}_\nu(z)=J_\nu(z)+iY_\nu(z),\qquad H^{(2)}_\nu(z)=J_\nu(x)-iY_\nu(z).
+\]
+From our discussion we immediately obtain the large $z$ limit
+\[
+H^{(1)}_\nu(z)\xrightarrow{x\to\infty}\sqrt{\frac{2}{\pi z}}\,e^{i\left(z-\frac{\pi\nu}{2}-\frac{\pi}{4}\right)},
+\qquad
+H^{(2)}_\nu(z)\xrightarrow{x\to\infty}\sqrt{\frac{2}{\pi z}}\,e^{-i\left(z-\frac{\pi\nu}{2}-\frac{\pi}{4}\right)}.
+\]
+Similarly, for small $z$ we have
+\[
+H^{(1)}_\nu(z)\xrightarrow{z\to0} -\frac{i}{\pi}\Gamma(\nu)\left(\frac{2}{z}\right)^\nu
+\quad H^{(2)}_\nu(z)\xrightarrow{z\to0} \frac{i}{\pi}\Gamma(\nu)\left(\frac{2}{z}\right)^\nu.
+\]
+
+\section{Spherical Bessel functions \(j_\ell(z), y_\ell(z)\)}
+\label{app:sph_bessel}
+Spherical Bessel functions are the generalization of Bessel functions to problems in which spherical symmetry manifests. They are solutions of the following differential equation
+$$\frac{d^2j_\ell}{dz^2}+\frac{2}{z}\frac{dj_\ell}{dz}+\bigg(1-\frac{\ell(\ell+1)}{z^2}\bigg)j_\ell=0,$$
+and they can also be reconducted to the ordinary Bessel functions by
+\[
+j_\ell(z)=\sqrt{\frac{\pi}{2z}}\,J_{\ell+1/2}(z),\qquad
+y_\ell(x)=\sqrt{\frac{\pi}{2z}}\,Y_{\ell+1/2}(z).
+\]
+From the above all the proprieties of the Bessel functions can be also applied to their spherical counterparts.\\
+A really important relation that we used several times is the recursive relation which allows computing derivatives of these fucntions
+$$j'_\ell(z)=j_{\ell-1}(z)-\frac{\ell+1}{z}j_\ell(z)=\frac\ell zj_\ell(z)-j_{\ell+1}(z),$$
+which holds also for $y_\ell(z).$\\Finally, the following recursion relation holds
+$$j_{\ell+1}(z)=\frac{2\ell+1}{z}j_\ell(z)-j_{\ell-1}(z),$$
+which again holds also for $y_\ell(z)$.
+ 
+\section{Gamma function \(\Gamma(z)\)}
+\label{app:gamma}
+The Euler gamma function is the generalization of the factorial operator over the right part ($\text{Re}(z)>0$) of the complex plane
+\[
+\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}\,dt,\quad\Rightarrow\quad \Gamma(z+1)=z\Gamma(z).
+\]
+This implies that half integer arguments can be used in this generalized factor: indeed by knowing $\Gamma(1/2)$ we can then infer by recursion all the next half integer values 
+\[
+\Gamma\!\left(1/2\right)=\sqrt{\pi},\qquad
+\Gamma\!\left(3/2\right)=\frac{\sqrt{\pi}}{2},\qquad\dots
+\]
+
+\section{Riemann zeta function \(\zeta(s)\)}
+\label{app:zeta}
+Lastly, let's introduce the Riemann zeta function, which we used several times to simplify integrals.
+This function is defined by the following integral  
+\[
+\zeta(z)\defeq\frac{1}{\Gamma(z)}\int dx\frac{x^{z-1}}{e^x-1},\qquad z\in \mathbb C.
+\]
+When the real part of $z$ is grater then 1, then one can show that the above integral can be written as a series
+$$\zeta(z)=\sum_{n=1}^{\infty}\frac{1}{n^z}$$
+We conclude by quoting some important values of the zeta function 
+\[
+\zeta(2)=\frac{\pi^2}{6},\qquad
+\zeta(3)\approx 1.202056\ ,\qquad
+\zeta(4)=\frac{\pi^4}{90}.
+\]
+
+
+
