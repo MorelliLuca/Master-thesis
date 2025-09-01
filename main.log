@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.25)  27 AUG 2025 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.25)  1 SEP 2025 22:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -764,10 +764,10 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Logo Unibo.png, id=7, 185.0112pt x 133.6995pt>
-File: Logo Unibo.png Graphic file (type png)
-<use Logo Unibo.png>
-Package pdftex.def Info: Logo Unibo.png  used on input line 4.
+<logo_unibo.png, id=7, 185.0112pt x 133.6995pt>
+File: logo_unibo.png Graphic file (type png)
+<use logo_unibo.png>
+Package pdftex.def Info: logo_unibo.png  used on input line 4.
 (pdftex.def)             Requested size: 184.9429pt x 133.65631pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--24
@@ -785,7 +785,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--24
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Logo Unibo.png>]) [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo_unibo.png>]) [2
 
 
 ]
@@ -796,31 +796,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--24
 ]
 \openout2 = `Notazioni.aux'.
 
- (./Notazioni.tex) [4
-
-
-
-] (./main.toc
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 1.
+ (./Notazioni.tex
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [5
+)
+Overfull \hbox (15.93811pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/12 as $\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 = 1$ when con-ve-nient for nu-mer-i-cal es-ti-mates. :con-tentRe-f-er-ence[oaicite:4]index=4 
+ []
+
+[4
 
 
 
-] [6])
+]
+Overfull \hbox (6.0039pt too wide) in paragraph at lines 46--47
+\OT1/cmr/m/n/12 fac-tors and the $(2\OML/cmm/m/it/12 ` \OT1/cmr/m/n/12 + 1)$ nor-mal-iza-tion when switch-ing be-tween Leg-en-dre and spherical-
+ []
+
+[5]
+Overfull \hbox (27.1455pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/12 tur-ba-tions are writ-ten as $\OML/cmm/m/it/12 I \OMS/cmsy/m/n/12 / \OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 B\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 G \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 Y\OT1/cmr/m/n/12 ]$. :con-tentRe-f-er-ence[oaicite:16]index=16 
+ []
+
+
+Overfull \hbox (53.522pt too wide) in paragraph at lines 67--68
+[]$\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^Q \OML/cmm/m/it/12 ^^W=\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k[]T[]\OT1/cmr/m/n/12 )$ -- di-men-sion-less fre-quency; $\OML/cmm/m/it/12 T[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 T[]\OT1/cmr/m/n/12 (1 + \OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )$. :con-tentRe-f-er-ence[oaicite:19]index=19 
+ []
+
+
+Overfull \hbox (82.25993pt too wide) in paragraph at lines 70--71
+[]$\OML/cmm/m/it/12 F[]$ \OT1/cmr/m/n/12 -- elec-tro-mag-netic ten-sor; $\OML/cmm/m/it/12 T[]$ \OT1/cmr/m/n/12 -- energy-momentum ten-sor. :con-tentRe-f-er-ence[oaicite:22]index=22 
+ []
+
+) [6] (./main.toc [7
+
+
+
+] [8])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [7] [8
+ [9] [10
 
 ] [1
 
@@ -1003,15 +1028,15 @@ Overfull \hbox (11.35161pt too wide) detected at line 284
 
 [117] [118]
 Package pgfplots info on input line 324: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
- [119]) [120]
-Appendix A.
-(./Fundamentals/MaxSymmetric.tex [121
+ [119] [120]) [121] [122
 
-] [122]) [123] [124
+]
+Appendix A.
+(./Fundamentals/MaxSymmetric.tex [123] [124]) [125] [126
 
 ]
 Appendix B.
-(./Appendix/Thermo.tex [125]) (./CMB/PertubedBoltzmannEquations.tex
+(./Appendix/Thermo.tex [127]) (./CMB/PertubedBoltzmannEquations.tex
 Underfull \hbox (badness 10000) in paragraph at lines 20--1
 
  []
@@ -1021,26 +1046,184 @@ Overfull \hbox (15.07323pt too wide) in paragraph at lines 9--11
 \OT1/cmr/m/n/12 The lo-cal mo-men-tum de-fined in the same way, there-fore it must sat-isfy the usual Minkowskian
  []
 
-[126] [127] [128]) (./main.bbl [129] [130
+[128] [129] [130]) (./Appendix/SpecialFunc.tex [131] [132
 
-] [131] [132]) [133] (./main.aux (./titilepage.aux) (./abstract.aux) (./Notazioni.aux))
+]
+Appendix C.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ell' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\theta' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\varphi' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ell' on input line 30.
+
+[133]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ell' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\theta' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\varphi' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 73.
+
+[134]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 110.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 110.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ell' on input line 110.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 110.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ell' on input line 110.
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 16.48335pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.48335pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.48335pt}.
+
+[135]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Gamma' on input line 126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 138.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 138.
+
+[136]) (./main.bbl [137] [138
+
+] [139]) [140] (./main.aux (./titilepage.aux) (./abstract.aux) (./Notazioni.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 37307 strings out of 478287
- 863694 string characters out of 5849289
- 1699150 words of memory out of 5000000
- 54354 multiletter control sequences out of 15000+600000
- 490144 words of font info for 109 fonts, out of 8000000 for 9000
+ 37372 strings out of 478287
+ 864730 string characters out of 5849289
+ 1699333 words of memory out of 5000000
+ 54390 multiletter control sequences out of 15000+600000
+ 491844 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,22n,89p,1766b,2421s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (141 pages, 1020790 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (150 pages, 1089845 bytes).
 PDF statistics:
- 1918 PDF objects out of 2073 (max. 8388607)
- 1695 compressed objects within 17 object streams
- 520 named destinations out of 1000 (max. 500000)
- 646 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2020 PDF objects out of 2073 (max. 8388607)
+ 1785 compressed objects within 18 object streams
+ 546 named destinations out of 1000 (max. 500000)
+ 710 words of extra memory for PDF output out of 10000 (max. 10000000)
 
