@@ -1,11 +1,24 @@
 \begin{thebibliography}{10}
 
+\bibitem{10.1093/mnras/stx1653}
+Maximilian~H. Abitbol, Jens Chluba, J.~Colin Hill, and Bradley~R. Johnson.
+\newblock Prospects for measuring cosmic microwave background spectral
+  distortions in the presence of foregrounds.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  471(1):1126--1140, 06 2017.
+
 \bibitem{abramowitz+stegun}
 Milton {Abramowitz} and Irene~A. {Stegun}.
 \newblock {\em Handbook of Mathematical Functions with Formulas, Graphs, and
   Mathematical Tables}.
 \newblock Dover, New York City, ninth dover printing, tenth gpo printing
   edition, 1964.
+
+\bibitem{Audren:2012wb}
+Benjamin Audren, Julien Lesgourgues, Karim Benabed, and Simon Prunet.
+\newblock {Conservative Constraints on Early Cosmology: an illustration of the
+  Monte Python cosmological parameter inference code}.
+\newblock {\em JCAP}, 1302:001, 2013.
 
 \bibitem{Birrell:1982ix}
 N.~D. Birrell and P.~C.~W. Davies.
@@ -25,6 +38,11 @@ J.~R. Bond and G.~Efstathiou.
 \newblock The statistics of cosmic background radiation fluctuations.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   226(3):655--687, 06 1987.
+
+\bibitem{Brinckmann:2018cvx}
+Thejs Brinckmann and Julien Lesgourgues.
+\newblock {MontePython 3: boosted MCMC sampler and other features}.
+\newblock 2018.
 
 \bibitem{Chluba_Green}
 J.~Chluba.
@@ -102,6 +120,14 @@ R.~Khatri, R.~A. Sunyaev, and J.~Chluba.
   waves in the early universe.
 \newblock {\em Astronomy amp; Astrophysics}, 543:A136, July 2012.
 
+\bibitem{pixie}
+Alan Kogut, Eric Switzer, Dale Fixsen, Nabila Aghanim, Jens Chluba, Dave Chuss,
+  Jacques Delabrouille, Cora Dvorkin, Brandon Hensley, Colin Hill, Bruno
+  Maffei, Anthony Pullen, Aditya Rotti, Alina Sabyr, Leander Thiele,
+  Ed~Wollack, and Ioana Zelko.
+\newblock The primordial inflation explorer (pixie): Mission design and science
+  goals, 2025.
+
 \bibitem{Lucca_2020}
 Matteo Lucca, Nils Schöneberg, Deanna~C. Hooper, Julien Lesgourgues, and Jens
   Chluba.
@@ -115,6 +141,70 @@ D.~Paoletti, F.~Finelli, and F.~Paci.
   background of magnetic fields to cosmic microwave background anisotropies.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   396(1):523–534, June 2009.
+
+\bibitem{refId0}
+{Planck Collaboration}, {Adam, R.}, {Ade, P. A. R.}, {Aghanim, N.}, {Alves, M.
+  I. R.}, {Arnaud, M.}, {Ashdown, M.}, {Aumont, J.}, {Baccigalupi, C.},
+  {Banday, A. J.}, {Barreiro, R. B.}, {Bartlett, J. G.}, {Bartolo, N.},
+  {Battaner, E.}, {Benabed, K.}, {Benoît, A.}, {Benoit-Lévy, A.}, {Bernard,
+  J.-P.}, {Bersanelli, M.}, {Bielewicz, P.}, {Bock, J. J.}, {Bonaldi, A.},
+  {Bonavera, L.}, {Bond, J. R.}, {Borrill, J.}, {Bouchet, F. R.}, {Boulanger,
+  F.}, {Bucher, M.}, {Burigana, C.}, {Butler, R. C.}, {Calabrese, E.},
+  {Cardoso, J.-F.}, {Catalano, A.}, {Challinor, A.}, {Chamballu, A.}, {Chary,
+  R.-R.}, {Chiang, H. C.}, {Christensen, P. R.}, {Clements, D. L.}, {Colombi,
+  S.}, {Colombo, L. P. L.}, {Combet, C.}, {Couchot, F.}, {Coulais, A.}, {Crill,
+  B. P.}, {Curto, A.}, {Cuttaia, F.}, {Danese, L.}, {Davies, R. D.}, {Davis, R.
+  J.}, {de Bernardis, P.}, {de Rosa, A.}, {de Zotti, G.}, {Delabrouille, J.},
+  {Désert, F.-X.}, {Dickinson, C.}, {Diego, J. M.}, {Dole, H.}, {Donzelli,
+  S.}, {Doré, O.}, {Douspis, M.}, {Ducout, A.}, {Dupac, X.}, {Efstathiou, G.},
+  {Elsner, F.}, {Enßlin, T. A.}, {Eriksen, H. K.}, {Falgarone, E.},
+  {Fergusson, J.}, {Finelli, F.}, {Forni, O.}, {Frailis, M.}, {Fraisse, A. A.},
+  {Franceschi, E.}, {Frejsel, A.}, {Galeotta, S.}, {Galli, S.}, {Ganga, K.},
+  {Ghosh, T.}, {Giard, M.}, {Giraud-Héraud, Y.}, {Gjerløw, E.},
+  {González-Nuevo, J.}, {Górski, K. M.}, {Gratton, S.}, {Gregorio, A.},
+  {Gruppuso, A.}, {Gudmundsson, J. E.}, {Hansen, F. K.}, {Hanson, D.},
+  {Harrison, D. L.}, {Helou, G.}, {Henrot-Versillé, S.},
+  {Hernández-Monteagudo, C.}, {Herranz, D.}, {Hildebrandt, S. R.}, {Hivon,
+  E.}, {Hobson, M.}, {Holmes, W. A.}, {Hornstrup, A.}, {Hovest, W.},
+  {Huffenberger, K. M.}, {Hurier, G.}, {Jaffe, A. H.}, {Jaffe, T. R.}, {Jones,
+  W. C.}, {Juvela, M.}, {Keihänen, E.}, {Keskitalo, R.}, {Kisner, T. S.},
+  {Kneissl, R.}, {Knoche, J.}, {Kunz, M.}, {Kurki-Suonio, H.}, {Lagache, G.},
+  {Lähteenmäki, A.}, {Lamarre, J.-M.}, {Lasenby, A.}, {Lattanzi, M.},
+  {Lawrence, C. R.}, {Le Jeune, M.}, {Leahy, J. P.}, {Leonardi, R.},
+  {Lesgourgues, J.}, {Levrier, F.}, {Liguori, M.}, {Lilje, P. B.},
+  {Linden-Vørnle, M.}, {López-Caniego, M.}, {Lubin, P. M.}, {Macías-Pérez,
+  J. F.}, {Maggio, G.}, {Maino, D.}, {Mandolesi, N.}, {Mangilli, A.}, {Maris,
+  M.}, {Marshall, D. J.}, {Martin, P. G.}, {Martínez-González, E.}, {Masi,
+  S.}, {Matarrese, S.}, {McGehee, P.}, {Meinhold, P. R.}, {Melchiorri, A.},
+  {Mendes, L.}, {Mennella, A.}, {Migliaccio, M.}, {Mitra, S.},
+  {Miville-Deschênes, M.-A.}, {Moneti, A.}, {Montier, L.}, {Morgante, G.},
+  {Mortlock, D.}, {Moss, A.}, {Munshi, D.}, {Murphy, J. A.}, {Naselsky, P.},
+  {Nati, F.}, {Natoli, P.}, {Netterfield, C. B.}, {Nørgaard-Nielsen, H. U.},
+  {Noviello, F.}, {Novikov, D.}, {Novikov, I.}, {Orlando, E.}, {Oxborrow, C.
+  A.}, {Paci, F.}, {Pagano, L.}, {Pajot, F.}, {Paladini, R.}, {Paoletti, D.},
+  {Partridge, B.}, {Pasian, F.}, {Patanchon, G.}, {Pearson, T. J.}, {Perdereau,
+  O.}, {Perotto, L.}, {Perrotta, F.}, {Pettorino, V.}, {Piacentini, F.}, {Piat,
+  M.}, {Pierpaoli, E.}, {Pietrobon, D.}, {Plaszczynski, S.}, {Pointecouteau,
+  E.}, {Polenta, G.}, {Pratt, G. W.}, {Prézeau, G.}, {Prunet, S.}, {Puget,
+  J.-L.}, {Rachen, J. P.}, {Reach, W. T.}, {Rebolo, R.}, {Reinecke, M.},
+  {Remazeilles, M.}, {Renault, C.}, {Renzi, A.}, {Ristorcelli, I.}, {Rocha,
+  G.}, {Rosset, C.}, {Rossetti, M.}, {Roudier, G.}, {Rubiño-Martín, J. A.},
+  {Rusholme, B.}, {Sandri, M.}, {Santos, D.}, {Savelainen, M.}, {Savini, G.},
+  {Scott, D.}, {Seiffert, M. D.}, {Shellard, E. P. S.}, {Spencer, L. D.},
+  {Stolyarov, V.}, {Stompor, R.}, {Strong, A. W.}, {Sudiwala, R.}, {Sunyaev,
+  R.}, {Sutton, D.}, {Suur-Uski, A.-S.}, {Sygnet, J.-F.}, {Tauber, J. A.},
+  {Terenzi, L.}, {Toffolatti, L.}, {Tomasi, M.}, {Tristram, M.}, {Tucci, M.},
+  {Tuovinen, J.}, {Umana, G.}, {Valenziano, L.}, {Valiviita, J.}, {Van Tent,
+  F.}, {Vielva, P.}, {Villa, F.}, {Wade, L. A.}, {Wandelt, B. D.}, {Wehus, I.
+  K.}, {Wilkinson, A.}, {Yvon, D.}, {Zacchei, A.}, and {Zonca, A.}
+\newblock Planck 2015 results - x. diffuse component separation: Foreground
+  maps.
+\newblock {\em A\&A}, 594:A10, 2016.
+
+\bibitem{constraininginflationarypotentialspectral}
+Nils Schöneberg, Matteo Lucca, and Deanna~C. Hooper.
+\newblock Constraining the inflationary potential with spectral distortions,
+  2021.
 
 \bibitem{Watanabe_2006}
 Yuki Watanabe and Eiichiro Komatsu.

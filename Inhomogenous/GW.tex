@@ -1,9 +1,9 @@
 \chapter{GW in the post-inflationary universe}
-In this section we will explore the evolution of gravitational waves in the post-inlationary universe: understanding this is fundamental to predict how the primordial power spectrum we found can impact present observable and which phenomena can magnify or reduce the resulting signal. To begin with we will describe free propagation of gravitational waves in the different eras of the universe to then introduce interactions that can alter this. 
+In this section we will explore the evolution of gravitational waves in the post-inflationary universe: understanding this is fundamental to predict how the primordial power spectrum we found can impact present observable and which phenomena can magnify or reduce the resulting signal. To begin with we will describe free propagation of gravitational waves in the different eras of the universe to then introduce interactions that can alter this. 
 
 \section{Free gravitational waves in FRW universe}
 \label{sec:free_GW}
-To study the propagation of gravitational waves in the FRW universe we must start from the Hilbert-Einstain action: at second order with respect to the tensor metric perturbations $h_ij$ it reads
+To study the propagation of gravitational waves in the FRW universe we must start from the Hilbert-Einstein action: at second order with respect to the tensor metric perturbations $h_ij$ it reads
 \begin{equation*}
     \mathcal{S} [h_{ij}]=\frac{1}{64\pi G}\int d^4xa^2\Big[(h'_{ij})^2-(h_{ij,k})^2\Big].
 \end{equation*}
@@ -17,7 +17,7 @@ Since the tensor $h_{ij}$ is a transverse traceless symmetric 3-tensor its dynam
     \end{pmatrix}\qquad\text{with }\boldsymbol{\epsilon}^\lambda_{ij}\boldsymbol{\epsilon}^{\lambda}_{ij}=1.
     \label{eq:GW-polarizations}
 \end{equation}
-This decomposition allows us to rewrite the action as the sum of the actions of each polarization, which turns out ro be the same:
+This decomposition allows us to rewrite the action as the sum of the actions of each polarization, which turns out to be the same:
 \begin{equation*}
     \mathcal{S} [h_{ij}]=\frac{1}{64\pi G}\sum_{\lambda=+,\times}\int d^4xa^2\Big[(h'_{(\lambda)})^2-(h_{(\lambda),k})^2\Big],
 \end{equation*}
@@ -46,8 +46,27 @@ where $J_\nu$ and $Y_\nu$ are the \emph{Bessel functions of the first and second
     \label{eq:free_GW_sol}
     \tilde h_k(\tau)=C_1(\mathbf{k})\tau\frac{j_{\beta-1}(k\tau)}{a(\tau)}+C_2(\mathbf{k})\tau\frac{y_{\beta-1}(k\tau)}{a(\tau)}.
 \end{equation}
+\begin{figure}
+    \centering
+\begin{tikzpicture}
+  \begin{axis}[
+      grid=major,
+      xlabel={$k\tau$},
+      ylabel={$h_k(\tau)$},
+      width=12cm, height=7cm,
+  ]
+    % Load and plot from the external file
+    \addplot [thick, dashed, smooth] table {CMB/tensor_rad.dat};
+    \addlegendentry{Rad. Dom.}
+    \addplot [thick, smooth] table {CMB/tensor_mat.dat};
+    \addlegendentry{Mat. Dom.}
+  \end{axis}
+\end{tikzpicture}
+\caption{Comparison of the evolution of the amplitude of primordial gravitational waves in the radiation dominated universe and in the matter dominated universe. We used the condition $C_2=0$ and $C_1=1$. }
+\label{fig:h_m/r}
+\end{figure}
 Note that the above solution holds also during slow-roll inflation, when a simple calculation gives $\beta\approx-1$. Lastly, let us appreciate that super Hubble horizon and sub Hubble horizon regimes we recover the behaviors which we already discovered studying inflation: from equation \eqref{eq:EOM_GW_FREE}, in the limit $k^2\gg a'/a=a H$ oscillating modes are displayed at sub Hubble horizon scales while for $k^2\ll\ a'/a=a H$ the solution reads:
-$$\tilde h_k(\tau)=C_1(\mathbf k)+C_2(\mathbf k)\int\frac{d\tau}{a^2},$$ which is a combination of a constant mode and a mode that decays as the universe expands.
+$$\tilde h_k(\tau)=C_1(\mathbf k)+C_2(\mathbf k)\int\frac{d\tau}{a^2},$$ which is a combination of a constant mode and a mode that decays as the universe expands. The superhorizon constant solution implies that the condition $C_2(\mathbf k)=0$ must be imposed since $y_n(x)$ diverges for $x\to 0$, while $j_n(x)$ is regular (see Appendix \ref{app:sph_bessel}), in this way a matching with the inflationary solution can be obtained.
 \section{Interacting GW}
 The previous section was devoted to study the evolution of tensor perturbations, namely primordial gravitational waves, in the free case, when no matter perturbation is coupled to these modes.
 In general, perturbing the Einstein field equations with tensor perturbations, results in the following
@@ -61,7 +80,7 @@ In the next section we will study three different sources of anisotropic stress 
 \label{sec:neutrino_damping}
  Weinberg \cite{Weinberg_nu_dump} showed that free streaming neutrinos, neutrinos that decoupled from the plasma and can move freely without being scattered (Section \ref{sec:decoupling}) can source anisotropic stress that then couples with the gravitational waves reducing their amplitudes after having crossed back the Hubble horizon. In this section we will illustrate this behavior.
 
-To obtain the anisotropic stress related to neutrinos we shall understand their behavior in the early universe: as we know from Section \ref{sec:BoltzmannEquation}, this is described by the \emph{Boltzmann equation}. Describing decoupled neutrinos the collision term must be set to zero, hence the Boltzmann equation will be just a conservation equation. Following the calulations carried out by Weinberg, we will not use the local momentum $\mathbf{p}$ to write the Boltzmann equation. Instead, the comoving momentum $\mathbf{P}$ allows us to make more explicit which term can depend on the metric and source anisotropic stresses. By the chain rule, the Liouville operator can be expressed as
+To obtain the anisotropic stress related to neutrinos we shall understand their behavior in the early universe: as we know from Section \ref{sec:BoltzmannEquation}, this is described by the \emph{Boltzmann equation}. Describing decoupled neutrinos the collision term must be set to zero, hence the Boltzmann equation will be just a conservation equation. Following the calculations carried out by Weinberg, we will not use the local momentum $\mathbf{p}$ to write the Boltzmann equation. Instead, the comoving momentum $\mathbf{P}$ allows us to make more explicit which term can depend on the metric and source anisotropic stresses. By the chain rule, the Liouville operator can be expressed as
 \begin{align*}
     \hat L[f]&=\frac{df}{dt}= \frac{\partial f}{\partial t}+\frac{\partial f}{\partial x^i}\frac{dx^i}{dt}+\frac{\partial f}{\partial P_i}\frac{dP_i}{dt},
 \end{align*}
@@ -69,8 +88,7 @@ where we can evaluate all the remaining total derivatives with respect to time f
 $$\frac{dx^i}{dt}=\frac{dx^i/d\lambda}{dx^0/d\lambda}=\frac{P^i}{P^0},\qquad \frac{dP^i}{d\lambda}=\frac{dP^i}{dt}P^0=-\Gamma^i_{\mu\nu} P^\mu P^\nu.$$
 A simple calculation yields
 \begin{align*}
-        \frac{dP_i}{dt}=&\frac{d}{dt}g_{ij}P^j=g_{ij,0}P^j+h_{ij,k}P^iP^k+g_{ij}\frac{dP^j}{dt}\\
-        &=g_{ij,0}P^j+g_{ij,k}P^jP^k-\Gamma^{i}_{\mu\nu}\frac{P^\mu P^\nu}{P^0}\\
+        \frac{dP_i}{dt}=&\frac{d}{dt}g_{ij}P^j=g_{ij,0}P^j+h_{ij,k}P^iP^k+g_{ij}\frac{dP^j}{dt}=g_{ij,0}P^j+g_{ij,k}P^jP^k-\Gamma^{i}_{\mu\nu}\frac{P^\mu P^\nu}{P^0}\\
         &=g_{ij,0}P^j+g_{ij,k}P^jP^k-2\frac{1}{2}g^{ik}g_{jk,0}P^j-\frac{1}{2}g^{ih}(g_{hk,j}+g_{hj,k}-g_{jk,h})\frac{P^kP^j}{P^0}\\
         &=\frac{1}{2}g_{jk,i}\frac{P^kP^j}{P^0}
 \end{align*}
@@ -122,7 +140,26 @@ with $A$ and $\delta$ are constants that must be computed numerically. Dicus and
     \label{eq:Tmodes_nu_damped}
     h(u)=\sum_{n\text{ even}}^{\infty}a_n j_n(u).
 \end{equation}
- In their work they have computed the numerical coefficients $a_0=1,\ a_2=0.0243807,\ a_4=5.28424\times10^{-2},\ a_6= 6.13545\times10^{-3}.\ a_8=2.07534\times10^{-4},\ a_{10}=6.16273\times10^{-5},\ a_{12}=-4.78885\times10^{-6}$ and with smaller and smaller higher coefficients. 
+\begin{figure}
+    \centering
+\begin{tikzpicture}
+  \begin{axis}[
+      grid=major,
+      xlabel={$k\tau$},
+      ylabel={$h_k(\tau)$},
+      width=12cm, height=7cm,
+  ]
+    % Load and plot from the external file
+    \addplot [thick, dashed, smooth] table {CMB/tensor_rad.dat};
+    \addlegendentry{Free-sol.}
+    \addplot [thick, smooth] table {CMB/tensor_nu.dat};
+    \addlegendentry{$\nu$ damped}
+  \end{axis}
+\end{tikzpicture}
+\caption{Comparison of the evolution of the amplitude of primordial gravitational waves in the radiation dominated universe, both in absence and presence of free-streaming neutrinos. }
+\label{fig:h_nu}
+\end{figure}
+ In their work they have computed the numerical coefficients $a_0=1,\ a_2=0.243807,\ a_4=5.28424\times10^{-2},\ a_6= 6.13545\times10^{-3}.\ a_8=2.07534\times10^{-4},\ a_{10}=6.16273\times10^{-5},\ a_{12}=-4.78885\times10^{-6}$ and with smaller and smaller higher coefficients. 
  Moreover, considering that for $u\to0$ all the even order Bessel functions behave as $(-1)^{n/2}\sin(u)/u$, the factor $A$ can be approximated to be
 $$A\approx \sum_{n=0}^{5}(-1)^n a_{2n}\approx 0.80313,$$
 which shows that the effect of the anisotropic stress is to reduce the amplitude of horizon crossing tensor perturbations.
@@ -142,7 +179,7 @@ We can obtain the anisotropic stress by projecting the energy-momentum tensor on
     \sqrt{\frac32}\tilde T^{ij}\boldsymbol{e}_{ij}^{(\pm)}&=\sqrt{\frac32}\tilde \pi^{ij}\boldsymbol{e}_{ij}^{(\pm)}=\frac{3}{2}4\tilde\pi^{(\mp)}\\
     &=\frac{g_\text{dof}}{(2\pi)^3}\sqrt{\frac32}\int d^3p \frac{p^ip^j}{p^0}\boldsymbol{e}_{ij}^{(\pm)}f(t,\mathbf k,\mathbf p)\\&=\frac{g_\text{dof}}{(2\pi)^3}\sqrt{\frac32}\int d^3p\ p\ \sin^2(\theta)e^{\pm i2\phi}\bigg(\bar f(t,p)-\tilde\Theta p\frac{\partial\bar f}{\partial p}\bigg),
 \end{align*}
-where in the first line we used that $\boldsymbol{e}_{ij}^{(\pm)}\boldsymbol{e}_{ij}^{(\pm)}=0$ and $\boldsymbol{e}_{ij}^{(\pm)}\boldsymbol{e}_{ij}^{(\mp)}=4$. At ths stage we can recognise the spherical harmonics $Y_{2,\pm2}(\theta,\phi)=\sqrt{\frac{15}{2\pi}}\ \sin^2\theta e^{\pm i2\phi}$ and that by othronormality the integral over the solid angle of $\versor p$ vanished when intrgating $\bar f(t,p)$, while the remaining term gives the quadrupole momentum of the anisotropies. Indeed, expanding $\tilde \Theta$ and using again orthogonality we find
+where in the first line we used that $\boldsymbol{e}_{ij}^{(\pm)}\boldsymbol{e}_{ij}^{(\pm)}=0$ and $\boldsymbol{e}_{ij}^{(\pm)}\boldsymbol{e}_{ij}^{(\mp)}=4$. At ths stage we can recognize the spherical harmonics $Y_{2,\pm2}(\theta,\phi)=\sqrt{\frac{15}{2\pi}}\ \sin^2\theta e^{\pm i2\phi}$ and that by orthonormality the integral over the solid angle of $\versor p$ vanished when integrating $\bar f(t,p)$, while the remaining term gives the quadrupole momentum of the anisotropies. Indeed, expanding $\tilde \Theta$ and using again orthogonality we find
 \begin{align*}
     \tilde{\Theta}(\mathbf{k},\versor p)&=\sum_{\ell,m}(-i)^{\ell}\sqrt{\frac{4\pi}{2\ell+1}}Y_{\ell, m}(\versor p)\tilde\Theta_{\ell}^{(m)}(\mathbf k),\\
     \tilde \pi^{(\mp)}&=-\frac{g_\text{dof}}{6(2\pi)^3}\sqrt{\frac32}\int d^3p\ p^2 \frac{\partial\bar f}{\partial p}\sum_{\ell,m}(-i)^{\ell}\sqrt{\frac{2\pi}{15}}\sqrt{\frac{4\pi}{2\ell+1}}Y_{2,\mp2}^*Y_{\ell m}\tilde\Theta_{\ell}^{(m)}\\
@@ -227,20 +264,6 @@ where $C$ is the integration constant. Integrating one last time we obtain the f
 In the end we found that, together with the constant and decaying modes we already obtained in Section \ref{sec:free_GW}, a logarithmically increasing mode is generated. To reconnect this solution to the inflationary initial condition we can impose that at some $\tau_0$ when the magnetic fields are sourced 
 $$\tilde h_k(\tau_0)=\tilde h_k^\text{infl},\ \tilde h'_k(\tau_0)=0 \quad \Rightarrow\quad \tilde h_k(\tau) = 6 \frac{\tilde\pi^{(B)}}{\bar\rho_\gamma}\bigg(\log\frac{\tau}{\tau_0}+\frac{\tau_0}{\tau}\bigg)+\tilde h_k^\text{infl}.$$
 We should then study the sub horizon regime: in this case the the anisotropic stress will still influence the evolution of primordial gravitational waves. However, at the smallest scales the electromagnetic interactions dissipates the magnetic fields and the usual solutions are recovered. This occurs at the so called \emph{damping scale} $k_D$.\\Overall, we discovered that primordial magnetic fields generates a super horizon growth of the gravitational waves sourced by vacuum fluctuations, then upon reentering the Hubble horizon the tensor perturbations start to oscillate again under the influence of the magnetic fields. At some even smaller scale $k_D$ the magnetic fields dissipates and the usual dynamics is reestablished.  
-
-In general, primordial magnetic fields are modeled as a stochastic background which statistics is captured by a 2-points correlation function,
-\begin{equation}
-    \langle B_i(\mathbf{k})B^*_j(\mathbf{k'})\rangle=(2\pi)^3\delta^3(\mathbf{k}-\mathbf{k'})P_{ij}(\mathbf{k})\frac{\mathcal P_B(k)}{2},\label{eq:magnetic_2pt},
-\end{equation}
-were $\mathcal P_B$ is the power spectrum of the magnetic field. Phenomenologically these power spectra can be characterized by a power law
-$$\mathcal{P}_B(k)=\mathcal A_B\bigg(\frac{k}{k_0}\bigg)^{n_B},$$
-which then allows for the 2-points correlation function of the anisotropic stress to be obtained:
-$$\langle\tilde\pi^{*(B)}_{ij}(k)\tilde\pi^{(B)}_{hk}\rangle=\frac{1}{4}|\tilde \pi^{(B)}(k)|^2\mathcal{M}_{ijkh}(k)\delta(k-k'),\text{ and }\mathcal{M}_{ijkh}(k)\defeq P_{ik}P_{jh}+P_{ih}P_{jk}-P_{ij}P_{hk},$$
-and with $P_{ij}\defeq \delta_{ij} - \hat k_i\hat k_j.$
-An extensive description of the physics of primordial magnetic fields and their interactions with the CMB anisotropies can be found in \cite{Paoletti_2009}: in this work many 2-points correlation function of the anisotropic stress are computed, we only quote here the result in the case $n_B=2$ (Fig. \ref{fig:stress_B}):
-$$
-|\tilde \pi^{(B)}(k)|^2\bigg|_{n_B=2}=\frac{\mathcal{A_B}^2k_D^7}{256\pi^4k_0 ^4}\bigg[\frac{8}{15}-\frac{7}{6}k+\frac{16}{15}k^2-\frac{7}{24}k^3-\frac{13}{480}k^5+\frac{11}{1920}k^7\bigg].
-$$
 \begin{figure}
     \centering
     \begin{tikzpicture}
@@ -257,7 +280,6 @@ $$
         % The formula below is the normalized version:
         % y = k^3 * [8/15 - 7/6*k + 16/15*k^2 - 7/24*k^3 - 13/480*k^5 + 11/1920*k^7]
         \addplot[
-            blue,
             smooth
         ] 
         {x^3 * (8/15 - 7/6*x + 16/15*x^2 - 7/24*x^3 - 13/480*x^5 + 11/1920*x^7)};
@@ -266,6 +288,20 @@ $$
     \caption{Plot of $k^3 |\tilde{\pi}^{(B)}(k)|^2$ for $n_B=2$ as a function of $k/k_D$. We can appreciate that the anisotropic stress has a peak right after $k_D$, to then vanish for $2k_D$.}
     \label{fig:stress_B}
 \end{figure}
+
+In general, primordial magnetic fields are modeled as a stochastic background which statistics is captured by a 2-points correlation function,
+\begin{equation}
+    \langle B_i(\mathbf{k})B^*_j(\mathbf{k'})\rangle=(2\pi)^3\delta^3(\mathbf{k}-\mathbf{k'})P_{ij}(\mathbf{k})\frac{\mathcal P_B(k)}{2},\label{eq:magnetic_2pt},
+\end{equation}
+were $\mathcal P_B$ is the power spectrum of the magnetic field. Phenomenologically these power spectra can be characterized by a power law
+$$\mathcal{P}_B(k)=\mathcal A_B\bigg(\frac{k}{k_0}\bigg)^{n_B},$$
+which then allows for the 2-points correlation function of the anisotropic stress to be obtained:
+$$\langle\tilde\pi^{*(B)}_{ij}(k)\tilde\pi^{(B)}_{hk}\rangle=\frac{1}{4}|\tilde \pi^{(B)}(k)|^2\mathcal{M}_{ijkh}(k)\delta(k-k'),\text{ and }\mathcal{M}_{ijkh}(k)\defeq P_{ik}P_{jh}+P_{ih}P_{jk}-P_{ij}P_{hk},$$
+and with $P_{ij}\defeq \delta_{ij} - \hat k_i\hat k_j.$
+An extensive description of the physics of primordial magnetic fields and their interactions with the CMB anisotropies can be found in \cite{Paoletti_2009}: in this work many 2-points correlation function of the anisotropic stress are computed, we only quote here the result in the case $n_B=2$ (Fig. \ref{fig:stress_B}):
+$$
+|\tilde \pi^{(B)}(k)|^2\bigg|_{n_B=2}=\frac{\mathcal{A_B}^2k_D^7}{256\pi^4k_0 ^4}\bigg[\frac{8}{15}-\frac{7}{6}k+\frac{16}{15}k^2-\frac{7}{24}k^3-\frac{13}{480}k^5+\frac{11}{1920}k^7\bigg].
+$$
 In the above, the damping scale $k_D$ appears: mathematically it corresponds to an upper cut-off to every momentum integral of the power spectrum.
 
 
