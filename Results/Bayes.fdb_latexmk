@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1757263258 "/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex" "Bayes.pdf" "Bayes" 1757263258
+["pdflatex"] 1757351077 "/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex" "Bayes.pdf" "Bayes" 1757351077
   "/etc/texmf/web2c/texmf.cnf" 1691845395 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex" 1757263257 9965 e3b40f2799070c0ea31575d2e647cae7 ""
+  "/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex" 1757351076 10884 f91fbb8336affa435c787dfd91b47bf9 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
@@ -9,8 +9,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1691845597 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1711353807 2800863 b006096f82529f01114cb41cb216a1be ""
-  "Bayes.aux" 1757263258 32 3985256e7290058c681f74d7a3565a19 ""
-  "Bayes.tex" 1757263257 9965 e3b40f2799070c0ea31575d2e647cae7 ""
+  "Bayes.aux" 1757351077 32 3985256e7290058c681f74d7a3565a19 ""
+  "Bayes.tex" 1757351076 10884 f91fbb8336affa435c787dfd91b47bf9 ""
   (generated)
   "Bayes.log"
   "Bayes.pdf"

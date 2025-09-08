@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.25)  7 SEP 2025 18:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.25)  8 SEP 2025 19:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -5216,153 +5216,788 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.41 M
-      any astrophysical effects can produce a \emph{foreground} that must be...
+l.41 T
+      he first effect we should account for is any eventual error in the mea...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no M in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no a in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no w in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no G in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
 Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no C in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no s in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no I in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no c in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:41: Undefined control sequence.
+<write> ...rence `sec:SD_shapes' on page \thepage 
+                                                  \space undefined\on@line .
+l.41 ... discovered in Section \ref{sec:SD_shapes}
+                                                   corresponds to a spectral...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `sec:SD_shapes' on page  undefined on input line 41.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 41--42
+[]
+ []
+
+
+Overfull \hbox (15.56601pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 T$
+ []
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 41--42
+[]
+ []
+
+
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 M
+      oreover, the Zeldovich-Sunayev effect \cite{Zeldovich1972} can produce...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no Z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no [ in font nullfont!
+\citation{Zeldovich1972}
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.43 ...dovich-Sunayev effect \cite{Zeldovich1972}
+                                                   can produce a $y$-distort...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `Zeldovich1972' on page  undefined on input line 43.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 43--44
+[]
+ []
+
+
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 43--44
+[]
+ []
+
+
+Overfull \hbox (5.2616pt too wide) in paragraph at lines 43--44
+\OML/cmm/m/it/10 y$
+ []
+
+
+Overfull \hbox (12.26659pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 in-
+ []
+
+
+Overfull \hbox (11.11656pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 tr-
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 a-
+ []
+
+
+Overfull \hbox (20.18875pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 clus-
+ []
+
+
+Overfull \hbox (12.13878pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 ter
+ []
+
+
+Overfull \hbox (33.98868pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 medium
+ []
+
+
+Overfull \hbox (12.26659pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 in-
+ []
+
+
+Overfull \hbox (15.71652pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 ter-
+ []
+
+
+Overfull \hbox (25.55537pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 galac-
+ []
+
+
+Overfull \hbox (10.9888pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 tic
+ []
+
+
+Overfull \hbox (33.98868pt too wide) in paragraph at lines 43--44
+\OT1/cmr/m/it/10 medium
+ []
+
+
+Overfull \hbox (5.2616pt too wide) in paragraph at lines 43--44
+\OML/cmm/m/it/10 y$ 
+ []
+
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:44: Undefined control sequence.
+l.44 ...a \mathcal I_{ZS}(x)=(k_BT_z)^3x^3 y_\text
+                                                  {reio} Y(x),$$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (141.5429pt too wide) detected at line 44
+\OT1/cmr/m/n/10 ^^A\OMS/cmsy/m/n/10 I[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 k[]T[]\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 x[]y[]Y\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;
+ []
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:45: Undefined control sequence.
+<write> ...hermalizationProblem' on page \thepage 
+                                                  \space undefined\on@line .
+l.45 ...of Section \ref{sec:ThermalizationProblem}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `sec:ThermalizationProblem' on page  undefined on input line 45.
+
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 44--46
+       [] 
+ []
+
+
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:47: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 L
+      astly, a \emph{foreground} can be produced as the result of many proce...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no ( in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no I in font nullfont!
@@ -5372,88 +6007,8 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
 Missing character: There is no , in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no O in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -5472,11 +6027,11 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{constraininginflationarypotentialspectral}
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:41: Undefined control sequence.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:47: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.41 ...constraininginflationarypotentialspectral}
-                                                   the foreground can be mod...
+l.47 ...constraininginflationarypotentialspectral}
+                                                   this foreground can be mo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5484,12 +6039,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `constraininginflationarypotentialspectral' on page  undefined on input line 41.
+LaTeX Warning: Citation `constraininginflationarypotentialspectral' on page  undefined on input line 47.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -5555,20 +6111,20 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:42: LaTeX Error: Environment align* undefined.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:48: LaTeX Error: Environment align* undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 \begin{align*}
+l.48 \begin{align*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: Misplaced alignment tab character &.
-l.43     &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:49: Misplaced alignment tab character &.
+l.49     &
           \Delta \mathcal I_i(x)=A_i\bigg(\frac{x_i}{x_{\text{ref}}})^{\beta...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -5577,18 +6133,18 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: Missing $ inserted.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:49: Missing $ inserted.
 <inserted text> 
                 $
-l.43     &\Delta
+l.49     &\Delta
                  \mathcal I_i(x)=A_i\bigg(\frac{x_i}{x_{\text{ref}}})^{\beta...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: Undefined control sequence.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:49: Undefined control sequence.
 <argument> x_{\text 
                     {ref}}
-l.43 ...I_i(x)=A_i\bigg(\frac{x_i}{x_{\text{ref}}}
+l.49 ...I_i(x)=A_i\bigg(\frac{x_i}{x_{\text{ref}}}
                                                   )^{\beta_i+3} \frac{e^{x_{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5596,10 +6152,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: Undefined control sequence.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:49: Undefined control sequence.
 <argument> e^{x_{\text 
                        {ref}}}-1
-l.43 ...+3} \frac{e^{x_{\text{ref}}}-1}{e^{x_i}-1}
+l.49 ...+3} \frac{e^{x_{\text{ref}}}-1}{e^{x_i}-1}
                                                   ,\qquad\qquad\text{with } ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5607,8 +6163,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: Undefined control sequence.
-l.43 ...ext{ref}}}-1}{e^{x_i}-1},\qquad\qquad\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:49: Undefined control sequence.
+l.49 ...ext{ref}}}-1}{e^{x_i}-1},\qquad\qquad\text
                                                   {with } x_i\defeq\frac{\nu...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5616,8 +6172,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: Undefined control sequence.
-l.43 ...x_i}-1},\qquad\qquad\text{with } x_i\defeq
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:49: Undefined control sequence.
+l.49 ...x_i}-1},\qquad\qquad\text{with } x_i\defeq
                                                   \frac{\nu}{k_BT_i}\text{ a...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5625,8 +6181,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: Undefined control sequence.
-l.43 ...xt{with } x_i\defeq\frac{\nu}{k_BT_i}\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:49: Undefined control sequence.
+l.49 ...xt{with } x_i\defeq\frac{\nu}{k_BT_i}\text
                                                   { and } \nu_\text{ref}=545...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5634,8 +6190,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: Undefined control sequence.
-l.43 ...eq\frac{\nu}{k_BT_i}\text{ and } \nu_\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:49: Undefined control sequence.
+l.49 ...eq\frac{\nu}{k_BT_i}\text{ and } \nu_\text
                                                   {ref}=545\text{GHz},\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5643,8 +6199,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:43: Undefined control sequence.
-l.43 ..._BT_i}\text{ and } \nu_\text{ref}=545\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:49: Undefined control sequence.
+l.49 ..._BT_i}\text{ and } \nu_\text{ref}=545\text
                                                   {GHz},\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5652,10 +6208,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:44: Misplaced alignment tab character &.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:50: Misplaced alignment tab character &.
 <recently read> &
                  
-l.44     &
+l.50     &
           \Delta \mathcal{I}_\text{sync} (x)= A_S\bigg(\frac{x_\text{ref}}{x...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -5664,8 +6220,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:44: Undefined control sequence.
-l.44     &\Delta \mathcal{I}_\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:50: Undefined control sequence.
+l.50     &\Delta \mathcal{I}_\text
                                   {sync} (x)= A_S\bigg(\frac{x_\text{ref}}{x...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5673,10 +6229,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:44: Undefined control sequence.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:50: Undefined control sequence.
 <argument> x_\text 
                    {ref}
-l.44 ...sync} (x)= A_S\bigg(\frac{x_\text{ref}}{x}
+l.50 ...sync} (x)= A_S\bigg(\frac{x_\text{ref}}{x}
                                                   \bigg)^{\alpha_S+\tfrac{\o...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5684,8 +6240,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:44: Undefined control sequence.
-l.44 ...ac{x_\text{ref}}{x}\bigg)^{\alpha_S+\tfrac
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:50: Undefined control sequence.
+l.50 ...ac{x_\text{ref}}{x}\bigg)^{\alpha_S+\tfrac
                                                   {\omega_S}2\log^2(x/x_\tex...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5693,8 +6249,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:44: Undefined control sequence.
-l.44 ...\alpha_S+\tfrac{\omega_S}2\log^2(x/x_\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:50: Undefined control sequence.
+l.50 ...\alpha_S+\tfrac{\omega_S}2\log^2(x/x_\text
                                                   {ref})}\qquad \text{with }...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5702,8 +6258,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:44: Undefined control sequence.
-l.44 ...ega_S}2\log^2(x/x_\text{ref})}\qquad \text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:50: Undefined control sequence.
+l.50 ...ega_S}2\log^2(x/x_\text{ref})}\qquad \text
                                                   {with }\nu_\text{ref}=100\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5711,8 +6267,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:44: Undefined control sequence.
-l.44 ...x_\text{ref})}\qquad \text{with }\nu_\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:50: Undefined control sequence.
+l.50 ...x_\text{ref})}\qquad \text{with }\nu_\text
                                                   {ref}=100\text{GHz},\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5720,8 +6276,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:44: Undefined control sequence.
-l.44 ...\qquad \text{with }\nu_\text{ref}=100\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:50: Undefined control sequence.
+l.50 ...\qquad \text{with }\nu_\text{ref}=100\text
                                                   {GHz},\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5729,10 +6285,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:45: Misplaced alignment tab character &.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:51: Misplaced alignment tab character &.
 <recently read> &
                  
-l.45     &
+l.51     &
           \Delta \mathcal{I}_\text{free-free}(x)= A_\text{ff} \mathcal{ N} T...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -5741,8 +6297,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:45: Undefined control sequence.
-l.45     &\Delta \mathcal{I}_\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:51: Undefined control sequence.
+l.51     &\Delta \mathcal{I}_\text
                                   {free-free}(x)= A_\text{ff} \mathcal{ N} T...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5750,8 +6306,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:45: Undefined control sequence.
-l.45 ...a \mathcal{I}_\text{free-free}(x)= A_\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:51: Undefined control sequence.
+l.51 ...a \mathcal{I}_\text{free-free}(x)= A_\text
                                                   {ff} \mathcal{ N} T_e\big(...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5759,8 +6315,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:45: Undefined control sequence.
-l.45 ...ff} \mathcal{ N} T_e\big(1-e^{-\tau_{\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:51: Undefined control sequence.
+l.51 ...ff} \mathcal{ N} T_e\big(1-e^{-\tau_{\text
                                                   {ff}}}\big),&\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5768,8 +6324,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:45: Misplaced alignment tab character &.
-l.45 ... N} T_e\big(1-e^{-\tau_{\text{ff}}}\big),&
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:51: Misplaced alignment tab character &.
+l.51 ... N} T_e\big(1-e^{-\tau_{\text{ff}}}\big),&
                                                   \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -5778,11 +6334,11 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:46: Misplaced alignment tab character &.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Misplaced alignment tab character &.
 <recently read> &
                  
-l.46     &
-          \qquad\qquad\tau_\text{ff}\approx 0.05468EM\bigg(\frac{T_e}{\text{...
+l.52     &
+          \qquad\qquad\tau_\text{ff}\approx 0.05468\text{EM}\bigg(\frac{T_e}...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -5790,19 +6346,28 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:46: Undefined control sequence.
-l.46     &\qquad\qquad\tau_\text
-                                {ff}\approx 0.05468EM\bigg(\frac{T_e}{\text{...
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Undefined control sequence.
+l.52     &\qquad\qquad\tau_\text
+                                {ff}\approx 0.05468\text{EM}\bigg(\frac{T_e}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:46: Undefined control sequence.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Undefined control sequence.
+l.52 ...ad\qquad\tau_\text{ff}\approx 0.05468\text
+                                                  {EM}\bigg(\frac{T_e}{\text...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Undefined control sequence.
 <argument> \text 
                  {K}
-l.46 ...approx 0.05468EM\bigg(\frac{T_e}{\text{K}}
+l.52 ...0.05468\text{EM}\bigg(\frac{T_e}{\text{K}}
                                                   \bigg)^{-3/2}\bigg(\frac{\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5810,10 +6375,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:46: Undefined control sequence.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Undefined control sequence.
 <argument> \text 
                  {GHz}
-l.46 ...}\bigg)^{-3/2}\bigg(\frac{\nu}{\text{GHz}}
+l.52 ...}\bigg)^{-3/2}\bigg(\frac{\nu}{\text{GHz}}
                                                   \bigg)^{-2}g_\text{ff},& \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5821,8 +6386,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:46: Undefined control sequence.
-l.46 ...g(\frac{\nu}{\text{GHz}}\bigg)^{-2}g_\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Undefined control sequence.
+l.52 ...g(\frac{\nu}{\text{GHz}}\bigg)^{-2}g_\text
                                                   {ff},& \\ &\qquad\qquad g_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5830,8 +6395,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:46: Misplaced alignment tab character &.
-l.46 ...c{\nu}{\text{GHz}}\bigg)^{-2}g_\text{ff},&
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Misplaced alignment tab character &.
+l.52 ...c{\nu}{\text{GHz}}\bigg)^{-2}g_\text{ff},&
                                                    \\ &\qquad\qquad g_\text{...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -5840,10 +6405,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:46: Misplaced alignment tab character &.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Misplaced alignment tab character &.
 <recently read> &
                  
-l.46 ...}{\text{GHz}}\bigg)^{-2}g_\text{ff},& \\ &
+l.52 ...}{\text{GHz}}\bigg)^{-2}g_\text{ff},& \\ &
                                                   \qquad\qquad g_\text{ff}\a...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -5852,8 +6417,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:46: Undefined control sequence.
-l.46 ...{-2}g_\text{ff},& \\ &\qquad\qquad g_\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Undefined control sequence.
+l.52 ...{-2}g_\text{ff},& \\ &\qquad\qquad g_\text
                                                   {ff}\approx \log\bigg\{ e+...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5861,10 +6426,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:46: Undefined control sequence.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Undefined control sequence.
 <argument> \text 
                  {GHz}
-l.46 ...t{3}}{\pi}\log\bigg(\frac{\nu}{\text{GHz}}
+l.52 ...t{3}}{\pi}\log\bigg(\frac{\nu}{\text{GHz}}
                                                   \Big(\frac{T_e}{10^4\text{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5872,10 +6437,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:46: Undefined control sequence.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Undefined control sequence.
 <argument> 10^4\text 
                      {K}
-l.46 ...}{\text{GHz}}\Big(\frac{T_e}{10^4\text{K}}
+l.52 ...}{\text{GHz}}\Big(\frac{T_e}{10^4\text{K}}
                                                   \Big)^{-3/2}\bigg)\bigg]\b...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5884,22 +6449,22 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:47: LaTeX Error: \begin{document} ended by \end{align*}.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:53: LaTeX Error: \begin{document} ended by \end{align*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 \end{align*}
+l.53 \end{align*}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:47: Missing $ inserted.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:53: Missing $ inserted.
 <inserted text> 
                 $
-l.47 \end{align*}
+l.53 \end{align*}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5944,46 +6509,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no O in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
+Missing character: There is no S in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -6009,7 +6535,362 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no [ in font nullfont!
+\citation{refId0}
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:54: Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.54 ...lowing \cite{refId0,10.1093/mnras/stx1653}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `refId0' on page  undefined on input line 54.
+
+Missing character: There is no , in font nullfont!
+\citation{10.1093/mnras/stx1653}
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:54: Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.54 ...lowing \cite{refId0,10.1093/mnras/stx1653}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `10.1093/mnras/stx1653' on page  undefined on input line 54.
+
+Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 47--55
+[]
+ []
+
+
+Overfull \hbox (20.06094pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 fore-
+ []
+
+
+Overfull \hbox (29.51646pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 ground
+ []
+
+
+Overfull \hbox (28.69148pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 Galac-
+ []
+
+
+Overfull \hbox (10.9888pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 tic
+ []
+
+
+Overfull \hbox (20.8276pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 ther-
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 mal
+ []
+
+
+Overfull \hbox (17.88878pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 dust
+ []
+
+
+Overfull \hbox (19.9332pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 Cos-
+ []
+
+
+Overfull \hbox (15.84435pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 mic
+ []
+
+
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (24.78867pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 frared
+ []
+
+
+Overfull \hbox (24.9276pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 Back-
+ []
+
+
+Overfull \hbox (29.51646pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 ground
+ []
+
+
+Overfull \hbox (18.14432pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 syn-
+ []
+
+
+Overfull \hbox (36.2886pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 chrotron
+ []
+
+
+Overfull \hbox (23.51096pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 emis-
+ []
+
+
+Overfull \hbox (17.8888pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 sion
+ []
+
+
+Overfull \hbox (19.0387pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 free-
+ []
+
+
+Overfull \hbox (18.5276pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 free,
+ []
+
+
+Overfull \hbox (21.46654pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 spin-
+ []
+
+
+Overfull \hbox (18.911pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 ning
+ []
+
+
+Overfull \hbox (17.88878pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 dust
+ []
+
+
+Overfull \hbox (12.26659pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 in-
+ []
+
+
+Overfull \hbox (11.4999pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 te-
+ []
+
+
+Overfull \hbox (25.93866pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 grated
+ []
+
+
+Overfull \hbox (14.82213pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 CO
+ []
+
+
+Overfull \hbox (23.51096pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 emis-
+ []
+
+
+Overfull \hbox (17.8888pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 sion
+ []
+
+
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 47--55
+[]
+ []
+
+
+Overfull \hbox (41.15637pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/n/10 ^^A\OMS/cmsy/m/n/10 I[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (190.17201pt too wide) in paragraph at lines 47--55
+\OML/cmm/m/it/10 A[][][]\OT1/cmr/m/n/10 )[][]\OML/cmm/m/it/10 ;   []x[][][]^^W[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (41.52222pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/n/10 545[]\OML/cmm/m/it/10 ; [] 
+ []
+
+
+Overfull \hbox (54.92523pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/n/10 ^^A\OMS/cmsy/m/n/10 I[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (172.40947pt too wide) in paragraph at lines 47--55
+\OML/cmm/m/it/10 A[][][][][] []^^W[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (41.52222pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/n/10 100[]\OML/cmm/m/it/10 ; [] 
+ []
+
+
+Overfull \hbox (76.97823pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/n/10 ^^A\OMS/cmsy/m/n/10 I[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (54.5457pt too wide) in paragraph at lines 47--55
+\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 N\OML/cmm/m/it/10 T[][]\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (32.64282pt too wide) in paragraph at lines 47--55
+\OML/cmm/m/it/10 e[][]; [] 
+ []
+
+
+Overfull \hbox (24.79521pt too wide) in paragraph at lines 47--55
+\OML/cmm/m/it/10 ^^\[] \OMS/cmsy/m/n/10 ^^Y
+ []
+
+
+Overfull \hbox (160.43707pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05468[][][][][][][][][]\OML/cmm/m/it/10 g[]; [] 
+ []
+
+
+Overfull \hbox (25.19336pt too wide) in paragraph at lines 47--55
+\OML/cmm/m/it/10 g[] \OMS/cmsy/m/n/10 ^^Y
+ []
+
+
+Overfull \hbox (34.5174pt too wide) in paragraph at lines 47--55
+[] []\OML/cmm/m/it/10 e \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (47.77788pt too wide) in paragraph at lines 47--55
+[] []\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 96 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (131.55063pt too wide) in paragraph at lines 47--55
+[] [] [][][][][][][][][]\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (3.44513pt too wide) in paragraph at lines 47--55
+\OML/cmm/m/it/10 i$
+ []
+
+
+Overfull \hbox (20.8276pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 ther-
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 mal
+ []
+
+
+Overfull \hbox (17.88878pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 dust
+ []
+
+
+Overfull \hbox (18.04988pt too wide) in paragraph at lines 47--55
+\OT1/cmr/m/it/10 CIB
+ []
+
+
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 47--55
+[]
+ []
+
+
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 47--55
+[] 
+ []
+
+
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:56: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 O
+      verall 16 nuisance parameters, that we resumed in the following table,...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no O in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -6037,6 +6918,40 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no g in font nullfont!
@@ -6058,15 +6973,15 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
-Missing character: There is no : in font nullfont!
+Missing character: There is no . in font nullfont!
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:49: LaTeX Error: Environment table undefined.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:57: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 \begin{table}
+l.57 \begin{table}
                   [h!]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6077,42 +6992,20 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ] in font nullfont!
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:51: LaTeX Error: Environment tabularx undefined.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:59: LaTeX Error: Illegal character in array arg.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51 \begin{tabularx}
-                     {\textwidth}{>{\raggedright\arraybackslash}m{2.5cm} X}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:51: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.51 \begin{tabularx}{\textwidth}
-                                 {>{\raggedright\arraybackslash}m{2.5cm} X}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:51: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.51 \begin{tabularx}{\textwidth}
-                                 {>{\raggedright\arraybackslash}m{2.5cm} X}
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+l.59 \begin{tabular}{\textwidth}
+                                {>{\raggedright\arraybackslash}m{2.5cm} X}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no > in font nullfont!
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:51: Undefined control sequence.
-l.51 ...{\textwidth}{>{\raggedright\arraybackslash
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:59: Undefined control sequence.
+l.59 ...{\textwidth}{>{\raggedright\arraybackslash
                                                   }m{2.5cm} X}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6127,205 +7020,66 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no X in font nullfont!
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:52: Misplaced \noalign.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:60: Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.52 \hline
+l.60 \hline
            
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:60: You can't use `\hrule' here except with leaders.
+\hline ->\noalign {\ifnum 0=`}\fi \hrule 
+                                         \@height \arrayrulewidth \futurelet...
+l.60 \hline
+           
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 41--52
- [] 
- []
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:60: Missing number, treated as zero.
+<to be read again> 
+                   \futurelet 
+l.60 \hline
+           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:60: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \futurelet 
+l.60 \hline
+           
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-Overfull \hbox (20.06094pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/it/10 fore- 
- []
-
-
-Overfull \hbox (29.51646pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/it/10 ground 
- []
-
-
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 41--52
- [] 
- []
-
-
-Overfull \hbox (41.15637pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/n/10 ^^A\OMS/cmsy/m/n/10 I[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 
- []
-
-
-Overfull \hbox (190.17201pt too wide) in paragraph at lines 41--52
- \OML/cmm/m/it/10 A[][][]\OT1/cmr/m/n/10 )[][]\OML/cmm/m/it/10 ;   []x[][][]^^W[] \OT1/cmr/m/n/10 = 
- []
-
-
-Overfull \hbox (41.52222pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/n/10 545[]\OML/cmm/m/it/10 ; []  
- []
-
-
-Overfull \hbox (54.92523pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/n/10 ^^A\OMS/cmsy/m/n/10 I[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 
- []
-
-
-Overfull \hbox (172.40947pt too wide) in paragraph at lines 41--52
- \OML/cmm/m/it/10 A[][][][][] []^^W[] \OT1/cmr/m/n/10 = 
- []
-
-
-Overfull \hbox (41.52222pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/n/10 100[]\OML/cmm/m/it/10 ; []  
- []
-
-
-Overfull \hbox (76.97823pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/n/10 ^^A\OMS/cmsy/m/n/10 I[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 
- []
-
-
-Overfull \hbox (54.5457pt too wide) in paragraph at lines 41--52
- \OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 N\OML/cmm/m/it/10 T[][]\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 ^^@ 
- []
-
-
-Overfull \hbox (32.64282pt too wide) in paragraph at lines 41--52
- \OML/cmm/m/it/10 e[][]; []  
- []
-
-
-Overfull \hbox (24.79521pt too wide) in paragraph at lines 41--52
- \OML/cmm/m/it/10 ^^\[] \OMS/cmsy/m/n/10 ^^Y 
- []
-
-
-Overfull \hbox (160.43707pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05468\OML/cmm/m/it/10 EM[][][][][][][][]g[]; []  
- []
-
-
-Overfull \hbox (25.19336pt too wide) in paragraph at lines 41--52
- \OML/cmm/m/it/10 g[] \OMS/cmsy/m/n/10 ^^Y 
- []
-
-
-Overfull \hbox (34.5174pt too wide) in paragraph at lines 41--52
- [] []\OML/cmm/m/it/10 e \OT1/cmr/m/n/10 + 
- []
-
-
-Overfull \hbox (47.77788pt too wide) in paragraph at lines 41--52
- [] []\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 96 \OMS/cmsy/m/n/10 ^^@ 
- []
-
-
-Overfull \hbox (131.55063pt too wide) in paragraph at lines 41--52
- [] [] [][][][][][][][][]\OML/cmm/m/it/10 ;$ 
- []
-
-
-Overfull \hbox (3.44513pt too wide) in paragraph at lines 41--52
- \OML/cmm/m/it/10 i$ 
- []
-
-
-Overfull \hbox (20.8276pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/it/10 ther- 
- []
-
-
-Overfull \hbox (15.84436pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/it/10 mal 
- []
-
-
-Overfull \hbox (17.88878pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/it/10 dust 
- []
-
-
-Overfull \hbox (18.04988pt too wide) in paragraph at lines 41--52
- \OT1/cmr/m/it/10 CIB 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:53: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 \textbf{Parameter}
-                        & \textbf{Description} \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:53: Misplaced alignment tab character &.
-l.53 \textbf{Parameter} &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:61: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.61 \textbf{Parameter} &
                           \textbf{Description} \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
-
-Overfull \hbox (52.79138pt too wide) in paragraph at lines 53--53
- []\OT1/cmr/bx/n/10 Parameter 
- []
-
-
-Overfull \hbox (17.92352pt too wide) in paragraph at lines 53--53
- \OT1/cmr/bx/n/10 De- 
- []
-
-
-Overfull \hbox (27.79985pt too wide) in paragraph at lines 53--53
- \OT1/cmr/bx/n/10 scrip- 
- []
-
-
-Overfull \hbox (19.80545pt too wide) in paragraph at lines 53--53
- \OT1/cmr/bx/n/10 tion 
- []
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:54: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.54 \hline
-           
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:55: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 $
-      \Delta T$      & Temperature shift amplitude \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:55: Misplaced alignment tab character &.
-l.55 $\Delta T$      &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:63: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.63 $\Delta T$      &
                        Temperature shift amplitude \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -6352,32 +7106,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
-
-Overfull \hbox (15.56601pt too wide) in paragraph at lines 55--55
- []$\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 T$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:56: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 $
-      T_D$           & Temperature of thermal dust \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:56: Misplaced alignment tab character &.
-l.56 $T_D$           &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:64: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.64 $T_D$           &
                        Temperature of thermal dust \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -6403,32 +7139,14 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
-
-Overfull \hbox (13.09752pt too wide) in paragraph at lines 56--56
- []$\OML/cmm/m/it/10 T[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:57: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 $
-      \beta_D$       & Exponent appearing in Eq.\,(16.11a) \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:57: Misplaced alignment tab character &.
-l.57 $\beta_D$       &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:65: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.65 $\beta_D$       &
                        Exponent appearing in Eq.\,(16.11a) \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no E in font nullfont!
 Missing character: There is no x in font nullfont!
@@ -6460,32 +7178,14 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no ) in font nullfont!
-
-Overfull \hbox (12.91002pt too wide) in paragraph at lines 57--57
- []$\OML/cmm/m/it/10 ^^L[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:58: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 $
-      A_D$           & Amplitude of the spectral distortion (SD) due to ther...
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:58: Misplaced alignment tab character &.
-l.58 $A_D$           &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:66: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.66 $A_D$           &
                        Amplitude of the spectral distortion (SD) due to ther...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no A in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -6539,25 +7239,8 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
-
-Overfull \hbox (14.75378pt too wide) in paragraph at lines 58--58
- []$\OML/cmm/m/it/10 A[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:59: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59 $
-      T_{\text{CIB}}$& Cosmic Infrared Background (CIB) temperature \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:59: Undefined control sequence.
-l.59 $T_{\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:67: Undefined control sequence.
+l.67 $T_{\text
               {CIB}}$& Cosmic Infrared Background (CIB) temperature \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6565,15 +7248,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:59: Misplaced alignment tab character &.
-l.59 $T_{\text{CIB}}$&
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:67: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.67 $T_{\text{CIB}}$&
                        Cosmic Infrared Background (CIB) temperature \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no C in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -6615,25 +7297,8 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
-
-Overfull \hbox (23.04094pt too wide) in paragraph at lines 59--59
- []$\OML/cmm/m/it/10 T[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:60: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 $
-      \beta_{\text{CIB}}$ & Exponent appearing in Eq.\,(16.11a) \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:60: Undefined control sequence.
-l.60 $\beta_{\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:68: Undefined control sequence.
+l.68 $\beta_{\text
                   {CIB}}$ & Exponent appearing in Eq.\,(16.11a) \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6641,15 +7306,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:60: Misplaced alignment tab character &.
-l.60 $\beta_{\text{CIB}}$ &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:68: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.68 $\beta_{\text{CIB}}$ &
                             Exponent appearing in Eq.\,(16.11a) \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no E in font nullfont!
 Missing character: There is no x in font nullfont!
@@ -6681,25 +7345,8 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no ) in font nullfont!
-
-Overfull \hbox (22.85344pt too wide) in paragraph at lines 60--60
- []$\OML/cmm/m/it/10 ^^L[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:61: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61 $
-      A_{\text{CIB}}$ & Amplitude of the SD due to CIB \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:61: Undefined control sequence.
-l.61 $A_{\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:69: Undefined control sequence.
+l.69 $A_{\text
               {CIB}}$ & Amplitude of the SD due to CIB \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6707,15 +7354,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:61: Misplaced alignment tab character &.
-l.61 $A_{\text{CIB}}$ &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:69: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.69 $A_{\text{CIB}}$ &
                         Amplitude of the SD due to CIB \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no A in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -6741,25 +7387,8 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no B in font nullfont!
-
-Overfull \hbox (24.6972pt too wide) in paragraph at lines 61--61
- []$\OML/cmm/m/it/10 A[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:62: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 $
-      \alpha_{\text{sync}}$ & Exponent appearing in Eq.\,(16.11b) \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:62: Undefined control sequence.
-l.62 $\alpha_{\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:70: Undefined control sequence.
+l.70 $\alpha_{\text
                    {sync}}$ & Exponent appearing in Eq.\,(16.11b) \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6767,15 +7396,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:62: Misplaced alignment tab character &.
-l.62 $\alpha_{\text{sync}}$ &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:70: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.70 $\alpha_{\text{sync}}$ &
                               Exponent appearing in Eq.\,(16.11b) \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no E in font nullfont!
 Missing character: There is no x in font nullfont!
@@ -6807,25 +7435,8 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no ) in font nullfont!
-
-Overfull \hbox (23.49516pt too wide) in paragraph at lines 62--62
- []$\OML/cmm/m/it/10 []$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:63: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63 $
-      \omega_{\text{sync}}$ & Exponent appearing in Eq.\,(16.11b) \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:63: Undefined control sequence.
-l.63 $\omega_{\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:71: Undefined control sequence.
+l.71 $\omega_{\text
                    {sync}}$ & Exponent appearing in Eq.\,(16.11b) \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6833,15 +7444,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:63: Misplaced alignment tab character &.
-l.63 $\omega_{\text{sync}}$ &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:71: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.71 $\omega_{\text{sync}}$ &
                               Exponent appearing in Eq.\,(16.11b) \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no E in font nullfont!
 Missing character: There is no x in font nullfont!
@@ -6873,25 +7483,8 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no ) in font nullfont!
-
-Overfull \hbox (23.32268pt too wide) in paragraph at lines 63--63
- []$\OML/cmm/m/it/10 ![]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:64: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 $
-      A_{\text{sync}}$ & Amplitude of the SD due to synchrotron emission \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:64: Undefined control sequence.
-l.64 $A_{\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:72: Undefined control sequence.
+l.72 $A_{\text
               {sync}}$ & Amplitude of the SD due to synchrotron emission \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6899,15 +7492,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:64: Misplaced alignment tab character &.
-l.64 $A_{\text{sync}}$ &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:72: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.72 $A_{\text{sync}}$ &
                          Amplitude of the SD due to synchrotron emission \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no A in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -6949,32 +7541,14 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-
-Overfull \hbox (24.59816pt too wide) in paragraph at lines 64--64
- []$\OML/cmm/m/it/10 A[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:65: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65 $
-      T_e$           & Temperature of electron plasma \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:65: Misplaced alignment tab character &.
-l.65 $T_e$           &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:73: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.73 $T_e$           &
                        Temperature of electron plasma \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no T in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -7003,32 +7577,14 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
-
-Overfull \hbox (10.13786pt too wide) in paragraph at lines 65--65
- []$\OML/cmm/m/it/10 T[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:66: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 $
-      \mathrm{EM}$   & Emission measure \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:66: Misplaced alignment tab character &.
-l.66 $\mathrm{EM}$   &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:74: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.74 $\mathrm{EM}$   &
                        Emission measure \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no E in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -7045,25 +7601,8 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
-
-Overfull \hbox (15.97226pt too wide) in paragraph at lines 66--66
- []$[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:67: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.67 $
-      \nu_{\text{spin}}$ & Parameter for the shape of the distortion due to ...
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:67: Undefined control sequence.
-l.67 $\nu_{\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:75: Undefined control sequence.
+l.75 $\nu_{\text
                 {spin}}$ & Parameter for the shape of the distortion due to ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7071,15 +7610,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:67: Misplaced alignment tab character &.
-l.67 $\nu_{\text{spin}}$ &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:75: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.75 $\nu_{\text{spin}}$ &
                            Parameter for the shape of the distortion due to ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no P in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -7133,25 +7671,8 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
-
-Overfull \hbox (21.1091pt too wide) in paragraph at lines 67--67
- []$\OML/cmm/m/it/10 ^^W[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:68: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.68 $
-      A_{\text{spin}}$ & Amplitude of the SD due to spinning dust \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:68: Undefined control sequence.
-l.68 $A_{\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:76: Undefined control sequence.
+l.76 $A_{\text
               {spin}}$ & Amplitude of the SD due to spinning dust \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7159,15 +7680,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:68: Misplaced alignment tab character &.
-l.68 $A_{\text{spin}}$ &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:76: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.76 $A_{\text{spin}}$ &
                          Amplitude of the SD due to spinning dust \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no A in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -7202,25 +7722,8 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
-
-Overfull \hbox (23.6693pt too wide) in paragraph at lines 68--68
- []$\OML/cmm/m/it/10 A[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:69: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69 $
-      A_{\text{CO}}$ & Amplitude of the SD due to CO emission \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:69: Undefined control sequence.
-l.69 $A_{\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:77: Undefined control sequence.
+l.77 $A_{\text
               {CO}}$ & Amplitude of the SD due to CO emission \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7228,15 +7731,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:69: Misplaced alignment tab character &.
-l.69 $A_{\text{CO}}$ &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:77: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.77 $A_{\text{CO}}$ &
                        Amplitude of the SD due to CO emission \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no A in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -7269,25 +7771,8 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-
-Overfull \hbox (20.52376pt too wide) in paragraph at lines 69--69
- []$\OML/cmm/m/it/10 A[]$ 
- []
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:70: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 $
-      y_\text{reio}$ & Amplitude of the y-distortion due to reonization.\\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:70: Undefined control sequence.
-l.70 $y_\text
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:78: Undefined control sequence.
+l.78 $y_\text
              {reio}$ & Amplitude of the y-distortion due to reonization.\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7295,15 +7780,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:70: Misplaced alignment tab character &.
-l.70 $y_\text{reio}$ &
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:78: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.78 $y_\text{reio}$ &
                        Amplitude of the y-distortion due to reonization.\\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 Missing character: There is no A in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -7349,52 +7833,14 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (19.90169pt too wide) in paragraph at lines 70--70
- []$\OML/cmm/m/it/10 y[]$ 
- []
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:71: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.71 \hline
-           
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:72: LaTeX Error: \begin{document} ended by \end{tabularx}.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:81: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \end{tabularx}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:73: LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 \caption
+l.81 \caption
              {Model parameters describing different contributions to spectra...
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:73: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 \caption{M
-               odel parameters describing different contributions to spectra...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7468,17 +7914,27 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:74: LaTeX Error: \begin{document} ended by \end{table}.
+/home/lyokol/Scrivania/Master thesis/Results/Bayes.tex:82: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 \end{table}
+l.82 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 56--83
+[]
+ []
+
+
+Overfull \hbox (57.86221pt too wide) in paragraph at lines 56--83
+[]
+ []
 
 )
 ! Emergency stop.
@@ -7488,11 +7944,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 30 strings out of 478287
- 667 string characters out of 5849289
- 298098 words of memory out of 5000000
- 18322 multiletter control sequences out of 15000+600000
+ 31 strings out of 478287
+ 698 string characters out of 5849289
+ 301177 words of memory out of 5000000
+ 18323 multiletter control sequences out of 15000+600000
  469913 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,6n,23p,893b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,9n,23p,893b,147s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

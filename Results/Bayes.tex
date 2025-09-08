@@ -38,46 +38,51 @@ To perform a Bayesian analysis using data from CMB observations or using simulat
 \end{equation}
 where $\nu_i$ is the $i$-th frequency bin of the assumed detector and $\delta \mathcal I(\nu_i)$ the corresponding sensitivity. $\Delta \mathcal I(\nu_i)$ is instead the spectral distortion itself, which is can be the result of the superposition of different distortions due to different effects. 
 
-The first effect we should account for is any eventual error in the measurement of the CMB temperature monopole, namely the average temperature of the CMB. Indeed, any small error can be modeled as a small shift in temperature $\Delta T$, which as we discovered in Section \ref{sec:SD_shapes} corresponds to a spectral dsitortion.
+The first effect we should account for is any eventual error in the measurement of the CMB temperature monopole, namely the average temperature of the CMB. Indeed, any small error can be modeled as a small shift in temperature $\Delta T$, which as we discovered in Section \ref{sec:SD_shapes} corresponds to a spectral distortion.
 
 Moreover, the Zeldovich-Sunayev effect \cite{Zeldovich1972} can produce a $y$-distortion by the interaction of the CMB photons with the reionized electrons of the \emph{intracluster medium} or the \emph{intergalactic medium}. These scatterings, taking place in the late universe, will inject energy in the decoupled CMB which then is not able to thermalize, producing a $y$-distortion:
 $$ \Delta \mathcal I_{ZS}(x)=(k_BT_z)^3x^3 y_\text{reio} Y(x),$$
 where we used the definitions of Section \ref{sec:ThermalizationProblem}.
 
 Lastly, a \emph{foreground} can be produced as the result of many processes, such as \emph{Galactic thermal dust}, the \emph{Cosmic Infrared Background} (CIB), the \emph{synchrotron emission}, \emph{free-free, spinning dust} and \emph{integrated CO emission}. As explained in \cite{constraininginflationarypotentialspectral} this foreground can be modeled as the superposition of the following components
-\begin{align*}
-    &\Delta \mathcal I_i(x)=A_i\bigg(\frac{x_i}{x_{\text{ref}}})^{\beta_i+3} \frac{e^{x_{\text{ref}}}-1}{e^{x_i}-1},\qquad\qquad\text{with } x_i\defeq\frac{\nu}{k_BT_i}\text{ and } \nu_\text{ref}=545\text{GHz},\\
-    &\Delta \mathcal{I}_\text{sync} (x)= A_S\bigg(\frac{x_\text{ref}}{x}\bigg)^{\alpha_S+\tfrac{\omega_S}2\log^2(x/x_\text{ref})}\qquad \text{with }\nu_\text{ref}=100\text{GHz},\\
+\begin{align}
+    &\Delta \mathcal I_i(x)=A_i\bigg(\frac{x_i}{x_{\text{ref}}}\bigg)^{\beta_i+3} \frac{e^{x_{\text{ref}}}-1}{e^{x_i}-1},\qquad\qquad\text{with } x_i\defeq\frac{\nu}{k_BT_i}\text{ and } \nu_\text{ref}=545\text{GHz},\label{eq:FOR_i}\\
+    &\Delta \mathcal{I}_\text{sync} (x)= A_S\bigg(\frac{x_\text{ref}}{x}\bigg)^{\alpha_S+\tfrac{\omega_S}2\log^2(x/x_\text{ref})}\qquad \text{with }\nu_\text{ref}=100\text{GHz},\label{eq:FOR_sync}\\
     &\Delta \mathcal{I}_\text{free-free}(x)= A_\text{ff} \mathcal{ N} T_e\big(1-e^{-\tau_{\text{ff}}}\big),&\\
     &\qquad\qquad\tau_\text{ff}\approx 0.05468\text{EM}\bigg(\frac{T_e}{\text{K}}\bigg)^{-3/2}\bigg(\frac{\nu}{\text{GHz}}\bigg)^{-2}g_\text{ff},& \\ &\qquad\qquad g_\text{ff}\approx \log\bigg\{ e+\exp\bigg[5.96-\frac{\sqrt{3}}{\pi}\log\bigg(\frac{\nu}{\text{GHz}}\Big(\frac{T_e}{10^4\text{K}}\Big)^{-3/2}\bigg)\bigg]\bigg\},
-\end{align*}  
-where in the first equation $i$ can be either \emph{thermal dust} or \emph{CIB}. Spinning dust and CO emissions are instead modeled using particular templates following \cite{refId0,10.1093/mnras/stx1653}.
+\end{align}  
+where in the first equation $i$ can be either \emph{thermal dust} or \emph{CIB} and $x$ is the dimensionless frequency as defined in Section \ref{sec:ThermalizationProblem}. Spinning dust and CO emissions are instead modeled using particular templates following \cite{refId0,10.1093/mnras/stx1653}.
 
-Overall 16 nuisance parameters, that we resumed in the following table, regulate the foreground.
+Overall, the following 16 nuisance parameters regulate the distortion signal that we should remove to obtain only the cosmological spectral distortions.
 \begin{table}[h!]
 \centering
-\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}m{2.5cm} X}
+\begin{tabular}{ c p{12cm} }
 \hline
 \textbf{Parameter} & \textbf{Description} \\
 \hline
 $\Delta T$      & Temperature shift amplitude \\
 $T_D$           & Temperature of thermal dust \\
-$\beta_D$       & Exponent appearing in Eq.\,(16.11a) \\
+$\beta_D$       & Tilt of the power law in Equation \eqref{eq:FOR_i} in the case of thermal dust\\
 $A_D$           & Amplitude of the spectral distortion (SD) due to thermal dust \\
 $T_{\text{CIB}}$& Cosmic Infrared Background (CIB) temperature \\
-$\beta_{\text{CIB}}$ & Exponent appearing in Eq.\,(16.11a) \\
+$\beta_{\text{CIB}}$ & Tilt of the power law in equation \eqref{eq:FOR_i} in the case of CIB \\
 $A_{\text{CIB}}$ & Amplitude of the SD due to CIB \\
-$\alpha_{\text{sync}}$ & Exponent appearing in Eq.\,(16.11b) \\
-$\omega_{\text{sync}}$ & Exponent appearing in Eq.\,(16.11b) \\
+$\alpha_{\text{sync}}$ & Exponent appearing in Equation \eqref{eq:FOR_sync} \\
+$\omega_{\text{sync}}$ & Exponent appearing in Equation \eqref{eq:FOR_sync} \\
 $A_{\text{sync}}$ & Amplitude of the SD due to synchrotron emission \\
 $T_e$           & Temperature of electron plasma \\
-$\mathrm{EM}$   & Emission measure \\
+$\mathrm{EM}$   & Emission measure in the free-free emission \\
 $\nu_{\text{spin}}$ & Parameter for the shape of the distortion due to spinning dust \\
 $A_{\text{spin}}$ & Amplitude of the SD due to spinning dust \\
 $A_{\text{CO}}$ & Amplitude of the SD due to CO emission \\
 $y_\text{reio}$ & Amplitude of the y-distortion due to reonization.\\
 \hline
-\end{tabularx}
-\caption{Model parameters describing different contributions to spectral distortions.}
+\end{tabular}
+\caption{Nuisance parameters describing spectral distortions.}
 \end{table}
-
+\subsection{Semi-analytical constraints}
+Constraints on the power spectrum of primordial gravitational waves can be obtained by a semi-analytical approach. Recalling the construction of the window function \eqref{eq:window_function}
+$$a=\int dk\ \Delta_T(k) W_a(k),$$
+we can see that it is possible to constrain $ \Delta_T(k)$ by comparing the current observational limits on the distortion amplitude with the amplitude obtained by a Dirac delta power spectrum,
+$$\Delta(k)\defeq A_\delta\ \delta\bigg(\log\frac{k}{\hat k}\bigg)\quad \Rightarrow\quad A_\delta W_a\big(\hat k\big)<a_{\text{upper limit}}\quad \Rightarrow\quad A_{\text{upper limit}}(k)=\frac{a_{\text{upper limit}}}{W_a(k)}.$$
+In this way, we obtain the maximum allowed amplitude for the power spectrum at the scale $\hat k$.

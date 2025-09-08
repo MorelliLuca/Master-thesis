@@ -79,19 +79,20 @@
 \contentsline {section}{\numberline {8.1}Methodology of the analysis}{117}{section.8.1}%
 \contentsline {subsection}{\numberline {8.1.1}Bayesian inference and MCMC algorithms}{117}{subsection.8.1.1}%
 \contentsline {subsection}{\numberline {8.1.2}CMB likelihoods}{119}{subsection.8.1.2}%
-\contentsline {chapter}{\numberline {A}Differential geometry tools}{121}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{121}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Thermodynamics tools}{125}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{125}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{125}{subsection.B.1.1}%
-\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{126}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Collision term}{128}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{128}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Special functions}{131}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Spherical harmonics \(Y_{\ell m}(\theta ,\varphi )\)}{131}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Legendre polynomials \(P_\ell (x)\)}{132}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Spin-weighted spherical harmonics \({}_sY_{\ell m}(\theta ,\varphi )\)}{132}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Bessel functions \(J_\nu (z), Y_\nu (z)\) and Hankel functions $H_\nu ^{(1)}(z), H_\nu ^{(2)}(z)$}{133}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Spherical Bessel functions \(j_\ell (z), y_\ell (z)\)}{134}{section.C.5}%
-\contentsline {section}{\numberline {C.6}Gamma function \(\Gamma (z)\)}{134}{section.C.6}%
-\contentsline {section}{\numberline {C.7}Riemann zeta function \(\zeta (s)\)}{134}{section.C.7}%
+\contentsline {subsection}{\numberline {8.1.3}Semi-analytical constraints}{120}{subsection.8.1.3}%
+\contentsline {chapter}{\numberline {A}Differential geometry tools}{123}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{123}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{127}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{127}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{127}{subsection.B.1.1}%
+\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{128}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Collision term}{130}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{130}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Special functions}{133}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Spherical harmonics \(Y_{\ell m}(\theta ,\varphi )\)}{133}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Legendre polynomials \(P_\ell (x)\)}{134}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Spin-weighted spherical harmonics \({}_sY_{\ell m}(\theta ,\varphi )\)}{134}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Bessel functions \(J_\nu (z), Y_\nu (z)\) and Hankel functions $H_\nu ^{(1)}(z), H_\nu ^{(2)}(z)$}{135}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Spherical Bessel functions \(j_\ell (z), y_\ell (z)\)}{136}{section.C.5}%
+\contentsline {section}{\numberline {C.6}Gamma function \(\Gamma (z)\)}{136}{section.C.6}%
+\contentsline {section}{\numberline {C.7}Riemann zeta function \(\zeta (s)\)}{136}{section.C.7}%
