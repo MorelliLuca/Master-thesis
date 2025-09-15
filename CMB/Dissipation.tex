@@ -189,7 +189,7 @@ Now, the equation of motion for $\Theta_P$ \eqref{eq:multipole_boltzmann_polatiz
  \end{align*}
 where again the non-scattering terms will all cancel each other out. We also recall that $\Pi\defeq\tilde\Theta_2+\tilde\Theta_{P,2}+\tilde\Theta_{P,0}$. Using the above and introducing the primordial power spectrum as before, the heating rate due to the polarization anisotropies reads (multiplied by the appropriate factor)
 \begin{align}
-    \langle\Theta_P\dot \Theta_P\rangle&=-n_e\sigma_T\int\frac{d^3k}{(2\pi)^3}\mathcal{P}_\mathcal{R} (\mathbf{k})\bigg[3\tilde\Theta_{P,1}^2+\frac{9}{2}\tilde\Theta_{P,2}^2-\frac{1}{2}\tilde\Theta_2(\tilde\Theta_{P,2}+\tilde\Theta_{P,0})+\nonumber\\&\qquad\qquad\qquad\qquad\qquad\qquad+\frac{1}{2}\tilde\Theta_{P,0}(\tilde\Theta_{P,0}-\tilde\Theta_{P,2})+\sum_{\ell=3}^{\infty}(2\ell+1)\tilde\Theta_\ell^2\bigg].
+    \langle\Theta_P\dot \Theta_P\rangle&=-n_e\sigma_T\int\frac{d^3k}{(2\pi)^3}\mathcal{P}_\mathcal{R} (\mathbf{k})\bigg[3\tilde\Theta_{P,1}^2+\frac{9}{2}\tilde\Theta_{P,2}^2-\frac{1}{2}\tilde\Theta_2\big(\tilde\Theta_{P,2}+\tilde\Theta_{P,0}\big)+\nonumber\\&\qquad\qquad\qquad\qquad\qquad\qquad+\frac{1}{2}\tilde\Theta_{P,0}\big(\tilde\Theta_{P,0}-\tilde\Theta_{P,2}\big)+\sum_{\ell=3}^{\infty}(2\ell+1)\tilde\Theta_\ell^2\bigg].
     \label{eq:TT_P_average_scalar}
 \end{align}
 \subsubsection{Tight coupling approximation}
@@ -225,13 +225,13 @@ where $\Pi^{(2)}\defeq(\tilde\Theta_2^{(2)}-\sqrt{6}\tilde E_2^{(2)})/10$, and w
     \label{eq:TT_I_average_tensor}
 \end{align}
  
-At this point we still need to compute the heating rate associated to the polarization anisotropies. To simplify the calculations with the spin weighted spherical harmonics, we will define $$\Theta_{\pm}(\mathbf{x,\versor p})\defeq(\Theta_Q\pm i\Theta_U)(\mathbf{x,\versor p})=\int\frac{d^3k}{(2\pi)^3}e^{i\mathbf{k}\cdot\mathbf{x}}\sum_{\ell m} (-i)^{\ell}\sqrt{\frac{4\pi}{2\ell+1}}Y^{\pm2}_{\ell m}(\versor p)(\tilde E_{\ell}^{(m)}\pm i\tilde B_\ell^{(m)}),$$
+At this point we still need to compute the heating rate associated to the polarization anisotropies. To simplify the calculations with the spin weighted spherical harmonics, we will define $$\Theta_{\pm}(\mathbf{x,\versor p})\defeq(\Theta_Q\pm i\Theta_U)(\mathbf{x,\versor p})=\int\frac{d^3k}{(2\pi)^3}e^{i\mathbf{k}\cdot\mathbf{x}}\sum_{\ell m} (-i)^{\ell}\sqrt{\frac{4\pi}{2\ell+1}}Y^{\pm2}_{\ell m}(\versor p)\big(\tilde E_{\ell}^{(m)}\pm i\tilde B_\ell^{(m)}\big),$$
 where we decomposed  $\tilde\Theta_{\ell,\pm}^{(m)}$ in its real and imaginary parts $\tilde E_{\ell}^{(m)},\ \tilde B_\ell^{(m)}
 $. The heating rate \eqref{eq:heating_rate_P} thus reads 
 $$\frac{d}{dt}\frac{\Delta \rho_\gamma}{\rho_\gamma}\bigg|_\text{P}=-4\langle\Theta_+\dot\Theta_-+\Theta_-\dot\Theta_+\rangle=-4\langle\Theta_+\dot\Theta_+^*+\Theta_-\dot\Theta_-^*\rangle,$$ in Fourier space, this manipulation will give the right orthogonality integral for the spherical harmonics. Furthermore, we will see that all the calculations will not depend on the choice of the sign, hence computing the first term gives us also the result for the latter.\\
 Moving to Fourier space and averaging over the solid angle gives, as in our previous calculations:
 \begin{align*}
-    \int\frac{d\Omega_\versor p}{4\pi}\Theta_+\dot \Theta_+^*&=\int\frac{d^3k}{(2\pi)^3}\frac{d^3k'}{(2\pi)^3}e^{i(\mathbf{k}-\mathbf{k}')\cdot\mathbf{x}}\sum_{\substack{\ell=0\\\ell'=0}}^{\infty}\sum_{\substack{m=-2\\m'=-2}}^{2}\frac{(-i)^{\ell}(i)^{\ell'}}{\sqrt{(2\ell+1)(2\ell'+1)}}\times\\&\qquad\qquad\qquad\qquad\qquad\qquad\times\tilde\Theta_{\ell,+}^{(m)}(\mathbf{k})[\dot{\tilde\Theta}_{\ell,+}^{(m')}(\mathbf{k}')]^*\int d\Omega_\versor p Y^{+2}_{\ell m}(\versor p)Y^{*+2}_{\ell' m'}(\versor p),
+    \int\frac{d\Omega_\versor p}{4\pi}\Theta_+\dot \Theta_+^*&=\int\frac{d^3k}{(2\pi)^3}\frac{d^3k'}{(2\pi)^3}e^{i(\mathbf{k}-\mathbf{k}')\cdot\mathbf{x}}\sum_{\substack{\ell=0\\\ell'=0}}^{\infty}\sum_{\substack{m=-2\\m'=-2}}^{2}\frac{(-i)^{\ell}(i)^{\ell'}}{\sqrt{(2\ell+1)(2\ell'+1)}}\times\\&\qquad\qquad\qquad\qquad\qquad\qquad\times\tilde\Theta_{\ell,+}^{(m)}(\mathbf{k})\big[\dot{\tilde\Theta}_{\ell,+}^{(m')}(\mathbf{k}')\big]^*\int d\Omega_\versor p Y^{+2}_{\ell m}(\versor p)Y^{*+2}_{\ell' m'}(\versor p),
 \end{align*}
 where we are now allowed to use the orthogonality of the spin weighted spherical harmonics $\int d\Omega_\versor p Y^{+2}_{\ell m}Y^{*+2}_{\ell' m'}=\delta_{\ell, \ell'}\delta_{m,m'}$. At this point we can ensemble average and divide and multiply each $\tilde\Theta$ by a primordial perturbation $\delta(\mathbf{k})$ as we did before. Note that this time, having $(\tilde\Theta_{\ell,+}^{(m)})^*$, the primordial power spectrum will be given by $\langle\delta(\mathbf{k})\delta^*(\mathbf{k'})\rangle=(2\pi)^3\mathcal{P}_\delta\delta^{(3)}(\mathbf{k}-\mathbf{k}')$. Keeping in mind the convention for which the $\tilde\Theta$ are now transfer functions, we obtain
 \begin{align*}
@@ -370,8 +370,9 @@ We can now compute its derivative
 $$\frac{d}{d\tau}\frac{j_1(k\tau)}{k\tau}=\frac{k^2\tau j_1'(k\tau)-kj_1(k\tau)}{(k\tau)^2}=k\frac{j_1(k\tau)-k\tau j_2(k\tau)-j_1(k\tau)}{(k\tau)^2}=-k \frac{j_2(k\tau)}{k\tau},$$
 where we used the recursive relation $j'_n(x)=n j_n(x)-xj_{n+1}(x)$. We conclude that the appropriate heating rate for the dissipation of gravitational waves reentering the Hubble horizon in the matter dominated era is 
 \begin{equation}
-    \frac{d}{dt}\frac{\Delta\rho_\gamma}{\rho_\gamma}\bigg|_T=\frac{4H^2}{45n_e\sigma_T}\int\frac{d^3k}{(2\pi)^3}\mathcal{P}_T\mathcal{T}_h^{RD}(k\tau),\qquad\text{with }\mathcal{T}_h^{MD}\defeq 18j_2^2(k\tau).
+    \frac{d}{dt}\frac{\Delta\rho_\gamma}{\rho_\gamma}\bigg|_T=\frac{H^2}{45n_e\sigma_T}\int\frac{d^3k}{(2\pi)^3}\mathcal{P}_T\mathcal{T}_h^{MD}(k\tau),\qquad\text{with }\mathcal{T}_h^{MD}\defeq 18j_2^2(k\tau),
 \end{equation}
+where we must remove the factor $\times 4$ since during matter domination $a\propto \tau^2$ and therefore $H=2/(a\tau)$.
 \subsection{Window functions}
 While the information on the primordial perturbations are contained in the power spectrum, all the interactions occurring in the plasma can encoded as well by a function: the \textbf{window function}. In general, this means that the amplitude of a distortion can be expressed as
 \begin{equation}\label{eq:window_function}

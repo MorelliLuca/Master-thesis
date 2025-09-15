@@ -53,7 +53,7 @@ This expression allows to compute an analytic formula for the particle horizon a
 \begin{align*}
     \tau(a)&=\int_0^a \frac{da'}{(a')^2H(a')}=\int_0^a\frac{da'}{H_0\sqrt{\Omega_{m,0}}}\frac{1}{\sqrt{a'+a_\text{eq}}}\\
     &=\frac{2}{H_0\sqrt{\Omega_{m,0}}}\Big(\sqrt{a'+a_\text{eq}}-\sqrt{a_\text{eq}}\Big)\\
-    \Rightarrow &\qquad \theta_\text{max}=\frac{\sqrt{a_{\text{rec}}+a_{\text{eq}}}-\sqrt{a_{\text{eq}}}}{\sqrt{1+a_\text{eq}}-\sqrt{a_\text{rec}+a_\text{eq}}}\approx1.82 \times 10^{-2}\equiv 1.04 ^\circ,
+    \Rightarrow &\qquad \boxed{\theta_\text{max}=\frac{\sqrt{a_{\text{rec}}+a_{\text{eq}}}-\sqrt{a_{\text{eq}}}}{\sqrt{1+a_\text{eq}}-\sqrt{a_\text{rec}+a_\text{eq}}}\approx1.82 \times 10^{-2}\equiv 1.04 ^\circ},
 \end{align*}
 where we used that recombination occurs at $a_\text{rec}\approx z_\text{rec}^{-1}= 9.1\times 10^{-4}$ and $a_0=1$.
 This results clearly shows that thermalization processes alone cannot have produced the homogeneneity which the CMB displays over the whole sky. This inconsistency is known as the \textbf{flatness problem}.
@@ -124,14 +124,14 @@ We now know that a phase of accelerated expansion is required to solve the flatn
 To determine whether inflation, within a determined model, is taking place the \textbf{first slow-roll parameter} $\epsilon_1$ is used: indeed we know that inflation occurs when the Hubble radius is shrinking, namely
 \begin{equation}
     \label{eq:First_SR_paramteter}
-    0>\frac{d}{dt}\frac{1}{aH}=-\frac{1}{a}\bigg[1+\frac{\dot H}{H^2}\bigg]\defeq-1+\epsilon_1,\qquad\Rightarrow\qquad\epsilon_1\defeq-\frac{\dot H}{H^2}<1.
+    0>\frac{d}{dt}\frac{1}{aH}=-\frac{1}{a}\bigg[1+\frac{\dot H}{H^2}\bigg]\defeq-1+\epsilon_1,\qquad\Rightarrow\qquad\boxed{\epsilon_1\defeq-\frac{\dot H}{H^2}<1}.
 \end{equation}
 The main advantage of the first slow-roll parameter is that we can evaluate it in a specific model that we want to study and identify the conditions for its inflationary dynamics. Note that this parameter also quantifies the departure from De Sitter spacetime (since for De Sitter $H=$ const and thus $\epsilon_1=0$).
 
 At this point we have to consider which cosmic fluid drives inflation: the easiest fluid, and yet complex enough to give rise to inflationary dynamics, is a quantum scalar field, usually called \textbf{inflaton}. In general a quantum field $\phi(x)$ depends both on time and space, such scenario would spoil the symmetries of FRW metric and would require us to solve the full system of the Einstein equations coupled to the field. For this reason we assume that classically the field can be perturbatively expanded resulting in a background homogeneous field $\phi(t)$, plus some small perturbations $\delta \phi(t,\mathbf x)$, that can be later described in the context of a cosmological perturbation theory (Section \ref{sec:perturbations}). In this way, the background  inflation field determines the dynamics of inflation, and it is treated completely classically, while its perturbations will source anisotropies through quantum mechanisms.\\
 Starting from the action of the background inflaton field, with a generic potential, we can derive its equation of motion
 \begin{equation}
-    \mathcal{S}[\phi]=\int\ d^4x\sqrt{-g}\bigg(\frac{1}{2}\dot\phi^2(t)-V(\phi)\bigg)\qquad\Rightarrow\qquad\ddot\phi+3H\dot \phi+\partial_\phi V(\phi)=0,\label{eq:motion_inflaton}
+    \mathcal{S}[\phi]=\int\ d^4x\sqrt{-g}\bigg(\frac{1}{2}\dot\phi^2(t)-V(\phi)\bigg)\qquad\Rightarrow\qquad\boxed{\ddot\phi+3H\dot \phi+\partial_\phi V(\phi)=0},\label{eq:motion_inflaton}
 \end{equation}
 and its energy-momentum tensor
 \begin{equation}
@@ -156,7 +156,7 @@ which should be solved to determine the evolution of the scale factor. However, 
     \epsilon_1=-\frac{\dot H}{H^2}=\frac{\frac{3}{2}\dot\phi^2}{\big(\frac{1}{2}\dot\phi^2+V(\phi)\big)}=\frac{4\pi G\dot\phi^2}{H^2},\label{eq:SRP_field}
 \end{equation}
 where we obtained the time derivative of the Hubble parameter by differentiating the Friedmann equation \eqref{eq:Friedmann_inflaton} in which we inserted the equation of motion \eqref{eq:motion_inflaton}
-$$2H\dot H=\frac{8\pi G}{3}\bigg(\dot\phi\ddot\phi+\partial_\phi V(\phi)\dot\phi\bigg)=-8\pi GH\dot \phi^2\quad\Rightarrow\quad \dot H=-\frac{\dot \phi^2}{16\pi G}.$$
+$$2H\dot H=\frac{8\pi G}{3}\bigg(\dot\phi\ddot\phi+\partial_\phi V(\phi)\dot\phi\bigg)=-8\pi GH\dot \phi^2\quad\Rightarrow\quad \boxed{\dot H=-\frac{\dot \phi^2}{16\pi G}}.$$
 Form the slow-roll parameter we immediately note that inflation occurs when $\dot \phi\ll V(\phi)$. Note that in this limit the inflaton field behaves as vacuum $$\omega\defeq\frac{p}{\rho}=\frac{\frac{1}{2}\dot\phi^2-V(\phi)}{\frac{1}{2}\dot\phi^2+V(\phi)}\xrightarrow{\dot\phi\ll V(\phi)}-1,$$
 and thus, as we expect, we recover an approximated version of De Sitter spacetime.
 

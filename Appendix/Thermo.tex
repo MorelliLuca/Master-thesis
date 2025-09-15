@@ -1,5 +1,4 @@
-\section{Phase space distribution and thermodynamics observable}
-\subsection{Small chemical potential approximation}
+\section{Small chemical potential approximation}
 \label{sec:SmallChemicalPotential}
 In this appendix we will show how to approximate the energy and number densities for a gas of photons in the presence of a small chemical potential.
 The goal is to obtain corrections to  
@@ -9,13 +8,13 @@ Let's start from the number density, analogous calculations will then give the r
 \begin{align}
     n&=\frac{g}{(2\pi)^3}\int d^3p\ \frac{1}{\exp(\frac{\nu}{k_BT}+\mu)-1}=\frac{g}{2\pi^2}\int_0^\infty dp \frac{p^2 }{\exp(\frac{\nu}{k_BT}+\mu)-1}\nonumber\\&\ \bigg\downarrow\qquad p=\nu,\qquad x\defeq\frac{\nu}{k_BT}\nonumber\\
     &=\frac{g}{2\pi^2}(k_BT)^3\int_0^\infty dx \frac{x^2}{\exp(x+\mu)-1}=\frac{g}{2\pi^2}(k_BT)^3\int_0^\infty dx \frac{x^2e^{-(x+\mu)}}{1-e^{-(x+\mu)}}\nonumber\\&=\frac{g}{2\pi^2}(k_BT)^3\int_0^\infty dx\ x^2e^{-(x+\mu)}\sum_{n=0}^{\infty}e^{-n(x+\mu)}=\frac{g}{2\pi^2}(k_BT)^3\sum_{n=0}^{\infty}\int_0^\infty dx\ x^2e^{-(n+1)(x+\mu)}\nonumber\\&=\frac{g}{2\pi^2}(k_BT)^3\sum_{n=0}^{\infty}\frac{2}{(n+1)^3}e^{-(n+1)\mu}\approx\frac{g}{2\pi^2}(k_BT)^3\sum_{n=0}^{\infty}2\frac{1-(n+1)\mu}{(n+1)^3}\nonumber\\&\ \bigg \downarrow\qquad \zeta(z)\defeq\sum_{n=1}^\infty\bigg(\frac{1}{n}\bigg)^z\qquad\text{Riemann zeta function}\nonumber\\
-    &=\frac{g}{\pi^2}(k_BT)^3[\zeta(3)-\mu\zeta(2)]=b_RT^3\bigg[1-\mu\frac{\zeta(2)}{\zeta(3)}\bigg]\,\label{eq:SmallChemicalPotential_n}
+    &=\frac{g}{\pi^2}(k_BT)^3\big[\zeta(3)-\mu\zeta(2)\big]=b_RT^3\bigg[1-\mu\frac{\zeta(2)}{\zeta(3)}\bigg]\,\label{eq:SmallChemicalPotential_n}
 \end{align}
 where in the last line we defined $b_R\defeq\frac{g}{\pi^2}k_B^3\zeta(3)$ with $g=2$.
 
 The same calculation can be applied to the energy density, we just need to pay attention to the extra $\nu$ factor in the integrand: ultimately this will lead to a different integral inside the series expansion, hence different points of the zeta function will appear. Again from the definition and preceding as before
 \begin{align}
     \rho&=\frac{g}{(2\pi)^3}\int d^3p\ \frac{E}{\exp(\frac{\nu}{k_BT}+\mu)-1}=\frac{g}{2\pi^2}\int_0^\infty dp \frac{p^3}{\exp(\frac{\nu}{k_BT}+\mu)-1}\nonumber\\
-    &=\frac{g}{2\pi^2}(k_BT)^4\sum_{n=0}^{\infty}\int_0^\infty dx\ x^3e^{-(n+1)(x+\mu)}\nonumber=\frac{g}{2\pi^2}(k_BT)^4\sum_{n=0}^{\infty}\frac{6}{(n+1)^4}e^{-(n+1)\mu}\\&\approx\frac{g}{2\pi^2}(k_BT)^4\sum_{n=0}^{\infty}6\frac{1-(n+1)\mu}{(n+1)^4}=\frac{3g}{\pi^2}(k_BT)^4[\zeta(4)-\mu\zeta(3)]=a_RT^4\bigg[1-\mu\frac{\zeta(3)}{\zeta(4)}\bigg]\,\label{eq:SmallChemicalPotential_rho}
+    &=\frac{g}{2\pi^2}(k_BT)^4\sum_{n=0}^{\infty}\int_0^\infty dx\ x^3e^{-(n+1)(x+\mu)}\nonumber=\frac{g}{2\pi^2}(k_BT)^4\sum_{n=0}^{\infty}\frac{6}{(n+1)^4}e^{-(n+1)\mu}\\&\approx\frac{g}{2\pi^2}(k_BT)^4\sum_{n=0}^{\infty}6\frac{1-(n+1)\mu}{(n+1)^4}=\frac{3g}{\pi^2}(k_BT)^4\big[\zeta(4)-\mu\zeta(3)\big]=a_RT^4\bigg[1-\mu\frac{\zeta(3)}{\zeta(4)}\bigg]\,\label{eq:SmallChemicalPotential_rho}
 \end{align}
 where we defined $a_R\defeq\frac{3g}{\pi^2}k_B^4\zeta(4)=\frac{\pi^2}{15}k_B^4$ with $g=2$.\\

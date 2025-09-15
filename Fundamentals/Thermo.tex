@@ -303,15 +303,15 @@ Instead of studying this equation in the limit in which the free electrons are z
 \begin{equation}
     X_e\defeq\frac{n_e}{n_p+n_H}=\frac{n_e}{n_e+n_H}\quad\Rightarrow\quad \frac{1-X_e}{X_e^2}=\frac{n_H}{n^2_e}(n_e+n_H)\defeq\frac{n_H}{n^2_e}n_b,
 \end{equation}
-where we defined the number density of baryons $n_b$. The main advantage is that the \textbf{baryon-to-photon ratio} $\eta\defeq n_b/n_\gamma$ from now on is conserved and we can easily compute $n_\gamma$ from equation \eqref{eq:relativistic_number_density} finding
+where we used the number density of baryons $n_b$. The main advantage is that the \textbf{baryon-to-photon ratio} $\eta_{b\gamma}\defeq n_b/n_\gamma$ from now on is conserved and we can easily compute $n_\gamma$ from equation \eqref{eq:relativistic_number_density} finding
 \begin{equation}
-    \frac{1-X_e}{X_e^2}\bigg|_\text{eq}=\frac{2\zeta(3)}{\pi^2}\eta\bigg(\frac{2\pi k_BT}{m_e}\bigg)^{\frac{3}{2}}\exp\bigg({\frac{E_I}{k_BT}}\Bigg),\label{eq:Saha}
+    \frac{1-X_e}{X_e^2}\bigg|_\text{eq}=\frac{2\zeta(3)}{\pi^2}\eta_{b\gamma}\bigg(\frac{2\pi k_BT}{m_e}\bigg)^{\frac{3}{2}}\exp\bigg({\frac{E_I}{k_BT}}\Bigg),\label{eq:Saha}
 \end{equation}
 which is the \textbf{Saha equation}. We can solve the above for $X_e$ to find
 $$
-X_e\bigg|_\text{eq}=\frac{-1+\sqrt{1+4f}}{2f}\qquad \text{with }f(T,\eta)=\frac{2\zeta(3)}{\pi^2}\eta\bigg(\frac{2\pi k_BT}{m_e}\bigg)^{\frac{3}{2}}\exp\bigg({\frac{E_I}{k_BT}}\Bigg)
+X_e\bigg|_\text{eq}=\frac{-1+\sqrt{1+4f}}{2f}\qquad \text{with }f(T,\eta)=\frac{2\zeta(3)}{\pi^2}\eta\bigg(\frac{2\pi k_BT}{m_e}\bigg)^{\frac{3}{2}}\exp\bigg({\frac{E_I}{k_BT}}\Bigg),
 $$
-which is shows in Figure \ref{fig:saha}.
+which is shown in Figure \ref{fig:saha}.
 \begin{figure}[ht!]
 \centering
 \begin{tikzpicture}
@@ -321,8 +321,6 @@ which is shows in Figure \ref{fig:saha}.
     ylabel={$X_e$},
     xmin=0.25, xmax=0.4,
     ymin=0, ymax=1,
-    axis x line = bottom,
-    axis y line = left,
     domain=0.1:1.5,
     samples=200,
     xtick={0.25,0.3,0.35,0.4, 0.32},
@@ -362,8 +360,7 @@ which is shows in Figure \ref{fig:saha}.
 \caption{Free electron fraction $X_e$ as a function of temperature $T$ (in eV) and redshift for $\eta=6\times10^{-10}$ and $E_I=13.6$ eV. From the graph we can appreciate when recombination occurs.}
 \label{fig:saha}
 \end{figure}
-We can appreciate that the fraction of free electrons drops at around $T\approx 0.32$ ev $\approx3760$ K. 
-Note that the temperature at which recombination occurs is one order of magnitude lower than the ionization energy of Hydrogen, this happens because there are more free photons that Hydrogen atoms: this means that even at $T<E_I$ a non-negligible fraction of photons have still $E_\gamma>E_I$, being in the tail of their energy distribution.
+We can appreciate that the fraction of free electrons drops at around $T\approx 0.32$ eV $\approx3760$ K, that is one order of magnitude lower than the ionization energy of Hydrogen. Recombination is delayed to when the plasma reaches this lower temperature because the number of free photons is far greater than the number of Hydrogen atoms, which means that even at $T<E_I$ a non-negligible fraction of photons have still $E_\gamma>E_I$, being in the tail of their energy distribution.
 Knowing that the temperature of photons today (CMB) is $T_\gamma\approx2.73$ K and that $T_\gamma\propto a^{-1}$ (since as we will see right after recombination photon decoupling occurs), we can compute the redshift at which Hydrogen formed
 $$
 1+z_\text{rec}=\frac{T_\text{rec}}{T_{\gamma,0}}\approx 1380.
@@ -421,8 +418,6 @@ In figure \ref{fig:COBE/FIRAS_spectrum} we can appreciate the spectral radiance 
     legend pos=north east,
     grid=both,
     major grid style={gray!30},
-    axis x line = bottom,
-    axis y line = left,
   ]
 
     % Theoretical Planck curve
@@ -430,7 +425,6 @@ In figure \ref{fig:COBE/FIRAS_spectrum} we can appreciate the spectral radiance 
       domain=30:600,
       samples=300,
       very thick,
-      red,
     ]
     {%
       2*6.626e-34*(x*1e9)^3/(3.00e8)^2 
@@ -441,9 +435,9 @@ In figure \ref{fig:COBE/FIRAS_spectrum} we can appreciate the spectral radiance 
     % Hard‑coded FIRAS‑like data with 1σ error bars
     \addplot+[
       only marks,
-      blue,
       mark=*,
       mark options={scale=1.0},
+      black
     ]
     table[row sep=\\, x index=0, y index=1]{
       % ν [GHz]    B_ν [W/m2/sr/Hz]    σ

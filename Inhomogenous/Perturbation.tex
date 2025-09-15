@@ -170,7 +170,7 @@ where we used the perturbed metric with conformal time in the Newtonian gauge. T
 Using the ADM formalism one can show that, in this gauge, scalar perturbations are parametrized only by the comoving curvature $\mathcal{R}$, despite the metric still containing $A$ and $B$:
 $$ds^2=-a^2(1+2A)d\tau^2+2a^2B_{,i}d\tau dx^i+a^2(1-2\mathcal{R})\delta_{ij}dx^idx^j.$$
 Indeed, as we already explained in Section \ref{sec:gauge_choice} these two last fields reduce to auxiliary fields. For these reasons we fix the comoving gauge from now on.\\
-Through the ADM formalism one can also show that the above action, at the second order reads
+Through the ADM formalism one can also show \cite{baumann2012tasilecturesinflation} that the above action, at the second order reads
 \begin{equation}
     \mathcal{S}_{2}[\mathcal{R} ]=\frac{1}{2}\int d^4x a^4\bigg(\frac{\bar \phi'}{a'}\bigg)^2\Big[(\mathcal{R}')^2-(\mathcal{R}_{,i})^2\Big].
 \end{equation}
@@ -215,7 +215,7 @@ On the other hand, its variance is non-zero and it is given by the so-called \te
 Physically this means that during inflation the scalar perturbations, even if not present in the first place, can be sourced by vacuum fluctuations. In this way we manage to build initial conditions for the perturbed Einstein equations that we previously discussed.
 
 At this point the only thing that remains to be found are the Bunch-Davies modes. First, we should find solutions for the Mukhanov-Sasaki equation in momentum space, for which the background evolution of inflation must be known. In the following we will work with slow-roll inflation but in general more complex models can be used. As we already noted equation \eqref{eq:SM-equation} contains an effective mass $-z''/z$ which is time dependent, hence to find its solution this dependence must be addressed. Using equation \eqref{eq:SRP_field},
-$$\epsilon_1=4\pi G\frac{\dot{\bar\phi}^2}{H^2}\qquad \Rightarrow\qquad z\defeq a\frac{\dot{\bar\phi}}{H}=a\sqrt{\frac{\epsilon_1}{4\pi G}},$$
+$$\epsilon_1=4\pi G\frac{\dot{\bar\phi}^2}{H^2}\qquad \Rightarrow\qquad \boxed{z\defeq a\frac{\dot{\bar\phi}}{H}=a\sqrt{\frac{\epsilon_1}{4\pi G}}},$$
  and differentiating twice $z$, with some simple algebra the effective mass can be express as a function of the slow-roll parameters: 
 $$z'=aHz\Big(1+\frac{\epsilon_2}{2}\Big),\quad z''=z(aH)^2\bigg(2-\epsilon_1+\frac{3}{2}\epsilon_2- \epsilon_1\epsilon_2+\frac{(\epsilon_2)^2}{4}+\frac{\epsilon_2\epsilon_3}{2}\bigg),$$
 where $\epsilon_i\defeq \dot{\epsilon}_{i-1}/(H\epsilon_{i-1})$ for $i\geq 2$.

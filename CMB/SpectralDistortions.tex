@@ -68,7 +68,7 @@ There are three main types of these interactions.
     \end{multicols}
     Note that this process, while transferring energy between different components of the plasma, generates new photons. The corresponding collision term reads
     \begin{align}\label{eq:C_Bremsstrahlung}
-        C[f]\bigg|_{BR}&=n_e\sigma_T\frac{K_{BR }\ e^{-x_e}}{x^3_e}[1-f(e^{x_e}-1)],\\
+        C[f]\bigg|_{BR}&=n_e\sigma_T\frac{K_{BR }\ e^{-x_e}}{x^3_e}\big[1-f(e^{x_e}-1)\big],\\
         \nonumber K_{BR}&\defeq\frac{\alpha}{2\pi}\frac{\lambda_e^3}{\sqrt{6\pi}\theta_e^{7/2}}\sum_iZ_i^2n_i\bar g_{ff}.
     \end{align}
     In the above we used the \emph{dimensionless electron frequency} $x_e=\nu/(k_BT_e)$, the \emph{dimensionless electron temperature} $\theta_e\defeq k_BT_e/m_e$ and the \emph{fine structure constant} $\alpha=e^2/(4\pi)\approx\/137$. We are also accounting for the possibility of having different gasses of ions, each with a number of ions per unit volume corresponding to $n_i$. Lastly, we used the electron Compton wavelength $\lambda_e=1/m_e\approx2.43\times10^{-10}$ cm and the \emph{thermally averaged Gaunt factor} $$\bar g_{ff}\approx\begin{cases}
@@ -100,7 +100,7 @@ There are three main types of these interactions.
     \end{multicols}
     Assuming that $\gamma(k_2)$ is a soft photon, namely $k_2\ll m_e$, the collision term for this interaction reads
     \begin{align}\label{eq:C_DCS}
-        C[f]\bigg|_{\text{DCS}}&=n_e\sigma_T\frac{K_{\text{DCS}}\ e^{-2x}}{x^3}[1-f(e^{x_e}-1)],\\
+        C[f]\bigg|_{\text{DCS}}&=n_e\sigma_T\frac{K_{\text{DCS}}\ e^{-2x}}{x^3}\big[1-f(e^{x_e}-1)\big],\\
         K_{\text{DCS}}&\defeq g_{\text{DCS}}\frac{4\alpha}{3\pi}\theta_\gamma^2\int dx\ x^4f(x)\bigg(1+f(x)\bigg),\nonumber\\\nonumber
         g_{\text{DCS}}&\approx\frac{1+3/2x+29/24x^2+11/16x^3+5/12x^4}{1+19.739\theta_\gamma-5.5797\theta_e},
     \end{align} 
@@ -126,7 +126,7 @@ where we considered that before recombination $T_e\approx T_\gamma\propto a^{-1}
     8.4\times10^{17}(1+z)^{-3/2}s\quad\ \text{matter domination} ,\\
 \end{cases}$$ shows that the thermalization by Compton scattering becomes inefficient for $z_{\mu y}\approx5\times10^4$. We should appreciate that this process becomes subdominant much before recombination.
 
-\begin{figure}[h]
+\begin{figure}
     \centering
     % First subfigure: Timescales
     \begin{subfigure}[b]{0.48\textwidth}
@@ -142,7 +142,6 @@ where we considered that before recombination $T_e\approx T_\gamma\propto a^{-1}
                 ymode=log,
                 legend pos=north east,
                 grid=major,
-                axis lines=left,
                 legend style={font=\small}
             ]
                 % t_H (radiation domination)
@@ -212,8 +211,11 @@ where we considered that before recombination $T_e\approx T_\gamma\propto a^{-1}
                 extra y tick labels={$1$},
                 legend pos=north west,
                 grid=major,
-                axis lines=left,
-                legend style={font=\small}
+                legend style={font=\small},
+                yticklabel pos=right,     % place y tick labels on the right
+                ylabel near ticks,        % place ylabel close to the ticks
+                % optional: tweak ylabel position if you want more separation
+                ylabel style={at={(axis description cs:1.22,0.25)},anchor=west},
             ]
                 % x_crit, DCS
                 \addplot[
@@ -313,10 +315,10 @@ and therefore no extra temperature shift is needed this time.
 
 Note that an inefficient Compton scattering interaction is not the only way to generate a y-distortion. Indeed, by Taylor expanding at second order in $\Delta T/T_z$ a temperature shift we can produce a distortion with the same shape as a y-distortion.
 \begin{align}
-    \nonumber B\bigg(\frac{x}{1+\Delta T/T_z}\bigg)&\approx B(x)+\frac{\partial}{\partial \frac{\Delta T}{T_z}}\bigg(e^{\frac{x}{1+\Delta T/T_z}}-1\bigg)^{-1}\frac{\Delta T}{T_z}+\frac{1}{2}\frac{\partial^2}{\partial \frac{\Delta T}{T_z}^2}\bigg(e^{\frac{x}{1+\Delta T/T_z}}-1\bigg)^{-1}\bigg(\frac{\Delta T}{T_z}\bigg)^2\\&\nonumber\approx B(x)+x\frac{e^x}{(e^x-1)^2}\frac{\Delta T}{T_z}-\frac{1}{2}\frac{e^xx}{(e^x-1)^2}\bigg[x-\frac{2e^{x}}{e^x-1}+2\bigg]\bigg(\frac{\Delta T}{T_z}\bigg)^2\\ \nonumber&= B(x)+G(x)\frac{\Delta T}{T_z}-\frac{1}{2}\frac{xe^x}{(e^x-1)^2}\bigg[\frac{x(e^x-1)-2xe^x}{e^x-1}-2\bigg]\bigg(\frac{\Delta T}{T_z}\bigg)^2\\&=B(x)+G(x)\frac{\Delta T}{T_z}+\frac{1}{2}[Y(x)+2G(x)]\bigg(\frac{\Delta T}{T_z}\bigg)^2.\label{eq:SD_2ord_temp_shift}
+    \nonumber B\bigg(\frac{x}{1+\Delta T/T_z}\bigg)&\approx B(x)+\frac{\partial}{\partial \frac{\Delta T}{T_z}}\bigg(e^{\frac{x}{1+\Delta T/T_z}}-1\bigg)^{-1}\frac{\Delta T}{T_z}+\frac{1}{2}\frac{\partial^2}{\partial \frac{\Delta T}{T_z}^2}\bigg(e^{\frac{x}{1+\Delta T/T_z}}-1\bigg)^{-1}\bigg(\frac{\Delta T}{T_z}\bigg)^2\\&\nonumber\approx B(x)+x\frac{e^x}{(e^x-1)^2}\frac{\Delta T}{T_z}-\frac{1}{2}\frac{e^xx}{(e^x-1)^2}\bigg[x-\frac{2e^{x}}{e^x-1}+2\bigg]\bigg(\frac{\Delta T}{T_z}\bigg)^2\\ \nonumber&= B(x)+G(x)\frac{\Delta T}{T_z}-\frac{1}{2}\frac{xe^x}{(e^x-1)^2}\bigg[\frac{x(e^x-1)-2xe^x}{e^x-1}-2\bigg]\bigg(\frac{\Delta T}{T_z}\bigg)^2\\&=B(x)+G(x)\frac{\Delta T}{T_z}+\frac{1}{2}\big[Y(x)+2G(x)\big]\bigg(\frac{\Delta T}{T_z}\bigg)^2.\label{eq:SD_2ord_temp_shift}
 \end{align}
 We can see that, overall, a temperature shift of amplitude $\Delta T/T_z+(\Delta T/T_z)^2$ and a y-distortion of amplitude $1/2\times(\Delta T/T_z)^2$ are generated. This could seem like some trivia: instead one of the main mechanism that we will study in the next sections will rely on the necessity to expand a temperature shift up to the second order, generating this distortion.
-\begin{figure}[h]
+\begin{figure}
 \begin{multicols}{2}
     \begin{tikzpicture}
         \begin{axis}[
@@ -326,7 +328,6 @@ We can see that, overall, a temperature shift of amplitude $\Delta T/T_z+(\Delta
             ymin=-4.5, ymax=7, xmode=log,
             restrict y to domain=-4.5:7, % Restrict y-values to avoid extreme values
             legend pos=north west,
-            axis lines=left,
             legend style={font=\small}
         ]
             % Plot for G(x) = x * exp(x) / (exp(x) - 1)^2
@@ -361,13 +362,16 @@ We can see that, overall, a temperature shift of amplitude $\Delta T/T_z+(\Delta
     \begin{tikzpicture}
         \begin{axis}[
             width=7cm, height=7cm,
-            xlabel={$x$}, ylabel={Distorted spectral intesisty},
+            xlabel={$x$}, ylabel={Distorted $\mathcal{I}$},
             xmin=0.01, xmax=50, % Avoid x=0 to prevent division by zero
             ymin=-.2, ymax=3.2, xmode=log,
             restrict y to domain=-0.2:3.2, % Restrict y-values to avoid extreme values
             legend pos=north west,
-            axis lines=left,
-            legend style={font=\small}
+            legend style={font=\small},
+            yticklabel pos=right,     % place y tick labels on the right
+            ylabel near ticks,        % place ylabel close to the ticks
+             % optional: tweak ylabel position if you want more separation
+            ylabel style={at={(axis description cs:1.22,0.25)},anchor=west},
         ]
             % Planckian blackbody spectrum B(x) * x^2
             \addplot[
@@ -408,7 +412,7 @@ We can see that, overall, a temperature shift of amplitude $\Delta T/T_z+(\Delta
         \end{axis}
     \end{tikzpicture}
 \end{multicols}
-\caption{Shapes of the spectral distortions plotted by their spectral intensity $\mathcal{I}\propto f(x)x^3$. The plot on the left shows the three spectral distortions with unitary amplitudes. The plot on the right compares the Planckian spectrum and the three distorted ones (Planckian + distortion).}
+\caption{Shapes of the spectral distortions plotted by their spectral radiance $\mathcal{I}\propto f(x)x^3$. The plot on the left shows the three spectral distortions with unitary amplitudes. The plot on the right compares the Planckian spectrum and the three distorted ones (Planckian + distortion).}
 \label{fig:SD_shapes}
 \end{figure}
 
@@ -488,11 +492,11 @@ To improve this approximation we can consider that the chemical potential of the
 \end{equation}
 where $z_{\text{th}}$ is the redshift at which the Compton scattering becomes inefficient. This suggests that the $\mu$ branching ratio can be approximated by $f(z)\defeq e^{-(z/z_{\text{th}})^{5/2}}$, giving in the end
 \begin{equation}
-    \mathcal{J}_g(z)=1-f(z),\quad \mathcal{J}_\mu(z)=f(z),\quad \mathcal{J}_y(z)=f(z)\Theta_{H}(z_{\mu y}-z), \label{eq:BR_soft}
+    \mathcal{J}_g(z)=1-f(z),\quad \mathcal{J}_\mu(z)=f(z)\Theta_{H}(z-z_{\mu y}),\quad \mathcal{J}_y(z)=\Theta_{H}(z_{\mu y}-z), \label{eq:BR_soft}
 \end{equation}
 which describes a smooth $g$-$\mu$ transition and an instantaneous $\mu$-$ y$ transition.\\A further improvement is obtained by J. Chluba in \cite{Chluba_Green} considering a smooth $\mu$-$ y$ transition and results in the following branching ratios:
 \begin{align}
-    \mathcal{J}_g(z)&=1-f(z),\\ \mathcal{J}_\mu(z)&=f(z)\bigg\{1-\exp\bigg[-\bigg(\frac{1+z}{5.8\times10^4}\bigg)^{1.88}\bigg]\bigg\},\\\quad \mathcal{J}_y(z)&=\bigg[1+\bigg(\frac{1+z}{6\times10^{2.58}}\bigg)\bigg]^{-1}.
+    \mathcal{J}_g(z)&=1-f(z),\\ \mathcal{J}_\mu(z)&=f(z)\Bigg\{1-\exp\Bigg[-\bigg(\frac{1+z}{5.8\times10^4}\bigg)^{1.88}\Bigg]\Bigg\},\\\quad \mathcal{J}_y(z)&=\Bigg[1+\bigg(\frac{1+z}{6\times10^{4}}\bigg)^{2.58}\Bigg]^{-1}.
 \end{align}
 Note that in this last approximation the sum of all the branching ratios is not equal to one, this is due to the presence of the residual distortions we mentioned at the end of Section \ref{sec:SD_shapes}. 
 

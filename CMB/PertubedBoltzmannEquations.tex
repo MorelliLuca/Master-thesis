@@ -24,7 +24,7 @@ therefore we need to compute $\frac{dP^0}{d\tau}$. This can be accomplished by u
 in the conformal Newtonian gauge the relevant Christoffel symbols are $$\Gamma^0_{00}=\mathcal{H}+\Psi',\quad\Gamma^0_{0i}=\Psi,_i,\quad\Gamma^0_{ij}=\bigg[\mathcal{H}(1+2\Phi-2\Psi)+\Phi' \bigg]\delta_{ij}.$$
 In this way we get
 \begin{align}\label{eq:B.2}
-    \frac{dp}{d\tau}&=(\mathcal{H}+\Psi') p-a(1+\Psi)\times\nonumber\\&\qquad\qquad\qquad\times \bigg[(\mathcal{H} +\Psi')P^0+P^i\Psi,_i+\bigg(\mathcal{H}(1+2\Phi-2\Psi)+\Phi' \bigg)\frac{P^iP^j\delta_{ij}}{P^0} \bigg]\nonumber\\
+    \frac{dp}{d\tau}&=(\mathcal{H}+\Psi') p-a(1+\Psi)\times\nonumber\\&\qquad\qquad\qquad\times \bigg[(\mathcal{H} +\Psi')P^0+P^i\Psi,_i+\big(\mathcal{H}(1+2\Phi-2\Psi)+\Phi' \big)\frac{P^iP^j\delta_{ij}}{P^0} \bigg]\nonumber\\
     &\approx\mathcal{H} p-\mathcal{H} p+\Psi'p-\Psi'p-p^i\Psi,_i-\mathcal{H}p-\Phi'p\nonumber\\
     &=-\mathcal{H} p-\Phi' p-p^i\Psi,_i
 \end{align}
@@ -40,7 +40,6 @@ Inserting equations \eqref{eq:B.1} and \eqref{eq:B.2} into the Liouville operato
     &\bigg\downarrow\quad\text{moving to cosmic time } dt=a\ d\tau,\nonumber\\
     \hat{\mathbf{L}}[f]&=\frac{\partial f}{\partial t}+\frac{\hat p^i}{a}\frac{\partial f}{\partial x^i}-p\bigg(H-\frac{\partial \Phi}{\partial t}+\frac{\partial \Phi}{\partial x^i}\frac{\hat p^i}{a}\bigg)\frac{\partial f}{\partial p}
 \end{align}
-\section{Collision term}   \label{app:collisionTerm}
 \section{Tensor perturbed Liouville operator}\label{app:tensorPerturbedLiouvilleOperator}
 Previously, we considered how scalar perturbations of the metric (which are in general the most studied) contributes to the evolution of the phase space associated to photons. Now, we are going to follow the same steps to study instead the effects of tensor perturbations. Again keep in mind that we will only consider first order perturbations and higher contributions will be neglected.
 
@@ -52,13 +51,13 @@ where $p^i=p\ p^i$ is again the local 3-momentum, note that even though its defi
 $$U^\mu=(a^{-1},0,0,0)\ \Rightarrow\ E=-U_\mu P^\mu= aP^0$$
 and then requiring that $E=\sqrt{p^ip^j\delta_{ij}}=p$ we observe that the form of the local 3-momentum should be
 \begin{align*}
-    P^\mu P_\mu&=-a^2(P^0)^2+a^2(\delta_{ij}+h_{ij})P^iP^j=0\quad\Rightarrow \quad(P^0)^2=(\delta_{ij}+h_{ij})P^iP^j\\E^2&=p_ip_j\delta_{ij}=(aP^0)^2=a^2(\delta_{ij}+h_{ij})P^iP^j\quad\Rightarrow \quad p_i=a(\delta_{ij}+\frac{1}{2}h_{ij})P^j,
+    P^\mu P_\mu&=-a^2\big(P^0\big)^2+a^2(\delta_{ij}+h_{ij})P^iP^j=0\quad\Rightarrow \quad\big(P^0\big)^2=(\delta_{ij}+h_{ij})P^iP^j\\E^2&=p_ip_j\delta_{ij}=\big(aP^0\big)^2=a^2(\delta_{ij}+h_{ij})P^iP^j\quad\Rightarrow \quad p_i=a(\delta_{ij}+\frac{1}{2}h_{ij})P^j,
 \end{align*} 
 where we used that there is no difference between covariant e contravariant vectors for the local momentum since in the local reference frame the spatial metric is the identity.
 
 We can now proceed and evaluate the first contribution to the Liouville operator $\frac{dx^i}{d\tau}$, keeping in mind that (as in appendix \ref{app:scalarPerturbedLiouvilleOperator}) we only need order zero contributions.
 \begin{equation}\label{eq:B.4}
-    \frac{dx^i}{d\tau}=\frac{P^i}{P^0}=\frac{p_j}{E}(\delta^{ij}-\frac{1}{2}h^{ij})\approx\frac{p^i}{E}.
+    \frac{dx^i}{d\tau}=\frac{P^i}{P^0}=\frac{p_j}{E}\bigg(\delta^{ij}-\frac{1}{2}h^{ij}\bigg)\approx\frac{p^i}{E}.
 \end{equation}
 The second factor is instead needed up to the first order. We start by evaluating
 $$\frac{dp}{d\tau}=\frac{d}{d\tau}aP^0=\mathcal{H} p+a\frac{dP^0}{d\tau}=\mathcal{H} p-\frac{a}{P^0}\Gamma^0_{\mu\nu}P^\mu P^\nu,$$

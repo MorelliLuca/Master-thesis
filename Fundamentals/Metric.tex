@@ -72,7 +72,7 @@ We can simplify this metric even more by scaling the radial coordinate
 \end{equation*}
 in this way the metric becomes
 \begin{equation*}
-    ds^2=-dt^2+a^2(t)\bigg[\bigg(1-r\frac{d\gamma}{dr}\bigg)^{2}e^{2(\beta(r)-\gamma(r))}dr^2+r^2(d\theta^2+\sin^2\theta\ d\phi^2)\bigg].
+    ds^2=-dt^2+a^2(t)\Bigg[\bigg(1-r\frac{d\gamma}{dr}\bigg)^{2}e^{2(\beta(r)-\gamma(r))}dr^2+r^2(d\theta^2+\sin^2\theta\ d\phi^2)\Bigg].
 \end{equation*}
 Since $g_{rr}$ must always be non-negative, we can define a function $\alpha(r)$, such that $e^{2\alpha}=\big(1-r\frac{d\gamma}{dr}\big)^{2}e^{2(\beta(r)-\gamma(r))}$, so that the metric reads
 \begin{equation*}
@@ -85,8 +85,8 @@ Now, we can evaluate the Christoffel symbols of the metric restricted to the uni
 \end{align}
 all the others are zero or deducible from the symmetries of the above.\\ We then obtain the non-vanishing components of the Riemann tensor are:
 \begin{align}\label{eq:RWL3Riemann}
-    ^{(3)}R^r_{\theta r\theta}&=re^{-2\alpha}\frac{d\alpha}{dr},\nonumber\\
-    ^{(3)}R^r_{\phi r\phi}&=re^{-2\alpha}\sin^2\theta\frac{d\alpha}{dr},\nonumber\\
+    ^{(3)}R^r_{\theta r\theta}&=re^{-2\alpha}\frac{d\alpha}{dr},\qquad
+    ^{(3)}R^r_{\phi r\phi}&=re^{-2\alpha}\sin^2\theta\frac{d\alpha}{dr},\qquad
     ^{(3)}R^\theta_{\phi \theta\phi}&=(1-e^{-2\alpha})\sin^2\theta.
 \end{align}
 Lastly, we can get the Ricci tensor:
@@ -95,7 +95,7 @@ Lastly, we can get the Ricci tensor:
 \end{equation}
 Combining the expression for the Ricci tensor \eqref{maxsymRicci} and the one above \eqref{eq:RWL3Ricci}, we end up with two differential equations that can be solved to determine the metric
 \begin{align*}
-    ^{(3)}R_{rr}&=\frac{^{(3)}R}{3}g_{tt}\quad\Rightarrow\quad\boxed{\frac{2}{r}\frac{d\alpha}{dr}=\frac{^{(3)}R}{3}e^{2\alpha}}\\ ^{(3)}R_{ij}&=\frac{^{(3)}R}{3}g_{ij}\quad\Rightarrow\quad \boxed{e^{-2\alpha}\bigg[r\frac{d\alpha}{dr}-1\bigg]+1=\frac{^{(3)}R}{3}r^2}.
+    ^{(3)}R_{rr}&=\frac{^{(3)}R}{3}g_{tt}\quad\Rightarrow\quad\frac{2}{r}\frac{d\alpha}{dr}=\frac{^{(3)}R}{3}e^{2\alpha}\\ ^{(3)}R_{ij}&=\frac{^{(3)}R}{3}g_{ij}\quad\Rightarrow\quad e^{-2\alpha}\bigg[r\frac{d\alpha}{dr}-1\bigg]+1=\frac{^{(3)}R}{3}r^2.
 \end{align*}
 Since we have two equations for one unknown, substituting the first equation into the second one, we can obtain an initial condition for the former
 \begin{equation*}
