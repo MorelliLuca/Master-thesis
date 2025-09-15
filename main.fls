@@ -1114,6 +1114,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasyb10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./main.toc
@@ -1155,13 +1162,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasyb10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT ./Fundamentals/Thermo.tex
 INPUT ./Fundamentals/Thermo.tex
@@ -1231,7 +1231,8 @@ INPUT ./CMB/Dissipation.tex
 INPUT ./CMB/Dissipation.tex
 INPUT CMB/Dissipation.tex
 INPUT CMB/Th.dat
-INPUT CMB/mu_Window.dat
+INPUT CMB/mu_Window_sharp.dat
+INPUT CMB/mu_WIndow_soft.dat
 INPUT ./Results/Bayes.tex
 INPUT ./Results/Bayes.tex
 INPUT ./Results/Bayes.tex

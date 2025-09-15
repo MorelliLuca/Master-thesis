@@ -83,11 +83,9 @@
 \contentsline {chapter}{\numberline {A}Differential geometry tools}{123}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{123}{section.A.1}%
 \contentsline {chapter}{\numberline {B}Thermodynamics tools}{127}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Phase space distribution and thermodynamics observable}{127}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Small chemical potential approximation}{127}{subsection.B.1.1}%
+\contentsline {section}{\numberline {B.1}Small chemical potential approximation}{127}{section.B.1}%
 \contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{128}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Collision term}{130}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Tensor perturbed Liouville operator}{130}{section.B.4}%
+\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{130}{section.B.3}%
 \contentsline {chapter}{\numberline {C}Special functions}{133}{appendix.C}%
 \contentsline {section}{\numberline {C.1}Spherical harmonics \(Y_{\ell m}(\theta ,\varphi )\)}{133}{section.C.1}%
 \contentsline {section}{\numberline {C.2}Legendre polynomials \(P_\ell (x)\)}{134}{section.C.2}%
