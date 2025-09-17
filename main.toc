@@ -75,22 +75,23 @@
 \contentsline {subsubsection}{Dissipation in the $\mu $-era}{111}{subsubsection*.29}%
 \contentsline {subsubsection}{Dissipation in the y-era}{113}{subsubsection*.32}%
 \contentsline {subsection}{\numberline {7.3.7}Window functions}{115}{subsection.7.3.7}%
-\contentsline {chapter}{\numberline {8}Numerical results and constraints}{117}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Methodology of the analysis}{117}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Bayesian inference and MCMC algorithms}{117}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}CMB likelihoods}{119}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Semi-analytical constraints}{120}{subsection.8.1.3}%
-\contentsline {chapter}{\numberline {A}Differential geometry tools}{123}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{123}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Thermodynamics tools}{127}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Small chemical potential approximation}{127}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{128}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{130}{section.B.3}%
-\contentsline {chapter}{\numberline {C}Special functions}{133}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Spherical harmonics \(Y_{\ell m}(\theta ,\varphi )\)}{133}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Legendre polynomials \(P_\ell (x)\)}{134}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Spin-weighted spherical harmonics \({}_sY_{\ell m}(\theta ,\varphi )\)}{134}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Bessel functions \(J_\nu (z), Y_\nu (z)\) and Hankel functions $H_\nu ^{(1)}(z), H_\nu ^{(2)}(z)$}{135}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Spherical Bessel functions \(j_\ell (z), y_\ell (z)\)}{136}{section.C.5}%
-\contentsline {section}{\numberline {C.6}Gamma function \(\Gamma (z)\)}{136}{section.C.6}%
-\contentsline {section}{\numberline {C.7}Riemann zeta function \(\zeta (s)\)}{136}{section.C.7}%
+\contentsline {subsection}{\numberline {7.3.8}Theoretical analysis of the distortions}{118}{subsection.7.3.8}%
+\contentsline {chapter}{\numberline {8}Numerical results and constraints}{121}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Methodology of the analysis}{121}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Bayesian inference and MCMC algorithms}{121}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}CMB likelihoods}{123}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Semi-analytical constraints}{124}{subsection.8.1.3}%
+\contentsline {chapter}{\numberline {A}Differential geometry tools}{127}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{127}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{131}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Small chemical potential approximation}{131}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{132}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{134}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Special functions}{137}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Spherical harmonics \(Y_{\ell m}(\theta ,\varphi )\)}{137}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Legendre polynomials \(P_\ell (x)\)}{138}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Spin-weighted spherical harmonics \({}_sY_{\ell m}(\theta ,\varphi )\)}{138}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Bessel functions \(J_\nu (z), Y_\nu (z)\) and Hankel functions $H_\nu ^{(1)}(z), H_\nu ^{(2)}(z)$}{139}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Spherical Bessel functions \(j_\ell (z), y_\ell (z)\)}{140}{section.C.5}%
+\contentsline {section}{\numberline {C.6}Gamma function \(\Gamma (z)\)}{140}{section.C.6}%
+\contentsline {section}{\numberline {C.7}Riemann zeta function \(\zeta (s)\)}{140}{section.C.7}%
