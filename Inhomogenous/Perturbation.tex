@@ -12,13 +12,13 @@ To get simpler calculations, using conformal time, we can employ the following d
     g_{0i}&=a^2(\tau)B_i(\tau,\mathbf x)\quad&\Rightarrow\qquad&\delta g_{0i}=a^2(\tau)B_i(\tau,\mathbf x),\\
     g_{ij}&=a^2(\tau)\bigg[\delta_{ij}+h_{ij}(\tau,\mathbf x)\bigg]\quad&\Rightarrow\qquad&\delta g_{ij}=a^2(\tau)h_{ij}(\tau,\mathbf x).
 \end{align} 
-Each non-scalar perturbation in the above can be then further decomposed by studying its momentum space representation: consider first the vector $B_i$, in momentum space a natural direction is determined by the wave number vector $\mathbf k$ so that $B_i$ itself can be decomposed on such direction and on its orthogonal plane: $$B_i(\tau,\mathbf x)=\int\frac{d^3k}{(2\pi)^3}e^{i\mathbf{k\cdot x}}(ik_i\tilde B(\tau,\mathbf k)+\tilde{\hat{B}}_i(\tau,\mathbf x))=B_{,i}(\tau,\mathbf k)+\hat{B}_i(\tau,\mathbf x),$$ where we denoted with the hat the orthogonal components to $\mathbf{k}$. The above decomposition consists just in the split of the longitudinal, or irrotational, part $B_{,i}$ and the transverse, or solenoidal, part $\hat{ B}_i$ of a generic vector field. Indeed, it's rather trivial to note that $$\epsilon^{ijk}B_{,ij}(\tau,\mathbf x)=0\quad\text{and } \tensor{\hat B}{_{i}^{,i}}(\tau,\mathbf x)\propto\int\frac{d^3k}{(2\pi)^3}e^{i\mathbf{k\cdot x}}k^i\hat{B}_i(\tau,\mathbf x)=0.$$
+Each non-scalar perturbation in the above can be then further decomposed by studying their \emph{Fourier Transform}: consider first the vector $B_i$, in momentum space a natural direction is determined by the wave number vector $\mathbf k$ so that $B_i$ itself can be decomposed on such direction and on its orthogonal plane: $$B_i(\tau,\mathbf x)=\int\frac{d^3k}{(2\pi)^3}e^{i\mathbf{k\cdot x}}(ik_i\tilde B(\tau,\mathbf k)+\tilde{\hat{B}}_i(\tau,\mathbf x))=B_{,i}(\tau,\mathbf k)+\hat{B}_i(\tau,\mathbf x),$$ where we denoted with the hat the orthogonal components to $\mathbf{k}$. The above decomposition consists just in the split of the longitudinal, or irrotational, part $B_{,i}$ and the transverse, or solenoidal, part $\hat{ B}_i$ of a generic vector field. Indeed, it's rather trivial to note that $$\epsilon^{ijk}B_{,ij}(\tau,\mathbf x)=0\quad\text{and } \tensor{\hat B}{_{i}^{,i}}(\tau,\mathbf x)\propto\int\frac{d^3k}{(2\pi)^3}e^{i\mathbf{k\cdot x}}k^i\hat{B}_i(\tau,\mathbf x)=0.$$
 The same decomposition can be used for $h_{ij}$: first we can factor out the trace, the remaining tensor is then projected in Fourier space on the direction of $\mathbf{k}$ and on its orthogonal plane in all the possible combinations of its indices. In this way we find:
-$$h_{ij}(\tau,\mathbf x)=-2C\delta_{ij}+2E_{,ij}+\hat E_{i,j}+\hat E_{j,i}+\hat E^{T}_{ij},$$ where $C$ and $E$ are scalar fields, $\hat E_i$ is a transverse or solenoidal vector field while $\hat E^{T}_{ij}$ is a traceless transverse tensor.\\ Overall we found 10 fields which perfectly match the 10 degerees of freedom of the metric:
+$$h_{ij}(\tau,\mathbf x)=-2C\delta_{ij}+2E_{,ij}+\hat E_{i,j}+\hat E_{j,i}+\hat E^{T}_{ij},$$ where $C$ and $E$ are scalar fields, $\hat E_i$ is a transverse or solenoidal vector field while $\hat E^{T}_{ij}$ is a traceless transverse tensor.\\ Overall we found 10 fields which perfectly match the 10 degrees of freedom (d.o.f.) of the metric:
 \begin{itemize}
-    \item $A,B,C,E$ which are \textbf{scalar perturbations} with 1 degree of freedom each,
-    \item $\hat B_i,\hat E_i$ which are \textbf{transverse vector perturbations}, thus with 2 degrees of freedom for each vector,
-    \item $\hat E^T_{ij}$ which is a \textbf{traceless transverse tensor perturbation}, hence with just 2 degrees of freedom, and we recognize it to be a gravitational wave.
+    \item $A,B,C,E$ which are \textbf{scalar perturbations},
+    \item $\hat B_i,\hat E_i$ which are \textbf{transverse vector perturbations} ($2\times2$ d.o.f),
+    \item $\hat E^T_{ij}$ which is a \textbf{traceless transverse tensor perturbation}, hence with just 2 d.o.f, and we recognize it to be a gravitational wave.
 \end{itemize}
 
 With the perturbed metric in our hands we can now study how the energy-momentum tensor of a perfect fluid gets perturbed. In the following discussion we will also generalize the universe content to an \emph{imperfect fluid} such as a combination different weakly interacting fluids, hence its energy-momentum tensor will include terms that describe physically relevant processes between its different components, for example the shear and bulk viscosity or the thermal conductivity. We can incorporate all of these effects in the \emph{shear stress} or \emph{anisotropic stress} $\pi^{\mu\nu}$, so that the general form of the energy-momentum tensor reads
@@ -26,7 +26,7 @@ With the perturbed metric in our hands we can now study how the energy-momentum 
     \tensor{T}{^\mu_\nu}=(\rho+p)U^\mu U_\nu+p\tensor{g}{^\mu_\nu}+\tensor{\pi}{^\mu_\nu}.
     \label{eq:Generalized_stress-energy_Tensor}
 \end{equation}
-Without loss of generality we can assume that $\pi^{\mu\nu}$ is traceless and flow-orthogonal, namely $\pi^{\mu\nu}U_\nu=0$ and $g_{\mu\nu}\pi^{\mu\nu}=0$. Indeed, from the above equation we can see that any non-traceless or flow-parallel contribution can be refactored in the energy density and in the pressure of the perfect fluid. This corresponds physically to require that in the rest frame of the fluid any shear stress is purely spatial, hence it manifests as an anisotropic contribution to the pressure ($\tensor{T}{^0_0}=\rho,\ \tensor{T}{^0_i}=0$ and $\tensor{T}{^i_j}=p\tensor{g}{^i_j}+\tensor{\pi}{^i_j}$). We now have to introduce perturbations in the above energy-momentum tensor: considering that $\pi^{\mu\nu}$ is already a deviation from the isotropic and homogeneous FRW case, we can assume that it is small enough to be treated as a perturbation, hence we still have to perturb the 4-velocity of the fluid $U^\mu$, the energy density and the pressure. \\ Starting from the 4-velcocity we assume that all its components could be perturbed, so that a small bulk velocity can appear ($U^i\neq0$): overall we will let $U^\mu=(\bar U^0+\delta U^0,\delta U^i)$, where $\bar U^0\gg\delta U^0,\delta U^i$ has the background value $a^{-1}$ that we get in the FRW case. Note that we can now define the bulk velocity of the fluid to be 
+Without loss of generality we can assume that $\pi^{\mu\nu}$ is traceless and flow-orthogonal, namely $\pi^{\mu\nu}U_\nu=0$ and $g_{\mu\nu}\pi^{\mu\nu}=0$. Indeed, from the above equation we can see that any non-traceless or flow-parallel contribution can be refactored in the energy density and in the pressure of the perfect fluid. This corresponds physically to require that in the rest frame of the fluid any shear stress is purely spatial, hence it manifests as an anisotropic contribution to the pressure ($\tensor{T}{^0_0}=\rho,\ \tensor{T}{^0_i}=0$ and $\tensor{T}{^i_j}=p\tensor{g}{^i_j}+\tensor{\pi}{^i_j}$). We now have to introduce perturbations in the above energy-momentum tensor: considering that $\pi^{\mu\nu}$ is already a deviation from the isotropic and homogeneous FRW case, we can assume that it is small enough to be treated as a perturbation, hence we still have to perturb the 4-velocity of the fluid $U^\mu$, the energy density and the pressure. \\ Starting from the 4-velocity we assume that all its components could be perturbed, so that a small bulk velocity can appear ($U^i\neq0$): overall we will let $U^\mu=(\bar U^0+\delta U^0,\delta U^i)$, where $\bar U^0\gg\delta U^0,\delta U^i$ has the background value $a^{-1}$ that we get in the FRW case. Note that we can now define the bulk velocity of the fluid to be 
 $$
 v^i\defeq\frac{d x^i}{d\tau}=\frac{dx^i/d\lambda}{dx^0/d\lambda}=\frac{U^i}{U^0}=\frac{\delta U^i}{\bar U^0+\delta U^0}\approx \frac{\delta U^i}{\bar U^0}=a\delta U^i.
 $$
@@ -47,21 +47,21 @@ Similarly, also the energy density and the pressure get perturbed: considering t
 \end{align} 
 In this way we can come back to the perturbed Einstein equations and solve it separately for the background and for the perturbations.
 \section{Gauge transformations}
-The principle of general relativity states that the laws of physics are independent of the observer that describes them, hence they are independent of the coordinate that we use. In this section we will study how perturbations are influenced by a coordinate transformation. We will discover that the freedom of choice of the coordinates translates in a gauge freedom of the perturbations, reducing the number of degrees of freedom that are relevant.
+The principle of general relativity states that the laws of physics are independent of the observer that describes them, hence they are independent of the coordinate that we use. In this section we will study how perturbations are influenced by a coordinate transformation. We will discover that the freedom of choice of the coordinates translates in a gauge freedom of the perturbations, reducing the number of degrees of freedom to the physical ones.
 
 Consider an infinitesimal coordinate transformation $x^\mu= \tilde x^\mu=x^\mu+\xi^\mu$, where $\xi^\mu$ is small vector field, comparable with the perturbations. This transformation will affect all the components of each tensor, in particular the metric will transform as
-$$\tilde g_{\mu\nu}(\tilde x)=\frac{\partial x^\alpha}{\partial\tilde  x^\mu}\frac{\partial  x^\beta}{\partial\tilde x^\nu}g_{\alpha\beta}(x)=g_{\mu\nu}(x)-\frac{\partial \xi^\alpha}{\partial\tilde x^\mu}g_{\alpha\nu}(x)-\frac{\partial \xi^\beta}{\partial\tilde x^\nu}g_{\mu\beta}(x)+\mathcal O(\xi^2),$$
+$$\tilde g_{\mu\nu}(\tilde x)=\frac{\partial x^\alpha}{\partial\tilde  x^\mu}\frac{\partial  x^\beta}{\partial\tilde x^\nu}g_{\alpha\beta}(x)=g_{\mu\nu}(x)-\frac{\partial \xi^\alpha}{\partial\tilde x^\mu}g_{\alpha\nu}(x)-\frac{\partial \xi^\beta}{\partial\tilde x^\nu}g_{\mu\beta}(x)+\mathcal O\big(\xi^2\big),$$
 at this point it is useful to expand each term on the left-hand side around $\tilde x$, so that we get an expression depending only on the new coordinates $\tilde x^\mu$, which at first order reads:
-$$\tilde g_{\mu\nu}(\tilde x)=g_{\mu\nu}(\tilde x)-\frac{\partial \xi^\alpha}{\partial \tilde x^\mu}g_{\alpha\nu}(\tilde x)-\frac{\partial \xi^\beta}{\partial \tilde x^\nu}g_{\mu\beta}(\tilde x)-\frac{\partial g_{\mu\nu}}{\partial \tilde x^\lambda}\xi^\lambda+\mathcal O(\xi^2).$$
+$$\tilde g_{\mu\nu}(\tilde x)=g_{\mu\nu}(\tilde x)-\frac{\partial \xi^\alpha}{\partial \tilde x^\mu}g_{\alpha\nu}(\tilde x)-\frac{\partial \xi^\beta}{\partial \tilde x^\nu}g_{\mu\beta}(\tilde x)-\frac{\partial g_{\mu\nu}}{\partial \tilde x^\lambda}\xi^\lambda+\mathcal O\big(\xi^2\big).$$
 Now we can separate the background and the perturbations and considering $\xi^\mu$ a first order perturbation we discover that the background metric remains unchanged, while each perturbation transforms as
 \begin{equation}
-     \delta \tilde g_{\mu\nu}(\tilde x)=\delta g_{\mu\nu}(\tilde x)-\frac{\partial \xi^\alpha}{\partial \tilde x^\mu}\bar g_{\alpha\nu}(\tilde x)-\frac{\partial \xi^\beta}{\partial \tilde x^\nu}\bar g_{\mu\beta}(\tilde x)-\frac{\partial\bar g_{\mu\nu}}{\partial \tilde x^\lambda}\xi^\lambda+\mathcal O(\xi^2,\delta g^2).
+     \delta \tilde g_{\mu\nu}(\tilde x)=\delta g_{\mu\nu}(\tilde x)-\frac{\partial \xi^\alpha}{\partial \tilde x^\mu}\bar g_{\alpha\nu}(\tilde x)-\frac{\partial \xi^\beta}{\partial \tilde x^\nu}\bar g_{\mu\beta}(\tilde x)-\frac{\partial\bar g_{\mu\nu}}{\partial \tilde x^\lambda}\xi^\lambda+\mathcal O\big(\xi^2,\delta g^2\big).
     \label{eq:perturbation_transformation}
 \end{equation} 
 
 The above transformation shows how the ten perturbation fields transforms under a change of coordinate. To better match the symmetries of the tensors we derived in the previous section, it is appropriate to decompose $\xi^\mu=(\xi^0,\zeta^{,i}+\xi^i_{\perp})$ where $\xi^0$ and $\zeta$ are two scalars while $\xi_\perp^i$ is a transverse vector ($\xi^i_{\perp,i}=0$).\\ The $00$ component gives us the transformation of the scalar perturbation $A$:
 \begin{align}
-    \delta \tilde g_{00}=-2a^2\tilde A=\delta g_{00}=- 2a^2 A+2a^2(\xi^{0})'+2aa'\xi^0\quad \Rightarrow\quad\boxed{\tilde A=A-\frac{1}{a}\frac{d}{d\tau}\bigg(a\xi^0\bigg)},\label{eq:gauge_A}
+    \delta \tilde g_{00}=-2a^2\tilde A=\delta g_{00}=- 2a^2 A+2a^2\big(\xi^{0}\big)'+2aa'\xi^0\quad \Rightarrow\quad{\tilde A=A-\frac{1}{a}\frac{d}{d\tau}\big(a\xi^0\big)},\label{eq:gauge_A}
 \end{align}
 where we used the $'$ to denote the derivative with respect to conformal time.\\
 Similarly, the $0i$ components give us the transformation of the vector perturbation $B_i$:
@@ -154,15 +154,15 @@ In the $\Lambda$CDM model we have mainly four components: photons and neutrinos,
 \end{equation}
 which allows obtaining all the initial conditions from just one matter perturbation.
 
-Other conditions, such as the \textbf{isocurvature initial conditions}, exits but both theoretically and observationally they seem to be less relevant than the adiabatic one. Indeed, the most simple models of inflation shows a good agreement with this kind of conditions, mainly because its dynamics in a single patch of universe it is fully determined by just one inflaton field. Moreover, current observation of the CMB further confirm the validity of the adiabatic initial condition.  
+Other conditions, such as the \textbf{isocurvature initial conditions}, exist but current observation of the CMB are mostly in agreement with the adiabatic initial condition. Moreover, the simplest models of inflation predicts adiabatic conditions, mainly because its dynamics in a single patch of universe is fully determined by just one inflaton field.   
 
 \section{Primordial perturbations}
-As we mentioned, the initial conditions of the perturbations are determined by inflation. In the followinf sections we will discover that perturbations naturally arise from quantum mechanics in curved spacetime as the inflaton field dominates the universe. The accelerated inflationary expansion stretched these perturbations from the quantum scale to the Hubble scale where, as we will see, they freeze and become classical. Then transitioning to the radiation dominated era the pertirbations start to renter the Hublle horizon, where they start to evolve again. In this way the initial conditions are determined by the perturbations at the Hubble scale during inflation. 
+As we mentioned, the initial conditions of the perturbations are determined by inflation. In the following sections we will discover that perturbations naturally arise from quantum field theory in curved spacetime when the inflaton field dominates over the energy contents of the universe. The accelerated inflationary expansion stretched these perturbations from the quantum scales to the Hubble scale where, as we will see, they freeze and become classical. Then transitioning to the radiation dominated era, perturbations relevant for observations renter the Hubble horizon, where they start to evolve again. In this way the initial conditions are determined by perturbations at the Hubble scale during inflation. 
 \subsection{Scalar perturbations during inflation}
-In Chapter \ref{chap:inflation} we developed the general framework that describes inflation: this was done by assuming that the inflaton can be described as a quantum fields which is totally homogeneous and depends only on the time variable. In this section we will allow for perturbation to introduce a space dependece in the inflaton field. As usual we will split the filed in its backgorund component $\bar\phi(\tau)$ plus some small perturbation $\delta\phi(\tau,\mathbf x)$.
+In Chapter \ref{chap:inflation} we developed the general framework that describes inflation: this was done by assuming that the inflaton can be described as a quantum fields which is totally homogeneous and depends only on the time variable. In this section we will allow for perturbation to introduce a space dependence in the inflaton field. As usual we will split the filed in its background component $\bar\phi(\tau)$ plus some small perturbation $\delta\phi(\tau,\mathbf x)$.
 
 The starting point is the action of a scalar field, minimally coupled to gravity
-$$\mathcal{S} [g,\phi]=-\int d^4x\sqrt{-g}\bigg(\frac{1}{2}\partial_\mu\phi\partial^\mu\phi+V(\phi)-\frac{R}{16\pi G}\bigg),$$where $R$ is the Ricci scalar. Since we want to study inhomogeneities, we perturb both the metric, in the way we explained in Section \ref{sec:perturbations}, and the inflaton field, which now is our universe content. Let us stop for a moment and consider the perturbed energy-momentum tensor of the inflaton: expanding at the first order in all perturbations we find
+$$\mathcal{S} [g,\phi]=\int d^4x\sqrt{-g}\bigg(-\frac{1}{2}\partial_\mu\phi\partial^\mu\phi-V(\phi)+\frac{R}{16\pi G}\bigg),$$where $R$ is the Ricci scalar. Since we want to study inhomogeneities, we perturb both the metric, in the way we explained in Section \ref{sec:perturbations}, and the inflaton field, which now is our universe content. Let us stop for a moment and consider the perturbed energy-momentum tensor of the inflaton: expanding at the first order in all perturbations we find
 \begin{align*}
     \tensor{T}{^0_i}=\partial^\mu\phi\partial_\nu\phi+\tensor{g}{^0_i}\mathcal{L}=-a^{-2}\bar\phi'\delta\phi_{,i},
 \end{align*}
@@ -196,7 +196,7 @@ More in detail, this is accomplished by studying equation \eqref{eq:SM-equation}
 $$\tilde\sigma_\mathbf{k}''+\bigg(\mathbf k^2-\frac{z''}{z}\bigg)\tilde\sigma_\mathbf{k}=0,$$
 then the Fourier coefficient of each mode is promoted to an operator. Note that $\sigma_\mathbf{k}$ depends only on the modulus of $\mathbf k$, hence we will drop the bold notation to signal this dependence. In this way the whole quantum field will read
 $$\hat\sigma(\tau\,\mathbf{x})=\int\frac{d^3k}{(2\pi)^3}\bigg[\hat a_{\mathbf k}\tilde\sigma_k(\tau)e^{i\mathbf{k\cdot x}} +\hat a_{\mathbf k}^{\dagger}\tilde\sigma^*_k(\tau)e^{-i\mathbf{k\cdot x}}\bigg],$$
-where the different signs in the exponentials are due to the requirement that $\hat\sigma^\dagger=\hat\sigma$, as $\sigma\in\mathbb{R}$ before the quantization, and both $\tilde\sigma_k$ and $\tilde\sigma_k*$ are included since they are linearly independent solutions. The operator $\hat a_\mathbf{k}$ and $\hat a^\dagger_\mathbf{k}$ are called \textbf{creation and annihilation operators} and they are defined through the commutation relations $$[\hat a_\mathbf{k},\hat a^\dagger_\mathbf{k'}]=(2\pi)\delta^{(3)}(\mathbf{k-k'}),\quad [\hat a_\mathbf{k},\hat a_\mathbf{k'}]=[\hat a^\dagger_\mathbf{k},\hat a^\dagger_\mathbf{k'}]=0.$$ These relations allow obtaining the canonical commutation relations precisely if the following normalization holds
+where the different signs in the exponential are due to the requirement that $\hat\sigma^\dagger=\hat\sigma$, as $\sigma\in\mathbb{R}$ before the quantization, and both $\tilde\sigma_k$ and $\tilde\sigma_k*$ are included since they are linearly independent solutions. The operator $\hat a_\mathbf{k}$ and $\hat a^\dagger_\mathbf{k}$ are called \textbf{creation and annihilation operators} and they are defined through the commutation relations $$[\hat a_\mathbf{k},\hat a^\dagger_\mathbf{k'}]=(2\pi)\delta^{(3)}(\mathbf{k-k'}),\quad [\hat a_\mathbf{k},\hat a_\mathbf{k'}]=[\hat a^\dagger_\mathbf{k},\hat a^\dagger_\mathbf{k'}]=0.$$ These relations allow obtaining the canonical commutation relations precisely if the following normalization holds
 \begin{align*}
 &\qquad\qquad\qquad\langle\sigma_k,\sigma_k\rangle=i(\tilde\sigma^*_k\tilde\sigma'_k-(\tilde\sigma_k^*)'\tilde\sigma_k)=1\\ [\hat\sigma(\tau,\mathbf x),\hat\sigma'(\tau,\mathbf y)]&=\int\frac{d^3k}{(2\pi)^3}\frac{d^3k'}{(2\pi)^3}    \Big([\hat a_\mathbf{k},\hat a^\dagger_\mathbf{k'}]\tilde\sigma_k(\tilde\sigma^*)'_{k'}e^{i(\mathbf{k\cdot x-k'\cdot y})}+[\hat a^\dagger_\mathbf{k},\hat a_\mathbf{k'}]\tilde\sigma_k^*\tilde\sigma'_ke^{-i(\mathbf{k\cdot x-k'\cdot y})}\Big)\\&=-\int\frac{d^3k}{(2\pi)^3}e^{i\mathbf{k\cdot(x-y)}}    (\tilde\sigma^*_k\tilde\sigma'_k-(\tilde\sigma_k^*)'\tilde\sigma_k)=i\delta^{(3)}(\mathbf{x-y}).
 \end{align*}
@@ -243,7 +243,7 @@ However $\sigma$ is not a metric perturbation and, to obtain a physical quantity
 \begin{align*}
     z'\approx zaH\approx-\frac{z}{\tau}\quad\Rightarrow\quad z(\tau)\approx\frac{1}{\tau}\quad\Rightarrow\quad\tilde{\mathcal{R}}_k\approx C_1+C_2\tau\xrightarrow{\tau\to 0}C_1,
 \end{align*}
-where the last limit is exactly the super Hubble horizon regime $aH\to\infty$. Hence, the only information that we will need to obtain the initial condition for cosmological perturbations is the power spectrum in the late-time limit, which, until the modes reenter the Hubble horizion, is time independent.
+where the last limit is exactly the super Hubble horizon regime $aH\to\infty$. Hence, the only information that we will need to obtain the initial condition for cosmological perturbations is the power spectrum in the late-time limit, which, until the modes reenter the Hubble horizon, is time independent.
 
 For these reasons we will not study the power spectrum of $\sigma$ but rather the one of the comoving curvature $\mathcal{R}$, which is:
 $$\mathcal{P_R}(k)=\frac{\mathcal{P}_\sigma}{z^2} =\frac{|\sigma_k|^2}{z^2}=-\tau8\pi G\frac{\pi}{8a^2\epsilon_1}|H_\nu^{(2)}(-k\tau)|^2,$$where we used that $z=a\sqrt{\epsilon_1/(4\pi G)}$. In the super Hubble horizon limit the Hankel function can be approximated as 
@@ -305,18 +305,15 @@ The above quantities imply that a \emph{consistency} relation should hold betwee
 \begin{equation}
     r(k)\defeq\frac{\mathcal{P}_T(k)}{\mathcal{P_R}(k)},
 \end{equation} 
-in the slow-roll approximation of a single field inflation, $r=16\epsilon_1=-8n_t$. Deviations from this relation signal that inflation is not driven by a single quantum inflaton field. While the CMB anisotropies allowed to characterize with good precision the power spectrum of primordial scalar perturbations, $\mathcal{A_R}=2.1\times 10^{-9},\ n_s=0.96$ at $k_0=0.05$ Mpc$^{-1}$ \cite{planck2018results} which shows good agreement with slow-roll inflation, we still haven't measured any signal from the tensor sector. Nowadays, measurements allow us to bound the expected tensor-to-scalar ratio to $r<0.07$.
+in the slow-roll approximation of a single field inflation, $r=16\epsilon_1=-8n_t$. Deviations from this relation signal that inflation is not driven by a single quantum inflaton field. While the CMB anisotropies allowed to characterize with good precision the power spectrum of primordial scalar perturbations, $\mathcal{A_R}=2.100\times 10^{-9},\ n_s=0.9649$ at $k_0=0.05$ Mpc$^{-1}$ \cite{planck2018results} which shows good agreement with slow-roll inflation, we still haven't measured any signal from the tensor sector. Nowadays, measurements allow us to bound the expected tensor-to-scalar ratio to $r<0.035$ at $95\%$ CL \cite{Ade_2021}.
 
-Moreover, to account for a broader class of inflationary models, the power spectrum can be phenomenologically generalized introducing a \emph{running spectral index} $n(k)$ and by then Taylor expanding
-\begin{equation}
-    \Delta=\mathcal{A}\bigg(\frac{k}{k_0}\bigg)^{n(k_0)-1+\frac{1}{2}\frac{d n}{d\log k}\log\frac{k}{k_0}+\frac{1}{6}\frac{d^2 n}{d\log k^2}\log^2\frac{k}{k_0}+\dots},
+Moreover, the two parameters ($\mathcal A, n$) can be traded off for the values of the power spectrum at two fixed scales $k_1$ and $k_2$. To see this, let's consider the $\log k$-$\log\Delta$ plane: any power law thus becomes a straight line with a slope given by $n-1$ (or $n$) and which intersects the $\log\Delta$ axis for $\log (k/k_0)=\log\mathcal A/(1-n)$. Now, instead of using these parameters we can use two points $(\log k_1,\log\Delta_1)$ and $(\log k_2,\log\Delta_2)$, in this way the power spectrum reads
+\begin{equation}\label{eq:2_scales_PS}
+    \Delta(k)=\exp\bigg\{\frac{\log k-\log k_1}{\log k_1 -\log k_2}\log\Delta(k_2)-\frac{\log k-\log k_2}{\log k_1 -\log k_2}\log\Delta(k_1)\bigg\}.
 \end{equation}
-in this way it can capture deviations from the power law behavior we found.\\
-On top of this, bump-like features can be added to the power spectrum. As explained in \cite{Hamann_2022} this can be done by modeling the bump as a \emph{log-normal} function
-\begin{equation}
-    \Delta_\text{bump}\defeq \mathcal A_\text{bump}\exp\Bigg[-\frac{\big(\log\frac{k}{k_{\text{pk}}}\big)^2}{2\sigma^2}\Bigg],\label{eq:lognormal}
-\end{equation}
-where $A_\text{bump}$ is the amplitude of the bump, $\sigma$ represents the width of the bump and $k_\text{pk}$ its location.  Note that for $\sigma\gg 1$ the bump degenerates into an almost flat plateau for $-\sigma\lesssim \log\frac{k}{k_{\text{pk}}}\lesssim\sigma $, as shown in Figure \ref{fig:lognormal_sigma}.
+From our geometrical considerations we also conclude that spectral index can be computed from the two scales as
+$$n-1=\frac{\log\Delta(k_2)-\log\Delta(k_1)}{\log k_2-\log k_1},$$
+while to obtain the amplitude of the power law we can just compute it at the know scale $k_1$ or $k_2$ with the above spectral index (which is scale invariant).
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.51\textwidth}
@@ -411,6 +408,19 @@ where $A_\text{bump}$ is the amplitude of the bump, $\sigma$ represents the widt
 \end{subfigure}
 \caption{Plots of the power spectra presented in this section. The figure on the left (a) shows the behavior of the bump as $\sigma$ increases: note how a plateau is produced for high values of $\sigma$. The plot on the right (b) compares the power law (dotted) with the bump (dashed) with their sum (solid line). }
 \end{figure}
+
+To account for a broader class of inflationary models, the power spectrum can be phenomenologically generalized introducing a \emph{running spectral index} $n(k)$ and by then Taylor expanding
+\begin{equation}
+    \Delta=\mathcal{A}\bigg(\frac{k}{k_0}\bigg)^{n(k_0)-1+\frac{1}{2}\frac{d n}{d\log k}\log\frac{k}{k_0}+\frac{1}{6}\frac{d^2 n}{d\log k^2}\log^2\frac{k}{k_0}+\dots},
+\end{equation}
+in this way it can capture deviations from the power law behavior we found.\\
+On top of this, bump-like features can be added to the power spectrum. As explained in \cite{Hamann_2022} this can be done by modeling the bump as a \emph{log-normal} function
+\begin{equation}
+    \Delta_\text{bump}\defeq \mathcal A_\text{bump}\exp\Bigg[-\frac{\big(\log\frac{k}{k_{\text{pk}}}\big)^2}{2\sigma^2}\Bigg],\label{eq:lognormal}
+\end{equation}
+where $A_\text{bump}$ is the amplitude of the bump, $\sigma$ represents the width of the bump and $k_\text{pk}$ its location.  Note that for $\sigma\gg 1$ the bump degenerates into an almost flat plateau for $-\sigma\lesssim \log\frac{k}{k_{\text{pk}}}\lesssim\sigma $, as shown in Figure \ref{fig:lognormal_sigma}.
+
+
 
  
 
