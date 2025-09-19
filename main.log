@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.25)  17 SEP 2025 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.25)  19 SEP 2025 15:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -655,14 +655,7 @@ File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count332
 \l__pdf_internal_box=\box112
-) (./main.aux (./titilepage.aux) (./abstract.aux) (./Notazioni.aux)
-
-LaTeX Warning: Label `fig:st_window' multiply defined.
-
-
-LaTeX Warning: Label `fig:st_window@cref' multiply defined.
-
-)
+) (./main.aux (./titilepage.aux) (./abstract.aux) (./Notazioni.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -919,11 +912,11 @@ Overfull \hbox (1.41722pt too wide) in paragraph at lines 135--137
  []
 
 [43] [44] [45] [46] [47] [48] [49] [50]
-Package pgfplots info on input line 342: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 389: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 389: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 339: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 386: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 386: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 
-Overfull \hbox (8.02682pt too wide) in paragraph at lines 408--409
+Overfull \hbox (8.02682pt too wide) in paragraph at lines 405--406
 [][] 
  []
 
@@ -1010,37 +1003,37 @@ Overfull \hbox (9.89888pt too wide) detected at line 169
  []
 
 [105] [106] [107]
-Overfull \hbox (6.94061pt too wide) detected at line 206
+Overfull \hbox (6.94061pt too wide) detected at line 215
 [] \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 
 []\OML/cmm/m/it/12 Y[]\OT1/cmr/m/n/12 ([])\OML/cmm/m/it/12 Y[]\OT1/cmr/m/n/12 ([]) = \OML/cmm/m/it/12 ^^N[]^^N[] [] [] d\OT1/cmr/m/n/12 
 []\OML/cmm/m/it/12 Y[]\OT1/cmr/m/n/12 ([])\OML/cmm/m/it/12 Y[]\OT1/cmr/m/n/12 ([]) = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 ^^N[]^^N[]
  []
 
-
-Overfull \hbox (19.96326pt too wide) detected at line 222
+[108]
+Overfull \hbox (19.96326pt too wide) detected at line 231
 []
  []
 
-[108] [109] [110]
-Overfull \hbox (11.35161pt too wide) detected at line 285
+[109] [110] [111]
+Overfull \hbox (11.35161pt too wide) detected at line 294
 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k^^\\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 A[] [] a[]j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k^^\\OT1/cmr/m/n/12 )  []  [](\OML/cmm/m/it/12 k^^\\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 A[] [] a[]k[][]j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k^^\\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k^^\\OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 ;
  []
 
 PGFPlots: reading {CMB/Th.dat}
-[111] [112]
-Package pgfplots info on input line 341: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
- [113] [114]
-Package pgfplots info on input line 407: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 407: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+[112] [113]
+Package pgfplots info on input line 350: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+ [114] [115]
+Package pgfplots info on input line 416: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 416: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/mu_Window_sharp.dat}
 PGFPlots: reading {CMB/mu_Window_soft.dat}
- [115]
-Package pgfplots info on input line 442: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 442: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 451: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 451: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/y_Window_sharp.dat}
 PGFPlots: reading {CMB/y_Window_soft.dat}
-Package pgfplots info on input line 469: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 469: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+ [116] [117]
+Package pgfplots info on input line 478: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 478: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/mu_Window_soft.dat}
 PGFPlots: reading {CMB/scalar_Window_mu.dat}
 
@@ -1409,69 +1402,73 @@ NOTE: coordinate (7.177943000000000000e+10,0.000000000000000000e+00) has been dr
 NOTE: coordinate (7.798301000000000000e+10,0.000000000000000000e+00) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
 NOTE: coordinate (8.472274000000000000e+10,0.000000000000000000e+00) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
 NOTE: coordinate (9.204496000000000000e+10,0.000000000000000000e+00) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+[118]
+Package pgfplots info on input line 532: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+PGFPlots: reading {CMB/mu_exact.dat}
+PGFPlots: reading {CMB/mu_soft.dat}
+PGFPlots: reading {CMB/mu_sharp.dat}
+Package pgfplots info on input line 566: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+PGFPlots: reading {CMB/y_exact.dat}
+PGFPlots: reading {CMB/y_soft.dat}
+PGFPlots: reading {CMB/y_sharp.dat}
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [116] [117]
-Package pgfplots info on input line 523: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
-PGFPlots: reading {CMB/mu_exact.dat}
+ [119]
+Package pgfplots info on input line 628: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 628: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+PGFPlots: reading {CMB/Lognormal/tensor_mu_aln@sigma1.000e-01.dat}
+PGFPlots: reading {CMB/Lognormal/tensor_mu_aln@sigma1.778e-01.dat}
+PGFPlots: reading {CMB/Lognormal/tensor_mu_aln@sigma3.162e-01.dat}
+PGFPlots: reading {CMB/Lognormal/tensor_mu_aln@sigma5.623e-01.dat}
+PGFPlots: reading {CMB/Lognormal/tensor_mu_aln@sigma1.000e+00.dat}
 
-NOTE: coordinate (-3.00000000e+00,-1.71389781e-12) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.93939394e+00,-1.10326233e-12) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.87878788e+00,-7.37104001e-13) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.81818182e+00,-5.10032022e-13) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.75757576e+00,-3.64307087e-13) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.69696970e+00,-2.67588204e-13) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.63636364e+00,-2.01314418e-13) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.57575758e+00,-1.54550581e-13) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.51515152e+00,-1.20674247e-13) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.45454545e+00,-9.55598200e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.39393939e+00,-7.65635621e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.33333333e+00,-6.19441058e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.27272727e+00,-5.05240675e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.21212121e+00,-4.14877597e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.15151515e+00,-3.42573253e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.09090909e+00,-2.84150462e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-2.03030303e+00,-2.36534488e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.96969697e+00,-1.97425197e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.90909091e+00,-1.65076933e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.84848485e+00,-1.38147678e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.78787879e+00,-1.15593712e-14) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.72727273e+00,-9.65947655e-15) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.66666667e+00,-8.04999631e-15) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.60606061e+00,-6.67882182e-15) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.54545455e+00,-5.50388035e-15) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.48484848e+00,-4.49092038e-15) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.42424242e+00,-3.61182400e-15) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.36363636e+00,-2.84330490e-15) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.30303030e+00,-2.16589039e-15) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.24242424e+00,-1.56311374e-15) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.18181818e+00,-1.02086132e-15) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.12121212e+00,-5.26832364e-16) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (-1.06060606e+00,-7.00771424e-17) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
-PGFPlots: reading {CMB/mu_soft.dat}
-PGFPlots: reading {CMB/mu_sharp.dat}
-) [118] [119] [120
+Overfull \hbox (6.12814pt too wide) in paragraph at lines 637--638
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package pgfplots info on input line 657: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 657: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+PGFPlots: reading {CMB/Plateau/tensor_mu_sigma@aln1.000e-03.dat}
+PGFPlots: reading {CMB/Plateau/tensor_mu_sigma@aln5.623e-04.dat}
+PGFPlots: reading {CMB/Plateau/tensor_mu_sigma@aln1.778e-04.dat}
+PGFPlots: reading {CMB/Plateau/tensor_mu_sigma@aln1.000e-04.dat}
+PGFPlots: reading {CMB/Plateau/scalar_mu_sigma@aln1.000e-03:.3e.dat}
+PGFPlots: reading {CMB/Plateau/scalar_mu_sigma@aln1.778e-04:.3e.dat}
+PGFPlots: reading {CMB/Plateau/scalar_mu_sigma@aln5.623e-06:.3e.dat}
+PGFPlots: reading {CMB/Plateau/scalar_mu_sigma@aln1.000e-06:.3e.dat}
+
+Overfull \hbox (1.8807pt too wide) in paragraph at lines 672--673
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[120]) [121] [122
 
 ]
 Chapter 8.
-(./Results/Bayes.tex [121]
+(./Results/Bayes.tex [123]
 Overfull \hbox (16.42445pt too wide) in paragraph at lines 29--30
 []\OT1/cmr/m/n/12 We con-clude this sec-tion pre-sent-ing one of the sim-plest MCMC al-go-rithms, the \OT1/cmr/m/it/12 Metropolis-
  []
 
-[122]
+[124]
 Underfull \vbox (badness 7540) has occurred while \output is active []
 
- [123] [124]) (./Results/NumericalResults.tex) [125] [126
+ [125] [126]) (./Results/NumericalResults.tex) [127] [128
 
 ]
 Appendix A.
-(./Fundamentals/MaxSymmetric.tex [127] [128]) [129] [130
+(./Fundamentals/MaxSymmetric.tex [129] [130]) [131] [132
 
 ]
 Appendix B.
-(./Appendix/Thermo.tex [131]) (./CMB/PertubedBoltzmannEquations.tex
+(./Appendix/Thermo.tex [133]) (./CMB/PertubedBoltzmannEquations.tex
 Underfull \hbox (badness 10000) in paragraph at lines 19--1
 
  []
@@ -1481,7 +1478,7 @@ Overfull \hbox (15.07323pt too wide) in paragraph at lines 9--11
 \OT1/cmr/m/n/12 The lo-cal mo-men-tum de-fined in the same way, there-fore it must sat-isfy the usual Minkowskian
  []
 
-[132] [133] [134]) (./Appendix/SpecialFunc.tex [135] [136
+[134] [135] [136]) (./Appendix/SpecialFunc.tex [137] [138
 
 ]
 Appendix C.
@@ -1517,7 +1514,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\ell' on input line 30.
 
-[137]
+[139]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 60.
@@ -1594,7 +1591,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 73.
 
-[138]
+[140]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 110.
@@ -1622,7 +1619,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.48335pt}.
 
-[139]
+[141]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 126.
@@ -1639,26 +1636,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\zeta' on input line 138.
 
-[140]) (./main.bbl [141] [142
+[142]) (./main.bbl [143] [144
 
-] [143] [144] [145]) [146] (./main.aux (./titilepage.aux) (./abstract.aux) (./Notazioni.aux))
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+] [145] [146] [147]) [148] (./main.aux (./titilepage.aux) (./abstract.aux) (./Notazioni.aux)) ) 
 Here is how much of TeX's memory you used:
- 37764 strings out of 478287
- 871665 string characters out of 5849289
- 2962898 words of memory out of 5000000
- 54712 multiletter control sequences out of 15000+600000
+ 37874 strings out of 478287
+ 873901 string characters out of 5849289
+ 2948059 words of memory out of 5000000
+ 54778 multiletter control sequences out of 15000+600000
  491844 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,22n,89p,1766b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (154 pages, 1479078 bytes).
+Output written on main.pdf (156 pages, 1512980 bytes).
 PDF statistics:
- 2120 PDF objects out of 2487 (max. 8388607)
- 1877 compressed objects within 19 object streams
- 574 named destinations out of 1000 (max. 500000)
- 718 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2162 PDF objects out of 2487 (max. 8388607)
+ 1915 compressed objects within 20 object streams
+ 584 named destinations out of 1000 (max. 500000)
+ 726 words of extra memory for PDF output out of 10000 (max. 10000000)
 

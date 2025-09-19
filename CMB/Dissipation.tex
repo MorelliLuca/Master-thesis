@@ -197,7 +197,7 @@ where again the non-scattering terms will all cancel each other out. We also rec
 To conclude our discussion on the dissipation of primordial scalar perturbations, we will limit to just briefly explain how to obtain an analytic expression for the heating rate valid in the tight coupling approximation\footnote{more calculations can be found in \cite{Chluba_2x2} and in Section 3 of \cite{Chluba_tens_diss} in which also polarization contributions are computed}, since this goes beyond the purpose of this work.\\
 As we know form Section \ref{sec:TightCouplingApproximation}, in the tight coupling regime all the multipoles with $\ell\geq2$ can be neglected, simplifying equations \eqref{eq:TT_I_average_scalar} and \eqref{eq:TT_P_average_scalar}. Furthermore, the monopole anisotropy in the tight coupling limit can be approximated as
 \begin{align*}
-    &\tilde\Theta_1\approx A\frac{c_s^2}{(1+R_\nu)^{1/4}}\sin(kr_s)e^{-\big(\frac{k}{k_D}\big)^2},\qquad \text{with }R_\nu\defeq \frac{4}{3}\frac{\bar\rho_\gamma}{\bar\rho_r}\approx0.41 ,&&\\ &A\approx\bigg(1+\frac{4}{15}\frac{\bar\rho_\nu}{\bar\rho_\gamma}\bigg)^{-1},\quad k_D\defeq2\pi\Bigg[\int dz\frac{c_s^2}{2n_e\sigma_T H}\bigg(\frac{R_\nu^2}{1+R_\nu}+\frac{16}{15}\bigg)\Bigg]^{-1/2},&&
+    &\tilde\Theta_1\approx A\frac{c_s^2}{(1+R_\nu)^{1/4}}\sin(kr_s)e^{-\big(\frac{k}{k_D}\big)^2},\qquad \text{with }R_\nu\defeq \frac{4}{3}\frac{\bar\rho_\gamma}{\bar\rho_\gamma+\bar\rho_nu}\approx0.41 ,&&\\ &A\approx\bigg(1+\frac{4}{15}\frac{\bar\rho_\nu}{\bar\rho_\gamma}\bigg)^{-1},\quad k_D\defeq2\pi\Bigg[\int dz\frac{c_s^2}{2n_e\sigma_T H}\bigg(\frac{R_\nu^2}{1+R_\nu}+\frac{16}{15}\bigg)\Bigg]^{-1/2},&&
 \end{align*}
 where $c_s$ is the speed of sound of the primordial plasma and $r_s$ is the comoving sound horizon. Lastly, the polarization multipoles can be approximated as $\tilde \Theta_{P,0}\approx (5/4)\tilde\Theta_2$ and $\tilde \Theta_{P,2}\approx (1/4)\tilde\Theta_2$ and zero otherwise, which make vanish equation \eqref{eq:TT_P_average_scalar}. Putting all together one can find 
 \begin{equation}
@@ -308,7 +308,7 @@ $$
 \caption{Plot of the transfer function $\mathcal T_h(k\tau)$. }
 \label{fig:Th}
 \end{figure}
-where $A_k$ is the amplitude of the mode (that we set to 1 to obtain the transfer function). The functions $j_n(x)$ are the spherical Bessel functions and their coefficients are $a_0=1,\ a_2=0.243807,\ a_4=5.28424\times10^{-2},\ a_6=6.13545\times10^{-3}$, with negligible higher-n values. In Section \ref{sec:photon_damping} we concluded that on small scales each mode amplitude is reduced by the friction factor $\exp(-\Gamma_\gamma\tau/2)$ with $\Gamma_\gamma\defeq32 \mathcal{H}(1-R_\nu)/(15n_e\sigma_T a)$ and $R_\nu\defeq\rho_\nu/( \rho_\nu+\rho_\gamma)$. \\
+where $A_k$ is the amplitude of the mode (that we set to 1 to obtain the transfer function). The functions $j_n(x)$ are the spherical Bessel functions and their coefficients are $a_0=1,\ a_2=0.243807,\ a_4=5.28424\times10^{-2},\ a_6=6.13545\times10^{-3}$, with negligible higher-n values. In Section \ref{sec:photon_damping} we concluded that on small scales each mode amplitude is reduced by the friction factor $\exp(-\Gamma_\gamma\tau/2)$ with $\Gamma_\gamma\defeq32 \mathcal{H}(1-R_\nu)/(15n_e\sigma_T a)$ and $R_\nu\defeq\bar\rho_\nu/( \bar\rho_\nu+\bar\rho_\gamma)$. \\
 Other effects should be taken into account, such as how the fraction of relativistic species decreases as the universe cools down (Section \ref{sec:decoupling}), however we will neglect these effects since, as explained by Chluba in \cite{Chluba_tens_diss}, these may affect the heating rate only for really blue power spectra up to a level of $20\%-30\%$.\\
 Putting everything together and using $\dot h=h'/a$ we find
 $$
@@ -364,13 +364,13 @@ which again displays the expected characteristics of reducing to the tight coupl
 \label{fig:fight_coupling}
 \end{figure}
 \subsubsection{Dissipation in the y-era}
-Modes reentering the comoving Hubble horizon during the y-era ($z<10^4$ from Section \ref{sec:ThermalizationScales}) encounter a different physical scenario: indeed the damping effects caused by neutrinos free-streaming and photons are now extremely suppressed and therefore different transfer functions must be used. Furthermore, in this era the radiation-matter transition occurs and therefore different heating rates must be computed. 
+Modes reentering the comoving Hubble horizon during the y-era ($z<10^4$ from Section \ref{sec:ThermalizationScales}) encounter a different physical scenario: indeed the damping caused by free-streaming neutrinos is now almost negligible, furthermore, in this era the radiation-matter transition occurs and therefore different heating rates must be computed. 
 
-To differentiate between the modes that reenter during matter and radiation domination we can define $k_\text{eq}\defeq aH|_\text{eq}\sim 10^{-2}$Mpc$^{-1}$ and $k_{\mu y}\defeq aH|_{\mu y}\sim 10^{-1}$Mpc$^{-1}$: for $k_{\mu y}>k>k_\text{eq}$ gravitational waves have already crossed the horizon before equality but already in the y-era, while for $k<k_\text{eq}$ the crossing occurs during the matter dominated era.\\ From Section \ref{sec:free_GW} we know that gravitational waves evolve differently in the two eras, according to equation \eqref{eq:free_GW_sol}. During the radiation dominated era the transfer function of primordial gravitational waves reads, imposing that for $k\tau\to0$ the solution must be regular\footnote{This requirement is needed since on super Hubble horizon scales the constant solution must be recovered. Indeed we recall that for $x\to0$ $j_n(x)\sim x^{n}/(2n+1)!!$ and $j_n(x)\sim -(2n+1)!!/x^{n}$.}, $ j_0(k\tau)$, which derivative
+To differentiate between the modes that reenter during matter and radiation domination we can define $k_\text{eq}\defeq aH|_\text{eq}\sim 10^{-2}$Mpc$^{-1}$ and $k_{\mu y}\defeq aH|_{\mu y}\sim 10^{-1}$Mpc$^{-1}$: for $k_{\mu y}>k>k_\text{eq}$ gravitational waves have already crossed the horizon before equality but already in the y-era, while for $k<k_\text{eq}$ the crossing occurs during matter domination.\\ From Section \ref{sec:free_GW} we know that gravitational waves evolve differently in the two eras, according to equation \eqref{eq:free_GW_sol}. During the radiation dominated era the transfer function of primordial gravitational waves reads, imposing that for $k\tau\to0$ the solution must be regular\footnote{This requirement is needed since on super Hubble horizon scales the constant solution must be recovered. Indeed we recall that for $x\to0$ $j_n(x)\sim x^{n}/(2n+1)!!$ and $j_n(x)\sim -(2n+1)!!/x^{n}$.}, $ j_0(k\tau)$, which derivative
 instead gives $-kj_1(k\tau)$. Inserting this derivative inside the heating rate \eqref{eq:HRI_tight} we finally find
 \begin{equation}
-    \frac{d}{dt}\frac{\Delta\rho_\gamma}{\rho_\gamma}\bigg|_T=\frac{4H^2}{45n_e\sigma_T}\int\frac{d^3k}{(2\pi)^3}\mathcal{P}_T\mathcal{T}_h^{RD}(k\tau),\qquad\text{with }\mathcal{T}_h^{RD}\defeq 2(k\tau)^2j_1^2(k\tau).
-\end{equation}
+    \frac{d}{dt}\frac{\Delta\rho_\gamma}{\rho_\gamma}\bigg|_T=\frac{4H^2}{45n_e\sigma_T}\int\frac{d^3k}{(2\pi)^3}\mathcal{P}_T\mathcal{T}_h^{RD}\mathcal T_\Theta e^{-\Gamma_\gamma\tau},\qquad\text{with }\mathcal{T}_h^{RD}\defeq 2(k\tau)^2j_1^2(k\tau).
+\end{equation} 
 In the matter dominated era instead, the amplitude of gravitational waves, requiring regularity for $k\tau\to0$, evolves as $j_1(k\tau)/(k\tau)$.
 However we shall note that this function cannot be used as a proper transfer function since, as we consider the super Hubble horizon limit, and so the amplitude become just a constant, the above does not converge to unity:
 $$\frac{j_1(k\tau)}{k\tau}\xrightarrow{k\tau\to0}\frac{k\tau}{3!!k\tau}+\mathcal{O}\big((k\tau)^2\big)=\frac{1}{3},$$
@@ -379,7 +379,7 @@ We can now compute its derivative
 $$\frac{d}{d\tau}\frac{j_1(k\tau)}{k\tau}=\frac{k^2\tau j_1'(k\tau)-kj_1(k\tau)}{(k\tau)^2}=k\frac{j_1(k\tau)-k\tau j_2(k\tau)-j_1(k\tau)}{(k\tau)^2}=-k \frac{j_2(k\tau)}{k\tau},$$
 where we used the recursive relation $j'_n(x)=n j_n(x)-xj_{n+1}(x)$. We conclude that the appropriate heating rate for the dissipation of gravitational waves reentering the Hubble horizon in the matter dominated era is 
 \begin{equation}
-    \frac{d}{dt}\frac{\Delta\rho_\gamma}{\rho_\gamma}\bigg|_T=\frac{H^2}{45n_e\sigma_T}\int\frac{d^3k}{(2\pi)^3}\mathcal{P}_T\mathcal{T}_h^{MD}(k\tau),\qquad\text{with }\mathcal{T}_h^{MD}\defeq 18j_2^2(k\tau),
+    \frac{d}{dt}\frac{\Delta\rho_\gamma}{\rho_\gamma}\bigg|_T=\frac{H^2}{45n_e\sigma_T}\int\frac{d^3k}{(2\pi)^3}\mathcal{P}_T\mathcal{T}_h^{MD}T_\Theta e^{-\Gamma_\gamma\tau},\qquad\text{with }\mathcal{T}_h^{MD}\defeq 18j_2^2(k\tau),
 \end{equation}
 where we must remove the factor $\times 4$ since during matter domination $a\propto \tau^2$ and therefore $H=2/(a\tau)$.
 \subsection{Window functions}
@@ -501,20 +501,20 @@ To begin with, we tried to reproduce the results that Chluba et al. obtained in 
 \hline
                                                                                                                    &                    & Chluba et al.       & Sharp tr.    & Smooth tr.  & Exact \\
 \hline
-\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}$\mathcal A_T=2.2\times10^{-10}$\\ $k_0=0.05$ Mpc$^{-1}$\end{tabular}}  & $n_t=0$            & $1.8\times10^{-14}$ & $1.3\times10^{-14}$ & $2.1\times10^{-14}$& $2.5\times10^{-14}$ \\
-                                                                                                                   & $n_t=0.36$         & $3.7\times10^{-13}$ & $2.6\times10^{-13}$ & $3.0\times10^{-13}$& $3.6\times10^{-13}$ \\
-                                                                                                                   & $n_t=1$            & $1.9\times10^{-9}$  & $1.4\times10^{-9}$  & $1.4\times10^{-9}$& $1.4\times10^{-9}$  \\
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}$\mathcal A_T=2.2\times10^{-10}$\\ $k_0=0.05$ Mpc$^{-1}$\end{tabular}}  & $n_t=0$            & $1.8\times10^{-14}$ & $1.8\times10^{-14}$ & $2.9\times10^{-14}$& $3.5\times10^{-14}$ \\
+                                                                                                                   & $n_t=0.36$         & $3.7\times10^{-13}$ & $3.7\times10^{-13}$ & $4.1\times10^{-13}$& $5.0\times10^{-13}$ \\
+                                                                                                                   & $n_t=1$            & $1.9\times10^{-9}$  & $1.9\times10^{-9}$  & $1.9\times10^{-9}$& $2.0\times10^{-9}$  \\
 
 \hline
-\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}$\mathcal A_T=2.4\times10^{-10}$\\ $k_0=0.002$ Mpc$^{-1}$\end{tabular}} & $n_t=0$            & $1.9\times10^{-14}$ & $1.4\times10^{-14}$ & $2.4\times10^{-14}$&$3.4\times10^{-14}$ \\
-                                                                                                                   & $n_t=0.36$         & $1.3\times10^{-12}$ & $9.1\times10^{-13}$ & $1.0\times10^{-12}$ & $1.6\times10^{-12}$ \\
-                                                                                                                   &$n_t=1$             & $5.3\times10^{-8}$ & $3.8\times10^{-8}$  & $3.8\times10^{-8}$ & $4.8\times10^{-8}$    \\                 
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}$\mathcal A_T=2.4\times10^{-10}$\\ $k_0=0.002$ Mpc$^{-1}$\end{tabular}} & $n_t=0$            & $1.9\times10^{-14}$ & $1.8\times10^{-14}$ & $3.2\times10^{-14}$&$3.9\times10^{-14}$ \\
+                                                                                                                   & $n_t=0.36$         & $1.3\times10^{-12}$ & $1.3\times10^{-12}$ & $1.4\times10^{-12}$ & $1.8\times10^{-12}$ \\
+                                                                                                                   &$n_t=1$             & $5.3\times10^{-8}$ & $5.3\times10^{-8}$  & $5.3\times10^{-8}$ & $5.4\times10^{-8}$    \\                 
 \hline
 \end{tabular}
 \caption{$\mu$-distortions amplitudes computed for different values of the spectral index $n_t=\{0,0.36,1\}$ and for two set of power spectrum amplitudes and pivot scale. The last columns compare the amplitudes obtained in \cite{Chluba_tens_diss} with our results. Results obtained both a sharp and smooth $\mu$-y transitioning and the exact branching ratios are reported.}
 \label{tab:chluba_comp}
 \end{table}
-From Table \ref{tab:chluba_comp} we can see that our results are generally in good agreement with those of Chluba et al. in \cite{Chluba_tens_diss}. Discrepancies of maximum $30\%$ are present between these and our results, obtained using the same branching ratios. Instead, when a smooth $\mu$-y transition is considered, the contribution of perturbations that reenter the comoving Hubble horizon is evident for nearly scale invariant spectra, remaining a subdominant effect for blue tilted ones. Moreover, this effect is even more evident when using branching ratios computed exactly through the Green's function method (Section \ref{sec:branching_ratios}) which result in $\mu$-distortions that are about the double than those predicted by Chluba.\\ The same results are shown in Figure \ref{fig:mu_amplitudes} but for all the spectral indexes ranging from 0 to 1: from this plot we can better appreciate how for nearly scale invariant power spectra accounting for perturbation dissipation during the $\mu$-y transition becomes more relevant. 
+From Table \ref{tab:chluba_comp} we can see that we were able to reproduce (column \emph{Sharp tr.}) the same results obtained by Chluba et al. in \cite{Chluba_tens_diss}, using the same branching ratios. When the smooth $\mu$-y transition is considered instead the amplitudes increase and almost double using exact branching ratios computed through the Green's function method (Section \ref{sec:branching_ratios}). Note that this effect is evident for nearly scale invariant spectra, remaining a subdominant effect for blue tilted ones: this happens because blue tilted power spectrums correspond to less excited modes that reenter the comoving Hubble horizon at later times, such as during the $\mu$-y transition.\\ The same results are shown in Figure \ref{fig:mu_amplitudes} but for all the spectral indexes ranging from 0 to 1: from this plot we can better appreciate how for nearly scale invariant power spectra accounting for perturbation dissipation during the $\mu$-y transition becomes more relevant. Finally, we can observe that only for very blue power spectra ($n_t>1$) the amplitude becomes comparable with those of Silk damping in the standard inflation scenario ($\mu\approx1.4\times10^{-8}$) \cite{Chluba_2x2}. However, this is quite in contrast with current constraints on the spectral index, which should be nearly scale invariant.
 
 \begin{figure}
     \centering
@@ -526,18 +526,18 @@ From Table \ref{tab:chluba_comp} we can see that our results are generally in go
       ylabel={$\mu$},
       width=12cm, height=8cm,
       legend pos = north west,
-      xmin = -0.05, xmax = 1.05,
-      ymin = 1e-14 , ymax = 5e-9,
+      xmin = -0.05, xmax = 1.1,
+      ymin = 1e-14 , ymax =1e-8,
       %xtick={1e-6, 1e-4, 1e-2, 1e0, 1e2, 1e4, 1e6, 1e8},
   ]
     % Load and plot from the external file
     \addplot [smooth, thick] table {CMB/mu_exact.dat};
     \addlegendentry{Exact}
     \addplot [thick, smooth, dashed] table {CMB/mu_soft.dat};
-    \addlegendentry{Soft transitioning}
+    \addlegendentry{Smooth transitioning}
     \addplot [thick, smooth, dotted] table {CMB/mu_sharp.dat};
     \addlegendentry{Sharp transitioning}
-    \addplot [only marks, marks=x, thick] table {
+    \addplot [only marks, thick] table {
     0 1.8e-14
     0.36 3.7e-13
     1 1.9e-9 
@@ -548,7 +548,8 @@ From Table \ref{tab:chluba_comp} we can see that our results are generally in go
 \caption{Comparison of the amplitudes of $\mu$ distortions computed through our implementation of CLASS and the results (points on the plot) of Chluba et al. \cite{Chluba_tens_diss}. Different branching ratios results has been plotted as well. }
 \label{fig:mu_amplitudes}
 \end{figure}
-We then conducted a similar comparison for y-distortions. From Figure \ref{fig:y_amplitudes} we can see that, although for nearly scale invariant power spectra y-distortions are almost one order of magnitude larger that $\mu$-distortions, the former grow much less as we increase the spectral index. For blue power spectra $n_t\sim 1$ the difference becomes of more then 3 order of magnitude reaching the amplitude sourced by Silk damping in the standard inflation scenario ($\mu\approx1.4\times10^{-8}$) \cite{Chluba_2x2}.  
+We then conducted a similar comparison for y-distortions. From Figure \ref{fig:y_amplitudes} we can see that also for y-distortions, accounting for a non-instantaneous $\mu$-y transition, increases its amplitude.\\
+Furthermore, although for nearly scale invariant power spectra y-distortions are almost one order of magnitude larger that $\mu$-distortions, the former grow much less as we increase the spectral index. For blue power spectra $n_t\sim 1$ y-distortions are more than 3 order of magnitude smaller than the $\mu$ counterpart.  
 \begin{figure}
     \centering
 \begin{tikzpicture}
@@ -560,14 +561,14 @@ We then conducted a similar comparison for y-distortions. From Figure \ref{fig:y
       width=12cm, height=8cm,
       legend pos = north west,
       xmin = -0.05, xmax = 1.05,
-      ymin = 1e-13 , ymax = 1e-11,
+      ymin = 1e-13 , ymax = 1e-10,
       %xtick={1e-6, 1e-4, 1e-2, 1e0, 1e2, 1e4, 1e6, 1e8},
   ]
     % Load and plot from the external file
     \addplot [smooth, thick] table {CMB/y_exact.dat};
     \addlegendentry{Exact}
     \addplot [thick, smooth, dashed] table {CMB/y_soft.dat};
-    \addlegendentry{Soft transitioning}
+    \addlegendentry{Smooth transitioning}
     \addplot [thick, smooth, dotted] table {CMB/y_sharp.dat};
     \addlegendentry{Sharp transitioning}
   \end{axis}
@@ -575,5 +576,104 @@ We then conducted a similar comparison for y-distortions. From Figure \ref{fig:y
 \caption{Comparison of the amplitudes of y distortions computed through our implementation of CLASS for the different branching ratios. }
 \label{fig:y_amplitudes}
 \end{figure}
+%    \begin{figure}[h]
+%        \centering
+%    \begin{tikzpicture}
+%    \begin{axis}[
+%        grid=major,
+%        ymode=log,
+%        xlabel={$r$},
+%        ylabel={Amplitude},
+%        width=12cm, height=8cm,
+%        legend pos = north west,
+%        xmin = 0, xmax = 1,
+%        ymin = 1e-15 , ymax = 1e-11,
+%        %xtick={1e-6, 1e-4, 1e-2, 1e0, 1e2, 1e4, 1e6, 1e8},
+%    ]
+%        % Load and plot from the external file
+%        \addplot [thick, smooth] table[x index=0, y index=2] {CMB/mu_const.dat};
+%        \addlegendentry{$\mu$-distortion}
+%        \addplot [thick, smooth, gray] table[x index=0, y index=2] {CMB/y_const.dat};
+%        \addlegendentry{y-distortion}
+%    \end{axis}
+%    \end{tikzpicture}
+%    \caption{Comparison of the amplitudes of y distortions computed through our implementation of CLASS for the different branching ratios. }
+%    \label{fig:mu_y_r}
+%    \end{figure}
+%
+%    To conclude this first analysis we also studied the distortions that we would be sourced in presence of a primordial power spectrum which follows the consistency relation $r=-8n_t$. In Figure \ref{fig:mu_y_r} we can see that even when $r\sim1$ both the amplitudes of $\mu$ and y-distortions remain several orders of magnitude smaller than those sourced by scalar perturbations.
 
+\subsection{Lognormal bump}
+We have noted that considering the simplest inflation models, which we know to predict a power law primordial power spectrum both for scalar and tensor perturbations, it would  be very hard to detect any spectral distortion sourced by gravitational waves since it would be overshadowed by those produced by scalar perturbations. However, current constraints on the power spectrum of primordial gravitational waves are obtained from CMB anisotropies and these constraints could become not valid at different scales. This allows for the possibility of considering bumps in the power spectrum which makes more excited only the modes that are relevant for our spectral distortions without spoiling current CMB measures.
 
+As we discussed in Section \ref{sec:primordial_PS}, bumps can be modelled using a \textbf{lognormal} \eqref{eq:lognormal} function. For our analysis we therefore summed the lognormal bump at the pivot scale $K_\text{pk}=10$ Mpc$^{-1}$, which is in the middle of the window function of $\mu$ distortions, to the usual power law. For the power law we used $r=0.036$, which matches the upper bound set by BICEP/Kek\cite{Ade_2021}, and a tilt which satisfies the consistency relation $n_t=-r/8$, however slightly changes of these parameters will not influence our results until the power spectrum remains nearly scale invariant. 
+
+To begin with, we studied which set of parameters are able to produce distortions of the order of $10^{-8}$: as it is shown in Figure \ref{fig:lognormal_res} at these scales already a tiny bump can push the distortions at the same order of magnitude of those produced by Silk damping. Considering a narrow bump ($\sigma_\text{bump}\sim0.1$) when $\mathcal{A}_\text{bump}\sim 10^{-2}$ we produce distortions $\mu\sim10^{-8}$, on the other hand bumps that are even slightly broader can produce similar distortions even though they are smaller: $\mathcal{A}_\text{bump}\sim 10^{-3}$ for $\sigma_\text{bump}\sim0.3$ and $\mathcal{A}_\text{bump}\sim 3\times10^{-4}$ for $\sigma_\text{bump}\sim1$. 
+
+\begin{figure}[h!]
+    \centering
+\begin{tikzpicture}
+  \begin{axis}[
+      grid=major,
+      ymode=log,
+      xmode=log,
+      xlabel={$\mathcal A_\text{bump}$},
+      ylabel={$\mu$},
+      width=16cm, height=8cm,
+      legend pos = north west,
+      legend style={font=\scriptsize},
+      %xmin = -0.05, xmax = 1.05,
+      %ymin = 1e-13 , ymax = 1e-10,
+      %xtick={1e-6, 1e-4, 1e-2, 1e0, 1e2, 1e4, 1e6, 1e8},
+  ]
+
+   \addplot[smooth, thick, green] table[col sep=space, x index=0,  y index = 1] {CMB/Lognormal/tensor_mu_aln@sigma1.000e-01.dat}; \addlegendentry{$\sigma_\text{bump}=0.1$}
+    \addplot[smooth, thick, orange] table[col sep=space, x index=0,  y index = 1] {CMB/Lognormal/tensor_mu_aln@sigma1.778e-01.dat}; \addlegendentry{ $\sigma_\text{bump}=0.18$}
+    \addplot[smooth, thick, red] table[col sep=space, x index=0,  y index = 1] {CMB/Lognormal/tensor_mu_aln@sigma3.162e-01.dat}; \addlegendentry{$\sigma_\text{bump}=0.31$}
+    \addplot[smooth, thick, black] table[col sep=space, x index=0,  y index = 1] {CMB/Lognormal/tensor_mu_aln@sigma5.623e-01.dat}; \addlegendentry{$\sigma_\text{bump}=0.56$}
+    \addplot[smooth, thick, blue] table[col sep=space, x index=0,  y index = 1] {CMB/Lognormal/tensor_mu_aln@sigma1.000e+00.dat}; \addlegendentry{$\sigma_\text{bump}=1$}   
+    
+  \end{axis}
+\end{tikzpicture}
+\caption{Amplitudes of $\mu$-distortions with a lognormal bump at $k_\text{pk}=10$Mpc$^{-1}$ as a function of the height of the bump. Different curves represent different width of the bump. }
+\label{fig:lognormal_res}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+\begin{tikzpicture}
+  \begin{axis}[
+      grid=major,
+      ymode=log,
+      xmode=log,
+      xlabel={$\sigma_{bump}$},
+      ylabel={$\mu$},
+      width=16cm, height=8cm,
+      legend pos = north east,
+      legend style={font=\scriptsize},
+      %xmin = -0.05, xmax = 1.05,
+      %ymin = 1e-13 , ymax = 1e-10,
+      %xtick={1e-6, 1e-4, 1e-2, 1e0, 1e2, 1e4, 1e6, 1e8},
+  ]
+
+    \addplot[smooth, thick, blue] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/tensor_mu_sigma@aln1.000e-03.dat}; \addlegendentry{PGW $\mathcal{A}_\text{bump}=1\times10^{-3}$}   
+    \addplot[smooth, thick, green] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/tensor_mu_sigma@aln5.623e-04.dat}; \addlegendentry{PGW $\mathcal{A}_\text{bump}=5\times10^{-4}$}
+    \addplot[smooth, thick, orange] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/tensor_mu_sigma@aln1.778e-04.dat}; \addlegendentry{PGW $\mathcal{A}_\text{bump}=2\times10^{-4}$}
+    \addplot[smooth, thick, red] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/tensor_mu_sigma@aln1.000e-04.dat}; \addlegendentry{PGW $\mathcal{A}_\text{bump}=1\times10^{-4}$}
+    
+
+    
+    \addplot[smooth, thick, dashed, blue] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/scalar_mu_sigma@aln1.000e-03:.3e.dat}; \addlegendentry{Scalar $\mathcal{A}_\text{bump}=1\times10^{-3}$}
+    \addplot[smooth, thick, dashed, green] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/scalar_mu_sigma@aln1.778e-04:.3e.dat}; \addlegendentry{Scalar $\mathcal{A}_\text{bump}=2\times10^{-4}$}
+     \addplot[smooth, thick, dashed, orange] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/scalar_mu_sigma@aln5.623e-06:.3e.dat}; \addlegendentry{Scalar $\mathcal{A}_\text{bump}=5\times10^{-6}$}
+    \addplot[smooth, thick, dashed, red] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/scalar_mu_sigma@aln1.000e-06:.3e.dat}; \addlegendentry{Scalar $\mathcal{A}_\text{bump}=1\times10^{-6}$}
+    
+  \end{axis}
+\end{tikzpicture}
+\caption{Comparison of the amplitudes of $\mu$-distortions with a lognormal bump as a function of the width of the bump. Dotted lines represent the distortions produced by scalar perturbations ($k_\text{pk}=1000$Mpc$^{-1}$), while solid lines represent distortions sourced by gravitational waves ($k_\text{pk}=10$Mpc$^{-1}$). }
+\label{fig:ln_plateau}
+\end{figure}
+
+We then studied the behavior of the distortions as we increase the width of the bump until it covers the full range of scales of the window function of $\mu$-distortions. For this analysis it is important to keep in mind that, considering the lognormal bump \eqref{eq:lognormal}, the interval of scales covered by $n\sigma_\text{bump}$ grows exponentially as
+$$k=k_\text{pk}e^{\pm n\sigma_\text{bump}}\approx k_\text{pk}10^{\pm n\sigma_\text{bump}\times 0.43},$$
+which give us a rough idea of the range of scales covered by the bump. In Figure \ref{fig:ln_plateau} it is shown this behavior: for small values of $\sigma_\text{bump}$ the distortion amplitudes keep increasing until we reach $\sigma_\text{bump}\sim10$, from this point the growth stops and a plateau starts in the graph of $\mu$. 
