@@ -1,9 +1,12 @@
-\section{Dissipation of primordial perturbations}
+\chapter{Dissipation of primordial perturbations}\label{chap:dissipation}
 \label{sec:dissipation_PGW}
-Primordial perturbations, when reentering the Hubble horizon after inflation, excite standing waves (e.g. of temperature) in the plasma that, depending on the phase of the wave, lead to different patches of photons to be hotter or colder than the average. Later on, these photons can diffuse in the baryon-photon plasma and mix together. In this way diffusion dissipates the standing waves and generates distortions in the \emph{CMB spectrum}. For scalar perturbations, this well known effect is called \emph{Silk damping}.
+Primordial perturbations, when reentering the Hubble horizon after inflation, excite standing waves (e.g. of temperature) in the plasma that, depending on the phase of the wave, lead to different patches of photons to be hotter or colder than the average. Later on, these photons can diffuse in the baryon-photon plasma and mix together. In this way, diffusion dissipates the standing waves and generates distortions in the \emph{CMB spectrum}. For scalar perturbations, this well known effect is called \emph{Silk damping}. The same phenomenon takes place also for primordial gravitational waves, however, due to the different physics of tensor perturbation compared to scalar ones, the sourcing mechanism has same differences. In particular, more gravitational waves dissipates at a slower rate than scalar perturbations and they are in general weaker, leading to smaller amplitudes but sourced by a broader spectrum of modes. In this chapter we will study in depth this processes to determine the heating rate associated to them.
 
-Initially, the \textbf{mixing of blackbodies} at different temperatures (by diffusion) produces \emph{y-distortions} in the overall spectrum of the CMB. Then, \textbf{comptonization} brings the equilibrium phase space distribution to a Bose-Einstein one (section \ref{sec:ThermalizationProblem}), turning the initial distortions in \emph{$\mu$-distortions}. In the following sections we will describe these two processes in detail.
-\subsection{Mixing of blackbodies}\label{sec:MixingOfBlackbodies}
+\section{Mixing of blackbodies}\label{sec:MixingOfBlackbodies}
+The \textbf{mixing of blackbodies} at different temperatures (by diffusion) is a two steps process.
+Initially, it produces \emph{y-distortions}, then in the $\mu$-era \textbf{comptonization} brings the equilibrium phase space distribution to a Bose-Einstein one (see Section \ref{sec:ThermalizationProblem}), turning the initial distortions in \emph{$\mu$-distortions}. In the following sections we will describe these two processes in detail.
+
+\subsection{From blackbodies to y-distortions}
 We already discovered that at high redshifts all the interactions in the primordial plasma bring the photons to a state of thermal equilibrium described by the Planck distribution
 $$B(\nu,T)=\frac{1}{\exp[\nu/(k_BT_e)]-1}=\big(e^x-1\big)^{-1},\qquad \text{with }x=\frac{\nu}{k_BT_e}.$$
 From this distribution we can evaluate the number density and the energy density of the photons in the radiation (see Section \ref{sec:thdm_obs})
@@ -131,7 +134,7 @@ If Comptonization is still efficient, the y-distortion turns in a $\mu$-distorti
     \mu=1.401\times\frac{1}{3}\frac{\Delta\rho}{\rho}\bigg|_\text{excess}=2.802\Big\langle\Theta^2_I+\Theta^2_Q+\Theta^2_U\Big\rangle.
 \end{equation}
 
-\subsection{Dissipation of scalar perturbations}
+\section{Dissipation of scalar perturbations}
 \label{sec:diss_scalar}
 We already anticipated that the process of mixing of blackbodies occurs at high redshifts when primordial perturbations reenter the Hubble horizon and start to interact with the plasma. In Section \ref{sec:ThetaTimeEvolution} we studied how the scalar perturbations generate temperature anisotropies as the result of this interaction. Temperature anisotropies, that intuitively we can think as hotter or colder patches of photon plasma, as the universe cools down (the mean free path of photons decreases a little) start to mix. This erases the perturbations at the smallest scales and the dissipated energy produces the spectral distortions. If this process occurs during the $\mu$-era, the resulting distortion is immediately Comptonized and we obtain a $\mu$ distortion, otherwise we are left with the y-distortion.
 
@@ -204,7 +207,7 @@ where $c_s$ is the speed of sound of the primordial plasma and $r_s$ is the como
     \frac{d}{dt}\frac{\Delta \rho_\gamma}{\rho_\gamma}\Bigg|_\text{Silk}=4A^2\int\frac{dk}{2\pi^2}\mathcal P_\mathcal R(k)k^2 \frac{dk_D^{-2}}{dt}e^{-2 {k^2}/{k_D^2}},
 \end{equation}
 which is the heating rate of \emph{Silk damping}. After having 
-\subsection{Dissipation of tensor perturbations}
+\section{Dissipation of tensor perturbations}
 When primordial gravitational waves reenter the Hubble horizon, as we described in Section \ref{sec:Anisotropies_From_Tensor}, specific multipoles of the CMB temperature anisotropies are excited (the one associated with the spherical harmonics $Y_{\ell,\pm2}$) and again, when the mean free path of photons starts to increase, the mixing of blackbodies can occur. We will now repeat the calculations of the previous section for this new case.
 
 Again, we start by moving to Fourier space and project the anisotropies onto an appropriate basis: as we know, for tensor perturbations the spherical harmonics $Y_{\ell,\pm2}$ must be chosen. The expansion \eqref{eq:TensorMultipoleExpansion}, once inserted in the heating rate \eqref{eq:heating_rate_I}, gives
@@ -382,7 +385,7 @@ where we used the recursive relation $j'_n(x)=n j_n(x)-xj_{n+1}(x)$. We conclude
     \frac{d}{dt}\frac{\Delta\rho_\gamma}{\rho_\gamma}\bigg|_T=\frac{H^2}{45n_e\sigma_T}\int\frac{d^3k}{(2\pi)^3}\mathcal{P}_T\mathcal{T}_h^{MD}T_\Theta e^{-\Gamma_\gamma\tau},\qquad\text{with }\mathcal{T}_h^{MD}\defeq 18j_2^2(k\tau),
 \end{equation}
 where we must remove the factor $\times 4$ since during matter domination $a\propto \tau^2$ and therefore $H=2/(a\tau)$.
-\subsection{Window functions}
+\section{Window functions}
 While the information on the primordial perturbations are contained in the power spectrum, all the interactions occurring in the plasma can be encoded by the so-called the \textbf{window function}. In general, this means that the amplitude of a distortion can be expressed as
 \begin{equation}\label{eq:window_function}
     a=\int\frac{d^3k}{(2\pi)^3}\mathcal P_\delta(k) W_a(k),
@@ -676,4 +679,5 @@ To begin with, we studied which set of parameters are able to produce distortion
 
 We then studied the behavior of the distortions as we increase the width of the bump until it covers the full range of scales of the window function of $\mu$-distortions. For this analysis it is important to keep in mind that, considering the lognormal bump \eqref{eq:lognormal}, the interval of scales covered by $n\sigma_\text{bump}$ grows exponentially as
 $$k=k_\text{pk}e^{\pm n\sigma_\text{bump}}\approx k_\text{pk}10^{\pm n\sigma_\text{bump}\times 0.43},$$
-which give us a rough idea of the range of scales covered by the bump. In Figure \ref{fig:ln_plateau} it is shown this behavior: for small values of $\sigma_\text{bump}$ the distortion amplitudes keep increasing until we reach $\sigma_\text{bump}\sim10$, from this point the growth stops and a plateau starts in the graph of $\mu$. 
+which give us a rough idea of the range of scales covered by the bump. In Figure \ref{fig:ln_plateau} it is shown this behavior: for small values of $\sigma_\text{bump}$ the distortion amplitudes keep increasing until we reach $\sigma_\text{bump}\sim10$, from this point the growth stops and a plateau starts in the graph of $\mu$. Indeed, for $\sigma_\text{bump}\sim10$, already the 1-$\sigma_\text{bump}$ interval covers $k\sim 10^{-3}-10{5}$ Mpc$^{-1}$, which matches our window function (Figure \ref{fig:mu_window}). Note that in this case, even bumps which height is quite small ($10^{-3}-10^{-4}$) are able to plateau over $\mu=10^{-8}$.\\
+To conclude this analysis we also computed the distortions produced by dissipation of scalar perturbation including a bump at scale $k=1000$ Mpc$^{-1}$. A totally analogous behavior is shown also in this case (dotted lines in Figure \ref{fig:ln_plateau}). However, Silk damping is able to produce distortions that are several order of magnitude ($\sim10^5$) bigger even when using bumps that are way smaller (for $\mathcal A_\text{bump}=10^{-6}$ the plateau sits at $\mu\sim 10^{-5}$).

@@ -71,6 +71,16 @@
 \include{titilepage}
 \null\thispagestyle{empty}
 \newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{minipage}[t]{0.9\textwidth}\raggedleft{
+  \textit{To my grandfather Gigi,\\ who taught me of electricity and atoms when I was a child.}
+}
+\end{minipage}
+\vspace*{5cm}
+\newpage
+\null\thispagestyle{empty}
+\newpage
 \include{abstract}
 \include{Notazioni} 
 \tableofcontents
@@ -78,6 +88,8 @@
 \mainmatter
 \setlength{\parskip}{.5em} % Increase paragraph spacing
 %\part{The homogeneous universe}
+\chapter*{Introduction}
+\input{Introduction}
 \chapter{The Friedmann Robertson Walker Universe}
 \input{Fundamentals/Metric}
 \input{Fundamentals/FriedmannEq}
@@ -90,11 +102,12 @@
 
 %\part{CMB physic}
 \chapter{Anisotropies of the CMB}
+\label{chap:anisotropies}
 \input{CMB/Anisotropies}
 \input{CMB/SpectralDistortions}
 \input{CMB/Dissipation}
 
-\chapter{Numerical results and constraints}
+\chapter{Numerical constraints and forecasts}
 \input{Results/Bayes}
 \input{Results/NumericalResults}
 

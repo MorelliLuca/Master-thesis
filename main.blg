@@ -7,45 +7,45 @@ A level-1 auxiliary file: Notazioni.aux
 The style file: plain.bst
 Database file #1: references.bib
 Warning--empty journal in Brinckmann:2018cvx
-You've used 30 entries,
+You've used 32 entries,
             2118 wiz_defined-function locations,
-            699 strings with 15419 characters,
-and the built_in function-call counts, 19807 in all, are:
-= -- 1550
-> -- 2164
+            713 strings with 11072 characters,
+and the built_in function-call counts, 12930 in all, are:
+= -- 1125
+> -- 988
 < -- 0
-+ -- 868
-- -- 832
-* -- 2067
-:= -- 3642
-add.period$ -- 87
-call.type$ -- 30
-change.case$ -- 505
++ -- 398
+- -- 360
+* -- 1140
+:= -- 2299
+add.period$ -- 94
+call.type$ -- 32
+change.case$ -- 275
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 313
-empty$ -- 726
-format.name$ -- 832
-if$ -- 3580
+cite$ -- 33
+duplicate$ -- 331
+empty$ -- 774
+format.name$ -- 360
+if$ -- 2498
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 29
-newline$ -- 149
-num.names$ -- 60
-pop$ -- 490
+int.to.str$ -- 32
+missing$ -- 30
+newline$ -- 160
+num.names$ -- 64
+pop$ -- 262
 preamble$ -- 1
-purify$ -- 476
+purify$ -- 244
 quote$ -- 0
-skip$ -- 223
+skip$ -- 237
 stack$ -- 0
-substring$ -- 545
-swap$ -- 29
+substring$ -- 576
+swap$ -- 31
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 114
+type$ -- 122
 warning$ -- 1
-while$ -- 81
-width$ -- 32
-write$ -- 320
+while$ -- 86
+width$ -- 34
+write$ -- 343
 (There was 1 warning)

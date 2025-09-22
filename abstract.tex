@@ -4,7 +4,20 @@
 \end{center}
 \vspace*{10pt}
 \addcontentsline{toc}{section}{Abstract}
-\markboth{Abstract}{Abstract}
+\markboth{}{Abstract}
 \begin{adjustwidth}{1cm}{1cm}
+Primordial gravitational waves (PGWs) generated during inflation, can leave observable imprints on
+the Cosmic Microwave Background (CMB) in the form of spectral distortions (SDs). These distortions,
+sourced by inefficient thermalization processes in the primordial plasma, provide a unique probe of
+primordial perturbations on smaller scales (wavenumbers $k \sim 50 - 10^{4}$ Mpc$^{-1}$) than those accessible
+through CMB anisotropies or galaxy surveys. Moreover, distortions sourced by PGWs could allow us to
+explore even smaller scales ($k > 10^{4}$ Mpc$^{-1}$), uncovering never tested before early universe phenomena. However, the SDs resulting from PGWs are expected to be much smaller than those sourced by scalar perturbations or other mechanisms, making their detection rather challenging.
+
+To investigate PGW-induced spectral distortions, we modified the \emph{distortion} module of CLASS to compute the heating rate associated to them, namely the rate at which energy is injected in the primordial plasma which then sources distortions. Our implementation enabled studying physical
+scenarios not previously explored numerically, just with simple modifications of the heating rate. Moreover, we were able to test, for the first time with PGWs dissipation, the Green’s function method \cite{Chluba_Green}, which computes exactly the injection history during the $\mu$-y transition. This showed that large scale PGWs ($k\sim 10^{-3}-10^{-1}$), that cross back the Hubble horizon during the transition era, can still contribute to $\mu$-distortions, increasing them by a factor 2 for nearly scale invariant power spectra.
+
+We then considered a \emph{lognormal} bump in the PGWs power spectra, placed in the middle of the window function of $\mu$-distortions ($k_\text{bump}=10$ Mpc$^{-1}$). We found that even tiny bumps ($\mathcal{A}_\text{bump}\sim 10^{-3}-10^{-2}$) can produce distortions comparable with scalar-induce ones, if they are sufficiently narrow ($\sigma_\text{bump}\sim 0.1-0.5$). Increasing the width of the bump, as it starts to cover the whole $\mu$ window function, the SD amplitude saturates to a constant value, which depends on the height of the bump. 
+
+Finally, using simulated data from a PIXIE-like experiment, through a MCMC analysis we forecasted constraints on the tensor power spectrum. Initially, we combined data from BICEP/Keck, Plack and PIXIE to constraint the tensor-to-scalar ratio $r$ at two different scales. Then, using only PIXIE-like data, we constrained the amplitude of the lognormal bump at $\mathcal{A}_\text{bump}<3.2\times10^{-2}$, marginalizing over the foreground.
 
 \end{adjustwidth}
