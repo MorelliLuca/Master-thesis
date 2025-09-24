@@ -1276,6 +1276,12 @@ INPUT CMB/Plateau/scalar_mu_sigma@aln1.000e-03:.3e.dat
 INPUT CMB/Plateau/scalar_mu_sigma@aln1.778e-04:.3e.dat
 INPUT CMB/Plateau/scalar_mu_sigma@aln5.623e-06:.3e.dat
 INPUT CMB/Plateau/scalar_mu_sigma@aln1.000e-06:.3e.dat
+INPUT CMB/Plateau/mu_sigma@aln1.000e-02.dat
+INPUT CMB/Plateau/mu_sigma@aln1.000e-03.dat
+INPUT CMB/Plateau/mu_sigma@aln1.000e-04.dat
+INPUT CMB/Plateau/y_sigma@aln1.000e-02.dat
+INPUT CMB/Plateau/y_sigma@aln1.000e-03.dat
+INPUT CMB/Plateau/y_sigma@aln1.000e-04.dat
 INPUT ./Results/Bayes.tex
 INPUT ./Results/Bayes.tex
 INPUT ./Results/Bayes.tex

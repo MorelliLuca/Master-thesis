@@ -622,10 +622,10 @@ To begin with, we studied which set of parameters are able to produce distortion
       xmode=log,
       xlabel={$\mathcal A_\text{bump}$},
       ylabel={$\mu$},
-      width=16cm, height=8cm,
+      width=15cm, height=8cm,
       legend pos = north west,
       legend style={font=\scriptsize},
-      %xmin = -0.05, xmax = 1.05,
+      xmin = 1e-4, xmax = 1e-2,
       %ymin = 1e-13 , ymax = 1e-10,
       %xtick={1e-6, 1e-4, 1e-2, 1e0, 1e2, 1e4, 1e6, 1e8},
   ]
@@ -651,10 +651,10 @@ To begin with, we studied which set of parameters are able to produce distortion
       xmode=log,
       xlabel={$\sigma_{bump}$},
       ylabel={$\mu$},
-      width=16cm, height=8cm,
+      width=15cm, height=8cm,
       legend pos = north east,
       legend style={font=\scriptsize},
-      %xmin = -0.05, xmax = 1.05,
+      xmin = 5e-1, xmax = 1e2,
       %ymin = 1e-13 , ymax = 1e-10,
       %xtick={1e-6, 1e-4, 1e-2, 1e0, 1e2, 1e4, 1e6, 1e8},
   ]
@@ -681,3 +681,39 @@ We then studied the behavior of the distortions as we increase the width of the 
 $$k=k_\text{pk}e^{\pm n\sigma_\text{bump}}\approx k_\text{pk}10^{\pm n\sigma_\text{bump}\times 0.43},$$
 which give us a rough idea of the range of scales covered by the bump. In Figure \ref{fig:ln_plateau} it is shown this behavior: for small values of $\sigma_\text{bump}$ the distortion amplitudes keep increasing until we reach $\sigma_\text{bump}\sim10$, from this point the growth stops and a plateau starts in the graph of $\mu$. Indeed, for $\sigma_\text{bump}\sim10$, already the 1-$\sigma_\text{bump}$ interval covers $k\sim 10^{-3}-10{5}$ Mpc$^{-1}$, which matches our window function (Figure \ref{fig:mu_window}). Note that in this case, even bumps which height is quite small ($10^{-3}-10^{-4}$) are able to plateau over $\mu=10^{-8}$.\\
 To conclude this analysis we also computed the distortions produced by dissipation of scalar perturbation including a bump at scale $k=1000$ Mpc$^{-1}$. A totally analogous behavior is shown also in this case (dotted lines in Figure \ref{fig:ln_plateau}). However, Silk damping is able to produce distortions that are several order of magnitude ($\sim10^5$) bigger even when using bumps that are way smaller (for $\mathcal A_\text{bump}=10^{-6}$ the plateau sits at $\mu\sim 10^{-5}$).
+
+\begin{figure}[]
+    \centering
+\begin{tikzpicture}
+  \begin{axis}[
+      grid=major,
+      ymode=log,
+      xmode=log,
+      xlabel={$\sigma_{bump}$},
+      ylabel={Amplitude},
+      width=15cm, height=8cm,
+      legend pos = south east,
+      legend style={font=\scriptsize},
+      xmin = 1e-2, xmax = 1e3,
+      %ymin = 1e-13 , ymax = 1e-10,
+      %xtick={1e-6, 1e-4, 1e-2, 1e0, 1e2, 1e4, 1e6, 1e8},
+  ]
+
+    \addplot[smooth, thick, blue] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/mu_sigma@aln1.000e-02.dat}; \addlegendentry{$\mu$ $\mathcal{A}_\text{bump}=1\times10^{-2}$}   
+    \addplot[smooth, thick, green] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/mu_sigma@aln1.000e-03.dat}; \addlegendentry{$\mu$ $\mathcal{A}_\text{bump}=1\times10^{-3}$}
+    \addplot[smooth, thick, red] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/mu_sigma@aln1.000e-04.dat}; \addlegendentry{$\mu$ $\mathcal{A}_\text{bump}=1\times10^{-4}$}
+    
+    
+
+    
+    \addplot[smooth, thick, blue, dashed] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/y_sigma@aln1.000e-02.dat}; \addlegendentry{y $\mathcal{A}_\text{bump}=1\times10^{-2}$}   
+    \addplot[smooth, thick, green, dashed] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/y_sigma@aln1.000e-03.dat}; \addlegendentry{y $\mathcal{A}_\text{bump}=1\times10^{-3}$}
+    \addplot[smooth, thick, red, dashed] table[col sep=space, x index=0,  y index = 1] {CMB/Plateau/y_sigma@aln1.000e-04.dat}; \addlegendentry{y $\mathcal{A}_\text{bump}=1\times10^{-4}$}
+    
+  \end{axis}
+\end{tikzpicture}
+\caption{Comparison of the amplitudes of $\mu$-distortions  and y-distortions with a lognormal bump as a function of the width of the bump. For both the same bump is placed at $k_\text{pk}=10$Mpc$^{-1}$.}
+\label{fig:muy_plateau}
+\end{figure}
+
+To conclude our analysis, we compared the $\mu$ and y amplitudes resulting from the same bump in the tensor power spectrum. As we can in see in Figure \ref{fig:muy_plateau}, both distortions starts with values in agreement with those we obtained for nearly scale invariant power spectra, then, as the width of the bump increases, they both grow in the same way and with similar values. However, when the bump saturates the window functions, while the $\mu$-distortions directly plateau, y-distortions rapidly increase to then plateau at a much higher value (roughly one order of magnitude more). This is due to the fact that when the bump reaches the largest scales ($k\sim10^{-4}$ Mpc$^{-1}$) the modes that reentered the comoving Hubble horizon during the y-era are excited as well, allowing for a sudden increase of the y-distortions amplitude. Please note that, these scenarios are out ruled by CMB anisotropies, since such large bumps would also affect the BB modes of CMB polarization. 
