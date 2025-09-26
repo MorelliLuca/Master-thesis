@@ -5,12 +5,12 @@ The effects of the dissipation of primordial perturbations we described must mee
 \end{equation}
 Moreover, considering the design of proposed future missions that aims to detect for the first time spectral distortions, such as PIXIE \cite{pixie}, we can produce forecasts on the expected amplitudes of spectral distortions.
 \section{Methodology of the analysis}
-To produce numerical results two publicly available codes has been used: first \textbf{CLASS} (Cosmic Linear Anisotropies Solving System) \cite{CLASS}, which is an Einstein-Boltzmann solver which computes also the amplitude of spectral distortions for several injecting phenomena, and then \textbf{MontePython} \cite{Brinckmann:2018cvx,Audren:2012wb}, which in combination with CLASS allows inferring constraints using \emph{Monte Carlo Markov Chains} algorithms.\\
-To use these two tools to analyze spectral distortions sourced by primordial gravitational waves, we developed a modified version of CLASS which computes also the heating rates we derived in Section \ref{sec:dissipation_PGW}. 
+To produce numerical results two publicly available codes has been used: first \textbf{\texttt{CLASS}} (Cosmic Linear Anisotropies Solving System) \cite{CLASS}, which is an Einstein-Boltzmann solver which computes also the amplitude of spectral distortions for several injecting phenomena, and then \textbf{\texttt{MontePython}} \cite{Brinckmann:2018cvx,Audren:2012wb}, which in combination with \texttt{CLASS} allows inferring constraints using \emph{Monte Carlo Markov Chains} algorithms.\\
+To use these two tools to analyze spectral distortions sourced by primordial gravitational waves, we developed a modified version of \texttt{CLASS} which computes also the heating rates we derived in Section \ref{sec:dissipation_PGW}. 
 
 Before proceeding discussing the results of our analysis, we are going to explain how the analysis has been conducted.
 \subsection{Bayesian inference and MCMC algorithms}
-Observations constraint any theoretical model since any observed data must be reproducible by the model. To prove this compatibility a Bayesian approach can be used: consider a model $\theta=\{\theta_1,\theta_2,\dots\theta_n\}$, where $\theta_i$ are the parameters of the model, and and a set of observed data $d$, we can then estimate the probability that our model is right given the observed data by the \emph{Bayes theorem}
+Observations constraint any theoretical model since any observed data must be reproducible by the model. To prove this compatibility a Bayesian approach can be used: consider a model $\theta=\{\theta_1,\theta_2,\dots\theta_n\}$, where $\theta_i$ are the parameters of the model, and a set of observed data $d$, we can then estimate the probability that our model is right given the observed data by the \emph{Bayes theorem}
 \begin{equation}
     P(\theta|d)=\frac{P(d|\theta)P(\theta)}{P(d)},
 \end{equation}
@@ -33,7 +33,7 @@ We conclude this section presenting one of the simplest MCMC algorithms, the \em
 \end{equation}
 If the candidate is rejected a new point is generated, otherwise the chain continues repeating this algorithm substituting the point $\theta^{(0)}$ with the previous element of the chain.
 \subsection{CMB likelihoods}
-To perform a Bayesian analysis using data from CMB observations or using simulated data, it is necessary to define an appropriate likelihood function. In our case of interest, the likelihood should take into account the outcome of CMB spectral distortion measurements and compare it with the theoretical prediction of our proposed models. Starting from the cosmological parameters obtained from the Planck \emph{TT,TE,EE + lowE + lensing data} \cite{planck2018results}, CLASS computes the fiducial values of the distortions. Then, each set of parameters of each chain is compared with the fiducial distortion by the following likelihood function
+To perform a Bayesian analysis using data from CMB observations or using simulated data, it is necessary to define an appropriate likelihood function. In our case of interest, the likelihood should take into account the outcome of CMB spectral distortion measurements and compare it with the theoretical prediction of our proposed models. Starting from the cosmological parameters obtained from the Planck \emph{TT,TE,EE + lowE + lensing data} \cite{planck2018results}, \texttt{CLASS} computes the fiducial values of the distortions. Then, each set of parameters of each chain is compared with the fiducial distortion by the following likelihood function
 \begin{equation}
     \log \mathcal L\defeq -\frac12 \sum_{\nu \text{ bins }}\bigg(\frac{\Delta\mathcal I_\text{obs}(\nu_i)-\Delta\mathcal I_\text{fid}(\nu_i)}{\delta \mathcal I(\nu_i)}\bigg)^2,
 \end{equation}

@@ -495,7 +495,7 @@ To conclude our analysis on the window functions, we would like to compare the r
 \end{figure}
 
 \section{Theoretical analysis of the distortions}
-At this stage we are able to produce theoretical predictions on the spectral distortions sourced by the dissipation of primordial gravitational waves. To obtain these results we modified the \emph{distortion} module of CLASS so that the heating rate we obtained is computed numerically and then used by CLASS to calculate the spectral distortions amplitudes.
+At this stage we are able to produce theoretical predictions on the spectral distortions sourced by the dissipation of primordial gravitational waves. To obtain these results we modified the \emph{distortion} module of \texttt{\texttt{CLASS}} so that the heating rate we obtained is computed numerically and then used by \texttt{\texttt{CLASS}} to calculate the spectral distortions amplitudes.
 
 
 To begin with, we tried to reproduce the results that Chluba et al. obtained in \cite{Chluba_tens_diss}: this was initially used as a benchmark to understand whether our implementation ed correctly.
@@ -504,14 +504,14 @@ To begin with, we tried to reproduce the results that Chluba et al. obtained in 
 \hline
                                                                                                                    &                    & Chluba et al.       & Sharp tr.    & Smooth tr.  & Exact \\
 \hline
-\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}$\mathcal A_T=2.2\times10^{-10}$\\ $k_0=0.05$ Mpc$^{-1}$\end{tabular}}  & $n_t=0$            & $1.8\times10^{-14}$ & $1.8\times10^{-14}$ & $2.9\times10^{-14}$& $3.5\times10^{-14}$ \\
-                                                                                                                   & $n_t=0.36$         & $3.7\times10^{-13}$ & $3.7\times10^{-13}$ & $4.1\times10^{-13}$& $5.0\times10^{-13}$ \\
-                                                                                                                   & $n_t=1$            & $1.9\times10^{-9}$  & $1.9\times10^{-9}$  & $1.9\times10^{-9}$& $2.0\times10^{-9}$  \\
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}$\mathcal A_T=2.2\times10^{-10}$\\ $k_0=0.05$ Mpc$^{-1}$\end{tabular}}  & $n_t=0$            & $1.8\times10^{-14}$ & $1.8\times10^{-14}$ & $2.7\times10^{-14}$& $3.7\times10^{-14}$ \\
+                                                                                                                   & $n_t=0.36$         & $3.7\times10^{-13}$ & $3.6\times10^{-13}$ & $4.0\times10^{-13}$& $5.0\times10^{-13}$ \\
+                                                                                                                   & $n_t=1$            & $1.9\times10^{-9}$  & $1.8\times10^{-9}$  & $1.8\times10^{-9}$& $1.9\times10^{-9}$  \\
 
 \hline
-\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}$\mathcal A_T=2.4\times10^{-10}$\\ $k_0=0.002$ Mpc$^{-1}$\end{tabular}} & $n_t=0$            & $1.9\times10^{-14}$ & $1.8\times10^{-14}$ & $3.2\times10^{-14}$&$3.9\times10^{-14}$ \\
-                                                                                                                   & $n_t=0.36$         & $1.3\times10^{-12}$ & $1.3\times10^{-12}$ & $1.4\times10^{-12}$ & $1.8\times10^{-12}$ \\
-                                                                                                                   &$n_t=1$             & $5.3\times10^{-8}$ & $5.3\times10^{-8}$  & $5.3\times10^{-8}$ & $5.4\times10^{-8}$    \\                 
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}$\mathcal A_T=2.4\times10^{-10}$\\ $k_0=0.002$ Mpc$^{-1}$\end{tabular}} & $n_t=0$            & $1.9\times10^{-14}$ & $1.9\times10^{-14}$ & $29\times10^{-14}$&$3.9\times10^{-14}$ \\
+                                                                                                                   & $n_t=0.36$         & $1.3\times10^{-12}$ & $1.2\times10^{-12}$ & $1.4\times10^{-12}$ & $1.7\times10^{-12}$ \\
+                                                                                                                   &$n_t=1$             & $5.3\times10^{-8}$ & $4.9\times10^{-8}$  & $4.9\times10^{-8}$ & $5.0\times10^{-8}$    \\                 
 \hline
 \end{tabular}
 \caption{$\mu$-distortions amplitudes computed for different values of the spectral index $n_t=\{0,0.36,1\}$ and for two set of power spectrum amplitudes and pivot scale. The last columns compare the amplitudes obtained in \cite{Chluba_tens_diss} with our results. Results obtained both a sharp and smooth $\mu$-y transitioning and the exact branching ratios are reported.}
@@ -548,11 +548,11 @@ From Table \ref{tab:chluba_comp} we can see that we were able to reproduce (colu
     \addlegendentry{Points from Chluba et al.}
   \end{axis}
 \end{tikzpicture}
-\caption{Comparison of the amplitudes of $\mu$ distortions computed through our implementation of CLASS and the results (points on the plot) of Chluba et al. \cite{Chluba_tens_diss}. Different branching ratios results has been plotted as well. }
+\caption{Comparison of the amplitudes of $\mu$ distortions computed through our implementation of \texttt{\texttt{CLASS}} and the results (points on the plot) of Chluba et al. \cite{Chluba_tens_diss}. Different branching ratios results have been plotted as well. }
 \label{fig:mu_amplitudes}
 \end{figure}
 We then conducted a similar comparison for y-distortions. From Figure \ref{fig:y_amplitudes} we can see that also for y-distortions, accounting for a non-instantaneous $\mu$-y transition, increases their amplitude.\\
-Furthermore, although for nearly scale invariant power spectra y-distortions are almost one order of magnitude larger that $\mu$-distortions, the former grow much less as we increase the spectral index. For blue power spectra $n_t\sim 1$ y-distortions are more than 3 order of magnitude smaller than the $\mu$ counterpart.  
+Furthermore, although for scale invariant power spectra y-distortions are almost equal to $\mu$-distortions, the former grow much less as we increase the spectral index, resulting in bigger $\mu$-distortions already for $n_t>0.2$. For very blue power spectra $n_t\sim 1$ y-distortions are more than 3 order of magnitude smaller than the $\mu$ counterpart.  
 \begin{figure}
     \centering
 \begin{tikzpicture}
@@ -564,7 +564,7 @@ Furthermore, although for nearly scale invariant power spectra y-distortions are
       width=12cm, height=8cm,
       legend pos = north west,
       xmin = -0.05, xmax = 1.05,
-      ymin = 1e-13 , ymax = 1e-10,
+      ymin = 5e-14 , ymax = 1e-10,
       %xtick={1e-6, 1e-4, 1e-2, 1e0, 1e2, 1e4, 1e6, 1e8},
   ]
     % Load and plot from the external file
@@ -576,7 +576,7 @@ Furthermore, although for nearly scale invariant power spectra y-distortions are
     \addlegendentry{Sharp transitioning}
   \end{axis}
 \end{tikzpicture}
-\caption{Comparison of the amplitudes of y distortions computed through our implementation of CLASS for the different branching ratios. }
+\caption{Comparison of the amplitudes of y distortions computed through our implementation of \texttt{\texttt{CLASS}} for the different branching ratios. }
 \label{fig:y_amplitudes}
 \end{figure}
 %    \begin{figure}[h]
@@ -600,7 +600,7 @@ Furthermore, although for nearly scale invariant power spectra y-distortions are
 %        \addlegendentry{y-distortion}
 %    \end{axis}
 %    \end{tikzpicture}
-%    \caption{Comparison of the amplitudes of y distortions computed through our implementation of CLASS for the different branching ratios. }
+%    \caption{Comparison of the amplitudes of y distortions computed through our implementation of \texttt{\texttt{CLASS}} for the different branching ratios. }
 %    \label{fig:mu_y_r}
 %    \end{figure}
 %

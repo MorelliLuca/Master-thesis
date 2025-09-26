@@ -1111,6 +1111,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT ./Notazioni.tex
 INPUT ./Notazioni.tex
 INPUT ./Notazioni.tex
@@ -1250,12 +1251,12 @@ INPUT ./CMB/Dissipation.tex
 INPUT CMB/Dissipation.tex
 INPUT CMB/Th.dat
 INPUT CMB/mu_Window_sharp.dat
-INPUT CMB/mu_WIndow_soft.dat
+INPUT CMB/mu_Window_soft.dat
 INPUT CMB/y_Window_sharp.dat
-INPUT CMB/y_Window_soft.dat
-INPUT CMB/mu_WIndow_soft.dat
+INPUT CMB/y_window_soft.dat
+INPUT CMB/mu_Window_soft.dat
 INPUT CMB/scalar_Window_mu.dat
-INPUT CMB/y_Window_soft.dat
+INPUT CMB/y_window_soft.dat
 INPUT CMB/scalar_Window_y.dat
 INPUT CMB/mu_exact.dat
 INPUT CMB/mu_soft.dat
@@ -1355,7 +1356,6 @@ INPUT ./main.bbl
 INPUT main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT main.aux
 INPUT ./titilepage.aux
 INPUT titilepage.aux
