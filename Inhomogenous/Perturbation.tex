@@ -210,7 +210,7 @@ To conclude our quantum approach to inflation we want to study the observable th
 $$\braket{0_\text{BD}|\hat{\tilde\sigma}_\mathbf{k}|0_\text{BD}}=\braket{0_\text{BD}|\hat a_{\mathbf k}\tilde\sigma_k+\hat a_{-\mathbf k}^{\dagger}\tilde\sigma^*_{-k}|0_\text{BD}}=0.$$
 On the other hand, its variance is non-zero and it is given by the so-called \textbf{power spectrum}:
 \begin{align*}
-   &\braket{0_\text{BD}|\hat{\tilde\sigma}_\mathbf{k}\hat{\tilde\sigma}_\mathbf{k'}|0_\text{BD}}=\\ &\qquad=\braket{0_\text{BD}|\hat a_{\mathbf k}\hat a_{\mathbf k'}\tilde\sigma_k \tilde\sigma_{k'}+\hat a_{\mathbf k}\hat a_{-\mathbf k'}^{\dagger}\tilde\sigma_{k} \tilde\sigma^*_{k'}+\hat a_{-\mathbf k}^{\dagger}\hat a_{\mathbf k'}\tilde\sigma_{-k}^* \tilde\sigma_{k'}+\hat a_{-\mathbf k}^\dagger\hat a_{-\mathbf k'}^{\dagger}\tilde\sigma_{-k} \tilde\sigma^*_{-k'}|0_\text{BD}}\\&\qquad=\braket{0_\text{BD}|\hat a_{\mathbf k}\hat a_{-\mathbf k'}^{\dagger}|0_\text{BD}}\tilde\sigma_{k} \tilde\sigma^*_{k'}=|\tilde\sigma_{k}|^2\delta^{(3)}(\mathbf{k+k'})\defeq\mathcal{P}_{\sigma}(k)\delta^{(3)}(\mathbf{k+k'}).
+   &\braket{0_\text{BD}|\hat{\tilde\sigma}_\mathbf{k}\hat{\tilde\sigma}_\mathbf{k'}|0_\text{BD}}=\\ &\qquad=\braket{0_\text{BD}|\hat a_{\mathbf k}\hat a_{\mathbf k'}\tilde\sigma_k \tilde\sigma_{k'}+\hat a_{\mathbf k}\hat a_{-\mathbf k'}^{\dagger}\tilde\sigma_{k} \tilde\sigma^*_{k'}+\hat a_{-\mathbf k}^{\dagger}\hat a_{\mathbf k'}\tilde\sigma_{-k}^* \tilde\sigma_{k'}+\hat a_{-\mathbf k}^\dagger\hat a_{-\mathbf k'}^{\dagger}\tilde\sigma_{-k} \tilde\sigma^*_{-k'}|0_\text{BD}}\\&\qquad=\braket{0_\text{BD}|\hat a_{\mathbf k}\hat a_{-\mathbf k'}^{\dagger}|0_\text{BD}}\tilde\sigma_{k} \tilde\sigma^*_{k'}=|\tilde\sigma_{k}|^2\delta^{(3)}(\mathbf{k+k'})\defeq{P}_{\sigma}(k)\delta^{(3)}(\mathbf{k+k'}).
 \end{align*} 
 Physically this means that during inflation the scalar perturbations, even if not present in the first place, can be sourced by vacuum fluctuations. In this way we manage to build initial conditions for the perturbed Einstein equations that we previously discussed.
 
@@ -246,14 +246,14 @@ However $\sigma$ is not a metric perturbation and, to obtain a physical quantity
 where the last limit is exactly the super Hubble horizon regime $aH\to\infty$. Hence, the only information that we will need to obtain the initial condition for cosmological perturbations is the power spectrum in the late-time limit, which, until the modes reenter the Hubble horizon, is time independent.
 
 For these reasons we will not study the power spectrum of $\sigma$ but rather the one of the comoving curvature $\mathcal{R}$, which is:
-$$\mathcal{P_R}(k)=\frac{\mathcal{P}_\sigma}{z^2} =\frac{|\sigma_k|^2}{z^2}=-\tau8\pi G\frac{\pi}{8a^2\epsilon_1}|H_\nu^{(2)}(-k\tau)|^2,$$where we used that $z=a\sqrt{\epsilon_1/(4\pi G)}$. In the super Hubble horizon limit the Hankel function can be approximated as 
+$${P_\mathcal{R}}(k)=\frac{{P}_\sigma}{z^2} =\frac{|\sigma_k|^2}{z^2}=-\tau8\pi G\frac{\pi}{8a^2\epsilon_1}|H_\nu^{(2)}(-k\tau)|^2,$$where we used that $z=a\sqrt{\epsilon_1/(4\pi G)}$. In the super Hubble horizon limit the Hankel function can be approximated as 
 $$|H_\nu^{(2)}|^2\xrightarrow{k\tau\to0}\frac{2^{2\nu}\Gamma^2(\nu)}{\pi^2}(-k\tau)^{-2\nu}\xrightarrow{\nu\approx3/2}\frac{2}{\pi}\bigg(\frac{k}{aH}\bigg)^{-2\nu},$$ where $\Gamma$ is the gamma function and $\Gamma^2(3/2)\approx\pi/2$ while $\tau\approx-(aH)^{-1}$. In this way the power spectrum reads
 \begin{equation}
-    \mathcal{P_R}(k)=8\pi G\frac{H^2}{4\epsilon_1(aH)^3}\bigg(\frac{k}{aH}\bigg)^{-2\nu},\label{eq:Scalar_Power_spectrum}
+    {P_\mathcal{R}}(k)=8\pi G\frac{H^2}{4\epsilon_1(aH)^3}\bigg(\frac{k}{aH}\bigg)^{-2\nu},\label{eq:Scalar_Power_spectrum}
 \end{equation}
 This quantity is usually expressed as the \textbf{dimensionless power spectrum}
 \begin{equation}
-    \Delta_\mathcal{R}(k)\defeq \frac{k^3}{2\pi^2}\mathcal{P_R}(k)=8\pi G\frac{H^2}{8\pi^2\epsilon_1}\bigg(\frac{k}{aH}\bigg)^{3-2\nu}.\label{eq:Scalar_Dimensionless_Power_spectrum}
+    \mathcal{P}_\mathcal{R}(k)\defeq \frac{k^3}{2\pi^2}P_\mathcal{R}(k)=8\pi G\frac{H^2}{8\pi^2\epsilon_1}\bigg(\frac{k}{aH}\bigg)^{3-2\nu}.\label{eq:Scalar_Dimensionless_Power_spectrum}
 \end{equation}
 
 \subsection{Tensor perturbations during inflation}
@@ -282,7 +282,7 @@ Also for tensor modes we note that at super Hubble horizon scale these freeze: i
  
 At this point, if we were to quantize the field $\sigma_{(\lambda)}$ we would have obtained the same results of the scalar case for each polarization: a zero expectation value and a variance determined by the power spectrum. Knowing that the physical observable, which moreover does not evolve at superhorizion scales, is $h_{(\lambda)}$ we want to find its power spectrum
 \begin{align*}
-    \mathcal{P}_T(k)&\defeq\braket{0_\text{BD}|\hat{\tilde h}_{ij}\hat{\tilde h}_{ij}|0_\text{BD}}=\frac{16\pi G}{a^2}\sum_{\lambda=+,\times}\braket{0_\text{BD}|\hat{\tilde\sigma}_{\mathbf(\lambda)}\hat{\tilde\sigma}_{\mathbf(\lambda)}|0_\text{BD}} \\&=32\pi G\sum_{\lambda=+,\times}\frac{|\tilde\sigma_{k(\lambda)}|^2}{a^2}=64\pi^2 G\frac{|H_{\nu_T}^{(2)}|^2}{4a^3H},
+    {P}_T(k)&\defeq\braket{0_\text{BD}|\hat{\tilde h}_{ij}\hat{\tilde h}_{ij}|0_\text{BD}}=\frac{16\pi G}{a^2}\sum_{\lambda=+,\times}\braket{0_\text{BD}|\hat{\tilde\sigma}_{\mathbf(\lambda)}\hat{\tilde\sigma}_{\mathbf(\lambda)}|0_\text{BD}} \\&=32\pi G\sum_{\lambda=+,\times}\frac{|\tilde\sigma_{k(\lambda)}|^2}{a^2}=64\pi^2 G\frac{|H_{\nu_T}^{(2)}|^2}{4a^3H},
 \end{align*}
 where an extra factor $\times 2 $ appears since both polarizations contribute equally. Recalling the super Hubble horizon limit of the Hankel function
 \begin{equation}
@@ -290,12 +290,12 @@ where an extra factor $\times 2 $ appears since both polarizations contribute eq
 \end{equation}
 we find the power spectrum and the dimensionless power spectrum, respectively:
 \begin{equation}
-    \mathcal{P}_T(k)=\frac{32\pi G}{a^3H}\bigg(\frac{k}{aH}\bigg)^{-2\nu_T},\qquad\Delta_h(k)\defeq\frac{k^3}{2\pi^2}\mathcal{P}_T(k)=8\pi G\frac{2H^2}{\pi^2}\bigg(\frac{k}{aH}\bigg)^{3-2\nu_T}.\label{eq:tensor_power_spectrum}
+    {P}_T(k)=\frac{32\pi G}{a^3H}\bigg(\frac{k}{aH}\bigg)^{-2\nu_T},\qquad\mathcal{P}_h(k)\defeq\frac{k^3}{2\pi^2}{P}_T(k)=8\pi G\frac{2H^2}{\pi^2}\bigg(\frac{k}{aH}\bigg)^{3-2\nu_T}.\label{eq:tensor_power_spectrum}
 \end{equation}
 \subsection{Phenomenology of the power spectrum}\label{sec:primordial_PS}
 In the previous two sections we obtained the power spectra of primordial scalar and tensor perturbations at the super Hubble horizon scale: in both cases we discovered that the power law is the form of slow-roll inflation power spectra. For each power spectra two quantities are defined: the \emph{amplitude} $\mathcal A$ and the \emph{spectral index} or \emph{tilt} $n$, which are the two quantities that we measure from observations. In general the two power spectra are then expressed as
 \begin{equation}
-    \Delta_\mathcal{R}(k)=\mathcal{A_R}\bigg(\frac{k}{k_0}\bigg)^{n_s-1}\qquad\text{and}\qquad\Delta_T(k)=\mathcal{A}_h\bigg(\frac{k}{k_0}\bigg)^{n_t},
+    \mathcal P_\mathcal{R}(k)=\mathcal{A_R}\bigg(\frac{k}{k_0}\bigg)^{n_s-1}\qquad\text{and}\qquad\mathcal P_T(k)=\mathcal{A}_h\bigg(\frac{k}{k_0}\bigg)^{n_t},
 \end{equation}
 where $k_0$ is called \emph{pivot scale} and defines the scale at which the power spectrum exactly equals to its amplitude. Note that in this way, while the tilt is independent of the pivot scale, the amplitude depends on $k_0$ since any rescale of this could be reabsorbed in $\mathcal A$.\\ From equations \eqref{eq:Scalar_Dimensionless_Power_spectrum} and \eqref{eq:tensor_power_spectrum} we recognize at the Hubble horizon scale
 \begin{equation}
@@ -307,12 +307,12 @@ The above quantities imply that a \emph{consistency} relation should hold betwee
 \end{equation} 
 in the slow-roll approximation of a single field inflation, $r=16\epsilon_1=-8n_t$. Deviations from this relation signal that inflation is not driven by a single quantum inflaton field. While the CMB anisotropies allowed to characterize with good precision the power spectrum of primordial scalar perturbations, $\mathcal{A_R}=2.100\times 10^{-9},\ n_s=0.9649$ at $k_0=0.05$ Mpc$^{-1}$ \cite{planck2018results} which shows good agreement with slow-roll inflation, we still haven't measured any signal from the tensor sector. Nowadays, measurements allow us to bound the expected tensor-to-scalar ratio to $r<0.035$ at $95\%$ CL \cite{Ade_2021}.
 
-Moreover, the two parameters ($\mathcal A, n$) can be traded off for the values of the power spectrum at two fixed scales $k_1$ and $k_2$. To see this, let's consider the $\log k$-$\log\Delta$ plane: any power law thus becomes a straight line with a slope given by $n-1$ (or $n$) and which intersects the $\log\Delta$ axis for $\log (k/k_0)=\log\mathcal A/(1-n)$. Now, instead of using these parameters we can use two points $(\log k_1,\log\Delta_1)$ and $(\log k_2,\log\Delta_2)$, in this way the power spectrum reads
+Moreover, the two parameters ($\mathcal A, n$) can be traded off for the values of the power spectrum at two fixed scales $k_1$ and $k_2$. To see this, let's consider the $\log k$-$\log\mathcal P$ plane: any power law thus becomes a straight line with a slope given by $n-1$ (or $n$) and which intersects the $\log\Delta$ axis for $\log (k/k_0)=\log\mathcal A/(1-n)$. Now, instead of using these parameters we can use two points $(\log k_1,\log\mathcal P_1)$ and $(\log k_2,\log\mathcal P_2)$, in this way the power spectrum reads
 \begin{equation}\label{eq:2_scales_PS}
-    \Delta(k)=\exp\bigg\{\frac{\log k-\log k_1}{\log k_1 -\log k_2}\log\Delta(k_2)-\frac{\log k-\log k_2}{\log k_1 -\log k_2}\log\Delta(k_1)\bigg\}.
+    \mathcal P(k)=\exp\bigg\{\frac{\log k-\log k_1}{\log k_1 -\log k_2}\log\mathcal P(k_2)-\frac{\log k-\log k_2}{\log k_1 -\log k_2}\log\mathcal P(k_1)\bigg\}.
 \end{equation}
 From our geometrical considerations we also conclude that spectral index can be computed from the two scales as
-$$n-1=\frac{\log\Delta(k_2)-\log\Delta(k_1)}{\log k_2-\log k_1},$$
+$$n-1=\frac{\log\mathcal P(k_2)-\log\mathcal P(k_1)}{\log k_2-\log k_1},$$
 while to obtain the amplitude of the power law we can just compute it at the know scale $k_1$ or $k_2$ with the above spectral index (which is scale invariant).
 \begin{figure}
     \centering
@@ -327,7 +327,7 @@ while to obtain the amplitude of the power law we can just compute it at the kno
     xmin=5e-2, xmax=5e1,
     ymin=0, ymax=1.05,
     xlabel={$k/k_{\mathrm{pk}}$},
-    ylabel={$\Delta_{\mathrm{bump}}$},
+    ylabel={$\mathcal P_{\mathrm{bump}}$},
     grid=none,
     legend pos=south east,
     legend cell align=left,
@@ -370,7 +370,7 @@ while to obtain the amplitude of the power law we can just compute it at the kno
     xmin=5e-3, xmax=5e1,
     ymin=1e-6, ymax=10,
     xlabel={$k/k_{\mathrm{pk}}$},
-    ylabel={$\Delta$},
+    ylabel={$\mathcal P$},
     grid=none,
     legend pos=south west,
     legend cell align=left,
@@ -411,12 +411,12 @@ while to obtain the amplitude of the power law we can just compute it at the kno
 
 To account for a broader class of inflationary models, the power spectrum can be phenomenologically generalized introducing a \emph{running spectral index} $n(k)$ and by then Taylor expanding
 \begin{equation}
-    \Delta=\mathcal{A}\bigg(\frac{k}{k_0}\bigg)^{n(k_0)-1+\frac{1}{2}\frac{d n}{d\log k}\log\frac{k}{k_0}+\frac{1}{6}\frac{d^2 n}{d\log k^2}\log^2\frac{k}{k_0}+\dots},
+    \mathcal P=\mathcal{A}\bigg(\frac{k}{k_0}\bigg)^{n(k_0)-1+\frac{1}{2}\frac{d n}{d\log k}\log\frac{k}{k_0}+\frac{1}{6}\frac{d^2 n}{d\log k^2}\log^2\frac{k}{k_0}+\dots},
 \end{equation}
 in this way it can capture deviations from the power law behavior we found.\\
 On top of this, bump-like features can be added to the power spectrum. As explained in \cite{Hamann_2022} this can be done by modeling the bump as a \emph{log-normal} function
 \begin{equation}
-    \Delta_\text{bump}\defeq \mathcal A_\text{bump}\exp\Bigg[-\frac{\big(\log\frac{k}{k_{\text{pk}}}\big)^2}{2\sigma^2}\Bigg],\label{eq:lognormal}
+    \mathcal P_\text{bump}\defeq \mathcal A_\text{bump}\exp\Bigg[-\frac{\big(\log\frac{k}{k_{\text{pk}}}\big)^2}{2\sigma^2}\Bigg],\label{eq:lognormal}
 \end{equation}
 where $A_\text{bump}$ is the amplitude of the bump, $\sigma$ represents the width of the bump and $k_\text{pk}$ its location.  Note that for $\sigma\gg 1$ the bump degenerates into an almost flat plateau for $-\sigma\lesssim \log\frac{k}{k_{\text{pk}}}\lesssim\sigma $, as shown in Figure \ref{fig:lognormal_sigma}.
 

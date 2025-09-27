@@ -1,13 +1,19 @@
 \label{chap:constr}
-The effects of the dissipation of primordial perturbations we described must meet current observations of the CMB. For example, the observed absence of spectral distortions by COBE/FIRAS \cite{COBE1996} constraints the possible amplitudes to 
+Current non-detection of CMB spectral distortions puts constraints on the allowed amplitudes of distortions based on the sensitivity of previous experiments: for example, COBE/FIRAS \cite{COBE1996} in 1996 constrained the possible amplitudes to be 
 \begin{equation}
     |\mu|<9\times10^{-5}, \qquad  |y|<1.5\times 10^{-5}.
 \end{equation}
-Moreover, considering the design of proposed future missions that aims to detect for the first time spectral distortions, such as PIXIE \cite{pixie}, we can produce forecasts on the expected amplitudes of spectral distortions.
-\section{Methodology of the analysis}
-To produce numerical results two publicly available codes has been used: first \textbf{\texttt{CLASS}} (Cosmic Linear Anisotropies Solving System) \cite{CLASS}, which is an Einstein-Boltzmann solver which computes also the amplitude of spectral distortions for several injecting phenomena, and then \textbf{\texttt{MontePython}} \cite{Brinckmann:2018cvx,Audren:2012wb}, which in combination with \texttt{CLASS} allows inferring constraints using \emph{Monte Carlo Markov Chains} algorithms.\\
-To use these two tools to analyze spectral distortions sourced by primordial gravitational waves, we developed a modified version of \texttt{CLASS} which computes also the heating rates we derived in Section \ref{sec:dissipation_PGW}. 
+Moreover, considering the design of proposed future missions that aims to detect for the first time spectral distortions, such as PIXIE \cite{pixie} or FOSSIL \cite{IAS_Fossil}, we can produce forecasts on future that could get from future non detection of spectral distortions.
 
+Moreover, primordial gravitational waves also lack of the detection of a cosmological signal, for example the BB modes of polarization anisotropies of the CMB. For example BICEP/Keck 2018 data \cite{Ade_2021} constrained the  tensor-to-scalar ratio to $r<0.035$ at $95\%$ CL. Further constraints has been obtained by Paoletti et al. \cite{Paoletti_2022} by parameterizing the tensor power spectrum with the tensor-to-scalar ratio at two scales (see  Section\ref{sec:primordial_PS}) $k_1=0.005$ and $k_2=0.02$ and studying the combined data of PLANCK \cite{planck2018results} and BICEP/Keck \cite{Ade_2021}: this analysis resulted in the following constraints
+\begin{equation}
+    r_{0.005}<0.030,\quad r_{0.02}<0.098\qquad\text{at 95\% CL.}
+\end{equation}
+In principle, spectral distortions sourced by primordial gravitational waves, can be used to further constraint the tensor primordial power spectrum. In this section, we will study which constraints can be put on such spectrum by future spectral distortions missions.
+\section{Methodology of the analysis}
+Modern cosmology relies heavily on numerical tools, mainly for the complexity of the different equations that must be solved altogether: for example the Boltzmann hierarchy, which in theory is composed of an infinite number of equation (each multipole) for each component of the plasma.
+To produce numerical results two publicly available codes has been used: first \textbf{\texttt{CLASS}} (Cosmic Linear Anisotropies Solving System) \cite{CLASS}, which is an Einstein-Boltzmann solver which computes also the amplitude of spectral distortions for several injecting phenomena, and then \textbf{\texttt{MontePython}} \cite{Brinckmann:2018cvx,Audren:2012wb}, which in combination with \texttt{CLASS} allows inferring constraints using \emph{Monte Carlo Markov Chains} algorithms.\\
+To use these two tools to analyze spectral distortions sourced by primordial gravitational waves, we developed a modified version of \texttt{CLASS} which computes also the heating rates we derived in Section \ref{sec:dissipation_PGW}. \\
 Before proceeding discussing the results of our analysis, we are going to explain how the analysis has been conducted.
 \subsection{Bayesian inference and MCMC algorithms}
 Observations constraint any theoretical model since any observed data must be reproducible by the model. To prove this compatibility a Bayesian approach can be used: consider a model $\theta=\{\theta_1,\theta_2,\dots\theta_n\}$, where $\theta_i$ are the parameters of the model, and a set of observed data $d$, we can then estimate the probability that our model is right given the observed data by the \emph{Bayes theorem}
@@ -20,14 +26,14 @@ In this way the problem of finding the posterior distribution is reduced to the 
 Once we obtained the posterior distribution, it is possible to \emph{marginalize} it to find the distribution of the $i$-th parameter of the assumed theoretical model, namely by integrating over the configuration space of the remaining parameters.
 $$P(\theta_i|d)\propto\int d\theta_1\dots d\theta_{i-1}d\theta_{i+1}\dots d\theta_n\ P(\theta|d). $$
 
-To obtain the posterior distribution, due to the complexity of the likelihood functions $\mathcal L(\theta)$ and the high number of parameters that ca be considered, numerical algorithms that explore the parameter space of $\theta$ are used. Monte Carlo Markov Chains is a class of these algorithms that, given a probability distribution, generates \textbf{Markov chains}\footnote{A Markov chain is a sequence of statistical events in which the probability associated to each element of the chain depends only on the state of the previous event.} of the parameters of the theoretical model which density is proportional to the posterior distribution itself. In this way, once each chain reached a \emph{stationary state} the chain itself can be used as an ensemble determined by the posterior.\\
+To obtain the posterior distribution, due to the complexity of the likelihood functions $\mathcal L(\theta)$ and the high number of parameters that can be considered, numerical algorithms that explore the parameter space of $\theta$ are used. Monte Carlo Markov Chains represent a class of these algorithms that, given a probability distribution, generates \textbf{Markov chains}\footnote{A Markov chain is a sequence of statistical events in which the probability associated to each element of the chain depends only on the state of the previous event.} of the parameters of the theoretical model which density is proportional to the posterior distribution itself. In this way, once each chain reached a \emph{stationary state} the chain itself can be used as an ensemble determined by the posterior.\\
 Each chain is generated by a random walk in the parameter space of the model which is determined by the \textbf{transition probability} $T\big(\theta^{(t)},\theta^{(t+1)}\big)$, between the points $\theta^{(t)}$ and $\theta^{(t+1)}$. The transition probability is determined by imposing the \emph{detailed balance condition}
 $$\frac{T\big(\theta^{(t)},\theta^{(t+1)}\big)}{T\big(\theta^{(t+1)},\theta^{(t)}\big)}=\frac{P\big(\theta^{(t+1)}|d\big)}{P\big(\theta^{(t)}|d\big)}.$$
 Then, statistical averages can be approximated using the elements of each chain
 $$E[f(\theta)]=\int d^n\theta\ f(\theta)P(\theta|d)\approx\frac1M\sum_{t=0}^{M-1}f\big(\theta^{(t)}\big),$$
 where $\theta^{(t)}$ is the $t$-th element of the chain. Similarly, the marginalized distributions can be obtained considering only a subset of parameters, discretizing their domains in bins and counting how main points of the chain fall in each bin.
 
-We conclude this section presenting one of the simplest MCMC algorithms, the \emph{Metropolis-Hastings} algorithm. This algorithm start from a initial guess point $\theta^{(0)}$ and randomly generates a candidate for the next point in the chain $\theta^{(c)}$ drawn from an arbitrary distribution $q\big(\theta^{(0)},\theta^{(c)}\big)$. Then the algorithm decides whether to discard the proposed candidate or to accept it as the next element of the chain: this is done by generating a random number $\mu\in[0,1)$ and the using the following criterion
+We conclude this section presenting one of the simplest MCMC algorithms, the \emph{Metropolis-Hastings} algorithm, which is also the algorithm we used. This algorithm start from a initial guess point $\theta^{(0)}$ and randomly generates a candidate for the next point in the chain $\theta^{(c)}$ drawn from an arbitrary distribution $q\big(\theta^{(0)},\theta^{(c)}\big)$. Then the algorithm decides whether to discard the proposed candidate or to accept it as the next element of the chain: this is done by generating a random number $\mu\in[0,1)$ and the using the following criterion
 \begin{equation}
     \theta^{(c)}\text{ accepted if }\mu<\min\Bigg(\frac{P\big(\theta^{(c)}|d\big)q\big(\theta^{(c)}|\theta^{(0)}\big)}{P\big(\theta^{(0)}|d\big)q\big(\theta^{(0)}|\theta^{(c)}\big)}\Bigg),\text{ otherwise rejected.}
 \end{equation}
@@ -37,7 +43,7 @@ To perform a Bayesian analysis using data from CMB observations or using simulat
 \begin{equation}
     \log \mathcal L\defeq -\frac12 \sum_{\nu \text{ bins }}\bigg(\frac{\Delta\mathcal I_\text{obs}(\nu_i)-\Delta\mathcal I_\text{fid}(\nu_i)}{\delta \mathcal I(\nu_i)}\bigg)^2,
 \end{equation}
-where $\nu_i$ is the $i$-th frequency bin of the assumed detector and $\delta \mathcal I(\nu_i)$ the corresponding sensitivity. $\Delta \mathcal I(\nu_i)$ is instead the spectral distortion itself, which is can be the result of the superposition of different distortions due to different effects. 
+where $\nu_i$ is the $i$-th frequency bin of the assumed detector and $\delta \mathcal I(\nu_i)$ the corresponding sensitivity. $\Delta \mathcal I(\nu_i)$ is instead the spectral distortion itself, which can be the result of the superposition of different distortions due to different effects. 
 
 The first effect we should account for is any eventual error in the measurement of the CMB temperature monopole, namely the average temperature of the CMB. Indeed, any small error can be modeled as a small shift in temperature $\Delta T$, which as we discovered in Section \ref{sec:SD_shapes} corresponds to a spectral distortion.
 
@@ -55,7 +61,7 @@ Lastly, a \emph{foreground} can be produced as the result of many processes, suc
 where in the first equation $i$ can be either \emph{thermal dust} or \emph{CIB} and $x$ is the dimensionless frequency as defined in Section \ref{sec:ThermalizationProblem}. Spinning dust and CO emissions are instead modeled using particular templates following \cite{refId0,10.1093/mnras/stx1653}.
 
 Overall, the following 16 nuisance parameters regulate the distortion signal that we should remove to obtain only the cosmological spectral distortions.
-\begin{table}[h!]
+\begin{table}[ht!]
 \centering
 \begin{tabular}{ c p{12cm} }
 \hline
