@@ -253,8 +253,9 @@ $$|H_\nu^{(2)}|^2\xrightarrow{k\tau\to0}\frac{2^{2\nu}\Gamma^2(\nu)}{\pi^2}(-k\t
 \end{equation}
 This quantity is usually expressed as the \textbf{dimensionless power spectrum}
 \begin{equation}
-    \mathcal{P}_\mathcal{R}(k)\defeq \frac{k^3}{2\pi^2}P_\mathcal{R}(k)=8\pi G\frac{H^2}{8\pi^2\epsilon_1}\bigg(\frac{k}{aH}\bigg)^{3-2\nu}.\label{eq:Scalar_Dimensionless_Power_spectrum}
+    \mathcal{P}_\mathcal{R}(k)\defeq \frac{k^3}{2\pi^2}P_\mathcal{R}(k)=8\pi G\frac{H^2}{8\pi^2\epsilon_1}\bigg(\frac{k}{aH}\bigg)^{3-2\nu}=\frac{H^2}{8\pi^2\epsilon_1 M_\text{pl}^2}\bigg(\frac{k}{aH}\bigg)^{3-2\nu},\label{eq:Scalar_Dimensionless_Power_spectrum}
 \end{equation}
+where we introduced the \textit{reduced Planck mass} $M_\text{pl}^2\defeq(8\pi G)^{-1}$. 
 
 \subsection{Tensor perturbations during inflation}
 Following the same ideas that guided us in the previous section, we shall now study the dynamics of the tensor perturbations $\hat E_{ij}^T$ during inflation. Since we are going to consider only tensor modes, we will use $h_{ij}$ to denote transverse traceless perturbations of the spatial components of the metric. While studying these perturbations, scalar perturbations (since overall perturbation theory gives a system of linear PDE) are decoupled and thus an action only for $h_{ij}$ can be considered. Starting from the Hilbert-Einstein action the ADM formalism can be used to obtain
@@ -290,24 +291,25 @@ where an extra factor $\times 2 $ appears since both polarizations contribute eq
 \end{equation}
 we find the power spectrum and the dimensionless power spectrum, respectively:
 \begin{equation}
-    {P}_T(k)=\frac{32\pi G}{a^3H}\bigg(\frac{k}{aH}\bigg)^{-2\nu_T},\qquad\mathcal{P}_h(k)\defeq\frac{k^3}{2\pi^2}{P}_T(k)=8\pi G\frac{2H^2}{\pi^2}\bigg(\frac{k}{aH}\bigg)^{3-2\nu_T}.\label{eq:tensor_power_spectrum}
+    {P}_T(k)=\frac{32\pi G}{a^3H}\bigg(\frac{k}{aH}\bigg)^{-2\nu_T},\qquad\mathcal{P}_h(k)\defeq\frac{k^3}{2\pi^2}{P}_T(k)=\frac{2H^2}{\pi^2M_\text{pl}^2}\bigg(\frac{k}{aH}\bigg)^{3-2\nu_T},\label{eq:tensor_power_spectrum}
 \end{equation}
+where again we introduced the \textit{reduced Planck mass}.
 \subsection{Phenomenology of the power spectrum}\label{sec:primordial_PS}
 In the previous two sections we obtained the power spectra of primordial scalar and tensor perturbations at the super Hubble horizon scale: in both cases we discovered that the power law is the form of slow-roll inflation power spectra. For each power spectra two quantities are defined: the \emph{amplitude} $\mathcal A$ and the \emph{spectral index} or \emph{tilt} $n$, which are the two quantities that we measure from observations. In general the two power spectra are then expressed as
 \begin{equation}
-    \mathcal P_\mathcal{R}(k)=\mathcal{A_R}\bigg(\frac{k}{k_0}\bigg)^{n_s-1}\qquad\text{and}\qquad\mathcal P_T(k)=\mathcal{A}_h\bigg(\frac{k}{k_0}\bigg)^{n_t},
+    \mathcal P_\mathcal{R}(k)=\mathcal{A_R}\bigg(\frac{k}{k_\star}\bigg)^{n_s-1}\qquad\text{and}\qquad\mathcal P_T(k)=\mathcal{A}_h\bigg(\frac{k}{k_\star}\bigg)^{n_t},
 \end{equation}
-where $k_0$ is called \emph{pivot scale} and defines the scale at which the power spectrum exactly equals to its amplitude. Note that in this way, while the tilt is independent of the pivot scale, the amplitude depends on $k_0$ since any rescale of this could be reabsorbed in $\mathcal A$.\\ From equations \eqref{eq:Scalar_Dimensionless_Power_spectrum} and \eqref{eq:tensor_power_spectrum} we recognize at the Hubble horizon scale
+where $k_\star$ is called \emph{pivot scale} and defines the scale at which the power spectrum exactly equals to its amplitude. Note that in this way, while the tilt is independent of the pivot scale, the amplitude depends on $k_\star$ since any rescale of this could be reabsorbed in $\mathcal A$.\\ From equations \eqref{eq:Scalar_Dimensionless_Power_spectrum} and \eqref{eq:tensor_power_spectrum} we recognize at the Hubble horizon scale
 \begin{equation}
-    \mathcal{A_R}=8\pi G\frac{H^2}{8\pi^2\epsilon_1},\ n_s=1-2\epsilon_1,\quad\text{and}\quad\mathcal{A}_T=8\pi G\frac{2H^2}{\pi^2},\ n_t=-2\epsilon_1.
+    \mathcal{A_R}=\frac{H^2}{8\pi^2\epsilon_1 M_\text{pl}^2 },\ n_s=1-2\epsilon_1,\quad\text{and}\quad\mathcal{A}_T=\frac{2H^2}{\pi^2M_\text{pl}^2},\ n_t=-2\epsilon_1.
 \end{equation}
 The above quantities imply that a \emph{consistency} relation should hold between their respective power spectra: indeed, defining the \textbf{tensor-to-scalar ratio}
 \begin{equation}
     r(k)\defeq\frac{\mathcal{P}_T(k)}{\mathcal{P_R}(k)},
 \end{equation} 
-in the slow-roll approximation of a single field inflation, $r=16\epsilon_1=-8n_t$. Deviations from this relation signal that inflation is not driven by a single quantum inflaton field. While the CMB anisotropies allowed to characterize with good precision the power spectrum of primordial scalar perturbations, $\mathcal{A_R}=2.100\times 10^{-9},\ n_s=0.9649$ at $k_0=0.05$ Mpc$^{-1}$ \cite{planck2018results} which shows good agreement with slow-roll inflation, we still haven't measured any signal from the tensor sector. Nowadays, measurements allow us to bound the expected tensor-to-scalar ratio to $r<0.035$ at $95\%$ CL \cite{Ade_2021}.
+in the slow-roll approximation of a single field inflation, $r=16\epsilon_1=-8n_t$. Deviations from this relation signal that inflation is not driven by a single quantum inflaton field. While the CMB anisotropies allowed to characterize with good precision the power spectrum of primordial scalar perturbations, $\mathcal{A_R}=2.100\times 10^{-9},\ n_s=0.9649$ at $k_\star=0.05$ Mpc$^{-1}$ \cite{planck2018results} which shows good agreement with slow-roll inflation, we still haven't measured any signal from the tensor sector. Nowadays, measurements allow us to bound the expected tensor-to-scalar ratio to $r<0.035$ at $95\%$ CL \cite{Ade_2021}.
 
-Moreover, the two parameters ($\mathcal A, n$) can be traded off for the values of the power spectrum at two fixed scales $k_1$ and $k_2$. To see this, let's consider the $\log k$-$\log\mathcal P$ plane: any power law thus becomes a straight line with a slope given by $n-1$ (or $n$) and which intersects the $\log\Delta$ axis for $\log (k/k_0)=\log\mathcal A/(1-n)$. Now, instead of using these parameters we can use two points $(\log k_1,\log\mathcal P_1)$ and $(\log k_2,\log\mathcal P_2)$, in this way the power spectrum reads
+Moreover, the two parameters ($\mathcal A, n$) can be traded off for the values of the power spectrum at two fixed scales $k_1$ and $k_2$. To see this, let's consider the $\log k$-$\log\mathcal P$ plane: any power law thus becomes a straight line with a slope given by $n-1$ (or $n$) and which intersects the $\log\mathcal{P}$ axis for $\log (k/k_0)=\log\mathcal A/(1-n)$. Now, instead of using these parameters we can use two points $(\log k_1,\log\mathcal P_1)$ and $(\log k_2,\log\mathcal P_2)$, in this way the power spectrum reads
 \begin{equation}\label{eq:2_scales_PS}
     \mathcal P(k)=\exp\bigg\{\frac{\log k-\log k_1}{\log k_1 -\log k_2}\log\mathcal P(k_2)-\frac{\log k-\log k_2}{\log k_1 -\log k_2}\log\mathcal P(k_1)\bigg\}.
 \end{equation}
@@ -409,12 +411,7 @@ while to obtain the amplitude of the power law we can just compute it at the kno
 \caption{Plots of the power spectra presented in this section. The figure on the left (a) shows the behavior of the bump as $\sigma$ increases: note how a plateau is produced for high values of $\sigma$. The plot on the right (b) compares the power law (dotted) with the bump (dashed) with their sum (solid line). }
 \end{figure}
 
-To account for a broader class of inflationary models, the power spectrum can be phenomenologically generalized introducing a \emph{running spectral index} $n(k)$ and by then Taylor expanding
-\begin{equation}
-    \mathcal P=\mathcal{A}\bigg(\frac{k}{k_0}\bigg)^{n(k_0)-1+\frac{1}{2}\frac{d n}{d\log k}\log\frac{k}{k_0}+\frac{1}{6}\frac{d^2 n}{d\log k^2}\log^2\frac{k}{k_0}+\dots},
-\end{equation}
-in this way it can capture deviations from the power law behavior we found.\\
-On top of this, bump-like features can be added to the power spectrum. As explained in \cite{Hamann_2022} this can be done by modeling the bump as a \emph{log-normal} function
+To model deviations from the power law, bump-like features can be added to the power spectrum. As explained in \cite{Hamann_2022} this can be done by modeling the bump as a \emph{log-normal} function
 \begin{equation}
     \mathcal P_\text{bump}\defeq \mathcal A_\text{bump}\exp\Bigg[-\frac{\big(\log\frac{k}{k_{\text{pk}}}\big)^2}{2\sigma^2}\Bigg],\label{eq:lognormal}
 \end{equation}

@@ -20,7 +20,7 @@
 \usepgfplotslibrary{colormaps}
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage[justification=centering]{caption}
+\usepackage[justification=centering, labelfont=bf]{caption}
 \usepackage{tensor}
 \usepackage{braket}
 \usepackage{tabularx}
@@ -107,12 +107,16 @@
 \input{CMB/SpectralDistortions}
 \input{CMB/Dissipation}
 
-\chapter{Numerical constraints and forecasts}
+\chapter{Constraints for future experiments}
 \input{Results/Bayes}
 \input{Results/NumericalResults}
 
+\chapter*{Conclusions}
+\input{Conclusions.tex}
+\input{Ringraziamenti.tex}
+
 \appendix
-\chapter{Differential geometry tools}
+\chapter{Maximally symmetric spaces}
 \input{Fundamentals/MaxSymmetric}
 \chapter{Thermodynamics tools}
 \input{Appendix/Thermo}

@@ -1,20 +1,29 @@
 \label{chap:constr}
-Current non-detection of CMB spectral distortions puts constraints on the allowed amplitudes of distortions based on the sensitivity of previous experiments: for example, COBE/FIRAS \cite{COBE1996} in 1996 constrained the possible amplitudes to be 
+Current non-detection of CMB spectral distortions puts constraints on the allowed amplitudes based on the sensitivity of previous experiments: for example, COBE/FIRAS \cite{COBE1996} in 1996 constrained the possible amplitudes to be 
 \begin{equation}
     |\mu|<9\times10^{-5}, \qquad  |y|<1.5\times 10^{-5}.
 \end{equation}
-Moreover, considering the design of proposed future missions that aims to detect for the first time spectral distortions, such as PIXIE \cite{pixie} or FOSSIL \cite{IAS_Fossil}, we can produce forecasts on future that could get from future non detection of spectral distortions.
+Moreover, considering the design of proposed future missions that aims to detect for the first time spectral distortions, such as PIXIE \cite{pixie,A_Kogut_2011} or FOSSIL \cite{IAS_Fossil}, we can produce forecasts on the constraints that will be put in the future by possible non-detections of spectral distortions. In the following section we will use simulated data from a PIXIE-like experiment, we therefore need to take into account the sensitivity predicted for PIXIE
+\begin{equation}
+    \label{eq:pix_sens} \mu_\text{PIXIE}\lesssim 2\times10^{-8}, \qquad y_\text{PIXIE}\lesssim???.
+\end{equation}
+Note that such sensitivity is insufficient to detect tensor-induced spectral distortions in the standard nearly scale invariant scenario.
 
-Moreover, primordial gravitational waves also lack of the detection of a cosmological signal, for example the BB modes of polarization anisotropies of the CMB. For example BICEP/Keck 2018 data \cite{Ade_2021} constrained the  tensor-to-scalar ratio to $r<0.035$ at $95\%$ CL. Further constraints has been obtained by Paoletti et al. \cite{Paoletti_2022} by parameterizing the tensor power spectrum with the tensor-to-scalar ratio at two scales (see  Section\ref{sec:primordial_PS}) $k_1=0.005$ and $k_2=0.02$ and studying the combined data of PLANCK \cite{planck2018results} and BICEP/Keck \cite{Ade_2021}: this analysis resulted in the following constraints
+Moreover, primordial gravitational waves also lack of a detection of a cosmological signal, for example from the BB modes of polarization anisotropies of the CMB, which are sourced only by primordial gravitational waves. Using BB modes, BICEP/\textit{Keck} 2018 data \cite{Ade_2021} only constrained the  tensor-to-scalar ratio to $r<0.035$ at $95\%$ CL. Further constraints have been obtained by Paoletti et al. \cite{Paoletti_2022} by relaxing the consistency relation $n_t=-r/8$ and parameterizing the tensor power spectrum with the tensor-to-scalar ratio at two scales (see  Section \ref{sec:primordial_PS}) $k_1=0.005$ and $k_2=0.02$: studying the combined data of \textit{Planck} \cite{planck2018results} and BICEP/\textit{Keck} 2018 \cite{Ade_2021} the following constraints have been found
 \begin{equation}
     r_{0.005}<0.030,\quad r_{0.02}<0.098\qquad\text{at 95\% CL.}
 \end{equation}
-In principle, spectral distortions sourced by primordial gravitational waves, can be used to further constraint the tensor primordial power spectrum. In this section, we will study which constraints can be put on such spectrum by future spectral distortions missions.
+In principle, spectral distortions sourced by primordial gravitational waves, can be used to further constraint the tensor primordial power spectrum. In this chapter, we will study which constraints can be put on such spectrum by future spectral distortions missions. We will first combine data from BICEP/\textit{Keck} 2018 with a PIXIE-like simulated experiment to study how spectral distortions can impact constraints on the tensor-to-scalar ratio. We will then study the constraints on bumps placed at the spectral distortions scales with only the PIXIE simulated data.
 \section{Methodology of the analysis}
 Modern cosmology relies heavily on numerical tools, mainly for the complexity of the different equations that must be solved altogether: for example the Boltzmann hierarchy, which in theory is composed of an infinite number of equation (each multipole) for each component of the plasma.
-To produce numerical results two publicly available codes has been used: first \textbf{\texttt{CLASS}} (Cosmic Linear Anisotropies Solving System) \cite{CLASS}, which is an Einstein-Boltzmann solver which computes also the amplitude of spectral distortions for several injecting phenomena, and then \textbf{\texttt{MontePython}} \cite{Brinckmann:2018cvx,Audren:2012wb}, which in combination with \texttt{CLASS} allows inferring constraints using \emph{Monte Carlo Markov Chains} algorithms.\\
-To use these two tools to analyze spectral distortions sourced by primordial gravitational waves, we developed a modified version of \texttt{CLASS} which computes also the heating rates we derived in Section \ref{sec:dissipation_PGW}. \\
-Before proceeding discussing the results of our analysis, we are going to explain how the analysis has been conducted.
+To produce numerical results two publicly available codes has been used: the first one is \textbf{\texttt{CLASS}} (Cosmic Linear Anisotropies Solving System) \cite{CLASS}, which is an Einstein-Boltzmann solver which computes also the amplitude of spectral distortions for several injecting phenomena, and then \textbf{\texttt{MontePython}} \cite{Brinckmann:2018cvx,Audren:2012wb}, which in combination with \texttt{CLASS} allows inferring constraints using \emph{Monte Carlo Markov Chains} algorithms.
+
+Before proceeding discussing the results of our analysis, we are going to explain the main modifications we apported to \texttt{CLASS} and we will also give a little of background on \textit{Bayesian inference} and \textit{MCMC} analysis.
+\subsection{Modifications to \texttt{CLASS}}
+To allow \texttt{MontePython} to work with tensor-induced spectral distortions, we developed a modified version of \texttt{CLASS} which computes also the heating rates we derived in Section \ref{sec:dissipation_PGW}. Our implementation takes into account how the different transfer functions change during the Matter-Radiation domination transition, allowing for a more accurate computation of amplitudes.\\
+To adapt \texttt{CLASS} to our needs we included two more modifications: first we allowed also the tensor primordial power spectrum to be parameterized using the \emph{2 scales} formalism, 
+$$\mathcal P_T(k)=\exp\bigg\{\frac{\log k-\log k_1}{\log k_1 -\log k_2}\log r_{k_2}\mathcal{P_R}(k_2)-\frac{\log k-\log k_2}{\log k_1 -\log k_2}\log r_{k_1}\mathcal{ P_{R}}(k_1)\bigg\},$$
+ then we also introduced the possibility of adding \emph{lognormal} bumps on top of the power law power spectrum.
 \subsection{Bayesian inference and MCMC algorithms}
 Observations constraint any theoretical model since any observed data must be reproducible by the model. To prove this compatibility a Bayesian approach can be used: consider a model $\theta=\{\theta_1,\theta_2,\dots\theta_n\}$, where $\theta_i$ are the parameters of the model, and a set of observed data $d$, we can then estimate the probability that our model is right given the observed data by the \emph{Bayes theorem}
 \begin{equation}
@@ -38,7 +47,7 @@ We conclude this section presenting one of the simplest MCMC algorithms, the \em
     \theta^{(c)}\text{ accepted if }\mu<\min\Bigg(\frac{P\big(\theta^{(c)}|d\big)q\big(\theta^{(c)}|\theta^{(0)}\big)}{P\big(\theta^{(0)}|d\big)q\big(\theta^{(0)}|\theta^{(c)}\big)}\Bigg),\text{ otherwise rejected.}
 \end{equation}
 If the candidate is rejected a new point is generated, otherwise the chain continues repeating this algorithm substituting the point $\theta^{(0)}$ with the previous element of the chain.
-\subsection{CMB likelihoods}
+\subsection{Spectral distortion likelihood and foreground}
 To perform a Bayesian analysis using data from CMB observations or using simulated data, it is necessary to define an appropriate likelihood function. In our case of interest, the likelihood should take into account the outcome of CMB spectral distortion measurements and compare it with the theoretical prediction of our proposed models. Starting from the cosmological parameters obtained from the Planck \emph{TT,TE,EE + lowE + lensing data} \cite{planck2018results}, \texttt{CLASS} computes the fiducial values of the distortions. Then, each set of parameters of each chain is compared with the fiducial distortion by the following likelihood function
 \begin{equation}
     \log \mathcal L\defeq -\frac12 \sum_{\nu \text{ bins }}\bigg(\frac{\Delta\mathcal I_\text{obs}(\nu_i)-\Delta\mathcal I_\text{fid}(\nu_i)}{\delta \mathcal I(\nu_i)}\bigg)^2,
@@ -54,9 +63,9 @@ where we used the definitions of Section \ref{sec:ThermalizationProblem}.
 Lastly, a \emph{foreground} can be produced as the result of many processes, such as \emph{Galactic thermal dust}, the \emph{Cosmic Infrared Background} (CIB), the \emph{synchrotron emission}, \emph{free-free, spinning dust} and \emph{integrated CO emission}. As explained in \cite{constraininginflationarypotentialspectral} this foreground can be modeled as the superposition of the following components
 \begin{align}
     &\Delta \mathcal I_i(x)=A_i\bigg(\frac{x_i}{x_{\text{ref}}}\bigg)^{\beta_i+3} \frac{e^{x_{\text{ref}}}-1}{e^{x_i}-1},\qquad\qquad\text{with } x_i\defeq\frac{\nu}{k_BT_i}\text{ and } \nu_\text{ref}=545\text{GHz},\label{eq:FOR_i}\\
-    &\Delta \mathcal{I}_\text{sync} (x)= A_S\bigg(\frac{x_\text{ref}}{x}\bigg)^{\alpha_S+\tfrac{\omega_S}2\log^2(x/x_\text{ref})}\qquad \text{with }\nu_\text{ref}=100\text{GHz},\label{eq:FOR_sync}\\
+    &\Delta \mathcal{I}_\text{sync} (x)= A_S\bigg(\frac{x_\text{ref}}{x}\bigg)^{\alpha_S+\tfrac{\omega_S}2\log^2(x/x_\text{ref})}\qquad \text{with }\nu_\text{ref}=100\text{GHz},\label{eq:FOR_sync}\\\nonumber
     &\Delta \mathcal{I}_\text{free-free}(x)= A_\text{ff} \mathcal{ N} T_e\big(1-e^{-\tau_{\text{ff}}}\big),&\\
-    &\qquad\qquad\tau_\text{ff}\approx 0.05468\text{EM}\bigg(\frac{T_e}{\text{K}}\bigg)^{-3/2}\bigg(\frac{\nu}{\text{GHz}}\bigg)^{-2}g_\text{ff},& \\ &\qquad\qquad g_\text{ff}\approx \log\bigg\{ e+\exp\bigg[5.96-\frac{\sqrt{3}}{\pi}\log\bigg(\frac{\nu}{\text{GHz}}\Big(\frac{T_e}{10^4\text{K}}\Big)^{-3/2}\bigg)\bigg]\bigg\},
+    &\qquad\qquad\tau_\text{ff}\approx 0.05468\text{EM}\bigg(\frac{T_e}{\text{K}}\bigg)^{-3/2}\bigg(\frac{\nu}{\text{GHz}}\bigg)^{-2}g_\text{ff},& \\ &\qquad\qquad g_\text{ff}\approx \log\bigg\{ e+\exp\bigg[5.96-\frac{\sqrt{3}}{\pi}\log\bigg(\frac{\nu}{\text{GHz}}\Big(\frac{T_e}{10^4\text{K}}\Big)^{-3/2}\bigg)\bigg]\bigg\},\nonumber
 \end{align}  
 where in the first equation $i$ can be either \emph{thermal dust} or \emph{CIB} and $x$ is the dimensionless frequency as defined in Section \ref{sec:ThermalizationProblem}. Spinning dust and CO emissions are instead modeled using particular templates following \cite{refId0,10.1093/mnras/stx1653}.
 
@@ -85,13 +94,13 @@ $A_{\text{CO}}$ & Amplitude of the SD due to CO emission \\
 $y_\text{reio}$ & Amplitude of the y-distortion due to reonization.\\
 \hline
 \end{tabular}
-\caption{Nuisance parameters describing spectral distortions.}
+\caption{Nuisance parameters describing the foreground of PXIE-like experiments.}
 \label{tab:nui_pixie}
 \end{table}
 \subsection{Semi-analytical constraints}
-Constraints on the power spectrum of primordial gravitational waves can be obtained by a semi-analytical approach. Recalling the construction of the window function \eqref{eq:window_function}
-$$a=\int dk\ \Delta_T(k) W_a(k),$$
-we can see that it is possible to constrain $ \Delta_T(k)$ by comparing the current observational limits on the distortion amplitude with the amplitude obtained by a Dirac delta power spectrum,
-$$\Delta(k)\defeq A_\delta\ \delta\bigg(\log\frac{k}{\hat k}\bigg)\quad \Rightarrow\quad A_\delta W_a\big(\hat k\big)<a_{\text{upper limit}}\quad \Rightarrow\quad A_{\text{upper limit}}(k)=\frac{a_{\text{upper limit}}}{W_a(k)}.$$
-In this way, we obtain the maximum allowed amplitude for the power spectrum at the scale $\hat k$.
+Before moving on to the analysis of the constraints obtained by Bayesian inference, we should indicate that also a semi-analytical approach can be used to constraint the power spectrum of primordial gravitational waves. The main idea behind this method is that for each wave number we can find the threshold value of the power spectrum, for which we would meet the sensitivity of some experiment. Recalling the construction of the window function \eqref{eq:window_function}
+$$a=\int dk\ \mathcal P_T(k) W_a(k),$$
+we can use a Dirac delta power spectrum, which essentially corresponds to the assumption that the whole distortion is sourced by the dissipation of just one single wave number. Requiring that the resulting distortion meets the sensitivity of the considered experiment,
+$$\mathcal P(k)\defeq A_\delta\ \delta\bigg(\log\frac{k}{\hat k}\bigg)\quad \Rightarrow\quad A_\delta W_a\big(\hat k\big)<a_{\text{sens}}\quad \Rightarrow\quad A_{\text{sens}}(k)=\frac{a_{\text{sens}}}{W_a(k)},$$
+we obtain the maximum allowed amplitude for the power spectrum at the scale $\hat k$. Combining all the amplitudes obtained, we are constructing a function which indicates the maximum allowed values of the power spectrum given a non detection of the distortions. 
 

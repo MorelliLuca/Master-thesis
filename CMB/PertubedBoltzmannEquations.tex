@@ -1,13 +1,13 @@
 \section{Scalar perturbed Liouville operator}\label{app:scalarPerturbedLiouvilleOperator}
-In this appendix we will show how to obtain the perturbed Liouville operator, at first order, for the photon phase space in the presence of scalar perturbations. Since we are interested only in first order perturbations, in the next calculations, we will always neglect higher order contributions by Taylor expanding every function of the perturbations. We will work with the perturbed metric in the conformal Newtonian gauge, which is given by
+In this appendix we will show how to obtain the perturbed Liouville operator, at first order, for the photon phase space in the presence of scalar perturbations. We will work with the perturbed metric in the conformal Newtonian gauge, which is given by
 $$ds^2=a^2(\eta)\left[-(1+2\Psi)d\tau^2+(1-2\Phi)\delta_{ij}dx^idx^j\right].$$
-The Liouville operator, defined in , reads
+The Liouville operator, defined in \ref{sec:BoltzmannEquation}, reads
 $$\hat{\mathbf{L}}[f]=\frac{df}{d\tau}=\frac{\partial f}{\partial \tau}+\frac{\partial f}{\partial x^i}\frac{d x^i}{d\tau}+\frac{\partial f}{\partial p}\frac{d p}{d\tau}+\frac{\partial f}{\partial \hat p^i}\frac{d \hat p^i}{d\tau},$$
-where $p^i=p\ \hat p^i$ (with $\hat p^i\hat p^j\delta_{ij}=1$) is the local 3-momentum of the photon, and we already considered that the local energy and the 3-momentum are not independent due to the mass-shell condition. We also assume that $f$ can also be expanded on a background, which corresponds to the black body radiation, plus a first order perturbation (see section \ref{sec:ThetaTimeEvolution} for more on this expansion). Note that, since the blackbody radiation is isotropic and homogeneous (it does not depend on $x^i$ or $\hat p^i$) the two factors $\frac{\partial f}{\partial x^i}$ and $\frac{\partial f}{\partial \hat p^i}$ are only first order contributions. This observation will simplify our calculations later on since it implies that $\frac{dx^i}{d\tau}$ and $\frac{d\hat p^i}{d\tau}$ are needed only at order zero.
+where $p^i=p\ \hat p^i$ (with $\hat p^i\hat p^j\delta_{ij}=1$) is the local 3-momentum of the photon, and we already considered that the local energy and the 3-momentum are not independent due to the mass-shell condition. We also assume that $f$ can also be expanded on a background, which corresponds to the black body radiation, plus a first order perturbation (see Section \ref{sec:ThetaTimeEvolution} for more on this expansion). Note that, since the blackbody radiation is isotropic and homogeneous (it does not depend on $x^i$ or $\hat p^i$) the two factors $\frac{\partial f}{\partial x^i}$ and $\frac{\partial f}{\partial \hat p^i}$ are only first order contributions. This observation will simplify our calculations later on since it implies that $\frac{dx^i}{d\tau}$ and $\frac{d\hat p^i}{d\tau}$ are needed only at order zero.
 
-Let's spend some time discussing local energy and momentum. The local energy is defined as the energy of a photon in the local rest frame of an observer, thus for a static observer ($U^\mu=(\frac{1-\Psi}{a},0,0,0)$) it reads
+Let's spend some time discussing local energy and momentum. The local energy is defined as the energy of a photon measured in the local rest frame of a specific observer, therefore for a static observer ($U^\mu=(\frac{1-\Psi}{a},0,0,0)$) it reads
 $$E=-U_\mu P^\mu=a(1+2\Psi)P^0(1-\Psi)\approx aP^0(1+\Psi).$$
-The local momentum defined in the same way, therefore it must satisfy the usual Minkowskian mass-shell relation $E=\sqrt{p^ip^j\delta_{ij}}$. Using the mass-shell condition for the 4-momentum of the photon $P^\mu P_\mu=0$, we can write
+The local momentum is defined in the same way, therefore it must satisfy the usual Minkowskian mass-shell relation $E=\sqrt{p^ip^j\delta_{ij}}$. Using the mass-shell condition for the 4-momentum of the photon $P^\mu P_\mu=0$, we can write
 \begin{align*}
     &P^\mu P_\mu=-a^2(1+2\Psi)(P^0)^2+a^2(1+2\Phi)P^iP^j\delta_{ij}=0,\\
     &\Rightarrow\quad P^0=\sqrt{\frac{1+2\Phi}{1+2\Psi}P^iP^j\delta_{ij}}\approx(1+\Phi-\Psi)\sqrt{P^iP^j\delta_{ij}},\\
@@ -21,7 +21,7 @@ We are now ready to determine all the contribution to the Liouville operator. Fi
 \end{equation}
 Then we have to evaluate $$\frac{dp}{d\tau}=\frac{d}{d\tau}aP^0(1+\Psi)=\mathcal{H}p+a(1+\Psi)\frac{dP^0}{d\tau}+p\Psi',$$
 therefore we need to compute $\frac{dP^0}{d\tau}$. This can be accomplished by using the geodesic equation $$ \frac{dP^0}{d\tau}=\frac{dP^0}{d\lambda}\frac{1}{P^0}=-\frac{\Gamma^0_{\mu\nu}}{P^0}P^\mu P^\nu,$$
-in the conformal Newtonian gauge the relevant Christoffel symbols are $$\Gamma^0_{00}=\mathcal{H}+\Psi',\quad\Gamma^0_{0i}=\Psi,_i,\quad\Gamma^0_{ij}=\bigg[\mathcal{H}(1+2\Phi-2\Psi)+\Phi' \bigg]\delta_{ij}.$$
+in the conformal Newtonian gauge the relevant Christoffel symbols for the above equation are $$\Gamma^0_{00}=\mathcal{H}+\Psi',\quad\Gamma^0_{0i}=\Psi,_i,\quad\Gamma^0_{ij}=\bigg[\mathcal{H}(1+2\Phi-2\Psi)+\Phi' \bigg]\delta_{ij}.$$
 In this way we get
 \begin{align}\label{eq:B.2}
     \frac{dp}{d\tau}&=(\mathcal{H}+\Psi') p-a(1+\Psi)\times\nonumber\\&\qquad\qquad\qquad\times \bigg[(\mathcal{H} +\Psi')P^0+P^i\Psi,_i+\big(\mathcal{H}(1+2\Phi-2\Psi)+\Phi' \big)\frac{P^iP^j\delta_{ij}}{P^0} \bigg]\nonumber\\
@@ -41,27 +41,27 @@ Inserting equations \eqref{eq:B.1} and \eqref{eq:B.2} into the Liouville operato
     \hat{\mathbf{L}}[f]&=\frac{\partial f}{\partial t}+\frac{\hat p^i}{a}\frac{\partial f}{\partial x^i}-p\bigg(H-\frac{\partial \Phi}{\partial t}+\frac{\partial \Phi}{\partial x^i}\frac{\hat p^i}{a}\bigg)\frac{\partial f}{\partial p}
 \end{align}
 \section{Tensor perturbed Liouville operator}\label{app:tensorPerturbedLiouvilleOperator}
-Previously, we considered how scalar perturbations of the metric (which are in general the most studied) contributes to the evolution of the phase space associated to photons. Now, we are going to follow the same steps to study instead the effects of tensor perturbations. Again keep in mind that we will only consider first order perturbations and higher contributions will be neglected.
+Previously, we considered how scalar perturbations of the metric  contributes to the evolution of the phase space associated to photons. Now, we are going to follow the same steps to study instead the effects of tensor perturbations. Again keep in mind that we will only consider first order perturbations and higher contributions will be neglected.
 
-Tensor perturbations are described by the transverse traceless tensor $h_{ij}$, which happens to be gauge invariant (section ). At first order in perturbation theory the tensor perturbed metric thus reads 
-$$ds^2=a^2(-d\tau^2+(\delta_{ij}+h_{ij})dx^idx^j).$$
+Tensor perturbations are described by the transverse traceless tensor $h_{ij}$, which happens to be gauge invariant (ss Section \ref{sec:perturbations}). At first order in perturbation theory the tensor perturbed metric thus reads 
+$$ds^2=a^2\Big(-d\tau^2+(\delta_{ij}+h_{ij})dx^idx^j\Big).$$
 The Liouville operator, as usual, is defined as
 $$\hat{\mathbf{L}}[f]=\frac{df}{d\tau}=\frac{\partial f}{\partial \tau}+\frac{\partial f}{\partial x^i}\frac{d x^i}{d\tau}+\frac{\partial f}{\partial p}\frac{d p}{d\tau}+\frac{\partial f}{\partial \hat p^i}\frac{d \hat p^i}{d\tau},$$
 where $p^i=p\ p^i$ is again the local 3-momentum, note that even though its definition (as the momentum observed by a static observer) won't change, its relation to the 4-momentum is changed due to the different metric considered. Now, indeed the local energy is
 $$U^\mu=(a^{-1},0,0,0)\ \Rightarrow\ E=-U_\mu P^\mu= aP^0$$
 and then requiring that $E=\sqrt{p^ip^j\delta_{ij}}=p$ we observe that the form of the local 3-momentum should be
 \begin{align*}
-    P^\mu P_\mu&=-a^2\big(P^0\big)^2+a^2(\delta_{ij}+h_{ij})P^iP^j=0\quad\Rightarrow \quad\big(P^0\big)^2=(\delta_{ij}+h_{ij})P^iP^j\\E^2&=p_ip_j\delta_{ij}=\big(aP^0\big)^2=a^2(\delta_{ij}+h_{ij})P^iP^j\quad\Rightarrow \quad p_i=a(\delta_{ij}+\frac{1}{2}h_{ij})P^j,
+    P^\mu P_\mu&=-a^2\big(P^0\big)^2+a^2(\delta_{ij}+h_{ij})P^iP^j=0\quad\Rightarrow \quad\boxed{\big(P^0\big)^2=(\delta_{ij}+h_{ij})P^iP^j}\\E^2&=p_ip_j\delta_{ij}=\big(aP^0\big)^2=a^2(\delta_{ij}+h_{ij})P^iP^j\quad\Rightarrow \quad \boxed{p_i=a(\delta_{ij}+\frac{1}{2}h_{ij})P^j},
 \end{align*} 
 where we used that there is no difference between covariant e contravariant vectors for the local momentum since in the local reference frame the spatial metric is the identity.
 
-We can now proceed and evaluate the first contribution to the Liouville operator $\frac{dx^i}{d\tau}$, keeping in mind that (as in appendix \ref{app:scalarPerturbedLiouvilleOperator}) we only need order zero contributions.
+We can now proceed and evaluate the first contribution to the Liouville operator $\frac{dx^i}{d\tau}$, keeping in mind that (as in appendix \ref{app:scalarPerturbedLiouvilleOperator}) we only need order zero contributions to get a first order term in the Liouville operator.
 \begin{equation}\label{eq:B.4}
     \frac{dx^i}{d\tau}=\frac{P^i}{P^0}=\frac{p_j}{E}\bigg(\delta^{ij}-\frac{1}{2}h^{ij}\bigg)\approx\frac{p^i}{E}.
 \end{equation}
-The second factor is instead needed up to the first order. We start by evaluating
+The second factor $\tfrac{dp}{d\tau}$ is instead needed up to the first order: we start by evaluating
 $$\frac{dp}{d\tau}=\frac{d}{d\tau}aP^0=\mathcal{H} p+a\frac{dP^0}{d\tau}=\mathcal{H} p-\frac{a}{P^0}\Gamma^0_{\mu\nu}P^\mu P^\nu,$$
-where in the last step we used the geodesic equation. With the metric in consideration the relevant Christoffel symbols read:
+where in the last step we used the geodesic equation. With our metric the only relevant Christoffel symbols read:
 $$\Gamma^0_{00}=\mathcal{H},\qquad \Gamma^0_{0i}=0,\qquad\Gamma^{0}_{ij}=\mathcal{H} (\delta_{ij}+h_{ij})+\frac{1}{2}h'_{ij}.$$
 With these, recalling that $p^2=a^2(\delta_{ij}+h_{ij})P^i P^j$ and that at order zero $p^\mu=aP^\mu$, we finally get
 \begin{equation}\label{eq:B.5}

@@ -77,25 +77,30 @@
 \contentsline {subsubsection}{Dissipation in the $\mu $-era}{115}{subsubsection*.30}%
 \contentsline {subsubsection}{Dissipation in the y-era}{117}{subsubsection*.33}%
 \contentsline {section}{\numberline {8.4}Window functions}{118}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Theoretical analysis of the distortions}{121}{section.8.5}%
+\contentsline {section}{\numberline {8.5}Numerical results}{121}{section.8.5}%
 \contentsline {subsection}{\numberline {8.5.1}Lognormal bump}{123}{subsection.8.5.1}%
-\contentsline {chapter}{\numberline {9}Numerical constraints and forecasts}{127}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Methodology of the analysis}{127}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Bayesian inference and MCMC algorithms}{127}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}CMB likelihoods}{129}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Semi-analytical constraints}{130}{subsection.9.1.3}%
-\contentsline {section}{\numberline {9.2}Constraints on lognormal bump}{131}{section.9.2}%
-\contentsline {chapter}{\numberline {A}Differential geometry tools}{133}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Maximally symmetric spaces}{133}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Thermodynamics tools}{137}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Small chemical potential approximation}{137}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{138}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{140}{section.B.3}%
-\contentsline {chapter}{\numberline {C}Special functions}{143}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Spherical harmonics \(Y_{\ell m}(\theta ,\varphi )\)}{143}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Legendre polynomials \(P_\ell (x)\)}{144}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Spin-weighted spherical harmonics \({}_sY_{\ell m}(\theta ,\varphi )\)}{144}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Bessel functions \(J_\nu (z), Y_\nu (z)\) and Hankel functions $H_\nu ^{(1)}(z), H_\nu ^{(2)}(z)$}{145}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Spherical Bessel functions \(j_\ell (z), y_\ell (z)\)}{146}{section.C.5}%
-\contentsline {section}{\numberline {C.6}Gamma function \(\Gamma (z)\)}{146}{section.C.6}%
-\contentsline {section}{\numberline {C.7}Riemann zeta function \(\zeta (s)\)}{146}{section.C.7}%
+\contentsline {chapter}{\numberline {9}Constraints for future experiments}{127}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Methodology of the analysis}{128}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Modifications to \texttt {CLASS}}{128}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Bayesian inference and MCMC algorithms}{128}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Spectral distortion likelihood and foreground}{130}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Semi-analytical constraints}{131}{subsection.9.1.4}%
+\contentsline {section}{\numberline {9.2}Constraining the tensor power spectrum}{131}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Constraining lognormal bumps}{133}{section.9.3}%
+\contentsline {chapter}{Conclusions}{135}{chapter*.46}%
+\contentsline {chapter}{Acknowledgments}{136}{chapter*.46}%
+\contentsline {chapter}{\numberline {A}Maximally symmetric spaces}{139}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Killing vectors and symmetries of a mainifold}{139}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Riemann tensor in a maximally symmetric space}{140}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{143}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Small chemical potential approximation}{143}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{144}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{146}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Special functions}{149}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Spherical harmonics \(Y_{\ell m}(\theta ,\varphi )\)}{149}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Legendre polynomials \(P_\ell (x)\)}{150}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Spin-weighted spherical harmonics \({}_sY_{\ell m}(\theta ,\varphi )\)}{150}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Bessel functions \(J_\nu (z), Y_\nu (z)\) and Hankel functions $H_\nu ^{(1)}(z), H_\nu ^{(2)}(z)$}{151}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Spherical Bessel functions \(j_\ell (z), y_\ell (z)\)}{152}{section.C.5}%
+\contentsline {section}{\numberline {C.6}Gamma function \(\Gamma (z)\)}{152}{section.C.6}%
+\contentsline {section}{\numberline {C.7}Riemann zeta function \(\zeta (s)\)}{152}{section.C.7}%

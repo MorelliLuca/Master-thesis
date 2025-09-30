@@ -32,7 +32,8 @@ P.~A.~R. Ade, Z.~Ahmed, M.~Amiri, D.~Barkats, R.~Basu Thakur, C.~A. Bischoff,
   J.~Willmert, C.~L. Wong, W.~L.~K. Wu, H.~Yang, K.~W. Yoon, E.~Young, C.~Yu,
   L.~Zeng, C.~Zhang, and S.~Zhang.
 \newblock Improved constraints on primordial gravitational waves using planck ,
-  wmap, and bicep/ keck observations through the 2018 observing season.
+  wmap, and bicep/ \textit{Keck} observations through the 2018 observing
+  season.
 \newblock {\em Physical Review Letters}, 127(15), October 2021.
 
 \bibitem{Audren:2012wb}
@@ -40,6 +41,11 @@ Benjamin Audren, Julien Lesgourgues, Karim Benabed, and Simon Prunet.
 \newblock {Conservative Constraints on Early Cosmology: an illustration of the
   Monte Python cosmological parameter inference code}.
 \newblock {\em JCAP}, 1302:001, 2013.
+
+\bibitem{Baldi_2005}
+Marco Baldi, Fabio Finelli, and Sabino Matarrese.
+\newblock Inflation with violation of the null energy condition.
+\newblock {\em Physical Review D}, 72(8), October 2005.
 
 \bibitem{baumann2012tasilecturesinflation}
 Daniel Baumann.
@@ -120,6 +126,11 @@ D.~J. Fixsen, E.~S. Cheng, J.~M. Gales, J.~C. Mather, R.~A. Shafer, and E.~L.
   data set.
 \newblock {\em The Astrophysical Journal}, 473:576--587, 1996.
 
+\bibitem{Gasperini_2003}
+M.~Gasperini and G.~Veneziano.
+\newblock The pre-big bang scenario in string cosmology.
+\newblock {\em Physics Reports}, 373(1–2):1–212, January 2003.
+
 \bibitem{Hamann_2022}
 Jan Hamann and Ameek Malhotra.
 \newblock Constraining primordial tensor features with the anisotropies of the
@@ -151,6 +162,26 @@ R.~Khatri, R.~A. Sunyaev, and J.~Chluba.
   waves in the early universe.
 \newblock {\em Astronomy amp; Astrophysics}, 543:A136, July 2012.
 
+\bibitem{Khoury_2001}
+Justin Khoury, Burt~A. Ovrut, Paul~J. Steinhardt, and Neil Turok.
+\newblock Ekpyrotic universe: Colliding branes and the origin of the hot big
+  bang.
+\newblock {\em Physical Review D}, 64(12), November 2001.
+
+\bibitem{Kobayashi_2010}
+Tsutomu Kobayashi, Masahide Yamaguchi, and Jun’ichi Yokoyama.
+\newblock Inflation driven by the galileon field.
+\newblock {\em Physical Review Letters}, 105(23), December 2010.
+
+\bibitem{A_Kogut_2011}
+A.~Kogut, D.J. Fixsen, D.T. Chuss, J.~Dotson, E.~Dwek, M.~Halpern, G.F.
+  Hinshaw, S.M. Meyer, S.H. Moseley, M.D. Seiffert, D.N. Spergel, and E.J.
+  Wollack.
+\newblock The primordial inflation explorer (pixie): a nulling polarimeter for
+  cosmic microwave background observations.
+\newblock {\em Journal of Cosmology and Astroparticle Physics},
+  2011(07):025–025, July 2011.
+
 \bibitem{pixie}
 Alan Kogut, Eric Switzer, Dale Fixsen, Nabila Aghanim, Jens Chluba, Dave Chuss,
   Jacques Delabrouille, Cora Dvorkin, Brandon Hensley, Colin Hill, Bruno
@@ -172,6 +203,15 @@ D.~Paoletti, F.~Finelli, and F.~Paci.
   background of magnetic fields to cosmic microwave background anisotropies.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   396(1):523–534, June 2009.
+
+\bibitem{Paoletti_2022}
+Daniela Paoletti, Fabio Finelli, Jussi Valiviita, and Masashi Hazumi.
+\newblock Planck and bicep/\textit{Keck} array 2018 constraints on primordial
+  gravitational waves and perspectives for future <mml:math
+  xmlns:mml="http://www.w3.org/1998/math/mathml"
+  display="inline"><mml:mi>b</mml:mi></mml:math> -mode polarization
+  measurements.
+\newblock {\em Physical Review D}, 106(8), October 2022.
 
 \bibitem{1965ApJ...142..419P}
 A.~A. {Penzias} and R.~W. {Wilson}.

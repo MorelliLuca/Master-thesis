@@ -13,7 +13,7 @@ Solving explicitly this equation yields for the first values of $\ell$ and $m$
 &Y_{00}(\theta,\phi)=\frac{1}{\sqrt{4\pi}}, &Y_{1,0}(\theta,\phi)=i\sqrt\frac{3}{4\pi}\cos{\theta},\\ &Y_{1,\pm1}(\theta,\phi)=\mp i\sqrt\frac{3}{8\pi}\sin\theta e^{\pm i\phi},\quad
 &Y_{20}(\theta,\phi)=\sqrt\frac{5}{16\pi}\big(1-3\cos^2\theta\big), \\ &Y_{2,\pm1}(\theta,\phi)=i\sqrt\frac{15}{8\pi}\cos{\theta}\sin\theta e^{\pm i\phi},\quad &Y_{2,\pm2}(\theta,\phi)=-\sqrt\frac{15}{32\pi}\sin^2\theta e^{\pm i2\phi},
 \end{align*}
-where all the coefficients are determined by using the orthonormality relation
+where all the coefficients have been determined by using the orthonormality relation
 \[
 \int\sin\theta\ d\theta d\phi\ Y_{\ell m}(\theta,\varphi)\,Y^*_{\ell' m'}(\theta,\varphi)
 =\delta_{\ell\ell'}\delta_{mm'},
@@ -22,9 +22,9 @@ which holds on the sphere since spherical harmonics represent an orthonormal bas
 We conclude our discussion on spherical harmonics by giving the conjugation and parity relations  
 \[
 Y_{\ell m}^*(\theta,\varphi)=(-1)^m Y_{\ell,-m}(\theta,\varphi),\qquad
-Y_{\ell m}(-\hat n)=(-1)^\ell Y_{\ell m}(\hat n),
+Y_{\ell m}(-\versor n)=(-1)^\ell Y_{\ell m}(\versor n),
 \]
-where the short-hand notation $\versor n$ has been used to indicate the angles associated to such direction.
+where the shorthand notation $\versor n$ has been used to indicate the angles associated to such direction.
 
 
 \section{Legendre polynomials \(P_\ell(x)\)}
@@ -37,11 +37,11 @@ The first three Legendre polynomials are
 $$
 P_0(\mu)=1,\qquad P_1(\mu)=\mu,\qquad P_2(\mu)=\frac{3\mu^2-1}{2},
 $$
-an explicit expression can be found for higher $\ell$ values by the \emph{Bonnet's formula}
+while an explicit expression can be found for higher $\ell$ values by the \emph{Bonnet's formula}
 \[
 (\ell+1)P_{\ell+1}(\mu)=(2\ell+1)\mu P_\ell(\mu)-\ell P_{\ell-1}(\mu).
 \]
-We can observe that for these three functions, but this proprieties holds for all $\ell$, the polynomials are even or odd functions depending on wether $\ell$ is even or odd, respectively.\\
+We can observe that for $\ell=0,1,2$ (but this proprieties holds for all $\ell$) the polynomials are even or odd functions depending on whether $\ell$ is even or odd, respectively.\\
 Note that the differential equation for spherical harmonics, assuming no $\phi$ dependence and defining $x\defeq\cos\theta$, turns into the Legendre equation above. This shows that we can match, up to the normalization factor, Legendre polynomials with $m=0$ spherical harmonics.
 \[
 Y_{\ell 0}(\theta,\varphi)=\sqrt{\frac{2\ell+1}{4\pi}}\,P_\ell(\cos\theta).
@@ -81,12 +81,12 @@ $$J_{-n}(z)=(-1)^n J_n(z), \qquad (n\in\mathbb Z) $$
 and therefore a new linearly independent solution must be found. The \emph{Bessel function of the second kind}, also sometimes known as \emph{Neumann fucntion}, manages to remain linearly independent for all the values of $\nu$
 $$Y_\nu(z)\defeq\frac{J_\nu(z)\cos(\nu\pi)-J_{-\nu}(z)}{\sin(\nu\pi)}.$$
 On the other hand $J_\nu(z)$ is usually referred to as the \emph{Bessel function of the first kind}.\\
-For small values of $z$ the last term of the Bessel function dominates the $z\to0$ limit is found
+For small values of $z$ the last term of the Bessel equation dominates and the $z\to0$ limit is found to be
 \[
 J_\nu(z)\xrightarrow{z\to0}\frac{1}{\Gamma(\nu+1)}\left(\frac{z}{2}\right)^\nu,\qquad
 Y_\nu(z)\xrightarrow{z\to0} -\frac{\Gamma(\nu)}{\pi}\left(\frac{2}{z}\right)^\nu,
 \]
-for which we can see that $J_\nu$ is regular for $z=0$ while $Y_\nu$ diverges. On the other hand, in the limit $x\to \infty$ the Bessel equation reduces to the equation of motion of a simple harmonic oscillator, and indeed the large $z$ asymptotic behavior results in 
+for which we can see that $J_\nu$ is regular for $z=0$ while $Y_\nu$ diverges. On the other hand, in the limit $z\to \infty$ the Bessel equation reduces to the equation of motion of a simple harmonic oscillator, and indeed the large $z$ asymptotic behavior results in 
 \[
 J_\nu(z)\xrightarrow{z\to\infty}\sqrt{\frac{2}{\pi z}}\cos\Big(z-\frac{\pi\nu}{2}-\frac{\pi}{4}\Big),\qquad
 Y_\nu(z)\xrightarrow{z\to\infty}\sqrt{\frac{2}{\pi z}}\sin\Big(z-\frac{\pi\nu}{2}-\frac{\pi}{4}\Big).
@@ -129,7 +129,7 @@ The Euler gamma function is the generalization of the factorial operator over th
 \[
 \Gamma(z)=\int_0^\infty t^{z-1}e^{-t}\,dt,\quad\Rightarrow\quad \Gamma(z+1)=z\Gamma(z).
 \]
-This implies that half integer arguments can be used in this generalized factor: indeed by knowing $\Gamma(1/2)$ we can then infer by recursion all the next half integer values 
+This implies that half integer arguments can be used in this generalized factorial: indeed by knowing $\Gamma(1/2)$ we can then infer by recursion all the next half integer values 
 \[
 \Gamma\!\left(1/2\right)=\sqrt{\pi},\qquad
 \Gamma\!\left(3/2\right)=\frac{\sqrt{\pi}}{2},\qquad\dots

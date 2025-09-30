@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.25)  25 SEP 2025 23:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.25)  30 SEP 2025 09:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -922,11 +922,11 @@ Overfull \hbox (1.41722pt too wide) in paragraph at lines 135--137
  []
 
 [45] [46] [47] [48] [49] [50] [51] [52]
-Package pgfplots info on input line 339: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 386: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 386: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 341: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 388: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 388: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 
-Overfull \hbox (8.02682pt too wide) in paragraph at lines 405--406
+Overfull \hbox (8.02682pt too wide) in paragraph at lines 407--408
 [][] 
  []
 
@@ -1017,37 +1017,45 @@ Overfull \hbox (9.89888pt too wide) detected at line 172
  []
 
 [108] [109] [110]
-Overfull \hbox (6.94061pt too wide) detected at line 218
+Overfull \hbox (6.94061pt too wide) detected at line 219
 [] \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 
 []\OML/cmm/m/it/12 Y[]\OT1/cmr/m/n/12 ([])\OML/cmm/m/it/12 Y[]\OT1/cmr/m/n/12 ([]) = \OML/cmm/m/it/12 ^^N[]^^N[] [] [] d\OT1/cmr/m/n/12 
 []\OML/cmm/m/it/12 Y[]\OT1/cmr/m/n/12 ([])\OML/cmm/m/it/12 Y[]\OT1/cmr/m/n/12 ([]) = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 ^^N[]^^N[]
  []
 
 [111]
-Overfull \hbox (19.96326pt too wide) detected at line 234
+Overfull \hbox (19.96326pt too wide) detected at line 235
+[]
+ []
+
+
+Overfull \hbox (2.48616pt too wide) detected at line 249
 []
  []
 
 [112] [113] [114]
-Overfull \hbox (11.35161pt too wide) detected at line 297
+Overfull \hbox (11.35161pt too wide) detected at line 298
 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k^^\\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 A[] [] a[]j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k^^\\OT1/cmr/m/n/12 )  []  [](\OML/cmm/m/it/12 k^^\\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 A[] [] a[]k[][]j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k^^\\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k^^\\OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 ;
  []
 
 PGFPlots: reading {CMB/Th.dat}
-[115] [116]
-Package pgfplots info on input line 353: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+[115]
+Underfull \vbox (badness 2875) has occurred while \output is active []
+
+ [116]
+Package pgfplots info on input line 354: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
  [117] [118]
-Package pgfplots info on input line 419: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 419: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 420: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 420: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/mu_Window_sharp.dat}
 PGFPlots: reading {CMB/mu_Window_soft.dat}
-Package pgfplots info on input line 454: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 454: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 455: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 455: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/y_Window_sharp.dat}
 PGFPlots: reading {CMB/y_Window_soft.dat}
  [119] [120]
-Package pgfplots info on input line 481: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 481: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 482: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 482: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/mu_Window_soft.dat}
 PGFPlots: reading {CMB/scalar_Window_mu.dat}
 
@@ -1417,31 +1425,24 @@ NOTE: coordinate (7.798301000000000000e+10,0.000000000000000000e+00) has been dr
 NOTE: coordinate (8.472274000000000000e+10,0.000000000000000000e+00) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
 NOTE: coordinate (9.204496000000000000e+10,0.000000000000000000e+00) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
 [121]
-Package pgfplots info on input line 535: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 536: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/mu_exact.dat}
 PGFPlots: reading {CMB/mu_soft.dat}
 PGFPlots: reading {CMB/mu_sharp.dat}
-Package pgfplots info on input line 569: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 570: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/y_exact.dat}
 PGFPlots: reading {CMB/y_soft.dat}
 PGFPlots: reading {CMB/y_sharp.dat}
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [122]
-Package pgfplots info on input line 631: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 631: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+ [122] [123]
+Package pgfplots info on input line 632: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 632: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/Lognormal/tensor_mu_aln@sigma1.000e-01.dat}
 PGFPlots: reading {CMB/Lognormal/tensor_mu_aln@sigma1.778e-01.dat}
 PGFPlots: reading {CMB/Lognormal/tensor_mu_aln@sigma3.162e-01.dat}
 PGFPlots: reading {CMB/Lognormal/tensor_mu_aln@sigma5.623e-01.dat}
 PGFPlots: reading {CMB/Lognormal/tensor_mu_aln@sigma1.000e+00.dat}
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package pgfplots info on input line 660: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 660: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 661: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 661: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/Plateau/tensor_mu_sigma@aln1.000e-03.dat}
 PGFPlots: reading {CMB/Plateau/tensor_mu_sigma@aln5.623e-04.dat}
 PGFPlots: reading {CMB/Plateau/tensor_mu_sigma@aln1.778e-04.dat}
@@ -1450,76 +1451,77 @@ PGFPlots: reading {CMB/Plateau/scalar_mu_sigma@aln1.000e-03:.3e.dat}
 PGFPlots: reading {CMB/Plateau/scalar_mu_sigma@aln1.778e-04:.3e.dat}
 PGFPlots: reading {CMB/Plateau/scalar_mu_sigma@aln5.623e-06:.3e.dat}
 PGFPlots: reading {CMB/Plateau/scalar_mu_sigma@aln1.000e-06:.3e.dat}
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[123] [124]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 685.
-
-Package pgfplots info on input line 700: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-Package pgfplots info on input line 700: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 701: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
+Package pgfplots info on input line 701: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {CMB/Plateau/mu_sigma@aln1.000e-02.dat}
 PGFPlots: reading {CMB/Plateau/mu_sigma@aln1.000e-03.dat}
 PGFPlots: reading {CMB/Plateau/mu_sigma@aln1.000e-04.dat}
 PGFPlots: reading {CMB/Plateau/y_sigma@aln1.000e-02.dat}
 PGFPlots: reading {CMB/Plateau/y_sigma@aln1.000e-03.dat}
 PGFPlots: reading {CMB/Plateau/y_sigma@aln1.000e-04.dat}
-) [125] [126
+) [124] [125] [126
 
 ]
 Chapter 9.
 (./Results/Bayes.tex
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 8.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 19.
  [127]
-Overfull \hbox (16.42445pt too wide) in paragraph at lines 30--31
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 22.
+ [128]
+Overfull \hbox (16.42445pt too wide) in paragraph at lines 45--46
 []\OT1/cmr/m/n/12 We con-clude this sec-tion pre-sent-ing one of the sim-plest MCMC al-go-rithms, the \OT1/cmr/m/it/12 Metropolis-
  []
 
-[128]
-Underfull \vbox (badness 7540) has occurred while \output is active []
-
- [129] [130]) (./Results/NumericalResults.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
-
- []
-
-<Constraints/Lognormal.pdf, id=1586, 561.47308pt x 553.14932pt>
+[129] [130]) (./Results/NumericalResults.tex
+<Constraints/BKPIXIE.pdf, id=1607, 401.79425pt x 380.73715pt>
+File: Constraints/BKPIXIE.pdf Graphic file (type pdf)
+<use Constraints/BKPIXIE.pdf>
+Package pdftex.def Info: Constraints/BKPIXIE.pdf  used on input line 5.
+(pdftex.def)             Requested size: 364.19667pt x 345.11772pt.
+ [131] [132 <./Constraints/BKPIXIE.pdf>]
+<Constraints/Lognormal.pdf, id=1653, 561.47308pt x 553.14932pt>
 File: Constraints/Lognormal.pdf Graphic file (type pdf)
 <use Constraints/Lognormal.pdf>
-Package pdftex.def Info: Constraints/Lognormal.pdf  used on input line 9.
-(pdftex.def)             Requested size: 156.1498pt x 153.83414pt.
-<Constraints/LN_NN.pdf, id=1587, 568.32718pt x 554.61598pt>
+Package pdftex.def Info: Constraints/Lognormal.pdf  used on input line 23.
+(pdftex.def)             Requested size: 223.07211pt x 219.76186pt.
+<Constraints/LN_NN.pdf, id=1654, 568.32718pt x 554.61598pt>
 File: Constraints/LN_NN.pdf Graphic file (type pdf)
 <use Constraints/LN_NN.pdf>
-Package pdftex.def Info: Constraints/LN_NN.pdf  used on input line 16.
-(pdftex.def)             Requested size: 156.1498pt x 152.38022pt.
-<Constraints/LN_NN_reio.pdf, id=1588, 736.35489pt x 721.55963pt>
+Package pdftex.def Info: Constraints/LN_NN.pdf  used on input line 30.
+(pdftex.def)             Requested size: 223.07211pt x 217.68724pt.
+<Constraints/LN_NN_reio.pdf, id=1655, 736.35489pt x 721.55963pt>
 File: Constraints/LN_NN_reio.pdf Graphic file (type pdf)
 <use Constraints/LN_NN_reio.pdf>
-Package pdftex.def Info: Constraints/LN_NN_reio.pdf  used on input line 25.
-(pdftex.def)             Requested size: 159.33473pt x 156.13422pt.
-) [131] [132 <./Constraints/Lognormal.pdf> <./Constraints/LN_NN.pdf> <./Constraints/LN_NN_reio.pdf>]
-Appendix A.
-(./Fundamentals/MaxSymmetric.tex [133
+Package pdftex.def Info: Constraints/LN_NN_reio.pdf  used on input line 39.
+(pdftex.def)             Requested size: 245.97299pt x 241.03308pt.
 
-] [134]) [135] [136
+Overfull \hbox (36.70189pt too wide) in paragraph at lines 37--43
+ []$[]$ 
+ []
+
+) [133] [134 <./Constraints/Lognormal.pdf> <./Constraints/LN_NN.pdf> <./Constraints/LN_NN_reio.pdf>] (./Conclusions.tex) (./Ringraziamenti.tex [135
+
+] [136]) [137] [138
+
+]
+Appendix A.
+(./Fundamentals/MaxSymmetric.tex [139]
+Overfull \hbox (19.95956pt too wide) detected at line 40
+[]
+ []
+
+[140]) [141] [142
 
 ]
 Appendix B.
-(./Appendix/Thermo.tex [137]) (./CMB/PertubedBoltzmannEquations.tex
+(./Appendix/Thermo.tex [143]) (./CMB/PertubedBoltzmannEquations.tex
 Underfull \hbox (badness 10000) in paragraph at lines 19--1
 
  []
 
-
-Overfull \hbox (15.07323pt too wide) in paragraph at lines 9--11
-\OT1/cmr/m/n/12 The lo-cal mo-men-tum de-fined in the same way, there-fore it must sat-isfy the usual Minkowskian
- []
-
-[138] [139] [140]) (./Appendix/SpecialFunc.tex [141] [142
+[144] [145] [146]) (./Appendix/SpecialFunc.tex [147] [148
 
 ]
 Appendix C.
@@ -1555,7 +1557,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\ell' on input line 30.
 
-[143]
+[149]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 60.
@@ -1632,7 +1634,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 73.
 
-[144]
+[150]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 110.
@@ -1660,7 +1662,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.48335pt}.
 
-[145]
+[151]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 126.
@@ -1677,22 +1679,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\zeta' on input line 138.
 
-[146]) (./main.bbl [147] [148
+[152]) (./main.bbl [153] [154
 
-] [149] [150]) [151] (./main.aux (./titilepage.aux) (./abstract.aux) (./Notazioni.aux)) ) 
+] [155] [156] [157]) [158] (./main.aux (./titilepage.aux) (./abstract.aux) (./Notazioni.aux)) ) 
 Here is how much of TeX's memory you used:
- 37968 strings out of 478287
- 875700 string characters out of 5849289
- 2090033 words of memory out of 5000000
- 54839 multiletter control sequences out of 15000+600000
- 492013 words of font info for 117 fonts, out of 8000000 for 9000
+ 38018 strings out of 478287
+ 876501 string characters out of 5849289
+ 2089930 words of memory out of 5000000
+ 54866 multiletter control sequences out of 15000+600000
+ 492182 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,22n,89p,1766b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (161 pages, 1634811 bytes).
+ 84i,22n,89p,2152b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (168 pages, 1687854 bytes).
 PDF statistics:
- 2312 PDF objects out of 2487 (max. 8388607)
- 2053 compressed objects within 21 object streams
- 597 named destinations out of 1000 (max. 500000)
- 765 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2415 PDF objects out of 2487 (max. 8388607)
+ 2145 compressed objects within 22 object streams
+ 613 named destinations out of 1000 (max. 500000)
+ 810 words of extra memory for PDF output out of 10000 (max. 10000000)
 
