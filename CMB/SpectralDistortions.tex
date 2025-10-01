@@ -1,23 +1,23 @@
 \chapter{Spectral Distortions}
 \label{chap:SpectralDistortions}
-In Section \ref{sec:CMB_decoupling} we discussed that the high interaction rate in the thermal plasma before recombination allowed for the Planckian distribution \eqref{eq:blackbody_spectrum} to be generated. We also showed that measurements from COBE/FIRAS satellite \cite{COBE1996} confirm that spectrum characteristic of CMB photons is compatible with this prediction.\\
-However, as the sensitivity of experiments increases, some deviations from blackbody behavior, also known as \textbf{spectral distortions}, could be detected in the near future. As we are going to show, distortions are actually expected to arise during the thermal history of the plasma.
+In Section \ref{sec:CMB_decoupling} we discussed that the high interaction rate in the thermal plasma before recombination allowed for a Planckian distribution \eqref{eq:blackbody_spectrum} to be generated. We also discussed how this Planckian distrivution has been measured by the COBE/FIRAS satellite \cite{COBE1996} at a $10^{-4}$ level of precision.\\
+However, as the sensitivity of experiments increases, some deviations from blackbody behavior, also known as \textbf{spectral distortions}, could be detected in the near future. As we are going to show, distortions are actually produced by the standard cosmological model at the level of precision of the next experiments.
 
-In the next sections we will study the physical processes occurring in the primordial plasma that result in spectral distortions. Our goal is to describe the particular phenomenon of the \emph{dissipation of the primordial gravitational waves}. 
+In the next sections we will study the physical processes occurring in the primordial plasma that result in spectral distortions. Our main goal is to describe the \emph{dissipation of the primordial gravitational waves}, which is one among many spectral distortions sourcing mechainsms. 
 
 \section{The thermalization problem of the CMB}\label{sec:ThermalizationProblem}
-The CMB, nowadays, is the relic of the primordial photons that filled the universe before recombination (see Section \ref{sec:recombination}). The spectrum that we observe today is determined by the interactions that occurred between the different components of the plasma and which led to a specific equilibrium state. For example, several processes can inject energy that then, through scatterings, will be redistributed in the plasma, recovering thermal equilibrium. The problem of determining how equilibrium is reached is usually referred as the \textbf{thermalization problem}.\\
-The thermal history of the photon plasma is determined by its phase space distribution through the \textbf{Boltzmann equation} (Section \ref{sec:BoltzmannEquation}), therefore, to understand how interactions can affect its thermal state, their influence on the phase space of photons must me addressed.  
+The CMB, is the relic of the primordial photons that filled the universe before recombination (see Section \ref{sec:recombination}). The spectrum that we observe today is determined by the interactions that occurred between the different components of the plasma and which led to a specific equilibrium state. For example, several processes can inject energy that then, through scatterings, will be redistributed in the plasma, recovering thermal equilibrium. The problem of determining how equilibrium is reached is usually referred as the \textbf{thermalization problem}.\\
+The thermal history of the photon plasma is determined by its phase space distribution through the \textbf{Boltzmann equation} (Section \ref{sec:BoltzmannEquation}). Our starting point must therefore be to study plasma interactions and its phase space distribution.  
 
 In the early universe, photons are mainly subject to scattering processes with electrons and light nuclei (Hydrogen and Helium). To describe these process it is useful to introduce the \emph{dimensionless frequency}
 \begin{equation}\label{eq:dimensionless_frequency}
     x\defeq\frac{\nu}{k_BT_z},\qquad T_z\defeq T_0(1+z),
 \end{equation}
-where $T_0$ is the present temperature of photons and $T_z$ is the temperature that would have a gas of decoupled photons at redshift $z$. In this way, $x$ is a \emph{time invariant variable}, since the redshift $\nu=\nu_0(1+z)$ cancels the time dependence of the temperature $T_z$, leaving only the today observed frequency and temperature. The use of this variable strongly simplifies the Boltzmann equation. Indeed, neglecting perturbations, the phase space distribution is just a function of time and energy only, and thus we can use $x$ to measure the energy of photons, since it is related to their frequency. In this way the time independence of $x$ allows to remove the momentum derivatives from the Liouville operator $$ \hat{L}[f]=\frac{df(t,x)}{dt}=\frac{\partial f}{\partial t}+\frac{dx}{dt}\frac{\partial f}{\partial x}=\frac{\partial f}{\partial t}=C[f].$$
+where $T_0$ is the present temperature of photons and $T_z$ is the temperature that would have a gas of decoupled photons at redshift $z$. In this way, $x$ is a \emph{time invariant variable}, since the redshift $\nu=\nu_0(1+z)$ cancels the time dependence of the temperature $T_z$, leaving only the observed frequency and temperature at present time. The use of this variable strongly simplifies the Boltzmann equation. Indeed, at a background level, the phase space distribution is just a function of time and energy only, and thus we can use $x$ to measure the energy of photons, since it is related to their frequency. In this way the time independence of $x$ allows to remove the momentum derivatives from the Liouville operator $$ \hat{L}[f]=\frac{df(t,x)}{dt}=\frac{\partial f}{\partial t}+\frac{dx}{dt}\frac{\partial f}{\partial x}=\frac{\partial f}{\partial t}=C[f].$$
 Note that the phase space distribution is stationary only when the ``collision term'' vanishes: physically this means that only scatterings can change the number of photons or their energies. Indeed, the gravitational redshift of the photons energies is automatically included in the definition of the time invariant temperature $x$.\\
 There are three main types of interactions entering in the Boltzmann equation.
 \begin{enumerate}
-    \item \textbf{Compton scattering}: this is the main actor in the thermalization of the CMB. In this process photons are scattered by electrons 
+    \item \textbf{Compton scattering}: this is the main effect that contributes to the thermalization of the CMB. In this process photons are scattered by electrons 
     \begin{multicols}{2}
         $$e^{-}(p)+\gamma(k)\rightleftharpoons e^{-}(p')+\gamma(k').$$\vspace{4cm}
         
@@ -39,7 +39,7 @@ There are three main types of interactions entering in the Boltzmann equation.
         \draw[decorate,decoration={snake}] (0,0) -- (2,2) node[at end, below right] {$\gamma$} node [midway, above left] {$k'$};
         \end{tikzpicture}
     \end{multicols}
-    Each collision results in a transfer of energy between the photon and electron components of the plasma conserving the number of both. The collision term associated with this process is the \textbf{Kompaneets equation}, which reads
+    Each collision results in a transfer of energy between the photon and electron components of the plasma conserving the number of both. The collision term associated with this process is
     \begin{equation}
         C[f]\bigg|_{CS}=n_e\sigma_T\frac{k_BT_e}{m_e}x^{-2}\frac{\partial}{\partial x}\bigg[x^4\bigg(\frac{\partial f}{\partial x}+\frac{T_z}{T_e}f(1+f)\bigg)\bigg],\label{eq:C_compton}
     \end{equation}
@@ -107,7 +107,7 @@ There are three main types of interactions entering in the Boltzmann equation.
     \end{align} 
     where we used the variables introduced for the previous interactions and the \emph{dimensionless photon temperature} $\theta_\gamma=k_BT_z/m_e$.
 \end{enumerate} 
-All these collision terms must then be combined to obtain the full \emph{Boltzmann equation} for the photons.
+All these collision terms must then be combined to obtain the \textbf{Kompaneets equation}, which describes the time evolution of the phase space distribution of photons.
 
 Since the main driving interaction is the Compton scattering, the most relevant collision term to study is equation \eqref{eq:C_compton}. This identically vanishes when
 $$0=\frac{\partial f}{\partial x}+\frac{T_z}{T_e}f(1+f),$$
@@ -121,7 +121,7 @@ This completes the discussion of Section \ref{sec:CMB_decoupling}, proving that 
 In the previous section we described the interactions that lead the plasma of photons to an equilibrium distribution. However, as the universe evolves, some interaction could become inefficient, affecting the final phase space distribution of the photons. We will now try to understand the timescale needed to reach equilibrium by these processes: when a timescale becomes too large the transfer of energy is effectively zero and the corresponding interactions will have negligible effects.
 
 The Thompson timescale $t_T$ describes the time between consecutive Compton scatterings: usually, assuming that $24\%$ of the baryonic mass is in the form of Helium (as in \cite{chlubafuturestepscosmologyusing}), it turns out to be $$t_T\defeq(n_e\sigma_T)^{-1}\approx2.7\times10^{20}X_e^{-1}(1+z)^{-3}s.$$ This timescale can be compared to the one associated with the expansion of the universe, $t_H\defeq H^{-1}$, to understand when the time between scatterings becomes so large that no scattering occur.\\
-To thermalize the plasma, scatterings have to transfer energy efficiently. The Kompaneets equation \eqref{eq:C_compton} gives us the timescale for this transfer, as estimated in \cite{chlubafuturestepscosmologyusing}\footnote{Intuitively, from the collision terms we can estimate each timescale by considering that $\frac{\partial\rho}{\partial t}=\frac{\rho}{t_\text{scale}}+\dots$ and that $\rho=\int d^3p\ Ef(p,t)$. In this way, a rough estimate is obtained by reading the appropriate constants from the collision terms.},
+To thermalize the plasma, scatterings have to transfer energy efficiently. The collision term \eqref{eq:C_compton} gives us the timescale for this transfer, as estimated in \cite{chlubafuturestepscosmologyusing}\footnote{Intuitively, from the collision terms we can estimate each timescale by considering that $\frac{\partial\rho}{\partial t}=\frac{\rho}{t_\text{scale}}+\dots$ and that $\rho=\int d^3p\ Ef(p,t)$. In this way, a rough estimate is obtained by reading the appropriate constants from the collision terms.},
 $$ t_{e\gamma}=\frac{m_et_T}{4k_BT_e}\approx\frac{4.9\times10^{5}}{n_e\sigma_T}\bigg(\frac{1100}{1+z}\bigg)\approx1.2\times10^{29}(1+z)^{-4}s,$$ 
 where we considered that before recombination $T_e\approx T_\gamma\propto a^{-1}$, we inserted the temperature of the plasma, and we considered $X_e\approx 1$ at high redshifts.\\ A comparison with the timescale of the expansion of the universe,
 $$t_H=H^{-1}\approx\begin{cases}
@@ -274,10 +274,10 @@ To proceed we should have in mind the following picture
     \item For $z_{\text{th}}\approx2\times10^6>z>z_{\mu y}\approx 5\times 10^4$ Bremsstrahlung and double Compton scattering become subdominant, with respect to effect of the expansion of the universe on the photon plasma. Compton scattering is still efficient and thus photons and electrons can exchange energy, but the number of the former is almost fixed. This results in the possibility, in presence of processes that can perturb the equilibrium, of generating \emph{spectral distortions} since, as we showed previously, Compton scattering now thermalizes with a non-zero chemical potential. This range of redshifts is called $\boldsymbol{\mu}$\textbf{-era}.
     \item For $z>z_{\mu y}\approx 5\times 10^4$ also Compton scattering becomes inefficient and therefore obtaining a perfect blackbody spectrum through thermalization becomes even harder. The impossibility of fully reach equilibrium, in this period called \textbf{y-era}, can give rise to another type of spectral distortions one equilibrium is perturbed.
 \end{enumerate}
-In the next sections we will focus on what kind of spectral distortions can be sourced in these three phases and how they are generated.
+In the next sections we will focus on what kind of spectral distortions and how they can be sourced in these three phases.
 
 \section{Modeling spectral distortions}
-As we saw, at high redshifts the photon plasma, in agreement with the observed CMB spectrum, always thermalizes to a blackbody radiation. Hence, spectral distortions will arise from deviations $\Delta f(x,t)$ from the \emph{Planckian blackbody} phase space distribution $B(x)\defeq(e^x-1)^{-1}$, as$$f(t,x)=B(x)+\Delta f(t,x),$$ where $x=\nu/(k_BT_z)$ as before. Then, every contribution $\Delta f(x,t)$ will also distort the \textbf{spectral radiance} (equation \eqref{eq:blackbody_spectrum} where we have now restored natural units) $$\mathcal{I}(t,x)=2(k_BT_z)^3 x^3f(t,x)=2(k_BT_z)^3\big[x^3B(x)+x^3\Delta f(t,x)\big],$$ which measures the energy of the radiation per unit frequency. Every distortion can then be further decomposed into a shape and an amplitude: the former one is determined by the physical process that generates the distortion while the latter describes how much the spectrum is distorted.\\
+As we saw, at high redshifts the photon plasma always thermalizes to a blackbody radiation. Hence, spectral distortions will arise from deviations $\Delta f(x,t)$ from the \emph{Planckian blackbody} phase space distribution $B(x)\defeq(e^x-1)^{-1}$, as$$f(t,x)=B(x)+\Delta f(t,x),$$ where $x=\nu/(k_BT_z)$ as before. Then, every contribution $\Delta f(x,t)$ will also distort the \textbf{spectral radiance} (equation \eqref{eq:blackbody_spectrum} where we have now restored natural units) $$\mathcal{I}(t,x)=2(k_BT_z)^3 x^3f(t,x)=2(k_BT_z)^3\big[x^3B(x)+x^3\Delta f(t,x)\big],$$ which measures the energy of the radiation per unit frequency. Every distortion can then be further decomposed into a shape and an amplitude: the former one is determined by the physical process that generates the distortion while the latter describes how much the spectrum is distorted.\\
 In the following subsections we will study the distortions of the phase space distribution since the corresponding spectral distortions are obtained just by multiplying the former by $2(k_BT_z)^3x^3$.
 
 \subsection{Shapes of spectral distortions}\label{sec:SD_shapes}
@@ -290,7 +290,7 @@ From the above we recognize the shape of the distortion $G(x)$ and its amplitude
     \label{eq:SD_temperature_shift}
     G(x)\defeq-x\frac{\partial B(x)}{\partial x}=\frac{xe^x}{(e^x-1)^2}.
 \end{equation}
-Note that, even though we called it ``distortion'', it is somewhat improper to consider it as such, since it constitutes a shift in the temperature of a blackbody spectrum.\\ 
+Note that, even though we called it ``distortion'', it is somewhat improper to consider it as such, since it represents just a change in temperature of the plasma, without changing the shape of the distribution.\\ 
 Moreover, since $T_z$ is defined with respect to a reference temperature observed today $T_0$, it is always possible to readjust $T_0$ such that it coincides with the perturbed temperature today, in this way the temperature shift becomes essentially unobservable. 
 
 \subsubsection{Chemical potential $\boldsymbol\mu$ distortion}
@@ -310,7 +310,7 @@ With this correction we finally have that a $\boldsymbol\mu$\textbf{-distortion}
 In the end, this result shows that energy injections in the $\mu$-era source $\mu$-distortions, and at the same time, through Compton scattering, heat the photon plasma.
 
 \subsubsection{Compton y distortion}
-Lastly, for $z<z_{\mu y}$ also energy transfer by Compton scattering becomes inefficient, this means that equilibrium is never fully reached after any energy injection. In this case, the spectral distortion shape can be obtained by exploiting the Kompaneets equation \eqref{eq:C_compton}
+Lastly, for $z<z_{\mu y}$ also energy transfer by Compton scattering becomes inefficient, this means that equilibrium is never fully reached after any energy injection. In this case, the spectral distortion shape can be obtained by exploiting the Compton scattering collision term \eqref{eq:C_compton}
 $$\frac{\partial f}{\partial t}=n_e\sigma_T\frac{k_BT_e}{m_e}x^{-2}\frac{\partial}{\partial x}\bigg[x^4\bigg(\frac{\partial f}{\partial x}+\frac{T_z}{T_e}f(1+f)\bigg)\bigg].$$ Recall that in the above we exploited the time independence of $x$ to rewrite $\hat{L}[f]=\frac{\partial f}{\partial t}.$
 Considering an initial blackbody distribution $B(x)$, this equation gives us an estimate for the change of phase space distribution over a small lapse of time $\Delta t$ $$\Delta f\approx n_e\sigma_T\frac{k_BT_e}{m_e}x^{-2}\frac{\partial}{\partial x}\bigg[x^4\bigg(\frac{\partial B(x)}{\partial x}+\frac{T_z}{T_e}B(x)(1+B(x))\bigg)\bigg]\Delta t.$$
 Some simple algebra can show that $-\frac{\partial B}{\partial x}=B(x)(1+B(x))={G(x)}/{x}={e^x}/{(e^x-1)^2}$, so that the above reads in the end
@@ -430,7 +430,7 @@ A more refined discussion should also consider non-thermal processes, such as at
 
 
 \subsection{Amplitudes of spectral distortions}\label{sec:SD_amplitudes}
-Now that we know which are the shapes of the of spectral distortions that we expect to observe in the \emph{CMB}, we want to understand how their respective amplitudes can be obtained and what is their meaning.
+Now that we know the shapes of the spectral distortions that we expect to observe in the \emph{CMB}, we want to understand how their respective amplitudes can be obtained and what is their meaning.
 
 When studying the effects of energy injections in the plasma, it is useful to relate amplitudes to the injected energy. This can easily be accomplished by considering that the energy density contribution of each spectral distortion must correspond to the injected energy that generated them in the first place. In this way, recalling that $\rho=\int d^3pf(p,t)E=4\pi (k_BT_z)^4\int dxf(x)x^3$ since $E=p=\nu$ and $x=\nu/(k_BT_z)$, we can write
 \begin{subequations}
@@ -514,7 +514,7 @@ which describes a smooth $g$-$\mu$ transition and an instantaneous $\mu$-$ y$ tr
 \end{align}   
 \end{subequations}
 
-Note that in this last approximation the sum of all the branching ratios is not equal to one, this is due to the presence of the residual distortions we mentioned at the end of Section \ref{sec:SD_shapes}. 
+Note that in this last approximation the sum of all the branching ratios is not equal to one, the conservation of energy can be restored using the residual distortions we introduced at the end of Section \ref{sec:SD_shapes}. 
 
 Finally, we can derive an exact solution for the branching ratios. This is done by exploiting \emph{Green's functions} methods to solve equation \eqref{eq:SD_Deltarho_rho}: we will now explain the main idea behind this method, but a more detailed explanation can be found in \cite{Lucca_2020}. To begin we consider the distorted spectral radiance associated with the photon plasma
 $$\mathcal{I}(x,z)\defeq 2p^3f(p,t)=(k_BT_z)^3x^3\bigg[B(x)+G(x)+M(x)+Y(x)\bigg],$$
