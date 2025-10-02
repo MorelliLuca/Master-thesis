@@ -3,7 +3,7 @@ The first analysis we conducted aims to show how data from a future PIXIE-like e
 \begin{figure}[t]
         \centering
         \includegraphics[width=.75\textwidth]{Constraints/BKPIXIE.pdf}
-        \caption{Posterior distribution of the tensor-to-scalar ratio $r$ at two different scales. The red contour is obtained using only data from BICEP/\textit{Keck} 2018 \cite{Ade_2021} while the other contours are obtained combining BICEP/\textit{Keck} 2018 with simulated data from a PIXIE-like experiment.}
+        \caption{Posterior distribution of the tensor-to-scalar ratio $r$ at two different scales $k_1=0.02$ Mpc$^{-1}$ and $k_2=0.005$ Mpc$^{-1}$. The red contour is obtained using only data from BICEP/\textit{Keck} 2018 \cite{Ade_2021} while the other contours are obtained combining BICEP/\textit{Keck} 2018 with simulated data from a PIXIE-like experiment. The blue contour is obtained by marginalizing over all the foreground/nuisance parameters, the green one by assuming a perfect knowledge of all of these parameters except $y_\text{reio}$ and the orange one including this last one.}
         \label{fig:r_const}        
     \end{figure}
 Figure \ref{fig:r_const} shows how combining spectral distortions constraint with CMB anisotropies data improves the constraints on $r$ at both scales. Indeed, the 95\% CL upper limits we obtained only from BICEP/\textit{Keck} 2018 data
@@ -18,20 +18,26 @@ Moreover, we also translated these results into constraints on the spectral inde
 \begin{figure}[t]
         \centering
         \includegraphics[width=.75\textwidth]{Constraints/nt.pdf}
-        \caption{Posterior distribution of the tensor-to-scalar ratio $r$ at the scale $k=0.01$ and of the spectral index $n_t$. The red contour is obtained using only data from BICEP/\textit{Keck} 2018 \cite{Ade_2021} while the other contours are obtained combining BICEP/\textit{Keck} 2018 with simulated data from a PIXIE-like experiment.}
+        \caption{Posterior distribution of the tensor-to-scalar ratio $r$ at the scale $k=0.01$ and of the spectral index $n_t$. The red contour is obtained using only data from BICEP/\textit{Keck} 2018 \cite{Ade_2021} while the other contours are obtained combining BICEP/\textit{Keck} 2018 with simulated data from a PIXIE-like experiment. The blue contour is obtained by marginalizing over all the foreground/nuisance parameters, the green one by assuming a perfect knowledge of all of these parameters except $y_\text{reio}$ and the orange one including this last one.}
         \label{fig:nt_const}        
 \end{figure}
 In Figure \ref{fig:nt_const} we can appreciate how PIXIE data puts a tighter limit on the spectral index. Indeed, we found that the constraint from with BICEP/\emph{Keck} 2018 alone,
-$$r_{0.01}=0.022^{+0.008}_{-0.013} ,\qquad n_t=0.57^{+1.59}_{-0.96},\qquad \text{68\%CL}$$
+%$$r_{0.01}=0.022^{+0.008}_{-0.013} ,\qquad n_t=0.57^{+1.59}_{-0.96},\qquad \text{68\%CL}$$
+$$r_{0.01}=0.022^{+0.021}_{-0.019} ,\qquad n_t=0.57^{+2.39}_{-2.66},\qquad \text{95\%CL}$$
 becomes, once we introduce the PIXIE-like data,
+%\begin{align*}
+%    &r_{0.01}=0.024^{+0.009}_{-0.014} ,\qquad n_t=-0.13^{+1.32}_{-0.45},\quad &\text{68\%CL with foreground }\\
+%    &r_{0.01}=0.024^{+0.009}_{-0.014} ,\qquad n_t=-0.22^{+1.30}_{-0.41},\quad &\text{68\%CL with only }y_\text{reio},\\
+%    &r_{0.01}=0.023^{+0.009}_{-0.014} ,\qquad n_t=-0.27^{+1.34}_{-0.43},\quad &\text{68\%CL with fixed foreground. }
+%\end{align*}
 \begin{align*}
-    &r_{0.01}=0.024^{+0.009}_{-0.014} ,\qquad n_t=-0.13^{+1.32}_{-0.45},\quad &\text{68\%CL with foreground }\\
-    &r_{0.01}=0.024^{+0.009}_{-0.014} ,\qquad n_t=-0.22^{+1.30}_{-0.41},\quad &\text{68\%CL with only }y_\text{reio},\\
-    &r_{0.01}=0.023^{+0.009}_{-0.014} ,\qquad n_t=-0.27^{+1.34}_{-0.43},\quad &\text{68\%CL with fixed foreground. }
+    &r_{0.01}=0.024^{+0.022}_{-0.021} ,\qquad &n_t=-0.13^{+1.48}_{-2.31},\quad &\text{95\%CL with foreground }\\
+    &r_{0.01}=0.024^{+0.023}_{-0.021} ,\qquad &n_t=-0.22^{+1.44}_{-2.16},\quad &\text{95\%CL with only }y_\text{reio},\\
+    &r_{0.01}=0.023^{+0.024}_{-0.021} ,\qquad &n_t=-0.27^{+1.52}_{-2.17},\quad &\text{95\%CL with fixed foreground. }
 \end{align*}
-Our analysis bends the constraints towards red tilted power spectra, narrowing the allowed window of spectral indexes. Overall, we shall note that blue spectral indexes ($n_t\sim1$) compatible with detectable tensor-induced spectral distortions, are still allowed, while far bluer spectra ($n_t\sim2$) are ruled-out. On the other hand, also the most red spectral indexes allowed by BICEP/\emph{Keck} alone ($n_t\sim-1.5$) are ruled-out by PIXIE.
+Our analysis bends the constraints towards red tilted power spectra, narrowing the allowed window of spectral indexes. Overall, we shall note that blue spectral indexes ($n_t\sim1$) compatible with detectable tensor-induced spectral distortions, are still allowed, while far bluer spectra ($n_t\sim2$) are ruled-out. On the other hand, also the most red spectral indexes allowed by BICEP/\emph{Keck} alone ($n_t\sim-3$) are ruled-out by our PIXIE-like experiment.
 
-We also compared the two most blue ($n_t=1.34$) and red ($n_t=-2.37$) tilted power law power spectra, allowed by the constraints we obtained. In Figure \ref{fig:analy_const_BK18} the two power spectra a shown: as we can see both power spectra lie several order of magnitude below the detection area (the area over the dashed plots) both of FIRAS and PIXIE. This is in agreement with the constraints on the amplitudes of the spectral distortions we obtained: ??? 
+We also compared the two most blue ($n_t=1.34$) and red ($n_t=-2.37$) tilted power law power spectra, allowed by the constraints we obtained. In Figure \ref{fig:analy_const_BK18} the two power spectra a shown: as we can see both power spectra lie several order of magnitude below the detection area (the area over the dashed plots) both of FIRAS and PIXIE.
 
 Overall, we showed that spectral distortions induced by primordial gravitational waves can impact the constraint that B-modes of polarization anisotropies put on the primordial tensor power spectrum.
 This strong synergy between spectral distortions and CMB anisotropies opens for the possibility of further constraining the tensor-to-scalar ratio by adding to our analysis \textit{Planck} data. 
