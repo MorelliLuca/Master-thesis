@@ -1,0 +1,106 @@
+\contentsline {section}{Abstract}{v}{Doc-Start}%
+\contentsline {section}{Notations and conventions}{vi}{Doc-Start}%
+\contentsline {chapter}{Introduction}{1}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}The Friedmann Robertson Walker Universe}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The geometry of the universe}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}The Friedmann Robertson Walker metric}{4}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Kinematic effects in the Robertson Walker universe}{8}{subsection.1.1.2}%
+\contentsline {subsubsection}{Hubble Law}{9}{subsubsection*.3}%
+\contentsline {subsubsection}{Cosmological redshift}{9}{subsubsection*.4}%
+\contentsline {section}{\numberline {1.2}The Friedmann equations}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Cosmic fluids}{11}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}The Friedmann equations}{13}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}The $\Lambda $CDM model}{15}{subsection.1.2.3}%
+\contentsline {chapter}{\numberline {2}The Hot Big Bang model}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Boltzmann equation}{21}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Thermodynamic observables}{23}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Equilibrium distributions}{24}{subsection.2.1.2}%
+\contentsline {subsubsection}{Ultrarelativistic limit}{24}{subsubsection*.9}%
+\contentsline {subsubsection}{Non-relativistic limit}{26}{subsubsection*.10}%
+\contentsline {section}{\numberline {2.2}Primordial plasma}{26}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Annihilation and decoupling of species}{27}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Recombination}{29}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Photon decoupling and the CMB}{30}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {3}Inflation}{33}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The flatness problem and its solution}{33}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Slow-roll inflation}{35}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Cosmological perturbation theory}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Metric and matter perturbations}{39}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Gauge transformations}{41}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Gauge choice}{44}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Initial conditions}{45}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Primordial perturbations}{46}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Scalar perturbations during inflation}{46}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Tensor perturbations during inflation}{50}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Phenomenology of the power spectrum}{52}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {5}GW in the post-inflationary universe}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Free gravitational waves in FRW universe}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Interacting GW}{57}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Neutrino damping}{57}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Photon damping}{60}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Primordial magnetic fields}{62}{subsection.5.2.3}%
+\contentsline {chapter}{\numberline {6}Anisotropies of the CMB}{67}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Observations and the angular power spectrum}{67}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Multipole expansion}{69}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}From perturbations to anisotropies}{70}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Time evolution of anisotropies}{71}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Polarization from Compton scattering}{73}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Multipole expansion of the Boltzmann equation}{78}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Polarization anisotropies power spectrum}{79}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Tensor perturbations effects on the CMB}{80}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Coupling of tensors pertubations to anisotropies}{81}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Multipole expansion of tensor induced anisotropies}{82}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Approximate solutions for the dynamics of the anisotropies}{83}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}The tight coupling approximation}{84}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Improved tight coupling approximation}{84}{subsection.6.4.2}%
+\contentsline {chapter}{\numberline {7}Spectral Distortions}{87}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The thermalization problem of the CMB}{87}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Thermalization scales}{90}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Modeling spectral distortions}{92}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Shapes of spectral distortions}{92}{subsection.7.2.1}%
+\contentsline {subsubsection}{Temperature shift G}{93}{subsubsection*.24}%
+\contentsline {subsubsection}{Chemical potential $\boldsymbol \mu $ distortion}{93}{subsubsection*.25}%
+\contentsline {subsubsection}{Compton y distortion}{94}{subsubsection*.26}%
+\contentsline {subsubsection}{Residual distortion}{95}{subsubsection*.28}%
+\contentsline {subsection}{\numberline {7.2.2}Amplitudes of spectral distortions}{96}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Injected, deposited energy and heating rate}{97}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Branching rations and the Green's function approach}{98}{subsection.7.2.4}%
+\contentsline {chapter}{\numberline {8}Dissipation of primordial perturbations}{101}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Mixing of blackbodies}{101}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}From blackbodies to y-distortions}{101}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Comptonization of mixed blackbodies}{104}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Mixing of polarized blackbodies}{105}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Dissipation of scalar perturbations}{107}{section.8.2}%
+\contentsline {subsubsection}{Tight coupling approximation}{110}{subsubsection*.29}%
+\contentsline {section}{\numberline {8.3}Dissipation of tensor perturbations}{111}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Tight coupling approximation}{114}{subsection.8.3.1}%
+\contentsline {subsubsection}{Dissipation in the $\mu $-era}{115}{subsubsection*.30}%
+\contentsline {subsubsection}{Dissipation in the y-era}{117}{subsubsection*.33}%
+\contentsline {section}{\numberline {8.4}Window functions}{119}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Numerical results}{120}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Lognormal bump}{123}{subsection.8.5.1}%
+\contentsline {chapter}{\numberline {9}Constraints from B-modes polarization and forecasts for future spectral distortions experiments}{127}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Methodology of the analysis}{128}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Modifications to \texttt {CLASS}}{128}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Bayesian inference and MCMC algorithms}{128}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Spectral distortion likelihood and foreground}{130}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Semi-analytical constraints}{131}{subsection.9.1.4}%
+\contentsline {section}{\numberline {9.2}Constraining the tensor power spectrum}{131}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Constraining lognormal bumps}{134}{section.9.3}%
+\contentsline {chapter}{Conclusions}{139}{chapter*.49}%
+\contentsline {chapter}{Acknowledgments}{141}{chapter*.49}%
+\contentsline {chapter}{\numberline {A}Maximally symmetric spaces}{143}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Killing vectors and symmetries of a mainifold}{143}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Riemann tensor in a maximally symmetric space}{144}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Thermodynamics tools}{147}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Small chemical potential approximation}{147}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Scalar perturbed Liouville operator}{148}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Tensor perturbed Liouville operator}{150}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Special functions}{153}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Spherical harmonics \(Y_{\ell m}(\theta ,\varphi )\)}{153}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Legendre polynomials \(P_\ell (x)\)}{154}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Spin-weighted spherical harmonics \({}_sY_{\ell m}(\theta ,\varphi )\)}{154}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Bessel functions \(J_\nu (z), Y_\nu (z)\) and Hankel functions $H_\nu ^{(1)}(z), H_\nu ^{(2)}(z)$}{155}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Spherical Bessel functions \(j_\ell (z), y_\ell (z)\)}{156}{section.C.5}%
+\contentsline {section}{\numberline {C.6}Gamma function \(\Gamma (z)\)}{156}{section.C.6}%
+\contentsline {section}{\numberline {C.7}Riemann zeta function \(\zeta (s)\)}{156}{section.C.7}%

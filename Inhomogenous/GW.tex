@@ -55,6 +55,7 @@ where $J_\nu$ and $Y_\nu$ are the \emph{Bessel functions of the first and second
       xlabel={$k\tau$},
       ylabel={$h_k(\tau)$},
       width=12cm, height=7cm,
+      xmin=0, xmax=30
   ]
     % Load and plot from the external file
     \addplot [thick, dashed, smooth] table {CMB/tensor_rad.dat};
@@ -149,6 +150,7 @@ with $A$ and $\delta$ are constants that must be computed numerically. Dicus and
       xlabel={$k\tau$},
       ylabel={$h_k(\tau)$},
       width=12cm, height=7cm,
+      xmin=0, xmax=30
   ]
     % Load and plot from the external file
     \addplot [thick, dashed, smooth] table {CMB/tensor_rad.dat};
@@ -279,7 +281,8 @@ We should then study the sub horizon regime: in this case the the anisotropic st
             domain=0:2,
             samples=200,
             grid=major,
-            thick
+            thick,
+            xmin=0, xmax=2
         ]
         % The formula below is the normalized version:
         % y = k^3 * [8/15 - 7/6*k + 16/15*k^2 - 7/24*k^3 - 13/480*k^5 + 11/1920*k^7]

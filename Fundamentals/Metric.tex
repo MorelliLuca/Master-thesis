@@ -178,23 +178,23 @@ All our observations, from astronomical objects, come in the form of light or, m
   \draw[gray, thick, dashed] (3,0) node[below, black] {$r_1$} -- (3,4);
 
   \foreach \i in {0,...,3} {
-        \draw[gray, ultra thick] (0,1+\i*0.85) -- (3,0.5+\i*0.7);
+        \draw[gray, ultra thick, dashed] (0,1+\i*0.85) -- (3,0.5+\i*0.7);
   }
-  \draw[gray, ultra thick] (1,4) -- (3,0.5+4*0.7);
+  \draw[gray, ultra thick, dashed] (1,4) -- (3,0.5+4*0.7);
 
   % 5 points on the left vertical axis
   \foreach \i in {0,...,3} {
-    \fill (0,1+\i*0.85) circle (2pt);
+    \fill[gray] (0,1+\i*0.85) circle (2pt);
   }
 
   \foreach \i in {0,...,4} {
-    \fill (3,0.5+\i*0.7) circle (2pt);
+    \fill[gray] (3,0.5+\i*0.7) circle (2pt);
   }
 
   
   % Labels for the points
-  \node[right] at (0,1) {$t_1$};
-  \node[left] at (3,0.5) {$t_0$};
+  \node[right] at (0,.8) {$t_1$};
+  \node[left] at (3,0.3) {$t_0$};
   \foreach \i in {0,...,2} {
     % Double arrows for delta t_obs
     \draw[<->] (-0.25,1+\i*0.85) -- (-0.25,\i*0.85+1.85);
