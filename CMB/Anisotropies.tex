@@ -1,4 +1,4 @@
-The \emph{cosmic microwave background radiation}, as we explained in Section \ref{sec:LambdaCDM}, is one of the most valuable sources of information that we got from the early universe. Its usefulness is encoded in its \textbf{anisotropies}: the small variations, in its temperature for example, from the perfectly homogeneous radiation that we would have in absence of perturbations. Anisotropies are a direct link to the primordial perturbations that were generated during inflation and to the many phenomena that took place in the early universe and influenced their evolution. In this chapter we are going to focus only on the temperature anisotropies, studying how they are observed and sourced. Initially we will deal with scalar perturbations, which are the main source of the anisotropies that we observe, then we will discuss the effects of primordial gravitational waves, which instead represents the main focus of this work. 
+The \emph{cosmic microwave background radiation}, as we explained in Section \ref{sec:LambdaCDM}, is one of the most valuable sources of information that we got from the early universe. A gold mine of information is encoded in its \textbf{anisotropies}, which are directly linked to inhomogeneities. Anisotropies are a direct link to the primordial perturbations that were generated during inflation and to the many phenomena that took place in the early universe and influenced their evolution. In this chapter we are going to focus only on the temperature and polarization anisotropies, studying how they are observed and sourced. Initially we will deal with scalar perturbations, which are the main source of the anisotropies that we observe, then we will discuss the effects of primordial gravitational waves, which instead represents the main focus of this work. 
 \section{Observations and the angular power spectrum}\label{sec:AngularPowerSpectrum}
 Consider a photon coming from a specific direction $\mathbf{\hat{n}}$ to us, assuming that $\bar{T}$ is the average temperature of all photons we observe in the sky, we can describe \emph{CMB temperature anisotropies} by
 $$T(\mathbf{\hat{n}}) = \bar{T} \big[1 + \Theta(\mathbf{\hat{n}})\big] \qquad \text{with } \Theta(\mathbf{\hat{n}}) \stackrel{\text{def}}{=} \frac{\Delta T(\mathbf{\hat{n}})}{\bar{T}}.$$
@@ -38,11 +38,11 @@ Estimating the angular power spectra involves computing ensemble averages over r
 \begin{equation}\label{eq:cl_estimate}
     \hat{C}_{\ell} = \frac{1}{2\ell+1}\sum_{m=-\ell}^{\ell} |a_{\ell m}|^2.
 \end{equation}
-One can show that this estimator is unbiased\footnote{An estimator is said to be unbiased if its expected value is equal to the true value of the parameter being estimated.}, however its variance is non-zero:
+One can show that this estimator is unbiased\footnote{An estimator is said to be unbiased if its expected value is equal to the true value of the parameter being estimated.}, and its variance is
 \begin{equation}\label{eq:cl_variance}
     \Delta\hat{C}_{\ell} \defeq\sqrt{\langle(C_\ell -\hat C_\ell)^2\rangle} = \sqrt{\frac{2}{2\ell+1}}C_{\ell},
 \end{equation} 
-which measures the error that systematically appears in this estimate and is usually called \textbf{cosmic variance}. Larger error appears for smaller values of $\ell$, which corresponds to larger angular scales. This can be understood as a consequence of the fewer number of data, encoded in $a_{\ell m}$, available at lower $\ell$. 
+which measures the uncertainty that systematically appears in this estimate and is usually called \textbf{cosmic variance}. Larger error appears for smaller multipoles of $\ell$, which corresponds to larger angular scales. This can be understood as a consequence of the fewer number of $a_{\ell m}$, available at lower $\ell$. 
 
 \subsection{Multipole expansion}\label{sec:MultipoleExpansion}
 Knowing how the CMB anisotropies are measured, it is now time to understand how they are sourced. In general, when the whole photon-baryon plasma, we should consider that these anisotropies has a spacetime dependence. Therefore, we will now consider
@@ -54,7 +54,7 @@ Knowing how the CMB anisotropies are measured, it is now time to understand how 
         \versor p\quad\text{direction of motion of the photons}.
     \end{cases}
 \end{equation}
-To come back to the observed anisotropies we just fix $t$ at the present day, $\mathbf x$ on the earth and we consider the direction of motion of the photons as the direction of observation (since it is the direction from which they come from).
+To come back to the observed anisotropies we just fix $t$ at the present day, $\mathbf x$ at the observer position and we consider the direction of motion of the photons as the direction of observation (since it is the direction from which they come from).
 
 In Section \ref{sec:ThetaTimeEvolution} we will see that the evolution of the anisotropies is described by a linear differential equation (since we are working with first order perturbations). It is therefore useful to introduce here some expansions that will simplify these equations.\\
 First of all, we can simplify the spacial dependence moving to Fourier space
@@ -84,11 +84,11 @@ After having Fourier transformed, this time we use spherical harmonics instead o
 \end{equation}
 Note that, in this case, no further assumption on the symmetries of the system were required, unlike in the expansion \ref{eq:legendre_expansion} were we implicitly assumed that $\Theta$ is invariant under rotation of $\versor{p}$ around $\versor{k}$. As we will see this is true for scalar perturbations but unfortunately it is not so for both \emph{vector} and \emph{tensor perturbations}. 
 \subsection{From perturbations to anisotropies}\label{sec:PertToAnis}
-It is now time to discuss how in general we connect perturbations of the FRW universe to the angular power spectrum of the anisotropies that we observe in the \emph{CMB}. Even though we will not study, in this work, the anisotropies themselves, this connection will be used, in a similar manner, when dealing with spectral distortions in the next chapter. 
+It is now time to discuss how in general we connect perturbations of the FRW universe to the angular power spectrum of the anisotropies that we observe in the \emph{CMB}. Even though anisotropies are not the research topic of this thesis, this connection will be used, in a similar manner, when dealing with spectral distortions in the next chapter. 
 
 We are interested in evaluating $\langle\tilde\Theta(\mathbf{k},\versor n)\tilde\Theta(\mathbf{k}',\versor n')\rangle$. This quantity, being determined by the solutions of ordinary differential equations (see Section \ref{sec:ThetaTimeEvolution}), depends on two factors:
 \begin{enumerate}
-    \item the initial amplitude of the perturbations generated during inflation, that upon horizon crossing source the anisotropies, which from our point of view are random variables generated by vacuum fluctuations;
+    \item the initial amplitude of the perturbations generated during inflation, that upon crossing of the Hubble radius source the anisotropies, which from our point of view are random variables generated by vacuum fluctuations;
     \item the dynamics of the anisotropies that we observe today and, which instead is clearly deterministic. 
 \end{enumerate}
 This consideration allows us to proceed in the following way: considering a generic primordial perturbation $\delta(\mathbf{k})$, we can decompose $ \tilde\Theta(\mathbf{k},\versor n)=\delta (\tilde\Theta/\delta) $, now the ratio $\tilde\Theta/\delta$ is completely independent of the initial amplitude of the perturbation (in the fraction the amplitude of the perturbations cancels) and won't contribute to the ensemble average.\\
@@ -109,15 +109,15 @@ where we used the definition of the primordial perturbation power spectrum. In t
     ,\label{eq:cl_pert}
 \end{align}
 where $\mu=\cos(\versor n\cdot\versor n')$ and we used the orthogonality of the Legendre polynomial and that $\Theta$ is real.\\
-Lastly, introducing the dimensionless power spectrum $\Delta^2_{\delta}(k)\defeq\frac{k^3}{2\pi^2}\mathcal P_{\delta}(k)$ we obtain:
+Lastly, introducing the dimensionless power spectrum $\mathcal{P}_{\delta}(k)\defeq\frac{k^3}{2\pi^2} P_{\delta}(k)$ we obtain:
 \begin{equation}
     C_{\ell}=4\pi\int \frac{dk}{k}\ \Delta^2_{\delta}(k)\bigg|\frac{\tilde\Theta_\ell(\mathbf k,\versor n)}{\delta(\mathbf{k})}\bigg|^2.
 \end{equation}
 We ended up with a formula that relates the angular power spectrum to the power spectrum of the perturbations via the so-called \textbf{transfer function} $|\frac{\Theta_\ell(\mathbf k,\versor n)}{\delta(\mathbf{k})}|$, which describes how the perturbations generates anisotropies and that we have to find in the next sections.\\
 \section{Time evolution of anisotropies}\label{sec:ThetaTimeEvolution}
-In this section we want to develop the machinery needed to understand how the anisotropies of the \emph{CMB} were generated by the primordial metric perturbations and then, how they evolved until today. This will give us the \emph{transfer functions}, which connect primordial perturbations (initial conditions) to later states of the perturbations. At this stage we will obatin them just by setting the amplitude of the corresponding perturbation to unity.
+In this section we want to develop the machinery needed to understand how the CMB anisotropies were generated by the primordial metric perturbations and then, how they evolved until today. This will give us the \emph{transfer functions}, which connect primordial perturbations (initial conditions) to later states of the perturbations. At this stage we will obatin them just by setting the amplitude of the corresponding perturbation to unity.
 
-To tackle this problem we need to study the evolution of the phase space of photons in perturbed spacetime, which in turn will give us the dynamics of the perturbed thermodynamic observale. Imposing the \emph{newtonian gauge}, we can write the metric, considering only scalar perturbations, as
+To tackle this problem we need to study the evolution of the phase space of photons in perturbed spacetime, which in turn will give us the dynamics of the perturbed thermodynamic observale. Imposing the \emph{Newtonian gauge}, we can write the metric, considering only scalar perturbations, as
 $$ds^2 = -(1+2\Psi)dt^2 + a^2(t)(1-2\Phi)\delta_{ij}dx^idx^j.$$
 In Appendix \ref{app:scalarPerturbedLiouvilleOperator} we showed that in this case the \emph{Liouville operator} reads as in \eqref{eq:Liouville_scalar_perturbed}:
 \begin{align*}
@@ -444,7 +444,7 @@ To conclude, the angular power spectra of the polarization can then be defined, 
 \end{align}
 \end{subequations}
 \section{Tensor perturbations effects on the CMB}\label{sec:Anisotropies_From_Tensor}
-In the previous sections we focused on how the scalar perturbations interact with the CMB generating anisotropies. We will instead now study how tensor perturbations, namely gravitational waves produced during inflation, affects the evolution of the plasma of photons and what kind of anisotropies are sourced by them.
+In the previous sections we focused on how the scalar perturbations interact with the CMB generating anisotropies. We will now study how tensor perturbations, namely gravitational waves (produced during inflation), affects the evolution of the plasma of photons and what kind of anisotropies are sourced by them.
 
 In appendix \ref{app:tensorPerturbedLiouvilleOperator} we showed that, considering tensor perturbed metric $$ds^2=-dt^2+a^2(\delta_{ij}h_{ij})dx^dx^j,$$the \emph{Liouville operator} reads as in \eqref{eq:tensorPerturbedLiouvilleOperator}
 $$\hat{\mathbf{L}}[f]=\frac{\partial f}{\partial t}+\frac{\hat p^i}{a}\frac{\partial f}{\partial x^i}-\frac{1}{2}\frac{\partial f}{\partial t}\dot{h}_{ij}\hat p^i\hat p^j+\text{second order terms},$$
