@@ -1291,6 +1291,8 @@ INPUT ./Results/Bayes.tex
 INPUT ./Results/Bayes.tex
 INPUT Results/Bayes.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT Constraints/constr_PIXIE_mu.dat
+INPUT Constraints/constr_FIRAS_mu.dat
 INPUT ./Results/NumericalResults.tex
 INPUT ./Results/NumericalResults.tex
 INPUT ./Results/NumericalResults.tex
@@ -1309,9 +1311,12 @@ INPUT Constraints/nt.pdf
 INPUT ./Constraints/nt.pdf
 INPUT ./Constraints/nt.pdf
 INPUT Constraints/constr_PIXIE_mu.dat
-INPUT Constraints/constr_FIRAS_mu.dat
 INPUT Constraints/Pk_blue.dat
 INPUT Constraints/Pk_red.dat
+INPUT Constraints/constr_PIXIE_mu.dat
+INPUT Constraints/bump.dat
+INPUT Constraints/bump_reio.dat
+INPUT Constraints/bump_NN.dat
 INPUT ./Constraints/Lognormal.pdf
 INPUT ./Constraints/Lognormal.pdf
 INPUT Constraints/Lognormal.pdf
@@ -1327,11 +1332,6 @@ INPUT ./Constraints/LN_NN_reio.pdf
 INPUT Constraints/LN_NN_reio.pdf
 INPUT ./Constraints/LN_NN_reio.pdf
 INPUT ./Constraints/LN_NN_reio.pdf
-INPUT Constraints/constr_PIXIE_mu.dat
-INPUT Constraints/constr_FIRAS_mu.dat
-INPUT Constraints/bump.dat
-INPUT Constraints/bump_reio.dat
-INPUT Constraints/bump_NN.dat
 INPUT ./Conclusions.tex
 INPUT Conclusions.tex
 INPUT ./Conclusions.tex

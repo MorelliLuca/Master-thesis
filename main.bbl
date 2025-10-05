@@ -36,6 +36,21 @@ P.~A.~R. Ade, Z.~Ahmed, M.~Amiri, D.~Barkats, R.~Basu Thakur, C.~A. Bischoff,
   season.
 \newblock {\em Physical Review Letters}, 127(15), October 2021.
 
+\bibitem{Planck:2015sxf}
+P.~A.~R. Ade et~al.
+\newblock {Planck 2015 results. XX. Constraints on inflation}.
+\newblock {\em Astron. Astrophys.}, 594:A20, 2016.
+
+\bibitem{Planck:2019nip}
+N.~Aghanim et~al.
+\newblock {Planck 2018 results. V. CMB power spectra and likelihoods}.
+\newblock {\em Astron. Astrophys.}, 641:A5, 2020.
+
+\bibitem{Planck:2018jri}
+Y.~Akrami et~al.
+\newblock {Planck 2018 results. X. Constraints on inflation}.
+\newblock {\em Astron. Astrophys.}, 641:A10, 2020.
+
 \bibitem{Audren:2012wb}
 Benjamin Audren, Julien Lesgourgues, Karim Benabed, and Simon Prunet.
 \newblock {Conservative Constraints on Early Cosmology: an illustration of the
@@ -80,6 +95,17 @@ J.~Chluba.
 \newblock Green’s function of the cosmological thermalization problem.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   434(1):352–357, June 2013.
+
+\bibitem{Chluba_2021}
+J.~Chluba, M.~H. Abitbol, N.~Aghanim, Y.~Ali-Haïmoud, M.~Alvarez, K.~Basu,
+  B.~Bolliet, C.~Burigana, P.~de~Bernardis, J.~Delabrouille,
+  E.~Dimastrogiovanni, F.~Finelli, D.~Fixsen, L.~Hart,
+  C.~Hernández-Monteagudo, J.~C. Hill, A.~Kogut, K.~Kohri, J.~Lesgourgues,
+  B.~Maffei, J.~Mather, S.~Mukherjee, S.~P. Patil, A.~Ravenni, M.~Remazeilles,
+  A.~Rotti, J.~A. Rubiño-Martin, J.~Silk, R.~A. Sunyaev, and E.~R. Switzer.
+\newblock New horizons in cosmology with spectral distortions of the cosmic
+  microwave background.
+\newblock {\em Experimental Astronomy}, 51(3):1515–1554, May 2021.
 
 \bibitem{Chluba_2x2}
 J.~Chluba, R.~Khatri, and R.~A. Sunyaev.
