@@ -21,7 +21,7 @@ where we used the equation of state for radiation $P=\frac{1}{3}\rho$ and the fa
 
 Zeldovich \cite{Zeldovich1972} showed that in general a mixing of blackbody spectra results in the appearance of a y-distortion. This can easily be understood by Taylor expanding a Planck distribution whose temperature depends on the position in the plasma (so that this describes a different blackbody spectrum at each point in space) and then taking the spatial average. This can also be seen as an ensemble of blackbodies at different temperatures, for which the average becomes an ensemble average. Considering a temperature $\bar{T}+\Delta T(x)$, with $\Delta T\ll\bar{T}$ the expansion of $B\big[x/(1+\Delta T/\bar T)\big]$ would result in a temperature shift (see Section\ref{eq:SD_temperature_shift}). However, this kind of distortion, being linear in $\Delta T/\bar T$, will give no distortion terms after the spatial average (hotter and colder spots, on average, give the mean temperature $\bar T$). A temperature shift expanded at the second order (equation \eqref{eq:SD_2ord_temp_shift}) instead gives rise to non-vanishing terms in the average
 \begin{align}
-     \nonumber\bigg\langle B\bigg(\frac{x}{1+(\Delta T/\bar T)^2}\bigg)\bigg\rangle&\approx\bigg\langle B(x)+G(x)\frac{\Delta T}{\bar T}+\frac{1}{2}\big[Y(x)+2G(x)\big]\bigg(\frac{\Delta T}{\bar T}\bigg)\bigg\rangle\\\nonumber
+     \nonumber\bigg\langle B\bigg(\frac{x}{1+\Delta T/\bar T}\bigg)\bigg\rangle&\approx\bigg\langle B(x)+G(x)\frac{\Delta T}{\bar T}+\frac{1}{2}\big[Y(x)+2G(x)\big]\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg\rangle\\\nonumber
      &=B(x)+G(x)\bigg\langle\frac{\Delta T}{\bar T}\bigg\rangle+\frac{1}{2}\big[Y(x)+2G(x)\big]\bigg\langle\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg\rangle\\&\bigg\downarrow \bigg\langle\frac{\Delta T}{\bar T}\bigg\rangle=0,\ B(x)+G(x)\bigg\langle\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg\rangle\approx B\bigg(\frac{x}{1+\big\langle(\Delta T/\bar T)^2\big\rangle}\bigg),\nonumber\\
      &\approx B\bigg(\frac{x}{1+\big\langle(\Delta T/\bar T)^2\big\rangle}\bigg)+\frac{1}{2}Y(x)\bigg\langle\bigg(\frac{\Delta T}{\bar T}\bigg)^2\bigg\rangle,\label{eq:Mixing_Y_SD}
 \end{align}
@@ -45,7 +45,7 @@ Lastly, we can compute the final entropy density$$ s_\text{final}=\frac{4}{3}a_R
 $$\Delta s=\frac{\Delta \rho}{T}\approx 2a_R \bar T^3\bigg(\frac{\Delta T}{\bar T}\bigg)^2.$$
 Note that this must be expected since, when mixing two blackbodies the entropy should increase as when we mix two fluids, hence the initial entropy cannot be the same as the final.
 
-To sum up what we discovered, mixing of blackbodies leads to a new spectrum that can be decomposed in two parts: a blackbody at a higher temperature $T_\text{new}=\bar T\big(1+\langle(\Delta T/\bar T)^2\rangle\big)$ and a y-distortion. While the number of photons is conserved (since we are only mixing them) and fully accounted by the blackbody part, the energy and entropy are redistributed between the temperature shift of the blackbody and the y-distortion. Exactly, $2/3$ of the energy associated to the distortions is directly transferred to the new blackbody (as a temperature increase), while the remaining $1/3$ is stored in the y-distortion. The entropy associated with the blackbody is instead conserved, while a new contribution appears due to the y-distortion. We shall indicate that, although part of our calculations used only the mixing of two blackbodies, considering an ensemble of $n$ blackbodies the result can be generalized without spoiling our solution. Indeed, it is sufficient to replace $(\Delta T/\bar T)^2$ by $\langle(\Delta T/\bar T)^2\rangle$ to account for the whole ensemble, as explained in \cite{MixingBB}.
+To sum up, mixing of blackbodies leads to a new spectrum that can be decomposed in two parts: a blackbody at a higher temperature $T_\text{new}=\bar T\big(1+\langle(\Delta T/\bar T)^2\rangle\big)$ and a y-distortion. While the number of photons is conserved (since we are only mixing them) and fully accounted by the blackbody part, the energy and entropy are redistributed between the temperature shift of the blackbody and the y-distortion. Exactly, $2/3$ of the energy associated to the distortions is directly transferred to the new blackbody (as a temperature increase), while the remaining $1/3$ is stored in the y-distortion. The entropy associated with the blackbody is instead conserved, while a new contribution appears due to the y-distortion. We shall indicate that, although part of our calculations used only the mixing of two blackbodies, considering an ensemble of $n$ blackbodies the result can be generalized without spoiling our solution. Indeed, it is sufficient to replace $(\Delta T/\bar T)^2$ by $\langle(\Delta T/\bar T)^2\rangle$ to account for the whole ensemble, as explained in \cite{MixingBB}.
 \subsection{Comptonization of mixed blackbodies}
 \label{sec:MixSD_Comportonization}
 The previously described mixing of blackbodies does not take into consideration the interactions in the plasma, this means that a y-distortion is produced at redshifts $z<z_{\mu y}\approx 5\times 10^4$ (see Section \ref{sec:ThermalizationProblem}). Compton scattering instead thermalizes the radiation to a Bose-Einstein distribution (or a Planckian if also Bremsstrahlung and double Compton scattering are efficient). We will show that during the $\mu$-era thermal processes convert y-distortions into $\mu$-distortions. 
@@ -72,7 +72,7 @@ Again, this result can be generalized to the case of mixing $n$ blackbodies by r
 
 \subsection{Mixing of polarized blackbodies}
 \label{sec:MixingPolarization}
-In our discussion of the mixing of blackbodies we still haven't taken into account also that the radiation is polarized. To connect to Section \ref{sec:ComptonPolarization} we shall change our notation to be consistent to the usual definition of \emph{CMB anisotropies} $\Theta(x,t)\defeq \Delta T/\bar T$.
+In our discussion of the mixing of blackbodies we still have not taken into account also that the radiation is polarized. To connect to Section \ref{sec:ComptonPolarization} we shall change our notation to be consistent to the usual definition of \emph{CMB anisotropies} $\Theta(x,t)\defeq \Delta T/\bar T$.
 
 We start by describing linearly polarized light, then the more general case will be deduced exploiting the following calculations. We start by introducing the \emph{phase space matrix}
 \begin{equation*}
@@ -365,7 +365,7 @@ which again displays the expected characteristics of reducing to the tight coupl
 
 \end{axis}
 \end{tikzpicture}
-\caption{Comparison of the tight coupling transfer functions $\mathcal{T}_\Theta(\xi)$ and the improved one. Recall that $\xi \defeq k/(n_e\sigma_T a)$. We can appreciate how the improved functions recover the tight coupling limit at early times ($\xi\ll1$) while they vanish at the scale of the mean free path of photons ($\xi\gg1$).}
+\caption{Comparison of the transfer function $\mathcal{T}_\Theta(\xi)$ in the tight coupling regime with the improved one. Recall that $\xi \defeq k/(n_e\sigma_T a)$. We can appreciate how the improved functions recover the tight coupling limit at early times ($\xi\ll1$) while they vanish at the scale of the mean free path of photons ($\xi\gg1$).}
 \label{fig:fight_coupling}
 \end{figure}
 \subsubsection{Dissipation in the y-era}
@@ -434,7 +434,7 @@ The first branching ratio, that has been also used in the work of Chluba et al. 
     \addlegendentry{Smooth $\mu$-y transition}
   \end{axis}
 \end{tikzpicture}
-\caption{Plot of the window function of the $\mu$ distortion sourced by the dissipation of primordial gravitational waves. A comparison between the window function obtained by J. Chluba in \cite{Chluba_tens_diss} and the one we obtained with a smooth $\mu$-y transitioning branching ratio is shown.}
+\caption{Plot of the window function of the $\mu$ distortion sourced by the dissipation of primordial gravitational waves. A comparison between the window function obtained by J. Chluba in \cite{Chluba_tens_diss} and the one we obtained with a smooth $\mu$-y transitioning branching ratio is shown. The two window functions match at the smallest scales while they deviate at the scale corresponding to modes which cross the Hubble radius during the $\mu$-y transition.}
 \label{fig:mu_window}
 \end{figure}
 A comparison between the two resulting window functions is shown in Figure \ref{fig:mu_window}: as we can see, using the second branching ratio the window function reaches bigger scales, up to $k\sim10^{-5}$ Mpc$^{-1}$. Moreover, a slightly bigger contribution appears for those wave number corresponding to gravitational waves that crossed the Hubble radius just before the $\mu$-y transition. On the other hand the small scale behavior remains the same, reaching $k\sim10^{8}$ Mpc$^{-1}$ still sourcing non-negligible $\mu$-distortions. The new contribution to the window function comes from the energy deposited in the plasma during the $\mu$-y transition, when both distortions can be sourced.\\
@@ -471,10 +471,10 @@ Again, for the two branching ratios the window functions have been computed and 
     \addlegendentry{Smooth $\mu$-y transition}
   \end{axis}
 \end{tikzpicture}
-\caption{Plot of the window function of the y-distortion sourced by the dissipation of primordial gravitational waves. A comparison between the results obtained using the sharp transitioning (gray) and the smooth transitioning (black) branching ratio is showed.}
+\caption{Plot of the window function of the y-distortion sourced by the dissipation of primordial gravitational waves. A comparison between the results obtained using the sharp transitioning (gray) and the smooth transitioning (black) branching ratio is showed. Note how the two windows perfectly overlap at the scales corresponding to the modes crossing the Hubble radius in the y-era while those crossing in the $\mu$-era are underestimated by the sharp branching ratio. }
 \label{fig:y_window}
 \end{figure}
-To conclude our analysis on the window functions, we would like to compare the results obtained by the dissipation of primordial gravitational waves and by the dissipation of scalar adiabatic perturbations. Following the results we found in Section \ref{sec:diss_scalar} we computed the corresponding window functions, which are shown in Figure \ref{fig:st_window}. From the plots, we can appreciate how the window functions associated with scalar perturbations are several orders of magnitude larger than those of primordial gravitational waves. This makes them much more likely to be detected by future experiments. On the other hand, the window function associated with primordial gravitational waves covers a much broader range of scales. Especially at small scales, while dissipation of scalar perturbations rapidly becomes negligible after $k\sim10^{4}$ Mpc$^{-1}$, primordial gravitational waves can still deposit energy in the plasma. This is most evident for really blue power spectra $n_t\sim1$.
+To conclude our analysis on the window functions, we would like to compare the results obtained by the dissipation of primordial gravitational waves and by the dissipation of scalar adiabatic perturbations. Following the results we found in Section \ref{sec:diss_scalar} we computed the corresponding window functions, which are shown in Figure \ref{fig:st_window}. From the plots, we can appreciate how the window functions associated with scalar perturbations are several orders of magnitude larger than those of primordial gravitational waves. This makes them much more likely to be detected by future experiments. On the other hand, the window functions associated with primordial gravitational waves cover a much broader range of scales. Especially at small scales, while dissipation of scalar perturbations rapidly becomes negligible after $k\sim10^{4}$ Mpc$^{-1}$, primordial gravitational waves can still deposit energy in the plasma and produce $\mu$-distortions. We also note that y-distortions get a relevant contribution also from gravitational waves at the smallest scales, while the window function of scalar perturbations sharply drops at $k\sim10^2$ Mpc$^-1$.  These effects are relevant the most for really blue power spectra, for which we should expect larger $\mu$-distortions than y-ones. On the other hand, red tilted power spectra will result in larger y-distortions.
 
 \begin{figure}
     \centering
@@ -649,7 +649,7 @@ To begin with, we studied which set of parameters are able to produce $\mu$-dist
     
   \end{axis}
 \end{tikzpicture}
-\caption{Amplitudes of $\mu$-distortions with a lognormal bump at $k_\text{pk}=10$Mpc$^{-1}$ as a function of the height of the bump. Different curves represent different width of the bump. }
+\caption{Amplitudes of $\mu$-distortions with a log-normal bump at $k_\text{pk}=10$ Mpc$^{-1}$ as a function of the amplitude of the bump. Different curves represent different width of the bump. }
 \label{fig:lognormal_res}
 \end{figure}
 
@@ -684,7 +684,7 @@ To begin with, we studied which set of parameters are able to produce $\mu$-dist
     
   \end{axis}
 \end{tikzpicture}
-\caption{Comparison of the amplitudes of $\mu$-distortions with a lognormal bump as a function of the width of the bump. Dotted lines represent the distortions produced by scalar perturbations ($k_\text{pk}=1000$Mpc$^{-1}$), while solid lines represent distortions sourced by gravitational waves ($k_\text{pk}=10$Mpc$^{-1}$). }
+\caption{Comparison of the amplitudes of $\mu$-distortions with a log-normal bump as a function of the width of the bump. Dotted lines represent the distortions produced by scalar perturbations ($k_\text{pk}=1000$Mpc$^{-1}$), while solid lines represent distortions sourced by gravitational waves ($k_\text{pk}=10$Mpc$^{-1}$). }
 \label{fig:ln_plateau}
 \end{figure}
 
@@ -723,7 +723,7 @@ We also computed the distortions produced by dissipation of scalar perturbation 
     
   \end{axis}
 \end{tikzpicture}
-\caption{Comparison of the amplitudes of $\mu$-distortions  and y-distortions with a lognormal bump as a function of the width of the bump. For both the same bump is placed at $k_\text{pk}=10$Mpc$^{-1}$.}
+\caption{Comparison of the amplitudes of $\mu$-distortions  and y-distortions with a log-normal bump as a function of the width of the bump. For both the same bump is placed at $k_\text{pk}=10$ Mpc$^{-1}$. In this plot we can appreciate how amplitudes plateau after $\sigma_\text{bump}\sim 10$.}
 \label{fig:muy_plateau}
 \end{figure}
 

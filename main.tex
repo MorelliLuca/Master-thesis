@@ -18,15 +18,17 @@
 \usepackage{multirow}
 \usepackage{pgfplots}
 \usepgfplotslibrary{colormaps}
-\usepackage{caption}
+%\usepackage{caption}
+\usepackage{perpage}
+\MakePerPage[1]{footnote}
 \usepackage{subcaption}
-\usepackage[justification=centering, labelfont=bf]{caption}
+\usepackage[justification=centering, labelfont=bf, font=it]{caption}
 \usepackage{tensor}
 \usepackage{braket}
 \usepackage{tabularx}
 
 
-\newcommand{\Title}{Dissipation of primordial Gravitational Waves and CMB spectral distortions}
+\newcommand{\Title}{Dissipation of primordial gravitational waves into CMB spectral distortions:\\ theory and observation prospects}
 \newcommand{\Author}{Luca Morelli}
 
 \newcommand{\defeq}{\stackrel{\text{def}}{=} }
@@ -53,6 +55,7 @@
 
 
 
+
 \cfoot{}
 \setlength{\headwidth}{\textwidth}
 \usetikzlibrary{arrows.meta, decorations.pathmorphing, positioning, decorations.markings}
@@ -72,9 +75,13 @@
 \null\thispagestyle{empty}
 \newpage
 \thispagestyle{empty}
-\vspace*{\fill}
+\vspace*{5cm}
 \begin{minipage}[t]{0.9\textwidth}\raggedleft{
-  \textit{To my grandfather Gigi,\\ who taught me of electricity and atoms when I was a child.}
+  \textit{To my grandfather Gigi,\\ who taught me of electricity and atoms when I was a child.\\}
+\vspace*{10cm}
+  \textit{``la scienza è ultima perfezione della nostra anima ...\\ 
+    ... tutti naturalmente al suo desiderio semo subietti''.}\\
+    Dante Alighieri, Convivio, Libro I, Cap. 1
 }
 \end{minipage}
 \vspace*{5cm}
@@ -124,7 +131,7 @@
 \input{CMB/PertubedBoltzmannEquations}
 \input{Appendix/SpecialFunc}
 
-\bibliographystyle{plain} 
+\bibliographystyle{unsrt} 
 \bibliography{references}  
 
 \end{document}

@@ -54,7 +54,7 @@ where $J_\nu$ and $Y_\nu$ are the \emph{Bessel functions of the first and second
   \begin{axis}[
       grid=major,
       xlabel={$k\tau$},
-      ylabel={$h_k(\tau)$},
+      ylabel={$\tilde h_k(\tau)$},
       width=12cm, height=7cm,
       xmin=0, xmax=30
   ]
@@ -65,7 +65,7 @@ where $J_\nu$ and $Y_\nu$ are the \emph{Bessel functions of the first and second
     \addlegendentry{Mat. Dom.}
   \end{axis}
 \end{tikzpicture}
-\caption{Comparison of the evolution of the amplitude of primordial gravitational waves in radiation domination and in matter domination. We used the condition $C_2=0$ and $C_1=1$. }
+\caption{Comparison of the evolution of the amplitude of gravitational waves in radiation domination and matter domination. We used $C_2=0$ and $\tilde h_k(0)=1$ in equation \eqref{eq:free_GW_sol}, this matches our solution with the inflationary one, with unitary amplitudes.}
 \label{fig:h_m/r}
 \end{figure}
 Note that the above solution holds also during slow-roll inflation, when a simple calculation gives $\beta\approx-1$. Lastly, let us appreciate that super Hubble horizon and sub Hubble horizon regimes we recover the behaviors which we already discovered studying inflation: from equation \eqref{eq:EOM_GW_FREE}, in the limit $k^2\gg a'/a=a H$ oscillating modes are displayed at sub Hubble horizon scales while for $k^2\ll\ a'/a=a H$ the solution reads:
@@ -149,7 +149,7 @@ with $A$ and $\delta$ are constants that must be computed numerically. Dicus and
   \begin{axis}[
       grid=major,
       xlabel={$k\tau$},
-      ylabel={$h_k(\tau)$},
+      ylabel={$\tilde h_k(\tau)$},
       width=12cm, height=7cm,
       xmin=0, xmax=30
   ]
@@ -293,7 +293,7 @@ We should then study the sub horizon regime: in this case the the anisotropic st
         {x^3 * (8/15 - 7/6*x + 16/15*x^2 - 7/24*x^3 - 13/480*x^5 + 11/1920*x^7)};
         \end{axis}
     \end{tikzpicture}
-    \caption{Plot of $k^3 |\tilde{\pi}^{(B)}(k)|^2$ for $n_B=2$ as a function of $k/k_D$. We can appreciate that the anisotropic stress has a peak right after $k_D$, to then vanish for $2k_D$.}
+    \caption{Plot of the correlation function of the anisotropic stress for $n_B=2$ as a function of $k/k_D$. We can appreciate that the anisotropic stress has a peak right after $k_D$, to then vanish for $2k_D$.}
     \label{fig:stress_B}
 \end{figure}
 
@@ -308,12 +308,12 @@ $$\big\langle \mathbf B^2(\mathbf{x})\big\rangle=\int \frac{d^3k}{(2\pi)^3}\math
 where we used the damping scale $k_D$ to regularize the integral. Similarly, the anisotropic stress can be computed from
 $$\langle\tilde\pi^{*(B)}_{ij}(k)\tilde\pi^{(B)}_{hk}\rangle=\frac{1}{4}|\tilde \pi^{(B)}(k)|^2\mathcal{M}_{ijkh}(k)\delta(k-k'),\text{ and }\mathcal{M}_{ijkh}(k)\defeq P_{ik}P_{jh}+P_{ih}P_{jk}-P_{ij}P_{hk}.$$
 
-An extensive description of the physics of primordial magnetic fields and their interactions with the CMB anisotropies can be found in \cite{Paoletti_2009}: in this work many 2-points correlation function of the anisotropic stress are computed, we only quote here the result in the case $n_B=2$ (Fig. \ref{fig:stress_B}):
+An extensive description of the physics of primordial magnetic fields and their interactions with the CMB anisotropies can be found in \cite{Paoletti_2009}: in this work many 2-points correlation function of the anisotropic stress are computed, we only quote here the result in the case $n_B=2$ :
 \begin{align*}
     |\tilde \pi^{(B)}(k)|^2\bigg|_{n_B=2}&=\frac{\mathcal{A_B}^2k_D^7}{256\pi^4k_0 ^4}\bigg[\frac{8}{15}-\frac{7}{6}k+\frac{16}{15}k^2-\frac{7}{24}k^3-\frac{13}{480}k^5+\frac{11}{1920}k^7\bigg]\\
-    &=\frac{25\big\langle \mathbf B^2(\mathbf{x})\big\rangle^2}{64k_D^3}\bigg[\frac{8}{15}-\frac{7}{6}k+\frac{16}{15}k^2-\frac{7}{24}k^3-\frac{13}{480}k^5+\frac{11}{1920}k^7\bigg].
+    &=\frac{25\big\langle \mathbf B^2(\mathbf{x})\big\rangle^2}{64k_D^3}\bigg[\frac{8}{15}-\frac{7}{6}k+\frac{16}{15}k^2-\frac{7}{24}k^3-\frac{13}{480}k^5+\frac{11}{1920}k^7\bigg],
 \end{align*}
-
+in Figure \ref{fig:stress_B} we can appreciate how the damping scale influences the correlation function.
 
 
 
